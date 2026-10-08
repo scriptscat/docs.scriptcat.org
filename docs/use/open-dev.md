@@ -7,6 +7,9 @@ import TabItem from '@theme/TabItem';
 import { Icon } from "@site/src/components/Icon";
 import BrowserGuide from '@site/src/components/BrowserGuide';
 import GithubStar from '@site/src/components/GithubStar';
+import Showcase from '@site/src/components/Showcase';
+
+<Showcase />
 
 <GithubStar variant="bar" scene="install" />
 

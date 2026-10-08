@@ -5,8 +5,11 @@ sidebar_class_name: hidden
 ---
 
 import GithubStar from '@site/src/components/GithubStar';
+import Showcase from '@site/src/components/Showcase';
 
 # 🎉 欢迎使用脚本猫
+
+<Showcase />
 
 恭喜您成功安装脚本猫浏览器扩展！脚本猫是一个强大的用户脚本管理器，兼容油猴脚本，并提供更多强大的功能。
 

@@ -3,6 +3,9 @@ title: 更新日志
 ---
 
 import GithubStar from '@site/src/components/GithubStar';
+import Showcase from '@site/src/components/Showcase';
+
+<Showcase />
 
 <GithubStar variant="bar" scene="changelog" />
 

@@ -1,0 +1,24 @@
+.showcase {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+  margin-bottom: var(--ifm-leading);
+}
+
+/* 与 AdSlot 的标签保持一致 */
+.label {
+  font-size: 0.625rem;
+  line-height: 1;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ifm-color-emphasis-500);
+}
+
+/* width/height 属性预留比例避免 CLS，这里让它跟随正文宽度缩放 */
+.image {
+  display: block;
+  width: 100%;
+  max-width: 970px;
+  height: auto;
+  border-radius: 8px;
+}
