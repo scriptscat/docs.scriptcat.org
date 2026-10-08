@@ -4,8 +4,12 @@ title: Beta 更新日志
 
 import GithubStar from '@site/src/components/GithubStar';
 import BetaTheme from '@site/src/components/BetaTheme';
+import Showcase from '@site/src/components/Showcase';
 
 <BetaTheme />
+
+<Showcase />
+
 <GithubStar variant="bar" scene="beta-changelog" />
 
 脚本猫的版本发布主要分为两条分支: 正式版本与预发布版本，正式版本更新日志请看：[更新日志](./index.md)
