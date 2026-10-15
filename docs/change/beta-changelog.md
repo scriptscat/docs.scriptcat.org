@@ -25,6 +25,46 @@ import Showcase from '@site/src/components/Showcase';
 
 另外除了预发布以外,脚本猫每次代码提交合并到主分支后都会在[Github Action](https://github.com/scriptscat/scriptcat/actions/workflows/build.yaml)上打包构建一次扩展,如果你想体验最新或者修复的内容可以前往[Github Action](https://github.com/scriptscat/scriptcat/actions/workflows/build.yaml)页进行下载.
 
+<a name="1.5.0-beta.5"></a>
+
+## 1.5.0-beta.5 (2026-10-15)
+
+本次预发布以打磨与修复为主：编辑器资源面板可直接查看已缓存的资源，并会标出脚本猫不支持的 `@grant` 和重复的 `@resource` 名称；批量更新页按当前站点分段；同时修复了上游改名后从网页重复安装、订阅手动检查更新无效、开启云同步时页面长时间空白，以及浏览器不支持的 `@match` scheme 导致整批脚本注册失败等问题。
+
+### 🧑‍💻 编辑器
+
+- ✨ 资源面板中 `@require` / `@require-css` 以文件名展示，完整 URL 可见且可搜索；新增「查看」，可预览已缓存的文本与图片资源（1 MiB 以内自动预览） ([#1758](https://github.com/scriptscat/scriptcat/pull/1758)) (by @cyfung1031)
+- ✨ 编辑器标出脚本猫不支持的 `@grant` ([#1763](https://github.com/scriptscat/scriptcat/pull/1763)) (by @cyfung1031)
+- ✨ 编辑器对重复的 `@resource` 名称给出警告 ([#1762](https://github.com/scriptscat/scriptcat/pull/1762)) (by @cyfung1031)
+- 🐛 存储、资源、脚本设置标签页下不再留出空白的状态栏 ([#1755](https://github.com/scriptscat/scriptcat/pull/1755)) (by @cyfung1031)
+
+### 🧩 GM API 变更
+
+- 🐛 Firefox 下补齐 `GM_info.userAgentData`，并对齐 Tampermonkey 的版本粒度与字段顺序 [#1752](https://github.com/scriptscat/scriptcat/issues/1752) ([#1754](https://github.com/scriptscat/scriptcat/pull/1754)) (by @cyfung1031)
+
+### 🐛 Bug 修复
+
+- 🐛 从网页链接安装时按下载地址认出已改名的脚本，避免上游改名后重复安装 [#1785](https://github.com/scriptscat/scriptcat/issues/1785) ([#1786](https://github.com/scriptscat/scriptcat/pull/1786)) (by @CodFrm)
+- 🐛 修复订阅手动检查更新无效，并同步刷新订阅列表 [#1773](https://github.com/scriptscat/scriptcat/issues/1773) ([#1781](https://github.com/scriptscat/scriptcat/pull/1781)) (by @CodFrm)
+- 🐛 浏览器不支持的 `@match` scheme（如 `edge://`）不再导致整批脚本注册失败 [#1771](https://github.com/scriptscat/scriptcat/issues/1771) ([#1772](https://github.com/scriptscat/scriptcat/pull/1772)) (by @cyfung1031)
+- 🐛 修复开启云同步后，脚本列表与编辑页长时间空白 ([#1765](https://github.com/scriptscat/scriptcat/pull/1765)) (by @CodFrm)
+- 🐛 不属于任何标签页的页面不再计入 Popup「后台脚本」列表 [#1774](https://github.com/scriptscat/scriptcat/issues/1774) ([#1783](https://github.com/scriptscat/scriptcat/pull/1783)) (by @CodFrm)
+- 🐛 点击扩展更新通知时激活已自动打开的更新日志页，不再重复打开 [#1769](https://github.com/scriptscat/scriptcat/issues/1769) ([#1782](https://github.com/scriptscat/scriptcat/pull/1782)) (by @Pililink)
+
+### ⚡️ 性能优化
+
+- ⚡️ 资源分块下载只解码请求的区间，大资源下载更快 ([#1753](https://github.com/scriptscat/scriptcat/pull/1753)) (by @cyfung1031)
+
+### 🎨 UI 改进
+
+- 💄 批量更新页按当前站点分为「相关」与「其他更新」两段，各段可单独全选；相似度改为向下取整，不足 100% 不再显示为 100%；并优化窄屏与移动端布局 [#1778](https://github.com/scriptscat/scriptcat/issues/1778) ([#1788](https://github.com/scriptscat/scriptcat/pull/1788)) (by @CodFrm)
+- 💄 启用排序时明确提示当前排序状态，拖拽手柄改为锁定状态，并提供切回默认顺序的入口 [#1751](https://github.com/scriptscat/scriptcat/issues/1751) ([#1768](https://github.com/scriptscat/scriptcat/pull/1768)) (by @CodFrm)
+- 💄 修复移动端脚本拖拽与左滑时的漏色，调整桌面端拖拽指针 ([#1756](https://github.com/scriptscat/scriptcat/pull/1756)) (by @CodFrm)
+
+### 🔒 安全性改进
+
+- 🔒 升级依赖以修复 pnpm audit 安全警告（react-router-dom、webdav、fast-xml-parser、dompurify 等） ([#1760](https://github.com/scriptscat/scriptcat/pull/1760)) (by @cyfung1031)
+
 <a name="1.5.0-beta.4"></a>
 
 ## 1.5.0-beta.4 (2026-09-18)

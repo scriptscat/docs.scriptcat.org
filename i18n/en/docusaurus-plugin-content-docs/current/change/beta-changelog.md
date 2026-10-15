@@ -21,6 +21,46 @@ You can obtain pre-release versions from the [Release](https://github.com/script
 
 Additionally, besides pre-releases, ScriptCat builds the extension on [Github Action](https://github.com/scriptscat/scriptcat/actions/workflows/build.yaml) after each code commit is merged to the main branch. If you want to experience the latest features or fixes, you can download them from the [Github Action](https://github.com/scriptscat/scriptcat/actions/workflows/build.yaml) page.
 
+<a name="1.5.0-beta.5"></a>
+
+## 1.5.0-beta.5 (2026-10-15)
+
+This pre-release focuses on polish and fixes: the editor's Resources panel can now preview cached resources and flags unsupported `@grant` values and duplicate `@resource` names; the batch update page groups updates by the current site; and it fixes duplicate installs from web pages after an upstream rename, subscription manual update checks doing nothing, long blank pages while cloud sync is enabled, and unsupported `@match` schemes breaking registration of every script.
+
+### 🧑‍💻 Editor
+
+- ✨ The Resources panel shows `@require` / `@require-css` by file name with the full URL visible and searchable, and adds a View action that previews cached text and image resources (automatic preview up to 1 MiB) ([#1758](https://github.com/scriptscat/scriptcat/pull/1758)) (by @cyfung1031)
+- ✨ The editor flags `@grant` values that ScriptCat does not support ([#1763](https://github.com/scriptscat/scriptcat/pull/1763)) (by @cyfung1031)
+- ✨ The editor warns about duplicate `@resource` names ([#1762](https://github.com/scriptscat/scriptcat/pull/1762)) (by @cyfung1031)
+- 🐛 The Storage, Resources and Script Settings tabs no longer leave an empty status bar ([#1755](https://github.com/scriptscat/scriptcat/pull/1755)) (by @cyfung1031)
+
+### 🧩 GM API Changes
+
+- 🐛 Provide `GM_info.userAgentData` on Firefox and align version granularity and field order with Tampermonkey [#1752](https://github.com/scriptscat/scriptcat/issues/1752) ([#1754](https://github.com/scriptscat/scriptcat/pull/1754)) (by @cyfung1031)
+
+### 🐛 Bug Fixes
+
+- 🐛 Installing from a web link now recognizes a renamed script by its download URL, so an upstream rename no longer creates a duplicate install [#1785](https://github.com/scriptscat/scriptcat/issues/1785) ([#1786](https://github.com/scriptscat/scriptcat/pull/1786)) (by @CodFrm)
+- 🐛 Fix manual update checks for subscriptions doing nothing, and refresh the subscription list afterwards [#1773](https://github.com/scriptscat/scriptcat/issues/1773) ([#1781](https://github.com/scriptscat/scriptcat/pull/1781)) (by @CodFrm)
+- 🐛 A `@match` scheme the browser does not support (such as `edge://`) no longer makes registration of the whole script batch fail [#1771](https://github.com/scriptscat/scriptcat/issues/1771) ([#1772](https://github.com/scriptscat/scriptcat/pull/1772)) (by @cyfung1031)
+- 🐛 Fix the script list and editor staying blank for a long time while cloud sync is enabled ([#1765](https://github.com/scriptscat/scriptcat/pull/1765)) (by @CodFrm)
+- 🐛 Pages that do not belong to any tab are no longer counted in the popup's background script list [#1774](https://github.com/scriptscat/scriptcat/issues/1774) ([#1783](https://github.com/scriptscat/scriptcat/pull/1783)) (by @CodFrm)
+- 🐛 Clicking the extension update notification focuses the changelog page that was already opened instead of opening another one [#1769](https://github.com/scriptscat/scriptcat/issues/1769) ([#1782](https://github.com/scriptscat/scriptcat/pull/1782)) (by @Pililink)
+
+### ⚡️ Performance Improvements
+
+- ⚡️ Chunked resource downloads decode only the requested range, making large resource downloads faster ([#1753](https://github.com/scriptscat/scriptcat/pull/1753)) (by @cyfung1031)
+
+### 🎨 UI Improvements
+
+- 💄 The batch update page splits updates into "related to this site" and "other updates", each with its own select-all; similarity is rounded down so anything below 100% is never shown as 100%; and the narrow-screen and mobile layouts are improved [#1778](https://github.com/scriptscat/scriptcat/issues/1778) ([#1788](https://github.com/scriptscat/scriptcat/pull/1788)) (by @CodFrm)
+- 💄 When a sort order is active, the list states it clearly, drag handles show as locked, and there is a way back to the default order [#1751](https://github.com/scriptscat/scriptcat/issues/1751) ([#1768](https://github.com/scriptscat/scriptcat/pull/1768)) (by @CodFrm)
+- 💄 Fix color bleed when dragging or swiping scripts on mobile, and adjust the desktop drag cursor ([#1756](https://github.com/scriptscat/scriptcat/pull/1756)) (by @CodFrm)
+
+### 🔒 Security Improvements
+
+- 🔒 Upgrade dependencies to resolve pnpm audit security warnings (react-router-dom, webdav, fast-xml-parser, dompurify and more) ([#1760](https://github.com/scriptscat/scriptcat/pull/1760)) (by @cyfung1031)
+
 <a name="1.5.0-beta.4"></a>
 
 ## 1.5.0-beta.4 (2026-09-18)
