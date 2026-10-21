@@ -23,6 +23,7 @@ console.log(GM_info.scriptMetaStr);
 ```
 
 * `sandboxMode` 目前只有 `raw` 值。 `runAt` 未支持。 `userAgentData` 支持但不一定和TM一致。
+* `userLanguage`（v1.5+）为脚本猫当前的界面语言，如 `"zh-CN"`、`"en-US"`、`"ja-JP"`，脚本可据此决定自身的显示语言。该值在脚本启动时确定；`@early-start` 脚本同步读取时可能为空字符串，请在 `CAT_scriptLoaded()` 之后读取。
 
 ### GM_log \*
 

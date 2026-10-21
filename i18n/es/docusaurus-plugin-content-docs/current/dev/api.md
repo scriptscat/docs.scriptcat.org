@@ -23,6 +23,7 @@ console.log(GM_info.scriptMetaStr);
 ```
 
 * `sandboxMode` actualmente solo tiene el valor `raw`. `runAt` no es compatible.
+* `userLanguage` (v1.5+) es el idioma actual de la interfaz de ScriptCat, por ejemplo `"zh-CN"`, `"en-US"`, `"ja-JP"`, para que un script pueda elegir su propio idioma de visualización. El valor se fija al iniciarse el script; un script con `@early-start` puede obtener una cadena vacía al leerlo de forma síncrona, así que léalo después de `CAT_scriptLoaded()`.
 
 ### GM_log \*
 

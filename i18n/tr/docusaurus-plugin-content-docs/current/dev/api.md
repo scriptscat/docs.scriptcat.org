@@ -23,6 +23,7 @@ console.log(GM_info.scriptMetaStr);
 ```
 
 * `sandboxMode` şu anda yalnızca `raw` değerine sahiptir. `runAt` desteklenmez. `userAgentData` desteklenir, ancak Tampermonkey ile tam olarak eşleşmeyebilir.
+* `userLanguage` (v1.5+), ScriptCat'in geçerli arayüz dilidir; örneğin `"zh-CN"`, `"en-US"`, `"ja-JP"`. Betik kendi görüntüleme dilini buna göre seçebilir. Değer betik başlatılırken belirlenir; `@early-start` betiği eşzamanlı okurken boş bir dize alabilir, bu nedenle değeri `CAT_scriptLoaded()` sonrasında okuyun.
 
 ### GM_log \*
 

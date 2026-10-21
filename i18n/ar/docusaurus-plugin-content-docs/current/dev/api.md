@@ -23,6 +23,7 @@ console.log(GM_info.scriptMetaStr);
 ```
 
 * `sandboxMode` حالياً له القيمة `raw` فقط. `runAt` غير مدعوم. `userAgentData` مدعوم، لكنه قد لا يطابق Tampermonkey تماماً.
+* `userLanguage` (v1.5+) هي لغة واجهة ScriptCat الحالية، مثل `"zh-CN"` و `"en-US"` و `"ja-JP"`، بحيث يمكن للسكرپت اختيار لغة العرض الخاصة به. تُحدَّد القيمة عند بدء تشغيل السكرپت؛ قد يحصل سكرپت `@early-start` على سلسلة فارغة عند قراءتها بشكل متزامن، لذا اقرأها بعد `CAT_scriptLoaded()`.
 
 ### GM_log \*
 

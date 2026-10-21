@@ -23,6 +23,7 @@ console.log(GM_info.scriptMetaStr);
 ```
 
 * `sandboxMode` 目前僅有 `raw` 值。`runAt` 不受支援。
+* `userLanguage`（v1.5+）為腳本貓目前的介面語言，如 `"zh-CN"`、`"en-US"`、`"ja-JP"`，腳本可據此決定自身的顯示語言。該值在腳本啟動時確定；`@early-start` 腳本同步讀取時可能為空字串，請在 `CAT_scriptLoaded()` 之後讀取。
 
 ### GM_log \*
 
