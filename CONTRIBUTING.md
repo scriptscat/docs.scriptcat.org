@@ -31,7 +31,7 @@
 
 ## 新增一条更新日志
 
-`change/` 下的版本文件（`v1.x.md`）不使用数字前缀排序；在 `sidebars.js` 的 `change` 数组里手动插入新版本号（数组顺序即侧边栏顺序，新版本插在最前面）。`change/beta-changelog.md` 是 Beta 版本的单独更新日志。更新日志只维护中文源 `docs/change/` 和英文源 `i18n/en/.../change/`：`zh-Hant` 路由复用中文源，其他翻译 locale 复用英文源。fallback 关系以 `scripts/check-config.json` 为准，不要恢复会漂移的 locale 副本。
+`change/` 下的版本文件（`v1.x.md`）不使用数字前缀排序；在 `sidebars.js` 的 `change` 数组里手动插入新版本号（数组顺序即侧边栏顺序，新版本插在最前面）。`change/beta-changelog.md` 是 Beta 版本的单独更新日志。更新日志只维护中文源 `docs/change/` 和英文源 `i18n/en/.../change/`：`zh-Hant` 路由复用中文源，其他翻译 locale 复用英文源。fallback 关系以 `scripts/check-config.json` 为准，不要恢复会漂移的 locale 副本。`use/policy/privacy_sctl.md`（sctl Browser 商店隐私政策）同样只维护中文和英文两套源，回退方式与更新日志相同。
 
 ## 加载不变的 URL（改动前必须确认不受影响）
 
