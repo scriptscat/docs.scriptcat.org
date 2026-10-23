@@ -10,6 +10,114 @@ For Beta version changelog, please see [Beta Changelog](./beta-changelog.md)
 
 ⚠️ Please note that if you are using Windows 8/7/XP, or your browser kernel version is lower than 120, you need to manually install the [legacy version of ScriptCat](https://github.com/scriptscat/scriptcat/releases). v0.16.x is the last version that supports Manifest V2. Installation steps can be found at: [Install Extension by Loading Unpacked](/use/use.md#load-unpacked-extension-installation).
 
+<a name="1.5.0"></a>
+
+## 1.5.0 (2026-10-23)
+
+v1.5 is a major release. The whole interface has been rebuilt and optimized for mobile. The new External Access feature lets you manage your scripts from the command line and from AI clients through [sctl](https://github.com/scriptscat/sctl). The release also adds a script recycle bin, network rule management (DNR) and redesigned install and update pages, officially supports Firefox MV3, and fixes a large number of GM API, cloud sync and stability issues. See [v1.5 — New Interface & External Access](./v1.5.md) for a feature tour. The ScriptCat AI Agent is still available only in Beta builds and is not yet enabled in the stable release.
+
+### 🔌 External Access: connect the command line and AI clients with sctl
+
+[sctl](https://github.com/scriptscat/sctl) is ScriptCat's companion local bridge, a single cross-platform executable. Once you pair it with a one-time code under **Tools → External Access** in ScriptCat, the `sctl` command in your terminal and [MCP](https://modelcontextprotocol.io/)-capable AI clients such as Claude Code can manage your scripts ([#1573](https://github.com/scriptscat/scriptcat/pull/1573)) (by @cyfung1031):
+
+- List scripts, read and search source by line ranges, install, edit by content anchors, enable, disable and delete.
+- Reading source and every write require approval on a confirmation page in the browser by default — Reject, Allow, or Allow for this session — and each category can be switched to allow without asking in the permission policy. External programs cannot approve their own requests, and every operation is recorded in an audit log you can open from the External Access card.
+- Communication stays on this machine by default (port 8643), the extension and sctl authenticate each other, and no Native Messaging host is needed.
+- With sctl's own **sctl Browser** extension you can also control tabs, manage bookmarks, history and other browser data, automate and debug pages, or hand a CDP endpoint to Playwright / Puppeteer — all from the command line.
+
+```bash
+# macOS / Linux (Windows PowerShell: irm https://raw.githubusercontent.com/scriptscat/sctl/main/scripts/install.ps1 | iex)
+curl -fsSL https://raw.githubusercontent.com/scriptscat/sctl/main/scripts/install.sh | sh
+sctl serve      # start the local daemon and keep it running
+sctl connect    # in another terminal; enter the printed code under Tools → External Access in ScriptCat
+```
+
+See [External Access](/docs/use/external-access/) for the full setup, MCP client configuration and security notes.
+
+### 🚀 Major New Features
+
+- 💄 All-new interface: fully rebuilt with consistent light and dark themes; the script list offers table and card views with advanced filters by status, type, tag and source; layouts are optimized for mobile browsers ([#1514](https://github.com/scriptscat/scriptcat/pull/1514)) (by @CodFrm)
+- ✨ Script recycle bin: deleted scripts go to the recycle bin first, where they can be restored (with their original data and permissions), deleted permanently, or cleaned up automatically when they expire; retention defaults to 30 days and can be changed or set to never ([#1585](https://github.com/scriptscat/scriptcat/pull/1585), [#1622](https://github.com/scriptscat/scriptcat/pull/1622)) (by @CodFrm)
+- ✨ Network rule management (DNR): under **Tools → Network rules**, remove response headers such as CSP / X-Frame-Options, rewrite request and response headers, block or redirect requests per domain, with scenario templates, drag-to-reorder, bulk actions, quota hints and match testing ([#1598](https://github.com/scriptscat/scriptcat/pull/1598), [#1733](https://github.com/scriptscat/scriptcat/pull/1733)) (by @cyfung1031)
+- ✨ Official Firefox MV3 support, with improved sandbox / offscreen communication ([#1561](https://github.com/scriptscat/scriptcat/pull/1561)) (by @cyfung1031)
+- ✨ The install page flags directives, values and GM capabilities that are written but have no effect in ScriptCat, and marks ScriptCat-only capabilities [#1713](https://github.com/scriptscat/scriptcat/issues/1713) ([#1742](https://github.com/scriptscat/scriptcat/pull/1742)) (by @CodFrm)
+- ✨ Script updates show permissions as a diff against the installed version with unchanged items collapsed, and the permanent security warning banner is gone [#1716](https://github.com/scriptscat/scriptcat/issues/1716) ([#1732](https://github.com/scriptscat/scriptcat/pull/1732)) (by @CodFrm)
+- ✨ View script code full-screen on the install page ([#1743](https://github.com/scriptscat/scriptcat/pull/1743)) (by @cyfung1031)
+- ✨ New-script templates can be customized separately for normal / background / scheduled scripts under **Settings → Development Tools → Script Templates**, with variables such as `{{name}}`, `{{match}}` and `{{date:YYYY-MM-DD}}` [#1722](https://github.com/scriptscat/scriptcat/issues/1722) ([#1731](https://github.com/scriptscat/scriptcat/pull/1731)) (by @CodFrm)
+- ✨ Site-scope quick actions in the popup, always visible and reversible; "Exclude on X" removes the site from `@match` first instead of hard-coding an `@exclude` [#1590](https://github.com/scriptscat/scriptcat/issues/1590) ([#1646](https://github.com/scriptscat/scriptcat/pull/1646), [#1666](https://github.com/scriptscat/scriptcat/pull/1666), [#1696](https://github.com/scriptscat/scriptcat/pull/1696)) (by @CodFrm)
+- ✨ More complete backup, restore and import: ScriptCat / Tampermonkey / Violentmonkey custom configuration and settings backup, plus resource repair ([#1554](https://github.com/scriptscat/scriptcat/pull/1554)) (by @CodFrm)
+- ✨ Manual download link for local backups ([#1543](https://github.com/scriptscat/scriptcat/pull/1543)) (by @cyfung1031)
+- ✨ A "Disabled" option for the icon service turns favicon fetching off completely ([#1637](https://github.com/scriptscat/scriptcat/pull/1637)) (by @CodFrm)
+
+### 🧩 GM API Changes
+
+- ✨ Support the `@exclude-match` metadata key [#1714](https://github.com/scriptscat/scriptcat/issues/1714) ([#1798](https://github.com/scriptscat/scriptcat/pull/1798)) (by @CodFrm)
+- ✨ `GM_info.userLanguage` exposes ScriptCat's current interface language [#1018](https://github.com/scriptscat/scriptcat/issues/1018) ([#1799](https://github.com/scriptscat/scriptcat/pull/1799)) (by @CodFrm)
+- 🐛 Provide `GM_info.userAgentData` on Firefox, matching Tampermonkey's version granularity and field order [#1752](https://github.com/scriptscat/scriptcat/issues/1752) ([#1754](https://github.com/scriptscat/scriptcat/pull/1754)) (by @cyfung1031)
+- 🐛 Native `GM_download` honors `@connect`, consistent with `GM_xmlhttpRequest` ([#1506](https://github.com/scriptscat/scriptcat/pull/1506)) (by @DudeAint)
+- 🐛 Native `GM_download` no longer asks for cross-origin permission when downloading a `data:` URI [#1635](https://github.com/scriptscat/scriptcat/issues/1635) ([#1797](https://github.com/scriptscat/scriptcat/pull/1797)) (by @CodFrm)
+- 🐛 `GM_download` fires `onerror` when given an empty url ([#1619](https://github.com/scriptscat/scriptcat/pull/1619)) (by @cyfung1031)
+- 🐛 Custom cookies in `GM_xmlhttpRequest` replace a same-name cookie instead of being appended ([#1604](https://github.com/scriptscat/scriptcat/pull/1604)) (by @cyfung1031)
+- 🐛 `GM_getTab` still returns data saved with `GM_saveTab` after the browser discards the tab [#1791](https://github.com/scriptscat/scriptcat/issues/1791) ([#1796](https://github.com/scriptscat/scriptcat/pull/1796)) (by @CodFrm)
+
+### 🧑‍💻 Editor
+
+- ✨ The "+" in the tab bar can create a normal, background or scheduled script directly ([#1544](https://github.com/scriptscat/scriptcat/pull/1544)) (by @cyfung1031)
+- ✨ The resource panel shows `@require` / `@require-css` by file name with the full URL visible and searchable, and a new "View" action previews cached text and image resources ([#1758](https://github.com/scriptscat/scriptcat/pull/1758)) (by @cyfung1031)
+- ✨ Flag undefined metadata keys, `@grant` values ScriptCat does not support, and duplicate `@resource` names ([#1608](https://github.com/scriptscat/scriptcat/pull/1608), [#1763](https://github.com/scriptscat/scriptcat/pull/1763), [#1762](https://github.com/scriptscat/scriptcat/pull/1762)) (by @cyfung1031)
+- ♻️ Adjust `eslint-plugin-userscripts` rules ([#1510](https://github.com/scriptscat/scriptcat/pull/1510)) (by @cyfung1031)
+- 🐛 Fix the missing guard when leaving with unsaved changes, the hidden close button on the active tab, the tab title not updating after a rename, and the empty status bar under the Storage / Resources / Script Settings tabs [#1556](https://github.com/scriptscat/scriptcat/issues/1556) ([#1656](https://github.com/scriptscat/scriptcat/pull/1656), [#1607](https://github.com/scriptscat/scriptcat/pull/1607), [#1755](https://github.com/scriptscat/scriptcat/pull/1755)) (by @CodFrm, @cyfung1031)
+
+### 🐛 Bug Fixes
+
+- 🐛 Fix large scripts and resources failing to install or load because of message size limits ([#1745](https://github.com/scriptscat/scriptcat/pull/1745)) (by @cyfung1031)
+- 🐛 An `@match` scheme the browser does not support (such as `edge://`) no longer makes a whole batch of scripts fail to register [#1771](https://github.com/scriptscat/scriptcat/issues/1771) ([#1772](https://github.com/scriptscat/scriptcat/pull/1772)) (by @cyfung1031)
+- 🐛 Fix scripts silently failing to inject on Edge Dev [#1724](https://github.com/scriptscat/scriptcat/issues/1724) ([#1725](https://github.com/scriptscat/scriptcat/pull/1725)) (by @mikemikimike)
+- 🐛 Fix sandbox compatibility of `@inject-into content` scripts on Firefox: add missing EventTarget methods and fix self-reference escapes, stripped interface objects and the separate-realm issue [#1701](https://github.com/scriptscat/scriptcat/issues/1701) ([#1692](https://github.com/scriptscat/scriptcat/pull/1692), [#1697](https://github.com/scriptscat/scriptcat/pull/1697), [#1706](https://github.com/scriptscat/scriptcat/pull/1706)) (by @CodFrm, @cyfung1031)
+- 🐛 Correct script resource classification and page resource permission boundaries so `@resource` / `@require-css` / `@require` no longer leak into each other ([#1686](https://github.com/scriptscat/scriptcat/pull/1686)) (by @cyfung1031)
+- 🐛 Fix `@run-at context-menu`: a run-at override from the settings panel was lost after re-registration, menu items failed to register, and the script's own `GM_registerMenuCommand` was blocked; the option is also added to script settings [#1649](https://github.com/scriptscat/scriptcat/issues/1649) ([#1718](https://github.com/scriptscat/scriptcat/pull/1718), [#1652](https://github.com/scriptscat/scriptcat/pull/1652)) (by @CodFrm)
+- 🐛 Installing from a web link recognizes a renamed script by its download URL, so an upstream rename no longer causes a duplicate install [#1785](https://github.com/scriptscat/scriptcat/issues/1785) ([#1786](https://github.com/scriptscat/scriptcat/pull/1786)) (by @CodFrm)
+- 🐛 Fix the script settings page showing the update URL as `meta.js` after an import or WebDAV restore, which rewrote the download URL [#1793](https://github.com/scriptscat/scriptcat/issues/1793) ([#1795](https://github.com/scriptscat/scriptcat/pull/1795)) (by @CodFrm)
+- 🐛 `.user.js` files served as `application/x-javascript` now open the install page [#1730](https://github.com/scriptscat/scriptcat/issues/1730) ([#1736](https://github.com/scriptscat/scriptcat/pull/1736)) (by @cyfung1031)
+- 🐛 Fix manual update checks for subscriptions having no effect, and refresh the subscription list afterwards [#1773](https://github.com/scriptscat/scriptcat/issues/1773) ([#1781](https://github.com/scriptscat/scriptcat/pull/1781)) (by @CodFrm)
+- 🐛 Cloud sync no longer runs on every Service Worker cold start and now runs every 30 minutes; fix sync state consistency and cloud conflict handling, scrambled script order after multi-device sync, sync failures with path-prefixed S3 endpoints (such as Supabase), and the script list and editor staying blank for a long time with cloud sync enabled [#1670](https://github.com/scriptscat/scriptcat/issues/1670) [#1682](https://github.com/scriptscat/scriptcat/issues/1682) [#1723](https://github.com/scriptscat/scriptcat/issues/1723) ([#1678](https://github.com/scriptscat/scriptcat/pull/1678), [#1504](https://github.com/scriptscat/scriptcat/pull/1504), [#1690](https://github.com/scriptscat/scriptcat/pull/1690), [#1729](https://github.com/scriptscat/scriptcat/pull/1729), [#1765](https://github.com/scriptscat/scriptcat/pull/1765)) (by @CodFrm, @cyfung1031)
+- 🐛 Install and update pages: fix back / close-tab behavior, the update page failing to close after installing, and update records being overwritten by a stale check snapshot [#1669](https://github.com/scriptscat/scriptcat/issues/1669) [#1648](https://github.com/scriptscat/scriptcat/issues/1648) [#1650](https://github.com/scriptscat/scriptcat/issues/1650) [#1651](https://github.com/scriptscat/scriptcat/issues/1651) ([#1594](https://github.com/scriptscat/scriptcat/pull/1594), [#1675](https://github.com/scriptscat/scriptcat/pull/1675), [#1677](https://github.com/scriptscat/scriptcat/pull/1677)) (by @cyfung1031, @CodFrm)
+- 🐛 The batch update page no longer closes itself on a countdown; when check records expire it re-checks automatically and finishes the remaining entries; opening details from a script name reuses the check cache instead of requesting again [#1715](https://github.com/scriptscat/scriptcat/issues/1715) ([#1720](https://github.com/scriptscat/scriptcat/pull/1720), [#1719](https://github.com/scriptscat/scriptcat/pull/1719)) (by @CodFrm)
+- 🐛 Popup: fix the global-off notice appearing only sometimes with an empty script list for the current page, false positives in "Running on this page" (and restore iframe scripts), pages outside any tab counted as "Background scripts", and the popup collapsing into a thin strip that pushed the header and footer out of view [#1687](https://github.com/scriptscat/scriptcat/issues/1687) [#1774](https://github.com/scriptscat/scriptcat/issues/1774) [#1800](https://github.com/scriptscat/scriptcat/issues/1800) ([#1694](https://github.com/scriptscat/scriptcat/pull/1694), [#1689](https://github.com/scriptscat/scriptcat/pull/1689), [#1783](https://github.com/scriptscat/scriptcat/pull/1783), [#1801](https://github.com/scriptscat/scriptcat/pull/1801)) (by @CodFrm)
+- 🐛 Fix clicks on the New Script button being swallowed by the hover menu; it now creates a user script directly [#1699](https://github.com/scriptscat/scriptcat/issues/1699) ([#1704](https://github.com/scriptscat/scriptcat/pull/1704)) (by @CodFrm)
+- 🐛 Clicking the extension update notification activates the changelog tab that was already opened instead of opening another one [#1769](https://github.com/scriptscat/scriptcat/issues/1769) ([#1782](https://github.com/scriptscat/scriptcat/pull/1782)) (by @Pililink)
+- 🐛 Clearing matches / excludes / tags / run-at in script settings no longer brings them back ([#1579](https://github.com/scriptscat/scriptcat/pull/1579)) (by @CodFrm)
+- 🐛 Avoid scheduled-task errors when cron auto-detects an invalid time zone, and replace an unavailable demo API in the crontab example ([#1531](https://github.com/scriptscat/scriptcat/pull/1531), [#1542](https://github.com/scriptscat/scriptcat/pull/1542)) (by @cyfung1031)
+- 🐛 Fix scheduled log cleanup not running ([#1599](https://github.com/scriptscat/scriptcat/pull/1599)) (by @CodFrm)
+- 🐛 Fix `window.focus` window focusing and tighten windowId validation ([#1577](https://github.com/scriptscat/scriptcat/pull/1577)) (by @cyfung1031)
+- 🐛 Script sync settings are saved immediately ([#1615](https://github.com/scriptscat/scriptcat/pull/1615)) (by @CodFrm)
+
+### ⚡️ Performance Improvements
+
+- ⚡️ Optimize the script loading cache and fix leftover popup menu items ([#1511](https://github.com/scriptscat/scriptcat/pull/1511)) (by @cyfung1031)
+- ⚡️ Chunked resource downloads decode only the requested range, so large resources download faster ([#1753](https://github.com/scriptscat/scriptcat/pull/1753)) (by @cyfung1031)
+- ⚡️ Use `structured_clone` serialization for internal extension messages on Chromium 148+ ([#1534](https://github.com/scriptscat/scriptcat/pull/1534)) (by @cyfung1031)
+
+### 🎨 UI Improvements
+
+- 💄 Android layout: dynamic viewport height, and tables, settings rows and the log stats bar re-flow on narrow screens ([#1636](https://github.com/scriptscat/scriptcat/pull/1636)) (by @RenjiYuusei)
+- 💄 The three list pages use one adaptive list row on desktop and mobile, so script names are no longer squeezed out in narrow windows [#1698](https://github.com/scriptscat/scriptcat/issues/1698) ([#1709](https://github.com/scriptscat/scriptcat/pull/1709)) (by @CodFrm)
+- 💄 The batch update page splits updates into "Related" (current site) and "Other updates", each with its own select-all; similarity is rounded down; narrow-screen and mobile layouts are improved [#1778](https://github.com/scriptscat/scriptcat/issues/1778) ([#1788](https://github.com/scriptscat/scriptcat/pull/1788)) (by @CodFrm)
+- 💄 When a sort is active, the list says so, drag handles show as locked, and there is a way back to the default order; fix color bleed when dragging and swiping on mobile [#1751](https://github.com/scriptscat/scriptcat/issues/1751) ([#1768](https://github.com/scriptscat/scriptcat/pull/1768), [#1756](https://github.com/scriptscat/scriptcat/pull/1756)) (by @CodFrm)
+- 💄 A compact popup layout option; the popup script list expansion count is configurable on its own; with the menu expansion count set to 0, expanded menus appear before Edit / Script Settings ([#1551](https://github.com/scriptscat/scriptcat/pull/1551), [#1645](https://github.com/scriptscat/scriptcat/pull/1645), [#1688](https://github.com/scriptscat/scriptcat/pull/1688)) (by @cyfung1031, @CodFrm)
+
+### 🔒 Security Improvements
+
+- 🔒 Upgrade dependencies (including TypeScript 6.0) and fix pnpm audit security warnings (react-router-dom, webdav, fast-xml-parser, dompurify and more) ([#1576](https://github.com/scriptscat/scriptcat/pull/1576), [#1567](https://github.com/scriptscat/scriptcat/pull/1567), [#1760](https://github.com/scriptscat/scriptcat/pull/1760)) (by @cyfung1031)
+
+### 🌐 Internationalization
+
+- 🌐 Add Korean (ko-KR), Turkish (tr-TR) and Brazilian Portuguese (pt-BR), including their chrome.i18n messages.json and Monaco editor languages ([#1568](https://github.com/scriptscat/scriptcat/pull/1568), [#1557](https://github.com/scriptscat/scriptcat/pull/1557), [#1587](https://github.com/scriptscat/scriptcat/pull/1587), [#1605](https://github.com/scriptscat/scriptcat/pull/1605)) (by @moduvoice, @azizaktas, @Lucas559-noob, @CodFrm)
+
+### Others
+
+- 🔧 Update-check failure logs include the URL, making problems easier to track down ([#1693](https://github.com/scriptscat/scriptcat/pull/1693)) (by @cyfung1031)
+
 <a name="1.4.0"></a>
 
 ## 1.4.0 (2026-06-26)

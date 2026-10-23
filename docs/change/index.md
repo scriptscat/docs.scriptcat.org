@@ -13,6 +13,114 @@ Beta 版本更新日志请查看 [Beta 更新日志](./beta-changelog.md)
 
 ⚠️ 请注意，如果你使用的 Windows 8/7/XP 系统，或者浏览器内核版本低于\<120，需要自行手动安装[旧版脚本猫](https://bbs.tampermonkey.net.cn/thread-3068-1-1.html)，v0.16.x 是最后一个支持 Manifest V2 的版本，安装步骤可以参考：[加载解压缩方式安装扩展](/docs/use/use/#%E5%8A%A0%E8%BD%BD%E8%A7%A3%E5%8E%8B%E7%BC%A9%E6%96%B9%E5%BC%8F%E5%AE%89%E8%A3%85%E6%89%A9%E5%B1%95)。
 
+<a name="1.5.0"></a>
+
+## 1.5.0 (2026-10-23)
+
+v1.5 是一次大版本更新：界面全面重做，并专门针对移动端做了优化；新增「外部接入」，可以通过 [sctl](https://github.com/scriptscat/sctl) 在命令行和 AI 客户端里管理脚本；同时带来脚本回收站、网络规则管理（DNR）、重做的安装与更新页，正式支持 Firefox MV3，并修复了大量 GM API、云同步与稳定性问题。功能介绍见 [v1.5 — 全新界面与外部接入](./v1.5.md)。脚本猫 AI Agent 仍然只在 Beta 版中提供，正式版暂未开放。
+
+### 🔌 外部接入：用 sctl 连接命令行与 AI 客户端
+
+[sctl](https://github.com/scriptscat/sctl) 是脚本猫配套的本地桥接工具，一个跨平台的单文件程序。在脚本猫「工具 → 外部接入」里用一次性配对码接入后，终端里的 `sctl` 命令和 Claude Code 等支持 [MCP](https://modelcontextprotocol.io/) 的 AI 客户端就能管理你的脚本 ([#1573](https://github.com/scriptscat/scriptcat/pull/1573)) (by @cyfung1031)：
+
+- 列出脚本，按行读取、搜索源码，安装、按内容锚点修改、启用、停用、删除；
+- 读取源码和写操作默认都要在浏览器的确认页里批准，可以选「拒绝 / 允许 / 本会话允许」，也可以在权限策略里按类别改为直接允许；外部程序无法批准自己的请求，每次操作都会记入审计日志，在外部接入卡片中可以查看；
+- 默认只在本机通信（端口 8643），扩展与 sctl 之间双向认证，不需要安装 Native Messaging Host；
+- 另外装上 sctl 自带的 **sctl Browser** 扩展，还可以从命令行控制标签页，管理书签、历史等浏览器数据，做页面自动化与调试，或者把一个 CDP 端点交给 Playwright / Puppeteer 使用。
+
+```bash
+# macOS / Linux（Windows PowerShell：irm https://raw.githubusercontent.com/scriptscat/sctl/main/scripts/install.ps1 | iex）
+curl -fsSL https://raw.githubusercontent.com/scriptscat/sctl/main/scripts/install.sh | sh
+sctl serve      # 启动本地 daemon，保持运行
+sctl connect    # 另开一个终端，把打印的配对码填进脚本猫「工具 → 外部接入」
+```
+
+完整步骤、MCP 客户端配置与安全说明见 [外部接入](/docs/use/external-access/)。
+
+### 🚀 主要新功能
+
+- 💄 全新界面：全面重构，统一明暗双主题；脚本列表提供表格 / 卡片两种视图与按状态、类型、标签、来源的高级筛选；针对移动浏览器专门优化布局 ([#1514](https://github.com/scriptscat/scriptcat/pull/1514)) (by @CodFrm)
+- ✨ 脚本回收站：删除的脚本先进入回收站，可以还原（保留原数据与权限）、彻底删除或到期自动清理，保留期默认 30 天，可调整或设为永不 ([#1585](https://github.com/scriptscat/scriptcat/pull/1585), [#1622](https://github.com/scriptscat/scriptcat/pull/1622)) (by @CodFrm)
+- ✨ 网络规则管理（DNR）：在「工具 → 网络规则」按域名移除 CSP / X-Frame-Options 等响应头、改写请求头与响应头、屏蔽或重定向请求，支持场景模板、拖拽排序、批量操作、配额提示与匹配测试 ([#1598](https://github.com/scriptscat/scriptcat/pull/1598), [#1733](https://github.com/scriptscat/scriptcat/pull/1733)) (by @cyfung1031)
+- ✨ 正式支持 Firefox MV3，完善 sandbox / offscreen 通信 ([#1561](https://github.com/scriptscat/scriptcat/pull/1561)) (by @cyfung1031)
+- ✨ 安装页标出写了但在脚本猫里不会生效的指令、取值与 GM 能力，并注明脚本猫独有的能力 [#1713](https://github.com/scriptscat/scriptcat/issues/1713) ([#1742](https://github.com/scriptscat/scriptcat/pull/1742)) (by @CodFrm)
+- ✨ 更新脚本时按与已安装版本的差异呈现权限，未变动项收起，并移除常驻的安全警示条 [#1716](https://github.com/scriptscat/scriptcat/issues/1716) ([#1732](https://github.com/scriptscat/scriptcat/pull/1732)) (by @CodFrm)
+- ✨ 安装页支持全屏查看脚本代码 ([#1743](https://github.com/scriptscat/scriptcat/pull/1743)) (by @cyfung1031)
+- ✨ 新建脚本模板可以在「设置 → 开发工具 → 脚本模板」按普通 / 后台 / 定时分别自定义，支持 `{{name}}`、`{{match}}`、`{{date:YYYY-MM-DD}}` 等变量 [#1722](https://github.com/scriptscat/scriptcat/issues/1722) ([#1731](https://github.com/scriptscat/scriptcat/pull/1731)) (by @CodFrm)
+- ✨ Popup 新增站点范围快捷操作，常驻显示且可以撤销；「排除在 X 上执行」优先移出 `@match`，而不是写死 `@exclude` [#1590](https://github.com/scriptscat/scriptcat/issues/1590) ([#1646](https://github.com/scriptscat/scriptcat/pull/1646), [#1666](https://github.com/scriptscat/scriptcat/pull/1666), [#1696](https://github.com/scriptscat/scriptcat/pull/1696)) (by @CodFrm)
+- ✨ 完善备份、还原与导入：支持 ScriptCat / Tampermonkey / Violentmonkey 的自定义配置与设置备份，并修复资源 ([#1554](https://github.com/scriptscat/scriptcat/pull/1554)) (by @CodFrm)
+- ✨ 本地备份新增手动下载链接 ([#1543](https://github.com/scriptscat/scriptcat/pull/1543)) (by @cyfung1031)
+- ✨ 图标服务新增「禁用」档，可以彻底关闭 favicon 获取 ([#1637](https://github.com/scriptscat/scriptcat/pull/1637)) (by @CodFrm)
+
+### 🧩 GM API 变更
+
+- ✨ 支持 `@exclude-match` 元数据 [#1714](https://github.com/scriptscat/scriptcat/issues/1714) ([#1798](https://github.com/scriptscat/scriptcat/pull/1798)) (by @CodFrm)
+- ✨ `GM_info` 新增 `userLanguage`，暴露脚本猫当前的界面语言 [#1018](https://github.com/scriptscat/scriptcat/issues/1018) ([#1799](https://github.com/scriptscat/scriptcat/pull/1799)) (by @CodFrm)
+- 🐛 Firefox 下补齐 `GM_info.userAgentData`，并对齐 Tampermonkey 的版本粒度与字段顺序 [#1752](https://github.com/scriptscat/scriptcat/issues/1752) ([#1754](https://github.com/scriptscat/scriptcat/pull/1754)) (by @cyfung1031)
+- 🐛 原生 `GM_download` 遵循 `@connect`，与 `GM_xmlhttpRequest` 一致 ([#1506](https://github.com/scriptscat/scriptcat/pull/1506)) (by @DudeAint)
+- 🐛 原生 `GM_download` 下载 `data:` URI 时不再误弹跨域权限确认 [#1635](https://github.com/scriptscat/scriptcat/issues/1635) ([#1797](https://github.com/scriptscat/scriptcat/pull/1797)) (by @CodFrm)
+- 🐛 `GM_download` 传入空 url 时触发 `onerror` ([#1619](https://github.com/scriptscat/scriptcat/pull/1619)) (by @cyfung1031)
+- 🐛 `GM_xmlhttpRequest` 自定义 cookie 覆盖同名 cookie，而不是追加 ([#1604](https://github.com/scriptscat/scriptcat/pull/1604)) (by @cyfung1031)
+- 🐛 标签页被浏览器丢弃后，`GM_getTab` 仍能读到 `GM_saveTab` 保存的数据 [#1791](https://github.com/scriptscat/scriptcat/issues/1791) ([#1796](https://github.com/scriptscat/scriptcat/pull/1796)) (by @CodFrm)
+
+### 🧑‍💻 编辑器
+
+- ✨ 标签栏「＋」可以直接选择新建普通 / 后台 / 定时脚本 ([#1544](https://github.com/scriptscat/scriptcat/pull/1544)) (by @cyfung1031)
+- ✨ 资源面板中 `@require` / `@require-css` 以文件名展示，完整 URL 可见且可搜索；新增「查看」，可以预览已缓存的文本与图片资源 ([#1758](https://github.com/scriptscat/scriptcat/pull/1758)) (by @cyfung1031)
+- ✨ 标出未定义的元数据标签、脚本猫不支持的 `@grant` 与重复的 `@resource` 名称 ([#1608](https://github.com/scriptscat/scriptcat/pull/1608), [#1763](https://github.com/scriptscat/scriptcat/pull/1763), [#1762](https://github.com/scriptscat/scriptcat/pull/1762)) (by @cyfung1031)
+- ♻️ 调整 `eslint-plugin-userscripts` 规则 ([#1510](https://github.com/scriptscat/scriptcat/pull/1510)) (by @cyfung1031)
+- 🐛 修复未保存时离开页面缺少保护、激活标签页的关闭按钮被隐藏、保存改名后标签页标题不同步，以及存储 / 资源 / 脚本设置标签页下留出空白状态栏 [#1556](https://github.com/scriptscat/scriptcat/issues/1556) ([#1656](https://github.com/scriptscat/scriptcat/pull/1656), [#1607](https://github.com/scriptscat/scriptcat/pull/1607), [#1755](https://github.com/scriptscat/scriptcat/pull/1755)) (by @CodFrm, @cyfung1031)
+
+### 🐛 Bug 修复
+
+- 🐛 修复大脚本与大资源受消息大小限制导致安装或读取失败 ([#1745](https://github.com/scriptscat/scriptcat/pull/1745)) (by @cyfung1031)
+- 🐛 浏览器不支持的 `@match` scheme（如 `edge://`）不再导致整批脚本注册失败 [#1771](https://github.com/scriptscat/scriptcat/issues/1771) ([#1772](https://github.com/scriptscat/scriptcat/pull/1772)) (by @cyfung1031)
+- 🐛 修复 Edge Dev 下脚本注入静默失效 [#1724](https://github.com/scriptscat/scriptcat/issues/1724) ([#1725](https://github.com/scriptscat/scriptcat/pull/1725)) (by @mikemikimike)
+- 🐛 修复 Firefox 下 `@inject-into content` 脚本的沙盒相容性：补齐 EventTarget 方法，修复自引用逃逸、接口对象被剥空与分离 realm 问题 [#1701](https://github.com/scriptscat/scriptcat/issues/1701) ([#1692](https://github.com/scriptscat/scriptcat/pull/1692), [#1697](https://github.com/scriptscat/scriptcat/pull/1697), [#1706](https://github.com/scriptscat/scriptcat/pull/1706)) (by @CodFrm, @cyfung1031)
+- 🐛 修正脚本资源分类与页面资源权限边界，`@resource` / `@require-css` / `@require` 不再互相串用 ([#1686](https://github.com/scriptscat/scriptcat/pull/1686)) (by @cyfung1031)
+- 🐛 修复 `@run-at context-menu`：设置面板覆写的运行时机在重新注册后失效、菜单项注册不上、脚本自己的 `GM_registerMenuCommand` 被屏蔽，并补上脚本设置中的该运行时机 [#1649](https://github.com/scriptscat/scriptcat/issues/1649) ([#1718](https://github.com/scriptscat/scriptcat/pull/1718), [#1652](https://github.com/scriptscat/scriptcat/pull/1652)) (by @CodFrm)
+- 🐛 从网页链接安装时按下载地址认出已改名的脚本，避免上游改名后重复安装 [#1785](https://github.com/scriptscat/scriptcat/issues/1785) ([#1786](https://github.com/scriptscat/scriptcat/pull/1786)) (by @CodFrm)
+- 🐛 修复导入或从 WebDAV 备份恢复后，脚本设置页把更新地址回显为 `meta.js`，导致下载地址被改写 [#1793](https://github.com/scriptscat/scriptcat/issues/1793) ([#1795](https://github.com/scriptscat/scriptcat/pull/1795)) (by @CodFrm)
+- 🐛 以 `application/x-javascript` 提供的 `.user.js` 也能进入安装页 [#1730](https://github.com/scriptscat/scriptcat/issues/1730) ([#1736](https://github.com/scriptscat/scriptcat/pull/1736)) (by @cyfung1031)
+- 🐛 修复订阅手动检查更新无效，并同步刷新订阅列表 [#1773](https://github.com/scriptscat/scriptcat/issues/1773) ([#1781](https://github.com/scriptscat/scriptcat/pull/1781)) (by @CodFrm)
+- 🐛 云同步：不再随 Service Worker 冷启动触发，周期改为 30 分钟；修复同步状态一致性与云端冲突处理、多设备同步后脚本排序错乱、带路径前缀的 S3 端点（如 Supabase）同步失败，以及开启云同步后脚本列表与编辑页长时间空白 [#1670](https://github.com/scriptscat/scriptcat/issues/1670) [#1682](https://github.com/scriptscat/scriptcat/issues/1682) [#1723](https://github.com/scriptscat/scriptcat/issues/1723) ([#1678](https://github.com/scriptscat/scriptcat/pull/1678), [#1504](https://github.com/scriptscat/scriptcat/pull/1504), [#1690](https://github.com/scriptscat/scriptcat/pull/1690), [#1729](https://github.com/scriptscat/scriptcat/pull/1729), [#1765](https://github.com/scriptscat/scriptcat/pull/1765)) (by @CodFrm, @cyfung1031)
+- 🐛 安装与更新页：修复回退 / 关闭标签页的逻辑、安装后更新页无法关闭，以及更新记录被过期的检查快照覆盖 [#1669](https://github.com/scriptscat/scriptcat/issues/1669) [#1648](https://github.com/scriptscat/scriptcat/issues/1648) [#1650](https://github.com/scriptscat/scriptcat/issues/1650) [#1651](https://github.com/scriptscat/scriptcat/issues/1651) ([#1594](https://github.com/scriptscat/scriptcat/pull/1594), [#1675](https://github.com/scriptscat/scriptcat/pull/1675), [#1677](https://github.com/scriptscat/scriptcat/pull/1677)) (by @cyfung1031, @CodFrm)
+- 🐛 批量更新页不再倒计时自动关闭；检查记录失效时自动重新检查并做完剩余条目；点击脚本名打开详情时复用检查缓存，不再重复请求 [#1715](https://github.com/scriptscat/scriptcat/issues/1715) ([#1720](https://github.com/scriptscat/scriptcat/pull/1720), [#1719](https://github.com/scriptscat/scriptcat/pull/1719)) (by @CodFrm)
+- 🐛 Popup：修复全局关闭提示时有时无且当前页脚本列表为空、「当前页运行脚本」误报（并恢复 iframe 脚本显示）、不属于任何标签页的页面被计入「后台脚本」，以及宽度塌缩成细条导致页眉页脚被挤出可视区 [#1687](https://github.com/scriptscat/scriptcat/issues/1687) [#1774](https://github.com/scriptscat/scriptcat/issues/1774) [#1800](https://github.com/scriptscat/scriptcat/issues/1800) ([#1694](https://github.com/scriptscat/scriptcat/pull/1694), [#1689](https://github.com/scriptscat/scriptcat/pull/1689), [#1783](https://github.com/scriptscat/scriptcat/pull/1783), [#1801](https://github.com/scriptscat/scriptcat/pull/1801)) (by @CodFrm)
+- 🐛 修复新建脚本按钮的点击被悬停菜单吞掉，改为直接新建用户脚本 [#1699](https://github.com/scriptscat/scriptcat/issues/1699) ([#1704](https://github.com/scriptscat/scriptcat/pull/1704)) (by @CodFrm)
+- 🐛 点击扩展更新通知时激活已自动打开的更新日志页，不再重复打开 [#1769](https://github.com/scriptscat/scriptcat/issues/1769) ([#1782](https://github.com/scriptscat/scriptcat/pull/1782)) (by @Pililink)
+- 🐛 脚本设置中清空匹配 / 排除 / 标签 / 运行时机后不再「删除即复活」 ([#1579](https://github.com/scriptscat/scriptcat/pull/1579)) (by @CodFrm)
+- 🐛 避免 cron 自动侦测到无效时区导致定时任务异常，并替换 crontab 示例中不可用的演示 API ([#1531](https://github.com/scriptscat/scriptcat/pull/1531), [#1542](https://github.com/scriptscat/scriptcat/pull/1542)) (by @cyfung1031)
+- 🐛 修复日志定时清理失效 ([#1599](https://github.com/scriptscat/scriptcat/pull/1599)) (by @CodFrm)
+- 🐛 修复 `window.focus` 窗口聚焦，并加强 windowId 校验 ([#1577](https://github.com/scriptscat/scriptcat/pull/1577)) (by @cyfung1031)
+- 🐛 脚本同步设置改为即时保存 ([#1615](https://github.com/scriptscat/scriptcat/pull/1615)) (by @CodFrm)
+
+### ⚡️ 性能优化
+
+- ⚡️ 优化脚本加载缓存，并修复 Popup 菜单残留 ([#1511](https://github.com/scriptscat/scriptcat/pull/1511)) (by @cyfung1031)
+- ⚡️ 资源分块下载只解码请求的区间，大资源下载更快 ([#1753](https://github.com/scriptscat/scriptcat/pull/1753)) (by @cyfung1031)
+- ⚡️ Chromium 148+ 上扩展内部消息启用 `structured_clone` 序列化 ([#1534](https://github.com/scriptscat/scriptcat/pull/1534)) (by @cyfung1031)
+
+### 🎨 UI 改进
+
+- 💄 安卓端适配：动态视口高度，窄屏下表格、设置行与日志统计条重新排布 ([#1636](https://github.com/scriptscat/scriptcat/pull/1636)) (by @RenjiYuusei)
+- 💄 桌面与移动端的三个列表页统一为自适应列表行，修复窄窗口下脚本名被挤没 [#1698](https://github.com/scriptscat/scriptcat/issues/1698) ([#1709](https://github.com/scriptscat/scriptcat/pull/1709)) (by @CodFrm)
+- 💄 批量更新页按当前站点分为「相关」与「其他更新」两段，各段可单独全选；相似度改为向下取整，并优化窄屏与移动端布局 [#1778](https://github.com/scriptscat/scriptcat/issues/1778) ([#1788](https://github.com/scriptscat/scriptcat/pull/1788)) (by @CodFrm)
+- 💄 启用排序时明确提示当前排序状态，拖拽手柄改为锁定状态，并提供切回默认顺序的入口；修复移动端拖拽与左滑时的漏色 [#1751](https://github.com/scriptscat/scriptcat/issues/1751) ([#1768](https://github.com/scriptscat/scriptcat/pull/1768), [#1756](https://github.com/scriptscat/scriptcat/pull/1756)) (by @CodFrm)
+- 💄 Popup 新增紧凑布局选项；脚本列表展开数量可以单独配置；菜单展开数量为 0 时，展开的菜单排在编辑 / 脚本设置之前 ([#1551](https://github.com/scriptscat/scriptcat/pull/1551), [#1645](https://github.com/scriptscat/scriptcat/pull/1645), [#1688](https://github.com/scriptscat/scriptcat/pull/1688)) (by @cyfung1031, @CodFrm)
+
+### 🔒 安全性改进
+
+- 🔒 升级依赖（含 TypeScript 6.0），修复 pnpm audit 安全告警（react-router-dom、webdav、fast-xml-parser、dompurify 等） ([#1576](https://github.com/scriptscat/scriptcat/pull/1576), [#1567](https://github.com/scriptscat/scriptcat/pull/1567), [#1760](https://github.com/scriptscat/scriptcat/pull/1760)) (by @cyfung1031)
+
+### 🌐 国际化
+
+- 🌐 新增韩语（ko-KR）、土耳其语（tr-TR）、巴西葡萄牙语（pt-BR），并补齐对应的 chrome.i18n messages.json 与 Monaco 编辑器语言 ([#1568](https://github.com/scriptscat/scriptcat/pull/1568), [#1557](https://github.com/scriptscat/scriptcat/pull/1557), [#1587](https://github.com/scriptscat/scriptcat/pull/1587), [#1605](https://github.com/scriptscat/scriptcat/pull/1605)) (by @moduvoice, @azizaktas, @Lucas559-noob, @CodFrm)
+
+### 其它
+
+- 🔧 检查更新失败的日志附带具体 URL，便于定位问题 ([#1693](https://github.com/scriptscat/scriptcat/pull/1693)) (by @cyfung1031)
+
 <a name="1.4.0"></a>
 
 ## 1.4.0 (2026-06-26)
