@@ -3,7 +3,7 @@ title: sctl Browser 隐私政策
 sidebar_label: sctl Browser 隐私政策
 ---
 
-sctl Browser 是由 scriptcat.org（以下简称"我们"）开发的浏览器扩展，用于把浏览器接入你在自己电脑上运行的 [sctl](https://github.com/scriptscat/sctl)（ScriptCat 的本地控制工具）。本政策仅适用于 sctl Browser 扩展，ScriptCat 扩展另见 [ScriptCat 隐私政策](./privacy.md)。
+sctl Browser 是由 scriptcat.org（以下简称"我们"）开发的浏览器扩展，用于把浏览器接入你在自己电脑上运行的 [sctl](https://github.com/scriptscat/sctl)（ScriptCat 的本地控制工具）。本政策仅适用于 sctl Browser 扩展，ScriptCat 扩展另见 [ScriptCat 隐私政策](/docs/use/policy/privacy/)。
 
 如有疑问，请通过 [yz@ggnb.top](mailto:yz@ggnb.top) 或 [GitHub Issues](https://github.com/scriptscat/sctl/issues) 联系我们。
 
