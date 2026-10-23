@@ -36,6 +36,7 @@ const sidebars = {
         "use/policy/disclaimer",
         "use/policy/privacy",
         "use/policy/privacy_website",
+        "use/policy/privacy_sctl",
       ],
     },
     // use/install_comple and script_installation (top-level) are hidden
