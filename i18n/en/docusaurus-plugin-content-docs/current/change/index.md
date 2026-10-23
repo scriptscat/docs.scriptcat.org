@@ -18,12 +18,14 @@ v1.5 is a major release. The whole interface has been rebuilt and optimized for 
 
 ### 🔌 External Access: connect the command line and AI clients with sctl
 
-[sctl](https://github.com/scriptscat/sctl) is ScriptCat's companion local bridge, a single cross-platform executable. Once you pair it with a one-time code under **Tools → External Access** in ScriptCat, the `sctl` command in your terminal and [MCP](https://modelcontextprotocol.io/)-capable AI clients such as Claude Code can manage your scripts ([#1573](https://github.com/scriptscat/scriptcat/pull/1573)) (by @cyfung1031):
+[sctl](https://github.com/scriptscat/sctl) is ScriptCat's companion local bridge, a single cross-platform executable. Once you pair it with a one-time code under **Tools → External Access** in ScriptCat, the `sctl` command in your terminal and [MCP](https://modelcontextprotocol.io/)-capable AI clients such as Claude Code can manage your scripts ([#1573](https://github.com/scriptscat/scriptcat/pull/1573)):
 
 - List scripts, read and search source by line ranges, install, edit by content anchors, enable, disable and delete.
 - Reading source and every write require approval on a confirmation page in the browser by default — Reject, Allow, or Allow for this session — and each category can be switched to allow without asking in the permission policy. External programs cannot approve their own requests, and every operation is recorded in an audit log you can open from the External Access card.
 - Communication stays on this machine by default (port 8643), the extension and sctl authenticate each other, and no Native Messaging host is needed.
 - With sctl's own **sctl Browser** extension you can also control tabs, manage bookmarks, history and other browser data, automate and debug pages, or hand a CDP endpoint to Playwright / Puppeteer — all from the command line.
+
+![sctl architecture: the CLI, AI clients and Playwright reach sctl serve, which talks to ScriptCat and sctl Browser over WebSocket](v1.5.assets/architecture.svg)
 
 ```bash
 # macOS / Linux (Windows PowerShell: irm https://raw.githubusercontent.com/scriptscat/sctl/main/scripts/install.ps1 | iex)

@@ -159,6 +159,10 @@ This pre-release highlights two major features — **External Access (MCP bridge
 ### 🚀 Major New Features
 
 - 💥 New "External Access (MCP bridge)": a local `sctl` daemon unifies CLI and MCP-client access; every script read/write is gated by tiered authorization and a human confirmation page with three levels — Deny / Allow / Allow this session — and every operation is audited ([#1573](https://github.com/scriptscat/scriptcat/pull/1573)) (by @cyfung1031)
+
+  [sctl](https://github.com/scriptscat/sctl) is ScriptCat's companion local bridge, a single cross-platform executable. Once you pair it with a one-time code under **Tools → External Access** in ScriptCat, the `sctl` command in your terminal and [MCP](https://modelcontextprotocol.io/)-capable AI clients such as Claude Code can manage your scripts; see [External Access](/docs/use/external-access/) for the full setup.
+
+  ![sctl architecture: the CLI, AI clients and Playwright reach sctl serve, which talks to ScriptCat and sctl Browser over WebSocket](v1.5.assets/architecture.svg)
 - 💥 Script recycle bin: deleted scripts go to the recycle bin first, with restore (preserving the original data and permissions), permanent delete, and expiry-based auto-cleanup; the retention period is configurable (default 30 days, or never) ([#1585](https://github.com/scriptscat/scriptcat/pull/1585)) (by @CodFrm)
 - 💥 Official Firefox MV3 support, with improved sandbox/offscreen communication ([#1561](https://github.com/scriptscat/scriptcat/pull/1561)) (by @cyfung1031)
 - ✨ Add quick site-scope actions to the popup ([#1646](https://github.com/scriptscat/scriptcat/pull/1646)) (by @CodFrm)

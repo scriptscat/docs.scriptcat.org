@@ -163,6 +163,10 @@ import Showcase from '@site/src/components/Showcase';
 ### 🚀 主要新功能
 
 - 💥 新增「外部接入（MCP 桥接）」：通过本地 `sctl` 守护进程统一接入 CLI 与 MCP 客户端，脚本读写均经分级授权与人工确认页面把关，支持「拒绝 / 允许 / 本会话允许」三档控制并留存审计 ([#1573](https://github.com/scriptscat/scriptcat/pull/1573)) (by @cyfung1031)
+
+  [sctl](https://github.com/scriptscat/sctl) 是脚本猫配套的本地桥接工具，一个跨平台的单文件程序。在脚本猫「工具 → 外部接入」里用一次性配对码接入后，终端里的 `sctl` 命令和 Claude Code 等支持 [MCP](https://modelcontextprotocol.io/) 的 AI 客户端就能管理你的脚本，完整步骤见 [外部接入](/docs/use/external-access/)。
+
+  ![sctl 架构：命令行、AI 客户端与 Playwright 连接 sctl serve，sctl serve 通过 WebSocket 连接 ScriptCat 与 sctl Browser](v1.5.assets/architecture.svg)
 - 💥 新增脚本回收站：删除的脚本先入回收站，支持还原（保留原数据与权限）、彻底删除与到期自动清理，保留期可配置（默认 30 天，可设为永不） ([#1585](https://github.com/scriptscat/scriptcat/pull/1585)) (by @CodFrm)
 - 💥 正式支持 Firefox MV3，完善 sandbox/offscreen 通信 ([#1561](https://github.com/scriptscat/scriptcat/pull/1561)) (by @cyfung1031)
 - ✨ 增加 Popup 站点范围快捷操作 ([#1646](https://github.com/scriptscat/scriptcat/pull/1646)) (by @CodFrm)

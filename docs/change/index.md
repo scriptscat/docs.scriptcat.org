@@ -21,12 +21,14 @@ v1.5 是一次大版本更新：界面全面重做，并专门针对移动端做
 
 ### 🔌 外部接入：用 sctl 连接命令行与 AI 客户端
 
-[sctl](https://github.com/scriptscat/sctl) 是脚本猫配套的本地桥接工具，一个跨平台的单文件程序。在脚本猫「工具 → 外部接入」里用一次性配对码接入后，终端里的 `sctl` 命令和 Claude Code 等支持 [MCP](https://modelcontextprotocol.io/) 的 AI 客户端就能管理你的脚本 ([#1573](https://github.com/scriptscat/scriptcat/pull/1573)) (by @cyfung1031)：
+[sctl](https://github.com/scriptscat/sctl) 是脚本猫配套的本地桥接工具，一个跨平台的单文件程序。在脚本猫「工具 → 外部接入」里用一次性配对码接入后，终端里的 `sctl` 命令和 Claude Code 等支持 [MCP](https://modelcontextprotocol.io/) 的 AI 客户端就能管理你的脚本 ([#1573](https://github.com/scriptscat/scriptcat/pull/1573))：
 
 - 列出脚本，按行读取、搜索源码，安装、按内容锚点修改、启用、停用、删除；
 - 读取源码和写操作默认都要在浏览器的确认页里批准，可以选「拒绝 / 允许 / 本会话允许」，也可以在权限策略里按类别改为直接允许；外部程序无法批准自己的请求，每次操作都会记入审计日志，在外部接入卡片中可以查看；
 - 默认只在本机通信（端口 8643），扩展与 sctl 之间双向认证，不需要安装 Native Messaging Host；
 - 另外装上 sctl 自带的 **sctl Browser** 扩展，还可以从命令行控制标签页，管理书签、历史等浏览器数据，做页面自动化与调试，或者把一个 CDP 端点交给 Playwright / Puppeteer 使用。
+
+![sctl 架构：命令行、AI 客户端与 Playwright 连接 sctl serve，sctl serve 通过 WebSocket 连接 ScriptCat 与 sctl Browser](v1.5.assets/architecture.svg)
 
 ```bash
 # macOS / Linux（Windows PowerShell：irm https://raw.githubusercontent.com/scriptscat/sctl/main/scripts/install.ps1 | iex）

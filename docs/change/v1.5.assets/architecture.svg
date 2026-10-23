@@ -1,0 +1,84 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-20 0 1040 400" role="img" aria-label="sctl 架构概览">
+  <style>
+    svg {
+      --page: #f5f6fa; --card: #ffffff; --ink: #111827; --sub: #6b7280; --edge: #c7cdd8; --shadow: rgba(17, 24, 39, .08);
+      --blue: #3b82f6; --violet: #8b5cf6; --pink: #ec4899; --teal: #14b8a6; --amber: #f59e0b; --green: #22c55e;
+      --teal-soft: #ecfdf9;
+    }
+    @media (prefers-color-scheme: dark) {
+      svg {
+        --page: #0d1117; --card: #161b22; --ink: #e6edf3; --sub: #8b949e; --edge: #30363d; --shadow: rgba(0, 0, 0, .4);
+        --teal-soft: #0f2a27;
+      }
+    }
+    text { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; fill: var(--ink); }
+    .page { fill: var(--page); }
+    .card { fill: var(--card); filter: url(#shadow); }
+    .hero { fill: var(--teal-soft); stroke: var(--teal); stroke-width: 1.5; filter: url(#shadow); }
+    .title { font-size: 16px; font-weight: 650; }
+    .sub { font-size: 13px; fill: var(--sub); }
+    .badge-text { font-size: 13px; font-weight: 700; fill: #fff; }
+    .chip { fill: var(--card); stroke: var(--edge); }
+    .chip-text { font-size: 12.5px; font-weight: 550; }
+    .wire { fill: none; stroke: var(--edge); stroke-width: 2; marker-end: url(#tip); }
+    .label { font-size: 12px; fill: var(--sub); }
+    .pill-text { font-size: 12px; font-weight: 600; }
+  </style>
+  <defs>
+    <filter id="shadow" x="-10%" y="-20%" width="120%" height="160%">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" style="flood-color: var(--shadow)"/>
+    </filter>
+    <marker id="tip" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M1,1 L9,5 L1,9" fill="none" style="stroke: var(--sub)" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <rect class="page" x="-20" width="1040" height="400" rx="20"/>
+
+  <rect class="card" x="15" y="40" width="250" height="76" rx="16"/>
+  <circle cx="57" cy="78" r="20" style="fill: var(--blue)"/><text class="badge-text" x="57" y="83" text-anchor="middle">›_</text>
+  <text class="title" x="91" y="73">sctl CLI</text>
+  <text class="sub" x="91" y="94">get · tabs · page · debug</text>
+
+  <rect class="card" x="15" y="162" width="250" height="76" rx="16"/>
+  <circle cx="57" cy="200" r="20" style="fill: var(--violet)"/><text class="badge-text" x="57" y="205" text-anchor="middle">AI</text>
+  <text class="title" x="91" y="195">AI 客户端</text>
+  <text class="sub" x="91" y="216">经由 sctl mcp</text>
+
+  <rect class="card" x="15" y="284" width="250" height="76" rx="16"/>
+  <circle cx="57" cy="322" r="20" style="fill: var(--pink)"/><text class="badge-text" x="57" y="327" text-anchor="middle">{ }</text>
+  <text class="title" x="91" y="317">Playwright</text>
+  <text class="sub" x="91" y="338">或 Puppeteer，原始 CDP</text>
+
+  <path class="wire" d="M265,78 C325,78 325,160 378,160"/>
+  <path class="wire" d="M265,200 L378,200"/>
+  <path class="wire" d="M265,322 C325,322 325,240 378,240"/>
+
+  <rect class="hero" x="385" y="90" width="230" height="220" rx="20"/>
+  <text class="title" x="500" y="132" text-anchor="middle" style="font-size: 20px">sctl serve</text>
+  <text class="sub" x="500" y="154" text-anchor="middle">本地守护进程</text>
+  <rect class="chip" x="415" y="176" width="170" height="30" rx="15"/>
+  <text class="chip-text" x="500" y="196" text-anchor="middle">控制 API</text>
+  <rect class="chip" x="415" y="214" width="170" height="30" rx="15"/>
+  <text class="chip-text" x="500" y="234" text-anchor="middle">页面自动化</text>
+  <rect class="chip" x="415" y="252" width="170" height="30" rx="15"/>
+  <text class="chip-text" x="500" y="272" text-anchor="middle">CDP 端点</text>
+
+  <path class="wire" d="M622,180 C675,180 675,120 718,120" style="marker-start: url(#tip)"/>
+  <path class="wire" d="M622,220 C675,220 675,280 718,280" style="marker-start: url(#tip)"/>
+  <text class="label" x="668" y="205" text-anchor="middle">WebSocket</text>
+
+  <rect class="card" x="725" y="70" width="260" height="100" rx="16"/>
+  <circle cx="767" cy="108" r="20" style="fill: var(--amber)"/><text class="badge-text" x="767" y="113" text-anchor="middle">SC</text>
+  <text class="title" x="801" y="103">ScriptCat</text>
+  <text class="sub" x="801" y="124">用户脚本</text>
+  <rect x="801" y="136" width="178" height="22" rx="11" style="fill: var(--amber); opacity: .15"/>
+  <text class="pill-text" x="890" y="151" text-anchor="middle" style="fill: var(--amber)">写入与读源码需你批准</text>
+
+  <rect class="card" x="725" y="230" width="260" height="100" rx="16"/>
+  <circle cx="767" cy="268" r="20" style="fill: var(--green)"/><text class="badge-text" x="767" y="273" text-anchor="middle">◎</text>
+  <text class="title" x="801" y="263">sctl Browser</text>
+  <text class="sub" x="801" y="284">标签页 · 页面 · 调试</text>
+  <rect x="801" y="296" width="166" height="22" rx="11" style="fill: var(--green); opacity: .15"/>
+  <text class="pill-text" x="884" y="311" text-anchor="middle" style="fill: var(--green)">立即执行</text>
+</svg>
