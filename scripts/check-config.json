@@ -4,26 +4,26 @@
   "i18nParityStrict": true,
   "frontmatterStrict": true,
   "i18nDocFallbacks": {
-    "ar": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md"] },
-    "bn": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md"] },
-    "de": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md"] },
-    "es": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md"] },
-    "fa": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md"] },
-    "fr": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md"] },
-    "hy": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md"] },
-    "id": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md"] },
-    "it": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md"] },
-    "ja": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md"] },
-    "ko": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md"] },
-    "nl": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md"] },
-    "pt": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md"] },
+    "ar": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl-browser.md"] },
+    "bn": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl-browser.md"] },
+    "de": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl-browser.md"] },
+    "es": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl-browser.md"] },
+    "fa": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl-browser.md"] },
+    "fr": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl-browser.md"] },
+    "hy": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl-browser.md"] },
+    "id": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl-browser.md"] },
+    "it": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl-browser.md"] },
+    "ja": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl-browser.md"] },
+    "ko": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl-browser.md"] },
+    "nl": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl-browser.md"] },
+    "pt": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl-browser.md"] },
     "ru": {
       "sourceLocale": "en",
-      "paths": ["change/", "use/policy/privacy_sctl.md"]
+      "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl-browser.md"]
     },
-    "tr": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md"] },
-    "uk": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md"] },
-    "vi": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md"] },
-    "zh-Hant": { "sourceLocale": "zh-Hans", "paths": ["change/", "use/policy/privacy_sctl.md"] }
+    "tr": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl-browser.md"] },
+    "uk": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl-browser.md"] },
+    "vi": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl-browser.md"] },
+    "zh-Hant": { "sourceLocale": "zh-Hans", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl-browser.md"] }
   }
 }

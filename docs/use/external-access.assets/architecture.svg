@@ -1,0 +1,75 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1040 380" role="img" aria-label="外部接入架构：命令行与 AI 客户端连接本机的 sctl serve，sctl serve 通过 WebSocket 连接脚本猫，读取源码与写操作由脚本猫按策略审批">
+  <style>
+    svg {
+      --page: #f5f6fa; --card: #ffffff; --ink: #111827; --sub: #6b7280; --edge: #c7cdd8; --shadow: rgba(17, 24, 39, .08);
+      --blue: #3b82f6; --violet: #8b5cf6; --teal: #14b8a6; --amber: #f59e0b; --green: #22c55e;
+      --teal-soft: #ecfdf9;
+    }
+    text { font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif; fill: var(--ink); }
+    .page { fill: var(--page); }
+    .card { fill: var(--card); filter: url(#shadow); }
+    .ghost { fill: none; stroke: var(--edge); stroke-width: 1.5; stroke-dasharray: 6 5; }
+    .hero { fill: var(--teal-soft); stroke: var(--teal); stroke-width: 1.5; filter: url(#shadow); }
+    .title { font-size: 16px; font-weight: 650; }
+    .sub { font-size: 13px; fill: var(--sub); }
+    .badge-text { font-size: 13px; font-weight: 700; fill: #fff; }
+    .chip { fill: var(--card); stroke: var(--edge); }
+    .chip-text { font-size: 12.5px; font-weight: 550; }
+    .wire { fill: none; stroke: var(--edge); stroke-width: 2; marker-end: url(#tip); }
+    .wire-ghost { fill: none; stroke: var(--edge); stroke-width: 2; stroke-dasharray: 5 5; marker-end: url(#tip); }
+    .label { font-size: 12px; fill: var(--sub); }
+    .pill-text { font-size: 12px; font-weight: 600; }
+  </style>
+  <defs>
+    <filter id="shadow" x="-10%" y="-20%" width="120%" height="160%">
+      <feDropShadow dx="0" dy="2" stdDeviation="4" flood-color="var(--shadow)"/>
+    </filter>
+    <marker id="tip" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse">
+      <path d="M0,0 L10,5 L0,10 z" style="fill: var(--edge)"/>
+    </marker>
+  </defs>
+
+  <rect class="page" width="1040" height="380" rx="20"/>
+
+  <rect class="card" x="30" y="92" width="250" height="76" rx="16"/>
+  <circle cx="72" cy="130" r="20" style="fill: var(--blue)"/><text class="badge-text" x="72" y="135" text-anchor="middle">›_</text>
+  <text class="title" x="106" y="125">命令行</text>
+  <text class="sub" x="106" y="146">sctl get · install · edit</text>
+
+  <rect class="card" x="30" y="212" width="250" height="76" rx="16"/>
+  <circle cx="72" cy="250" r="20" style="fill: var(--violet)"/><text class="badge-text" x="72" y="255" text-anchor="middle">AI</text>
+  <text class="title" x="106" y="245">AI 客户端</text>
+  <text class="sub" x="106" y="266">经由 sctl mcp（MCP）</text>
+
+  <path class="wire" d="M280,130 C330,130 330,170 383,170"/>
+  <path class="wire" d="M280,250 C330,250 330,210 383,210"/>
+  <text class="label" x="331" y="196" text-anchor="middle">本机控制 API</text>
+
+  <rect class="hero" x="390" y="80" width="240" height="220" rx="20"/>
+  <text class="title" x="510" y="122" text-anchor="middle" style="font-size: 20px">sctl serve</text>
+  <text class="sub" x="510" y="144" text-anchor="middle">本机守护进程（需手动启动）</text>
+  <rect class="chip" x="420" y="166" width="180" height="30" rx="15"/>
+  <text class="chip-text" x="510" y="186" text-anchor="middle">默认只监听 127.0.0.1:8643</text>
+  <rect class="chip" x="420" y="204" width="180" height="30" rx="15"/>
+  <text class="chip-text" x="510" y="224" text-anchor="middle">一次性配对码接入</text>
+  <rect class="chip" x="420" y="242" width="180" height="30" rx="15"/>
+  <text class="chip-text" x="510" y="262" text-anchor="middle">长期密钥双向认证</text>
+
+  <path class="wire" d="M637,170 C685,170 685,130 728,130" style="marker-start: url(#tip)"/>
+  <text class="label" x="682" y="190" text-anchor="middle">WebSocket</text>
+  <path class="wire-ghost" d="M637,230 C685,230 685,270 728,270" style="marker-start: url(#tip)"/>
+
+  <rect class="card" x="735" y="70" width="275" height="120" rx="16"/>
+  <circle cx="777" cy="108" r="20" style="fill: var(--amber)"/><text class="badge-text" x="777" y="113" text-anchor="middle">SC</text>
+  <text class="title" x="811" y="103">脚本猫</text>
+  <text class="sub" x="811" y="124">设置 → 工具 → 外部接入</text>
+  <rect x="757" y="144" width="231" height="26" rx="13" style="fill: var(--amber); opacity: .15"/>
+  <text class="pill-text" x="872.5" y="162" text-anchor="middle" style="fill: #b45309">读源码与写操作按策略由你审批</text>
+
+  <rect class="ghost" x="735" y="232" width="275" height="80" rx="16"/>
+  <circle cx="777" cy="272" r="20" style="fill: var(--green); opacity: .6"/><text class="badge-text" x="777" y="277" text-anchor="middle">◎</text>
+  <text class="title" x="811" y="267" style="fill: var(--sub)">sctl Browser（可选）</text>
+  <text class="sub" x="811" y="288">控制标签页、页面与调试</text>
+
+  <text class="label" x="520" y="350" text-anchor="middle">命令行和所有 AI 客户端共用同一个 sctl serve，只需在脚本猫中配对一次</text>
+</svg>

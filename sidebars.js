@@ -29,6 +29,7 @@ const sidebars = {
     "use/open-dev",
     "use/vscode",
     "use/external-access",
+    "use/sctl-browser",
     {
       type: "category",
       label: "服务协议",

@@ -1,12 +1,12 @@
 {
-  "updatedAt": "2026-09-01T08:58:07.225Z",
-  "stars": 5222,
+  "updatedAt": "2026-10-26T01:55:33.116Z",
+  "stars": 5680,
   "scripts": 3616,
-  "users": 1857770,
+  "users": 2301081,
   "usersByStore": {
     "chrome": 100000,
-    "edge": 1748423,
-    "firefox": 9347
+    "edge": 2188254,
+    "firefox": 12827
   },
   "contributors": {
     "count": 44,
