@@ -11,6 +11,10 @@
     "message": "他の管理ツールから移行",
     "description": "The label for category Migrate from other managers in sidebar use"
   },
+  "sidebar.use.category.命令行与 AI 接入": {
+    "message": "コマンドラインと AI",
+    "description": "The label for category 命令行与 AI 接入 in sidebar use"
+  },
   "sidebar.dev.category.Agent 智能助手": {
     "message": "Agent",
     "description": "The label for category Agent in sidebar dev"

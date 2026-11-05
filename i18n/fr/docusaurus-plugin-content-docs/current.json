@@ -14,5 +14,9 @@
   "sidebar.use.category.从其它管理器迁移": {
     "message": "Migration depuis d'autres gestionnaires",
     "description": "The label for category Migrate from other managers in sidebar"
+  },
+  "sidebar.use.category.命令行与 AI 接入": {
+    "message": "Ligne de commande et IA",
+    "description": "The label for category 命令行与 AI 接入 in sidebar use"
   }
 }

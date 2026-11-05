@@ -1,264 +1,148 @@
 ---
-title: External Access (CLI and AI Clients)
+title: External Access (Manage Scripts from the Command Line and AI)
 sidebar_label: External Access
 ---
 
-**External Access** lets local command-line programs and [MCP](https://modelcontextprotocol.io/)-capable AI
-clients manage scripts in ScriptCat through [sctl](https://github.com/scriptscat/sctl).
+**External Access** lets the command line and AI tools on your computer manage the scripts in ScriptCat through
+[sctl](/docs/use/sctl/): list, read, search, install, edit, enable, disable and delete them, run background scripts and
+read their logs.
 
 ```text
-AI client ── stdio MCP ──▶ sctl mcp ── local control API ──▶ sctl serve ── WebSocket ──▶ ScriptCat
-CLI ────────────────────────────────────────────────────────▲
+AI tools ── sctl mcp / sctl commands ──▶ sctl serve ── WebSocket ──▶ ScriptCat
 ```
 
-`sctl serve` is a separate local daemon that you must start explicitly. `sctl mcp` and requester commands never
-start it automatically. ScriptCat's policies and browser confirmation UI always decide whether source disclosure
-or a write is allowed; an external program cannot approve its own request.
+- ScriptCat's policies and confirmation pages always decide whether a source read or a write goes ahead; an external
+  program cannot approve its own request.
+- ScriptCat is paired once, and the command line and every AI tool share that connection.
 
-:::warning The listener is local by default
-sctl listens on `127.0.0.1` by default. It listens on another interface only when `--listen-address` is passed
-explicitly. `ws://` does not encrypt business traffic and there is no per-remote-client isolation, so use a
-non-default address only on a trusted network. The extension and daemon still establish a long-term key through
-a one-time pairing code and use mutual authentication on later connections.
-:::
+Before you start, install sctl and start `sctl serve` as described in [Getting Started with sctl](/docs/use/sctl/).
 
-## 1. Install sctl
+## 1. Turn it on and pair {#pairing}
 
-Install the latest release with one command — macOS and Linux:
+1. In ScriptCat, open **Tools → External Access** and turn on the switch. Keep the default **sctl address**,
+   `ws://127.0.0.1:8643`.
+2. Run `sctl connect` in a terminal and note the 8-character pairing code it shows.
+3. In ScriptCat, click **Enroll sctl**, enter the code and click **Enroll**.
+4. You are done when the card shows **Connected** and the sctl version; `sctl status` in a terminal confirms it too.
 
-```bash
-curl -fsSL https://raw.githubusercontent.com/scriptscat/sctl/main/scripts/install.sh | sh
-```
+The code is valid for 2 minutes and works once. Do not send it to an AI or paste it anywhere else.
 
-or Windows PowerShell:
+## 2. Permissions and confirmation {#permissions}
 
-```powershell
-irm https://raw.githubusercontent.com/scriptscat/sctl/main/scripts/install.ps1 | iex
-```
-
-The installer downloads the hyphen-named `sctl-<version>-<os>-<arch>.<ext>` release archive for your platform,
-verifies its sha256 against `checksums.txt` from the same release, and installs `sctl` into `~/.local/bin`
-(macOS/Linux) or `%LOCALAPPDATA%\sctl\bin` (Windows). `SCTL_VERSION` pins a specific version; `SCTL_INSTALL_DIR`
-overrides the install directory. If the install directory is not on your `PATH`, the installer prints the exact
-`PATH` hint for your platform — it never edits your shell profile or user PATH for you.
-
-sctl is a single executable. If [GitHub Releases](https://github.com/scriptscat/sctl/releases) has a published
-archive for your platform, you can also download and extract it, then put `sctl` (`sctl.exe` on Windows) on
-`PATH`.
-
-```bash
-sctl version
-```
-
-A plain source build reports `0.0.0-dev` to distinguish it from a release build with injected version, commit,
-and build-time metadata; this does not prevent it from connecting to ScriptCat. If no release is available,
-contributors can build it from the [sctl repository](https://github.com/scriptscat/sctl).
-
-## 2. Start the daemon and enroll
-
-Enrollment is a one-time step. Afterwards, the CLI and every MCP client share the trusted extension-to-daemon
-channel; they do not pair separately.
-
-### 2.1 Choose a data directory
-
-The daemon, CLI, and MCP process must use the same data directory. It stores the long-term pairing key, local
-control token, and logs. Choose an absolute path private to the current user:
-
-```text
-/absolute/path/to/sctl-data
-```
-
-Set the same environment variable for every sctl process:
-
-```bash
-export SCTL_DATA_DIR=/absolute/path/to/sctl-data
-sctl serve
-sctl status
-sctl mcp
-```
-
-An explicit `--data-dir` takes precedence over the environment variable.
-
-If neither `--data-dir` nor `SCTL_DATA_DIR` is set, sctl uses the platform's default per-user application data
-directory. Do not put the data directory in a repository or shared sync folder, and never give its `pairing.key`
-or `control.token` to an AI model.
-
-### 2.2 Start the daemon
-
-Run this in a terminal and keep the process alive:
-
-```bash
-sctl serve
-```
-
-The default address is `ws://127.0.0.1:8643`. The daemon is never auto-started by `connect`, `status`, another
-CLI command, or `sctl mcp`. For persistent use, run the command above with your operating system's user service
-manager.
-
-To listen explicitly on every network interface, run:
-
-```bash
-sctl --listen-address 0.0.0.0:8643 serve
-```
-
-On the daemon host, pass the same `--listen-address` to `connect`, `status`, other CLI commands, and `sctl mcp`.
-In ScriptCat's **sctl address** setting, enter an address the extension can actually reach, such as
-`ws://192.168.1.10:8643`; do not enter `0.0.0.0`.
-
-### 2.3 Enable and pair in ScriptCat
-
-1. Open **Settings → Tools → External Access** in ScriptCat and turn on the switch.
-2. Confirm that the **sctl address** matches the daemon; keep the default `ws://127.0.0.1:8643` normally.
-3. Keep `sctl serve` running and execute in another terminal:
-
-   ```bash
-   sctl connect
-   ```
-
-4. Enter the 8-character terminal code in the “Enroll sctl” dialog.
-5. Verify the connection:
-
-   ```bash
-   sctl status
-   ```
-
-The status should report a connected extension and show the daemon version.
-
-:::warning The pairing code is terminal-only
-The code looks like `A1B2-C3D4`, expires after 2 minutes, and works once. It is not sent to the extension over
-the WebSocket. Never paste it into an AI chat, issue, log, or MCP configuration; run `connect` again if it
-expires.
-:::
-
-## 3. Permissions and confirmation {#permissions}
-
-| Capability | Default behaviour |
+| Capability | Default behavior |
 |---|---|
-| List scripts and read metadata | Return directly |
-| Read or search script source | Follow the **source read** policy |
-| Install, edit, enable, disable, or delete a script | Follow the **write** policy |
+| List scripts, read metadata | Returned directly |
+| Run a background or scheduled script once, read script logs | Run directly |
+| Read or search script source | Follows the **Source read** policy |
+| Install, edit, enable, disable or delete scripts | Follows the **Write operations** policy |
 
-Both policies offer “Require approval” (default) and “Allow directly”.
+Both policies can be set to **Ask each time** (the default) or **Allow directly** on the External Access card.
 
-With “Require approval”, requests open a browser confirmation page. You can reject, allow once, or choose “Allow
-for this session”. Session allowances are keyed by script and operation kind, and are cleared when the browser
-restarts, the extension reloads, or External Access stops. A request expires after 5 minutes without a decision;
-requester disconnect or `Ctrl-C` also voids it.
+Under **Ask each time**, a request opens a confirmation page in the browser and the command line or AI waits for your
+decision. Installs and edits are confirmed on the script install page, which says at the top that the request came
+from External Access and, for an edit, shows the changes. Source reads, enabling, disabling and deleting open a
+separate confirmation page:
 
-“Allow directly” skips the confirmation page for that class of operation. Source can contain API keys, cookies,
-and other secrets, while writes can directly change scripts, so enable it only when you accept that risk.
+- **Allow**: allows this one request.
+- **Allow this session**: stops asking for the same kind of operation on the same script until the browser restarts,
+  the extension reloads or External Access is stopped.
+- **Reject**: the requester receives a rejection.
 
-## 4. Command-line usage
+A request with no decision expires after 5 minutes; it is also voided when the requester disconnects or you press
+`Ctrl-C` in the terminal.
+
+:::warning Use "Allow directly" with care
+"Allow directly" skips the confirmation page for that kind of operation. Script source may contain API keys, cookies
+and other secrets, and writes change your scripts immediately. Turn it on only when you understand the risk.
+:::
+
+`sctl run` really runs the script: its network requests, notifications and stored data all happen. Neither running nor
+reading logs asks for confirmation, so know what a script does before letting an AI run it.
+
+## 3. Command line {#cli}
 
 ```bash
-sctl get                         # List scripts
-sctl get <uuid>                  # Read metadata
-sctl get <uuid> -o source        # Print full source
+sctl get                         # list scripts
+sctl get <uuid>                  # read metadata
+sctl get <uuid> -o source        # print the full source
 sctl get <uuid> -o source --lines 20-80
-sctl grep <uuid> "fetch("         # Literal source search
-sctl grep <uuid> "pattern" -E    # Regular expression
+sctl grep <uuid> "fetch("        # search the source literally; -E for a regular expression
 sctl install <url|file>
 sctl edit <uuid> --replace OLD --with NEW
 sctl enable <uuid>
 sctl disable <uuid>
 sctl delete <uuid>
-sctl status
+sctl run <uuid>                  # run a background or scheduled script once, wait, print this run's logs
+sctl logs <uuid> --since 1h      # read a script's logs; filter with --level and --text
 ```
 
-`grep` is literal by default; `-E` enables regular expressions, `-i` ignores case, `-C N` adds context, and
-`-m N` limits matches. No match is successful and exits with code 0.
+- `grep` matches literally by default; `-i` ignores case and `-C N` adds context. No match is not an error and still
+  exits 0.
+- `edit` changes the script by content anchor, not by line number: by default each `--replace` text must occur exactly
+  once, and `--replace-all` replaces every match. Only the change is sent to the extension.
+- `run` waits up to 60 seconds by default; change it with `--timeout`, or use `--no-wait` to return at once. If the
+  timeout passes first, the script is still running and the result says so; that is not a failure. Page scripts cannot
+  be run this way.
 
-`edit` is content-anchored, never line-number-based. Each `oldText` must occur exactly once by default;
-`--replace-all` replaces every match. You can also pass a `{oldText,newText,replaceAll?}` array with `-f <file>`.
-Only edits are sent to the extension; there is no need to read or upload the entire source first.
+:::note Version requirement
+`run` and `logs` need a ScriptCat **later than v1.5.0** and an sctl **later than v0.3.0** (coming soon).
+:::
 
-Writes and source disclosure block for a browser decision. CLI exit codes:
+Commands that need confirmation wait for your decision in the browser, and the exit code tells you the outcome:
 
 | Exit code | Meaning |
 |---|---|
-| `0` | Approved and successful, or a read command completed normally |
-| `1` | User rejected the request |
-| `2` | Request expired, was cancelled with `Ctrl-C`, or the extension disconnected |
-| `3` | Other errors such as arguments, connection, or missing script |
+| `0` | Approved and succeeded, or a read-only command finished |
+| `1` | Rejected in the browser |
+| `2` | The request expired, was cancelled with `Ctrl-C`, or the extension disconnected |
+| `3` | Any other error: bad arguments, connection failure, script not found |
 
-Run `sctl <command> --help` for every option.
+Add `-o json` for machine-readable output, and run `sctl <command> --help` for every flag. With several ScriptCat
+instances paired, pick one with `--scriptcat <name>`; see [Getting Started with sctl](/docs/use/sctl/#instances).
 
-## 5. Connect an AI client (MCP)
+## 4. Use it from AI tools {#ai}
 
-First make sure `sctl serve` is running and `status` reports a connected extension. Then configure the MCP client
-to launch a separate `sctl mcp` process. Use absolute binary and data paths in GUI clients:
+To connect an AI tool (skill or MCP), see [Getting Started with sctl](/docs/use/sctl/#ai). To have an AI write scripts
+and verify them, see [Developing Scripts with AI](/docs/dev/ai/).
 
-```json
-{
-  "mcpServers": {
-    "scriptcat": {
-      "command": "/absolute/path/to/sctl",
-      "env": {
-        "SCTL_DATA_DIR": "/absolute/path/to/sctl-data"
-      },
-      "args": [
-        "mcp",
-        "--name",
-        "my-ai-client"
-      ]
-    }
-  }
-}
-```
+Over MCP, these are the script tools; each follows the same rules as its command:
 
-Many GUI applications do not expand `~`, `$HOME`, or shell expressions. `--name` is an audit label, not an
-authenticated identity or authorization boundary. MCP stdout is reserved for protocol frames; do not wrap sctl
-in a script that prints a banner to stdout.
-
-Current tools:
-
-| Tool | Purpose | Confirmation policy |
+| Tool | What it does | Policy |
 |---|---|---|
 | `scripts_list` | List script summaries | None |
 | `scripts_metadata_get` | Read one script's metadata | None |
-| `scripts_source_get` | Read source by uuid and optional line window | Source read policy |
-| `scripts_source_grep` | Search source and return matching lines | Source read policy |
-| `scripts_install_request` | Request script installation | Write policy |
-| `scripts_edit_request` | Request a content-anchored edit | Write policy |
-| `scripts_toggle_request` | Request enabling or disabling | Write policy |
-| `scripts_delete_request` | Request deletion | Write policy |
+| `scripts_source_get` | Read source by uuid, with an optional line range | Source read |
+| `scripts_source_grep` | Search source and return matching lines | Source read |
+| `scripts_install_request` | Request a script install | Write operations |
+| `scripts_edit_request` | Request a content-anchored edit | Write operations |
+| `scripts_toggle_request` | Request enabling or disabling a script | Write operations |
+| `scripts_delete_request` | Request deleting a script | Write operations |
+| `scripts_run` | Run a background or scheduled script once | None |
+| `scripts_logs` | Read a script's logs | None |
 
-## 6. Audit and revoke
+## 5. Audit and revoke {#revoke}
 
-- “View audit log” in the External Access card opens the log page filtered to this source.
-- `sctl status` shows daemon version, extension connectivity, and recent security events;
-  `-o json` returns complete events.
-- “Stop External Access” disconnects, deletes the extension-side pairing state, and clears session allowances.
-  Re-enrollment is required afterwards.
-- To disable only one AI client, remove sctl from that client's MCP configuration; this does not revoke other
-  CLI or client access.
+- **View audit log** on the External Access card opens the log page filtered to External Access.
+- `sctl status` shows the sctl version, the extension connection and a summary of recent security events; `-o json`
+  returns every event.
+- **Stop External Access** disconnects, deletes the extension's pairing data and clears session approvals. You need to
+  pair again to use it afterwards.
+- To cut off a single AI client, remove sctl from that client's MCP configuration. The command line and other clients
+  are not affected.
 
-## 7. Troubleshooting {#troubleshooting}
+## 6. Troubleshooting {#troubleshooting}
 
-**The daemon is unreachable**
+**The External Access card shows "connection failed"**: check that `sctl serve` is running, that the address on the
+card matches it, and that security software is not blocking `127.0.0.1:8643`. If you never paired or stopped External
+Access, pair again with `sctl connect`.
 
-Run `sctl serve` first. Requester commands never auto-start the daemon.
+**A command does not return**: find the confirmation page in the browser and decide; press `Ctrl-C` to void the
+request instead.
 
-**Control-channel authentication fails**
+**`run` or `logs` says to upgrade**: ScriptCat or sctl is too old. Upgrade both and restart `sctl serve`.
 
-Confirm that `serve`, CLI commands, and the MCP process resolve to the same absolute data directory. Check both
-`SCTL_DATA_DIR` and any explicit `--data-dir`, then restart the MCP client.
+**`debug` logs are missing**: the stable ScriptCat release keeps only `info` and higher. Log what you need to see at
+`info` or above.
 
-**The status says “Connection failed”**
-
-Confirm that the daemon is running, the extension address matches it, and local security software is not
-blocking `127.0.0.1:8643`.
-
-**A command does not return**
-
-Check the browser for a source-disclosure or write confirmation page. Press `Ctrl-C` to void the request.
-
-**Find logs**
-
-Logs are under `<data-dir>/logs/`. If neither `--data-dir` nor `SCTL_DATA_DIR` is set, defaults are:
-
-| Platform | Log directory |
-|---|---|
-| macOS | `~/Library/Application Support/sctl/logs/` |
-| Windows | `%LOCALAPPDATA%\sctl\logs\` |
-| Linux | `~/.config/sctl/logs/` |
+For problems with the daemon, the data directory or AI clients, see
+[Getting Started with sctl](/docs/use/sctl/#troubleshooting).

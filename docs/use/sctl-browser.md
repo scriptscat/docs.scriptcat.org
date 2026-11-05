@@ -12,8 +12,8 @@ sidebar_label: sctl Browser
 - 查看页面的控制台消息、未捕获的异常和网络请求；
 - 开一个 CDP 端点，让现有的 Playwright / Puppeteer 脚本直接使用你已登录的浏览器。
 
-sctl Browser 与[外部接入](/docs/use/external-access/)共用同一个 `sctl serve`，但两者各自配对、互不依赖：只想控制浏览器时，
-不装脚本猫也可以使用。
+sctl Browser 与脚本猫的[外部接入](/docs/use/external-access/)共用同一个 `sctl serve`，但两者各自配对、互不依赖：
+只想控制浏览器时，不装脚本猫也可以使用。
 
 :::danger 大部分操作不需要你确认
 与脚本猫的外部接入不同，sctl Browser 的操作默认**立即执行**，不会弹出确认页。任何能运行 sctl 命令的程序，包括你
@@ -25,8 +25,7 @@ sctl Browser 与[外部接入](/docs/use/external-access/)共用同一个 `sctl 
 
 ## 一、准备 sctl
 
-按[外部接入](/docs/use/external-access/)中「安装 sctl」和「启动 daemon」两步安装 sctl，并保持 `sctl serve` 运行。
-已经接入过脚本猫的话，这一步已经完成。
+按 [sctl 入门](/docs/use/sctl/)安装 sctl 并启动 `sctl serve`。已经接入过脚本猫的话，这一步已经完成。
 
 ## 二、安装扩展
 
@@ -50,9 +49,9 @@ sctl Browser 需要 **Chrome 125 或更高版本**，或同等版本的 Chromium
 
 手动安装的版本不会自动更新，更新时下载新版本解压覆盖，再在扩展管理页中点击重新加载。
 
-## 三、配对
+## 三、配对 {#pairing}
 
-1. 保持 `sctl serve` 运行，在另一个终端执行：
+1. 保持 `sctl serve` 运行，在终端执行：
 
    ```bash
    sctl connect
@@ -72,8 +71,8 @@ sctl Browser 需要 **Chrome 125 或更高版本**，或同等版本的 Chromium
    sctl browsers
    ```
 
-一个配对码只能配对一个扩展。脚本猫和 sctl Browser 都要配对时，分别运行一次 `sctl connect`。daemon 改过监听地址时，
-在弹窗右上角的设置中修改 daemon 地址。
+一个配对码只能配对一个扩展。脚本猫和 sctl Browser 都要配对时，分别执行一次 `sctl connect`。`sctl serve` 改过监听地址时，
+在弹窗右上角的设置中修改地址。
 
 ## 四、常用命令
 
@@ -116,10 +115,10 @@ sctl cookies list --url https://example.com # 查看 Cookie
 
 ### 多个浏览器
 
-可以配对多个浏览器（或同一浏览器的多个配置文件），每个都单独运行一次 `sctl connect`。有多个实例在线时，用
+可以配对多个浏览器（或同一浏览器的多个配置文件），每个都单独执行一次 `sctl connect`。有多个实例在线时，用
 `--browser <名称>` 或环境变量 `SCTL_BROWSER` 指定目标；`tabs list` 和 `windows list` 不指定时会汇总所有在线实例。
 
-## 五、需要确认的操作
+## 五、需要确认的操作 {#approval}
 
 | 操作 | 方式 |
 |---|---|
@@ -131,13 +130,13 @@ sctl cookies list --url https://example.com # 查看 Cookie
 
 审批窗口中点击**拒绝**或直接关闭窗口，命令以退出码 `1` 结束；5 分钟内没有决定或在终端按 `Ctrl-C`，以退出码 `2` 结束。
 
-## 六、在 AI 客户端中使用
+## 六、在 AI 工具中使用 {#ai}
 
-MCP 配置与[外部接入](/docs/use/external-access/)中「接入 AI 客户端」一节完全相同，同一个 `sctl mcp` 同时提供脚本猫和 sctl Browser 的工具，
-例如 `tabs_list`、`page_snapshot`、`page_click`、`debug_console`、`cdp_endpoint`。完整工具列表见 sctl 仓库的
-[MCP 文档](https://github.com/scriptscat/sctl/blob/main/docs/mcp.md#7-tool-reference)（英文）。
+AI 工具的接入方式（skill 或 MCP）见 [sctl 入门](/docs/use/sctl/#ai)，配好后不需要为 sctl Browser 单独设置。
 
-如果你的 AI 工具更适合直接调用命令行，可以安装 sctl 的 agent skill，安装方法见[用 AI 开发脚本](/docs/dev/ai/)。
+通过 MCP 接入时会出现 `tabs_list`、`page_snapshot`、`page_click`、`debug_console`、`cdp_endpoint` 等浏览器工具，
+完整列表见 sctl 仓库的 [MCP 文档](https://github.com/scriptscat/sctl/blob/main/docs/mcp.md#7-tool-reference)（英文）。
+这些工具和命令一样，大部分会立即执行，只把 sctl 交给你信任的 AI 工具。
 
 ## 七、连接 Playwright / Puppeteer
 

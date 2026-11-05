@@ -14,5 +14,9 @@
   "sidebar.use.category.从其它管理器迁移": {
     "message": "다른 관리자에서 마이그레이션",
     "description": "The label for sidebar.use.category.从其它管理器迁移"
+  },
+  "sidebar.use.category.命令行与 AI 接入": {
+    "message": "명령줄과 AI",
+    "description": "The label for category 命令行与 AI 接入 in sidebar use"
   }
 }

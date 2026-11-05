@@ -41,10 +41,12 @@ skill 的位置，这种方式要自己更新。
 
 只装 skill 就能让代理写脚本，最后由你自己安装 `.user.js` 文件、查看效果。想让代理自己安装脚本并在浏览器里验证，还需要：
 
-1. **sctl 与外部接入**：按[外部接入](/docs/use/external-access/)安装 sctl、启动 `sctl serve`，并在脚本猫中完成配对。
-   `sctl status` 显示扩展已连接即可。
-2. **sctl Browser**：要让代理打开页面、查看控制台、点击和截图来验证页面脚本，还需要安装并配对
+1. **sctl**：按 [sctl 入门](/docs/use/sctl/)安装 sctl 并启动 `sctl serve`。
+2. **脚本猫**：在脚本猫中开启[外部接入](/docs/use/external-access/)并完成配对，代理才能安装、运行脚本和读取日志。
+3. **sctl Browser**：要让代理打开页面、查看控制台、点击和截图来验证页面脚本，还需要安装并配对
    [sctl Browser](/docs/use/sctl-browser/)。只写后台或定时脚本时可以不装。
+
+配好后执行 `sctl status`，能看到在线的脚本猫（和浏览器）即可。
 
 ## 三、使用示例
 
@@ -88,7 +90,7 @@ skill 的位置，这种方式要自己更新。
 | 打开页面、读取页面内容、点击、查看控制台与网络请求 | 不需要确认 |
 
 确认页上的「本会话允许」可以让同一脚本的同类操作在本次浏览器会话内不再询问，代理反复修改同一个脚本时会顺畅很多。
-策略的完整说明见[外部接入](/docs/use/external-access/)中「权限与确认」一节。
+策略的完整说明见[外部接入的权限与确认](/docs/use/external-access/#permissions)。
 
 几点建议：
 
@@ -123,9 +125,9 @@ skill 的位置，这种方式要自己更新。
 
    装完后如果当前会话里还看不到这两个 skill，请用户新开一个会话。
 2. **检查 sctl**：执行 `sctl status`。
-   - 找不到 `sctl` 命令：请用户按[外部接入](/docs/use/external-access/)安装 sctl。
-   - 连不上 daemon：请用户执行 `sctl serve`；装了后台服务的执行 `sctl service start`。不要自己在后台启动 daemon，
-     它会随你的会话一起退出，还可能和用户的服务抢端口。
+   - 找不到 `sctl` 命令：请用户按 [sctl 入门](/docs/use/sctl/#install)安装 sctl。
+   - 连不上 daemon：请用户执行 `sctl service install` 注册后台服务（已装过的执行 `sctl service start`），或在一个终端里
+     运行 `sctl serve`。不要自己在后台启动 `sctl serve`，它会随你的会话一起退出，还可能和用户的服务抢端口。
    - 扩展未连接：请用户在脚本猫的设置里开启外部接入，执行 `sctl connect`，把显示的一次性配对码输入脚本猫。
    - 用户暂时不想装 sctl 也可以继续：你只负责写脚本，把 `.user.js` 交给用户自己安装。
 3. **检查 sctl Browser**：只在要验证页面脚本时需要。`sctl browsers` 没有在线的浏览器时，请用户按

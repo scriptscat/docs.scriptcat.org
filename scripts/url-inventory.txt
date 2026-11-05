@@ -45,6 +45,7 @@
 /ar/docs/use/policy/privacy_website/index.html
 /ar/docs/use/script_installation/index.html
 /ar/docs/use/sctl-browser/index.html
+/ar/docs/use/sctl/index.html
 /ar/docs/use/sync/index.html
 /ar/docs/use/use/index.html
 /ar/docs/use/vscode/index.html
@@ -98,6 +99,7 @@
 /bn/docs/use/policy/privacy_website/index.html
 /bn/docs/use/script_installation/index.html
 /bn/docs/use/sctl-browser/index.html
+/bn/docs/use/sctl/index.html
 /bn/docs/use/sync/index.html
 /bn/docs/use/use/index.html
 /bn/docs/use/vscode/index.html
@@ -151,6 +153,7 @@
 /de/docs/use/policy/privacy_website/index.html
 /de/docs/use/script_installation/index.html
 /de/docs/use/sctl-browser/index.html
+/de/docs/use/sctl/index.html
 /de/docs/use/sync/index.html
 /de/docs/use/use/index.html
 /de/docs/use/vscode/index.html
@@ -203,6 +206,7 @@
 /docs/use/policy/privacy_website/index.html
 /docs/use/script_installation/index.html
 /docs/use/sctl-browser/index.html
+/docs/use/sctl/index.html
 /docs/use/sync/index.html
 /docs/use/use/index.html
 /docs/use/vscode/index.html
@@ -252,6 +256,7 @@
 /en/docs/use/policy/privacy_website/index.html
 /en/docs/use/script_installation/index.html
 /en/docs/use/sctl-browser/index.html
+/en/docs/use/sctl/index.html
 /en/docs/use/sync/index.html
 /en/docs/use/use/index.html
 /en/docs/use/vscode/index.html
@@ -305,6 +310,7 @@
 /es/docs/use/policy/privacy_website/index.html
 /es/docs/use/script_installation/index.html
 /es/docs/use/sctl-browser/index.html
+/es/docs/use/sctl/index.html
 /es/docs/use/sync/index.html
 /es/docs/use/use/index.html
 /es/docs/use/vscode/index.html
@@ -358,6 +364,7 @@
 /fa/docs/use/policy/privacy_website/index.html
 /fa/docs/use/script_installation/index.html
 /fa/docs/use/sctl-browser/index.html
+/fa/docs/use/sctl/index.html
 /fa/docs/use/sync/index.html
 /fa/docs/use/use/index.html
 /fa/docs/use/vscode/index.html
@@ -411,6 +418,7 @@
 /fr/docs/use/policy/privacy_website/index.html
 /fr/docs/use/script_installation/index.html
 /fr/docs/use/sctl-browser/index.html
+/fr/docs/use/sctl/index.html
 /fr/docs/use/sync/index.html
 /fr/docs/use/use/index.html
 /fr/docs/use/vscode/index.html
@@ -464,6 +472,7 @@
 /hy/docs/use/policy/privacy_website/index.html
 /hy/docs/use/script_installation/index.html
 /hy/docs/use/sctl-browser/index.html
+/hy/docs/use/sctl/index.html
 /hy/docs/use/sync/index.html
 /hy/docs/use/use/index.html
 /hy/docs/use/vscode/index.html
@@ -517,6 +526,7 @@
 /id/docs/use/policy/privacy_website/index.html
 /id/docs/use/script_installation/index.html
 /id/docs/use/sctl-browser/index.html
+/id/docs/use/sctl/index.html
 /id/docs/use/sync/index.html
 /id/docs/use/use/index.html
 /id/docs/use/vscode/index.html
@@ -571,6 +581,7 @@
 /it/docs/use/policy/privacy_website/index.html
 /it/docs/use/script_installation/index.html
 /it/docs/use/sctl-browser/index.html
+/it/docs/use/sctl/index.html
 /it/docs/use/sync/index.html
 /it/docs/use/use/index.html
 /it/docs/use/vscode/index.html
@@ -624,6 +635,7 @@
 /ja/docs/use/policy/privacy_website/index.html
 /ja/docs/use/script_installation/index.html
 /ja/docs/use/sctl-browser/index.html
+/ja/docs/use/sctl/index.html
 /ja/docs/use/sync/index.html
 /ja/docs/use/use/index.html
 /ja/docs/use/vscode/index.html
@@ -677,6 +689,7 @@
 /ko/docs/use/policy/privacy_website/index.html
 /ko/docs/use/script_installation/index.html
 /ko/docs/use/sctl-browser/index.html
+/ko/docs/use/sctl/index.html
 /ko/docs/use/sync/index.html
 /ko/docs/use/use/index.html
 /ko/docs/use/vscode/index.html
@@ -730,6 +743,7 @@
 /nl/docs/use/policy/privacy_website/index.html
 /nl/docs/use/script_installation/index.html
 /nl/docs/use/sctl-browser/index.html
+/nl/docs/use/sctl/index.html
 /nl/docs/use/sync/index.html
 /nl/docs/use/use/index.html
 /nl/docs/use/vscode/index.html
@@ -784,6 +798,7 @@
 /pt/docs/use/policy/privacy_website/index.html
 /pt/docs/use/script_installation/index.html
 /pt/docs/use/sctl-browser/index.html
+/pt/docs/use/sctl/index.html
 /pt/docs/use/sync/index.html
 /pt/docs/use/use/index.html
 /pt/docs/use/vscode/index.html
@@ -837,6 +852,7 @@
 /ru/docs/use/policy/privacy_website/index.html
 /ru/docs/use/script_installation/index.html
 /ru/docs/use/sctl-browser/index.html
+/ru/docs/use/sctl/index.html
 /ru/docs/use/sync/index.html
 /ru/docs/use/use/index.html
 /ru/docs/use/vscode/index.html
@@ -891,6 +907,7 @@
 /tr/docs/use/policy/privacy_website/index.html
 /tr/docs/use/script_installation/index.html
 /tr/docs/use/sctl-browser/index.html
+/tr/docs/use/sctl/index.html
 /tr/docs/use/sync/index.html
 /tr/docs/use/use/index.html
 /tr/docs/use/vscode/index.html
@@ -944,6 +961,7 @@
 /uk/docs/use/policy/privacy_website/index.html
 /uk/docs/use/script_installation/index.html
 /uk/docs/use/sctl-browser/index.html
+/uk/docs/use/sctl/index.html
 /uk/docs/use/sync/index.html
 /uk/docs/use/use/index.html
 /uk/docs/use/vscode/index.html
@@ -998,6 +1016,7 @@
 /vi/docs/use/policy/privacy_website/index.html
 /vi/docs/use/script_installation/index.html
 /vi/docs/use/sctl-browser/index.html
+/vi/docs/use/sctl/index.html
 /vi/docs/use/sync/index.html
 /vi/docs/use/use/index.html
 /vi/docs/use/vscode/index.html
@@ -1051,6 +1070,7 @@
 /zh-Hant/docs/use/policy/privacy_website/index.html
 /zh-Hant/docs/use/script_installation/index.html
 /zh-Hant/docs/use/sctl-browser/index.html
+/zh-Hant/docs/use/sctl/index.html
 /zh-Hant/docs/use/sync/index.html
 /zh-Hant/docs/use/use/index.html
 /zh-Hant/docs/use/vscode/index.html

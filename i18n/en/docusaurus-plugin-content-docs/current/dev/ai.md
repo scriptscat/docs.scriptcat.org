@@ -47,11 +47,14 @@ scheduled script, `.user.js` or ScriptCat — there is nothing else to configure
 The skills alone are enough for the agent to write scripts; you then install the `.user.js` file and check it yourself.
 For the agent to install scripts and verify them in your browser, you also need:
 
-1. **sctl and External Access**: follow [External Access](/docs/use/external-access/) to install sctl, start
-   `sctl serve` and pair ScriptCat. You are ready when `sctl status` shows the extension connected.
-2. **sctl Browser**: for the agent to open pages, read the console, click and take screenshots while verifying a page
+1. **sctl**: install sctl and start `sctl serve` as described in [Getting Started with sctl](/docs/use/sctl/).
+2. **ScriptCat**: turn on [External Access](/docs/use/external-access/) in ScriptCat and pair it, so the agent can
+   install and run scripts and read their logs.
+3. **sctl Browser**: for the agent to open pages, read the console, click and take screenshots while verifying a page
    script, also install and pair [sctl Browser](/docs/use/sctl-browser/). It is not needed for background or scheduled
    scripts only.
+
+When you are done, `sctl status` should show ScriptCat (and the browser) online.
 
 ## 3. Example
 
@@ -100,8 +103,8 @@ What the agent does through sctl is exactly what you could do by running sctl yo
 | Open pages, read page content, click, read the console and network requests | No |
 
 "Allow this session" on a confirmation page stops repeat prompts for the same kind of operation on the same script
-until the browser session ends, which makes an agent iterating on one script much smoother. For the full policy, see the "Permissions and confirmation" section of
-[External Access](/docs/use/external-access/).
+until the browser session ends, which makes an agent iterating on one script much smoother. For the full policy, see
+[External Access's permissions and confirmation](/docs/use/external-access/#permissions).
 
 A few recommendations:
 
@@ -140,10 +143,11 @@ and skip the ones already done:
 
    If the two skills do not show up in the current session afterwards, ask the user to start a new session.
 2. **Check sctl.** Run `sctl status`.
-   - `sctl` not found: ask the user to install it by following [External Access](/docs/use/external-access/).
-   - Daemon unreachable: ask the user to run `sctl serve`, or `sctl service start` if they installed the background
-     service. Do not start the daemon in the background yourself: it exits with your session and can fight the user's
-     service for the port.
+   - `sctl` not found: ask the user to install it by following
+     [Getting Started with sctl](/docs/use/sctl/#install).
+   - Daemon unreachable: ask the user to register the background service with `sctl service install` (or
+     `sctl service start` if it is already installed), or to run `sctl serve` in a terminal. Do not start `sctl serve`
+     in the background yourself: it exits with your session and can fight the user's service for the port.
    - Extension not connected: ask the user to enable External Access in ScriptCat's settings, run `sctl connect`, and
      type the one-time code it shows into ScriptCat.
    - If the user does not want sctl for now, carry on anyway: you only write the script and hand the `.user.js` file to

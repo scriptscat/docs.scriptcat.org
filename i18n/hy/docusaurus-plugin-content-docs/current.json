@@ -14,5 +14,9 @@
   "sidebar.use.category.从其它管理器迁移": {
     "message": "Տեղափոխում այլ կառավարիչներից",
     "description": "The label for sidebar.use.category.从其它管理器迁移"
+  },
+  "sidebar.use.category.命令行与 AI 接入": {
+    "message": "Հրամանի տող և ԱԲ",
+    "description": "The label for category 命令行与 AI 接入 in sidebar use"
   }
 }

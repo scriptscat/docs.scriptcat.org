@@ -14,5 +14,9 @@
   "sidebar.use.category.从其它管理器迁移": {
     "message": "অন্যান্য ম্যানেজার থেকে স্থানান্তর",
     "description": "The label for sidebar.use.category.从其它管理器迁移"
+  },
+  "sidebar.use.category.命令行与 AI 接入": {
+    "message": "কমান্ড লাইন ও এআই",
+    "description": "The label for category 命令行与 AI 接入 in sidebar use"
   }
 }

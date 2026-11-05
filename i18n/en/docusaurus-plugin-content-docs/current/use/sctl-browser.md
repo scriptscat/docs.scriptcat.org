@@ -15,8 +15,8 @@ through sctl:
 - read a page's console messages, uncaught exceptions and network requests;
 - open a CDP endpoint so existing Playwright / Puppeteer scripts can use your signed-in browser.
 
-sctl Browser uses the same `sctl serve` as [External Access](/docs/use/external-access/), but the two are paired
-separately and do not depend on each other: you can use sctl Browser without installing ScriptCat.
+sctl Browser uses the same `sctl serve` as ScriptCat's [External Access](/docs/use/external-access/), but the two are
+paired separately and do not depend on each other: you can use sctl Browser without installing ScriptCat.
 
 :::danger Most operations need no confirmation
 Unlike ScriptCat's External Access, sctl Browser runs operations **immediately**, with no confirmation page. Any
@@ -30,8 +30,8 @@ separate browser profile.
 
 ## 1. Prepare sctl
 
-Install sctl and keep `sctl serve` running as described in [External Access](/docs/use/external-access/). If you have
-already connected ScriptCat, this step is done.
+Install sctl and start `sctl serve` as described in [Getting Started with sctl](/docs/use/sctl/). If you have already
+connected ScriptCat, this step is done.
 
 ## 2. Install the extension
 
@@ -60,7 +60,7 @@ If you cannot reach the extension stores, install it manually:
 A manual install does not update itself. To update, unzip the new version over the old one and click reload on the
 extensions page.
 
-## 3. Pair
+## 3. Pair {#pairing}
 
 1. Keep `sctl serve` running and run this in another terminal:
 
@@ -83,8 +83,8 @@ extensions page.
    sctl browsers
    ```
 
-One code pairs one extension. To pair both ScriptCat and sctl Browser, run `sctl connect` once for each. If the
-daemon listens on a non-default address, change the daemon address in the settings at the top right of the popup.
+One code pairs one extension. To pair both ScriptCat and sctl Browser, run `sctl connect` once for each. If
+`sctl serve` listens on a non-default address, change the address in the settings at the top right of the popup.
 
 ## 4. Common commands
 
@@ -132,7 +132,7 @@ You can pair several browsers (or several profiles of one browser) by running `s
 than one instance is online, pick one with `--browser <name>` or the `SCTL_BROWSER` environment variable; without a
 target, `tabs list` and `windows list` combine every online instance.
 
-## 5. Operations that need confirmation
+## 5. Operations that need confirmation {#approval}
 
 | Operation | How it is confirmed |
 |---|---|
@@ -145,15 +145,15 @@ target, `tabs list` and `windows list` combine every online instance.
 Clicking **Reject** or closing the window makes the command exit with code `1`; if nobody decides within 5 minutes or
 you press `Ctrl-C`, it exits with code `2`.
 
-## 6. Use it from an AI client
+## 6. Use it from AI tools {#ai}
 
-The MCP configuration is exactly the same as in [External Access](/docs/use/external-access/): one `sctl mcp` serves both
-the ScriptCat and the sctl Browser tools, such as `tabs_list`, `page_snapshot`, `page_click`, `debug_console` and
-`cdp_endpoint`. The full tool list is in the sctl repository's
-[MCP documentation](https://github.com/scriptscat/sctl/blob/main/docs/mcp.md#7-tool-reference).
+To connect an AI tool (skill or MCP), see [Getting Started with sctl](/docs/use/sctl/#ai); sctl Browser needs nothing
+extra.
 
-If your AI tool works better with the command line, install sctl's agent skill instead; see
-[Developing Scripts with AI](/docs/dev/ai/) for how.
+Over MCP you get browser tools such as `tabs_list`, `page_snapshot`, `page_click`, `debug_console` and `cdp_endpoint`;
+the full list is in the sctl repository's
+[MCP documentation](https://github.com/scriptscat/sctl/blob/main/docs/mcp.md#7-tool-reference). Like the commands, most
+of them run immediately, so give sctl only to AI tools you trust.
 
 ## 7. Connect Playwright / Puppeteer
 

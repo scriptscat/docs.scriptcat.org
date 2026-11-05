@@ -11,6 +11,10 @@
     "message": "Migrar desde otros gestores",
     "description": "The label for category Migrate from other managers in sidebar use"
   },
+  "sidebar.use.category.命令行与 AI 接入": {
+    "message": "Línea de comandos e IA",
+    "description": "The label for category 命令行与 AI 接入 in sidebar use"
+  },
   "sidebar.dev.category.Agent 智能助手": {
     "message": "Agent",
     "description": "The label for category Agent in sidebar dev"

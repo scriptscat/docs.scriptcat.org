@@ -27,9 +27,12 @@ const sidebars = {
       ],
     },
     "use/open-dev",
-    "use/vscode",
-    "use/external-access",
-    "use/sctl-browser",
+    {
+      type: "category",
+      label: "命令行与 AI 接入",
+      link: { type: "doc", id: "use/sctl" },
+      items: ["use/external-access", "use/sctl-browser"],
+    },
     {
       type: "category",
       label: "服务协议",
@@ -46,6 +49,7 @@ const sidebars = {
   dev: [
     "dev/index",
     "dev/ai",
+    "use/vscode",
     "dev/background",
     "dev/cloudcat",
     "dev/subscribe",

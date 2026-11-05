@@ -14,5 +14,9 @@
   "sidebar.use.category.从其它管理器迁移": {
     "message": "Міграція з інших менеджерів",
     "description": "The label for sidebar.use.category.从其它管理器迁移"
+  },
+  "sidebar.use.category.命令行与 AI 接入": {
+    "message": "Командний рядок і ШІ",
+    "description": "The label for category 命令行与 AI 接入 in sidebar use"
   }
 }

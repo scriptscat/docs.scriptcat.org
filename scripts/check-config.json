@@ -4,26 +4,26 @@
   "i18nParityStrict": true,
   "frontmatterStrict": true,
   "i18nDocFallbacks": {
-    "ar": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl-browser.md", "dev/ai.md"] },
-    "bn": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl-browser.md", "dev/ai.md"] },
-    "de": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl-browser.md", "dev/ai.md"] },
-    "es": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl-browser.md", "dev/ai.md"] },
-    "fa": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl-browser.md", "dev/ai.md"] },
-    "fr": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl-browser.md", "dev/ai.md"] },
-    "hy": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl-browser.md", "dev/ai.md"] },
-    "id": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl-browser.md", "dev/ai.md"] },
-    "it": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl-browser.md", "dev/ai.md"] },
-    "ja": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl-browser.md", "dev/ai.md"] },
-    "ko": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl-browser.md", "dev/ai.md"] },
-    "nl": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl-browser.md", "dev/ai.md"] },
-    "pt": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl-browser.md", "dev/ai.md"] },
+    "ar": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl.md", "use/external-access.md", "use/sctl-browser.md", "dev/ai.md"] },
+    "bn": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl.md", "use/external-access.md", "use/sctl-browser.md", "dev/ai.md"] },
+    "de": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl.md", "use/external-access.md", "use/sctl-browser.md", "dev/ai.md"] },
+    "es": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl.md", "use/external-access.md", "use/sctl-browser.md", "dev/ai.md"] },
+    "fa": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl.md", "use/external-access.md", "use/sctl-browser.md", "dev/ai.md"] },
+    "fr": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl.md", "use/external-access.md", "use/sctl-browser.md", "dev/ai.md"] },
+    "hy": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl.md", "use/external-access.md", "use/sctl-browser.md", "dev/ai.md"] },
+    "id": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl.md", "use/external-access.md", "use/sctl-browser.md", "dev/ai.md"] },
+    "it": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl.md", "use/external-access.md", "use/sctl-browser.md", "dev/ai.md"] },
+    "ja": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl.md", "use/external-access.md", "use/sctl-browser.md", "dev/ai.md"] },
+    "ko": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl.md", "use/external-access.md", "use/sctl-browser.md", "dev/ai.md"] },
+    "nl": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl.md", "use/external-access.md", "use/sctl-browser.md", "dev/ai.md"] },
+    "pt": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl.md", "use/external-access.md", "use/sctl-browser.md", "dev/ai.md"] },
     "ru": {
       "sourceLocale": "en",
-      "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl-browser.md", "dev/ai.md"]
+      "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl.md", "use/external-access.md", "use/sctl-browser.md", "dev/ai.md"]
     },
-    "tr": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl-browser.md", "dev/ai.md"] },
-    "uk": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl-browser.md", "dev/ai.md"] },
-    "vi": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl-browser.md", "dev/ai.md"] },
-    "zh-Hant": { "sourceLocale": "zh-Hans", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl-browser.md", "dev/ai.md"] }
+    "tr": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl.md", "use/external-access.md", "use/sctl-browser.md", "dev/ai.md"] },
+    "uk": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl.md", "use/external-access.md", "use/sctl-browser.md", "dev/ai.md"] },
+    "vi": { "sourceLocale": "en", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl.md", "use/external-access.md", "use/sctl-browser.md", "dev/ai.md"] },
+    "zh-Hant": { "sourceLocale": "zh-Hans", "paths": ["change/", "use/policy/privacy_sctl.md", "use/sctl.md", "use/external-access.md", "use/sctl-browser.md", "dev/ai.md"] }
   }
 }
