@@ -152,8 +152,8 @@ the ScriptCat and the sctl Browser tools, such as `tabs_list`, `page_snapshot`, 
 `cdp_endpoint`. The full tool list is in the sctl repository's
 [MCP documentation](https://github.com/scriptscat/sctl/blob/main/docs/mcp.md#7-tool-reference).
 
-If your AI tool works better with the command line, install the
-[agent skill](https://github.com/scriptscat/sctl/tree/main/skills/sctl) from the sctl repository instead.
+If your AI tool works better with the command line, install sctl's agent skill instead; see
+[Developing Scripts with AI](/docs/dev/ai/) for how.
 
 ## 7. Connect Playwright / Puppeteer
 

@@ -188,8 +188,8 @@ sctl delete <uuid>
 AI 客户端中还会出现 `browsers_list`、`tabs_list` 等浏览器控制工具，它们属于
 [sctl Browser](./sctl-browser.md) 扩展；没有配对 sctl Browser 时调用会返回错误，可以忽略。
 
-如果你的 AI 工具更适合直接调用命令行，也可以不配置 MCP，改为安装 sctl 仓库中的
-[agent skill](https://github.com/scriptscat/sctl/tree/main/skills/sctl)。
+如果你的 AI 工具更适合直接调用命令行，也可以不配置 MCP，改为安装 sctl 的 agent skill，安装方法和用 AI 编写、验证脚本的完整流程见
+[用 AI 开发脚本](/docs/dev/ai/)。
 
 ## 七、审计与撤销
 

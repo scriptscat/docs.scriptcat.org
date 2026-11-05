@@ -2,42 +2,32 @@
 title: Developing Scripts with AI
 ---
 
-When an AI coding agent such as Claude Code or Codex writes a userscript, it tends to follow Tampermonkey habits and gets
-the ScriptCat-specific parts wrong — background scripts have no page, `@grant none` has no `unsafeWindow`, and scheduled
-scripts' `once` has its own meaning. Once the script is written, the agent also cannot see whether it actually runs in your
-browser.
-
-Two agent skills close both gaps:
+You can have an AI coding agent such as Claude Code or Codex write ScriptCat scripts for you. With the two skills below,
+it follows ScriptCat's rules, installs the script into your ScriptCat, checks the result in your browser, and fixes and
+retries when something is wrong.
 
 | Skill | What it does | Where it lives |
 |---|---|---|
 | `scriptcat-userscript` | How to write: picking the script type, skeletons, the rules that break scripts, an API reference, plus a static checker and a hot-reload helper | ScriptCat repository, [`skills/scriptcat-userscript`](https://github.com/scriptscat/scriptcat/tree/main/skills/scriptcat-userscript) |
 | `sctl` | How to act: through [sctl](https://github.com/scriptscat/sctl), install the script into your ScriptCat and open pages, read the console and read logs in your real browser | sctl repository, [`skills/sctl`](https://github.com/scriptscat/sctl/tree/main/skills/sctl) |
 
-With both installed, the agent can work through the whole loop on its own: look at the target page, write the script,
-check it statically, install it, verify the result in your browser, and fix and retry when something is wrong.
+:::tip Let the AI set it up
+Send this to your AI agent. It follows the [instructions for AI agents](#for-ai-agents) on this page to check your setup,
+install the skills, and tell you which steps you need to do yourself:
+
+> Read https://docs.scriptcat.org/en/docs/dev/ai/ and follow its "For AI agents" section to set me up for writing ScriptCat scripts with AI.
+:::
 
 :::info Not ScriptCat's built-in Agent
 This page is about external AI coding tools running on your computer. For the AI features built into the ScriptCat
 extension and the `CAT.agent` API, see [Agent](/docs/dev/agent/).
 :::
 
-## 1. Prerequisites
+## 1. Install the two skills
 
-1. **sctl and External Access**: follow [External Access](/docs/use/external-access/) to install sctl, start
-   `sctl serve` and pair ScriptCat. You are ready when `sctl status` shows the extension connected.
-2. **sctl Browser (optional)**: for the agent to open pages, read the console, click and take screenshots while verifying
-   a page script, also install and pair [sctl Browser](/docs/use/sctl-browser/). It is not needed for background or
-   scheduled scripts only.
-3. **Node.js 18 or later**, for the checker bundled with `scriptcat-userscript`.
-
-Without sctl the skill still guides the agent through writing the script; at the end it hands you a `.user.js` file to
-install and check yourself.
-
-## 2. Install the two skills
-
-Install with [`npx skills`](https://skills.sh/) (requires Node.js). It installs a skill into several agents at once,
-such as Claude Code, Codex and Cursor, and asks which agents to install into:
+Install with [`npx skills`](https://skills.sh/), which needs Node.js 18 or later (the checker bundled with
+`scriptcat-userscript` needs it too). It installs a skill into several agents at once, such as Claude Code, Codex and
+Cursor, and asks which agents to install into:
 
 ```bash
 npx skills add scriptscat/scriptcat -g
@@ -51,6 +41,17 @@ from the sctl repository to where your agent reads skills. You then update them 
 
 Once installed, the agent loads the right skill by itself whenever you mention a userscript, background script,
 scheduled script, `.user.js` or ScriptCat — there is nothing else to configure.
+
+## 2. Connect ScriptCat (optional)
+
+The skills alone are enough for the agent to write scripts; you then install the `.user.js` file and check it yourself.
+For the agent to install scripts and verify them in your browser, you also need:
+
+1. **sctl and External Access**: follow [External Access](/docs/use/external-access/) to install sctl, start
+   `sctl serve` and pair ScriptCat. You are ready when `sctl status` shows the extension connected.
+2. **sctl Browser**: for the agent to open pages, read the console, click and take screenshots while verifying a page
+   script, also install and pair [sctl Browser](/docs/use/sctl-browser/). It is not needed for background or scheduled
+   scripts only.
 
 ## 3. Example
 
@@ -121,3 +122,34 @@ shows up on the Logs page or in `sctl logs`. Log anything you need to read at `i
 **More than one ScriptCat is online?** For example, ScriptCat is installed and paired in two browsers. Tell the agent
 which one to use: add `--scriptcat <name>` to the command or set the `SCTL_SCRIPTCAT` environment variable. List the
 names with `sctl scriptcats`.
+
+## 6. For AI agents {#for-ai-agents}
+
+This section is for AI coding agents. When the user asks you to set things up from this page, check each step in order
+and skip the ones already done:
+
+1. **Install the skills.** If you do not have the `scriptcat-userscript` and `sctl` skills yet, run the commands below
+   with `-a` set to your own agent name (such as `claude-code`, `codex` or `cursor`). Do not leave out `-a`: run
+   non-interactively without it, the skills only go to `~/.agents/skills`, which Claude Code and some other agents do
+   not read.
+
+   ```bash
+   npx skills add scriptscat/scriptcat -g -a claude-code
+   npx skills add scriptscat/sctl -g -a claude-code
+   ```
+
+   If the two skills do not show up in the current session afterwards, ask the user to start a new session.
+2. **Check sctl.** Run `sctl status`.
+   - `sctl` not found: ask the user to install it by following [External Access](/docs/use/external-access/).
+   - Daemon unreachable: ask the user to run `sctl serve`, or `sctl service start` if they installed the background
+     service. Do not start the daemon in the background yourself: it exits with your session and can fight the user's
+     service for the port.
+   - Extension not connected: ask the user to enable External Access in ScriptCat's settings, run `sctl connect`, and
+     type the one-time code it shows into ScriptCat.
+   - If the user does not want sctl for now, carry on anyway: you only write the script and hand the `.user.js` file to
+     the user to install.
+3. **Check sctl Browser**, only needed to verify page scripts. If `sctl browsers` shows no online browser, ask the user
+   to install and pair [sctl Browser](/docs/use/sctl-browser/).
+4. **Report.** Tell the user what is ready and what is left for them. When writing scripts afterwards, follow the
+   `scriptcat-userscript` skill. Installing and editing scripts needs the user's approval in the browser: tell them to
+   look at the browser, and do not retry in a loop.

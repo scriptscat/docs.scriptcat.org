@@ -137,8 +137,7 @@ MCP 配置与[外部接入](/docs/use/external-access/)中「接入 AI 客户端
 例如 `tabs_list`、`page_snapshot`、`page_click`、`debug_console`、`cdp_endpoint`。完整工具列表见 sctl 仓库的
 [MCP 文档](https://github.com/scriptscat/sctl/blob/main/docs/mcp.md#7-tool-reference)（英文）。
 
-如果你的 AI 工具更适合直接调用命令行，可以安装 sctl 仓库中的
-[agent skill](https://github.com/scriptscat/sctl/tree/main/skills/sctl)。
+如果你的 AI 工具更适合直接调用命令行，可以安装 sctl 的 agent skill，安装方法见[用 AI 开发脚本](/docs/dev/ai/)。
 
 ## 七、连接 Playwright / Puppeteer
 

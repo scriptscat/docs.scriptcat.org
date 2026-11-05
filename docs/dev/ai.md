@@ -2,36 +2,28 @@
 title: 用 AI 开发脚本
 ---
 
-用 Claude Code、Codex 这类 AI 编码代理写脚本时，代理常常按油猴的习惯来写，在脚本猫特有的地方出错，比如后台脚本
-没有页面、`@grant none` 下没有 `unsafeWindow`、定时脚本的 `once` 语义。写完之后它也看不到脚本在你的浏览器里到底有没有跑起来。
-
-给代理装上两个 agent skill 就能补上这两块：
+可以让 Claude Code、Codex 这类 AI 编码代理帮你写脚本猫脚本。给代理装上下面两个 skill 后，它会按脚本猫的规则来写，
+还能把脚本装进你的脚本猫、在你的浏览器里查看效果，发现问题自己修改后再试。
 
 | Skill | 作用 | 来源 |
 |---|---|---|
 | `scriptcat-userscript` | 怎么写：选脚本类型、骨架、易错规则、API 速查，附带静态检查和热重载工具 | 脚本猫仓库 [`skills/scriptcat-userscript`](https://github.com/scriptscat/scriptcat/tree/main/skills/scriptcat-userscript) |
 | `sctl` | 怎么操作：通过 [sctl](https://github.com/scriptscat/sctl) 把脚本装进你的脚本猫，在你的真实浏览器里打开页面、看控制台、读日志 | sctl 仓库 [`skills/sctl`](https://github.com/scriptscat/sctl/tree/main/skills/sctl) |
 
-装好之后，代理可以自己走完整个流程：先看目标页面，再写脚本、静态检查、安装，然后在浏览器里验证效果，有问题就改了再试。
+:::tip 让 AI 帮你配置
+把下面这句话发给你的 AI 代理。它会按本页[给 AI 代理的说明](#for-ai-agents)检查环境、安装 skill，并告诉你还有哪些步骤需要你自己完成：
+
+> 请阅读 https://docs.scriptcat.org/docs/dev/ai/ ，按其中「给 AI 代理的说明」帮我配置用 AI 开发脚本猫脚本的环境。
+:::
 
 :::info 和脚本猫内置的 Agent 不是一回事
 本文说的是在你电脑上运行的外部 AI 编码工具。脚本猫扩展里自带的 AI 能力和 `CAT.agent` API 见 [Agent](/docs/dev/agent/)。
 :::
 
-## 一、准备
+## 一、安装两个 skill
 
-1. **sctl 与外部接入**：按[外部接入](/docs/use/external-access/)安装 sctl、启动 `sctl serve`，并在脚本猫中完成配对。
-   `sctl status` 显示扩展已连接即可。
-2. **sctl Browser（可选）**：要让代理打开页面、查看控制台、点击和截图来验证页面脚本，还需要安装并配对
-   [sctl Browser](/docs/use/sctl-browser/)。只写后台或定时脚本时可以不装。
-3. **Node.js 18 或更高版本**：`scriptcat-userscript` 附带的检查工具需要它。
-
-没有 sctl 也能用：`scriptcat-userscript` 照样指导代理写脚本，最后把 `.user.js` 文件交给你，由你自己安装和查看效果。
-
-## 二、安装两个 skill
-
-用 [`npx skills`](https://skills.sh/) 安装（需要 Node.js）。它可以把 skill 装进 Claude Code、Codex、Cursor 等多个代理，执行时会让你
-选择装进哪些代理：
+用 [`npx skills`](https://skills.sh/) 安装，需要 Node.js 18 或更高版本（`scriptcat-userscript` 附带的检查工具也要用到它）。
+它可以把 skill 装进 Claude Code、Codex、Cursor 等多个代理，执行时会让你选择装进哪些代理：
 
 ```bash
 npx skills add scriptscat/scriptcat -g
@@ -44,6 +36,15 @@ npx skills add scriptscat/sctl -g
 skill 的位置，这种方式要自己更新。
 
 装好后，在对话里提到油猴脚本、后台脚本、定时脚本、`.user.js` 或脚本猫，代理就会自动加载对应的 skill，不需要额外指定。
+
+## 二、连接脚本猫（可选）
+
+只装 skill 就能让代理写脚本，最后由你自己安装 `.user.js` 文件、查看效果。想让代理自己安装脚本并在浏览器里验证，还需要：
+
+1. **sctl 与外部接入**：按[外部接入](/docs/use/external-access/)安装 sctl、启动 `sctl serve`，并在脚本猫中完成配对。
+   `sctl status` 显示扩展已连接即可。
+2. **sctl Browser**：要让代理打开页面、查看控制台、点击和截图来验证页面脚本，还需要安装并配对
+   [sctl Browser](/docs/use/sctl-browser/)。只写后台或定时脚本时可以不装。
 
 ## 三、使用示例
 
@@ -106,3 +107,28 @@ skill 的位置，这种方式要自己更新。
 
 **有多个脚本猫同时在线？** 例如两个浏览器都装了脚本猫并完成了配对。这时需要告诉代理用哪一个：在命令里加
 `--scriptcat <名称>`，或者设置环境变量 `SCTL_SCRIPTCAT`。名称可以用 `sctl scriptcats` 查看。
+
+## 六、给 AI 代理的说明 {#for-ai-agents}
+
+本节写给 AI 编码代理。用户让你按本页配置环境时，按下面的顺序检查，已经满足的步骤直接跳过：
+
+1. **安装 skill**：还没有 `scriptcat-userscript` 和 `sctl` 这两个 skill 时，执行下面的命令，把 `-a` 的值换成你自己的
+   代理名（如 `claude-code`、`codex`、`cursor`）。必须带 `-a`：非交互执行时不带它，skill 只会写进 `~/.agents/skills`，
+   Claude Code 等代理读不到。
+
+   ```bash
+   npx skills add scriptscat/scriptcat -g -a claude-code
+   npx skills add scriptscat/sctl -g -a claude-code
+   ```
+
+   装完后如果当前会话里还看不到这两个 skill，请用户新开一个会话。
+2. **检查 sctl**：执行 `sctl status`。
+   - 找不到 `sctl` 命令：请用户按[外部接入](/docs/use/external-access/)安装 sctl。
+   - 连不上 daemon：请用户执行 `sctl serve`；装了后台服务的执行 `sctl service start`。不要自己在后台启动 daemon，
+     它会随你的会话一起退出，还可能和用户的服务抢端口。
+   - 扩展未连接：请用户在脚本猫的设置里开启外部接入，执行 `sctl connect`，把显示的一次性配对码输入脚本猫。
+   - 用户暂时不想装 sctl 也可以继续：你只负责写脚本，把 `.user.js` 交给用户自己安装。
+3. **检查 sctl Browser**：只在要验证页面脚本时需要。`sctl browsers` 没有在线的浏览器时，请用户按
+   [sctl Browser](/docs/use/sctl-browser/) 安装并配对。
+4. **汇报**：告诉用户哪些已经就绪、哪些还需要他们处理。之后写脚本时按 `scriptcat-userscript` skill 的流程来。安装、编辑
+   脚本要用户在浏览器里确认，提醒用户去浏览器点击，不要反复重试。
