@@ -850,7 +850,7 @@
     "message": "支持 GM_* API · 元数据头完全一致"
   },
   "home.feat.compat.d": {
-    "message": "完全兼容油猴脚本格式与 GM API，现有脚本零改动直接迁移，切换毫无成本。"
+    "message": "完全兼容 Tampermonkey 脚本格式与 GM API，现有脚本零改动直接迁移，切换毫无成本。"
   },
   "home.feat.compat.t": {
     "message": "兼容 Tampermonkey"

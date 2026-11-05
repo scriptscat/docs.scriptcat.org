@@ -95,12 +95,12 @@ ScriptCat 不支持自动检查 CSP 限制来决定注入方式采用`content`�
 | 值                               | 正确案例                                                                                                                                | 错误案例                                 |
 | -------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------- |
 | `http://scriptcat.org/doc/match` | `http://scriptcat.org/doc/match`                                                                                                        | `http://scriptcat.org/doc/runAt`         |
-| `*://*/param?*`                  | `https://scriptcat.org/param` \| `http://scriptcat.org/param?search=油猴`                                                               | `https://scriptcat.org/test/param`       |
+| `*://*/param?*`                  | `https://scriptcat.org/param` \| `http://scriptcat.org/param?search=userscript`                                                               | `https://scriptcat.org/test/param`       |
 | `*://*/prefix*suffix`            | `http://scriptcat.org/prefix/suffix` \| `http://scriptcat.org/prefix/mid/suffix` \| `http://scriptcat.org/prefixsuffix`                 | `http://scriptcat.org/prefix/suffix/end` |
-| `http*://scriptcat.org/*`        | `https://scriptcat.org/` \| `https://scriptcat.org/doc` \| `http://scriptcat.org/doc/match` \| `http://scriptcat.org/param?search=油猴` | `https://doc.scriptcat.org/`             |
-| `http*://scriptcat.org/doc/*`    | `https://scriptcat.org/doc` \| `http://scriptcat.org/doc/match`                                                                         | `http://scriptcat.org/param?search=油猴` |
-| `http*://scriptcat.tld/doc/*`    | `https://scriptcat.cn/doc` \| `http://scriptcat.net.cn/doc/match`                                                                       | `http://google.com/param?search=油猴`    |
-| `http*://*.scriptcat.org/doc/*`  | `https://scriptcat.cn/doc` \| `http://www.scriptcat.net.cn/doc/match`                                                                   | `http://google.com/param?search=油猴`    |
+| `http*://scriptcat.org/*`        | `https://scriptcat.org/` \| `https://scriptcat.org/doc` \| `http://scriptcat.org/doc/match` \| `http://scriptcat.org/param?search=userscript` | `https://doc.scriptcat.org/`             |
+| `http*://scriptcat.org/doc/*`    | `https://scriptcat.org/doc` \| `http://scriptcat.org/doc/match`                                                                         | `http://scriptcat.org/param?search=userscript` |
+| `http*://scriptcat.tld/doc/*`    | `https://scriptcat.cn/doc` \| `http://scriptcat.net.cn/doc/match`                                                                       | `http://google.com/param?search=userscript`    |
+| `http*://*.scriptcat.org/doc/*`  | `https://scriptcat.cn/doc` \| `http://www.scriptcat.net.cn/doc/match`                                                                   | `http://google.com/param?search=userscript`    |
 
 ### include
 

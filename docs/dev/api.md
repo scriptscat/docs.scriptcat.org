@@ -60,7 +60,7 @@ const v = GM_getValue("foo", 0);
 GM_deleteValue("foo");
 ```
 
-#### 注意：当使用 `GM_setValue` 传入 `undefined` 时，ScriptCat 会将该键删除，而不会像油猴（Tampermonkey/GreaseMonkey）那样将 `undefined` 存储为值。
+#### 注意：当使用 `GM_setValue` 传入 `undefined` 时，ScriptCat 会将该键删除，而不会像 Tampermonkey / Greasemonkey 那样将 `undefined` 存储为值。
 
 #### 注意：由于数据操作是异步，执行 GM_setValue 或 GM_deleteValue 后立即 `window.close()` 的话会无法正确修改数据。建议使用 `await GM.setValue` 或 `await GM.deleteValue` 以确保数据操作完成。
 

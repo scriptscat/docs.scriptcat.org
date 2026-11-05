@@ -3,7 +3,7 @@ slug: /use/use
 title: 快速开始
 ---
 
-脚本猫是一个可以执行用户脚本的浏览器扩展，兼容油猴脚本，并提供更多功能。如果您发现 BUG 或者建议可以前往[GitHub Repo](https://github.com/scriptscat/scriptcat)进行反馈。
+脚本猫是一个可以执行用户脚本的浏览器扩展，兼容 Tampermonkey 的用户脚本，并提供更多功能。如果您发现 BUG 或者建议可以前往[GitHub Repo](https://github.com/scriptscat/scriptcat)进行反馈。
 
 ## 安装扩展
 

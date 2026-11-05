@@ -256,7 +256,7 @@ return result;
 | `scheduled-tasks/` | Cron 定时任务（internal + event 模式） | [安装](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/scheduled-tasks/SKILL.cat.md) |
 | `skill-creator/` | 辅助创建、测试和打包新 Skill | [安装](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/skill-creator/SKILL.cat.md) |
 | `file-parser/` | 解析常见文件格式（Excel、PDF、Word、CSV、PPT） | [安装](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/file-parser/SKILL.cat.md) |
-| `scriptcat-dev/` | 脚本猫/油猴脚本开发助手 | [安装](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/scriptcat-dev/SKILL.cat.md) |
+| `scriptcat-dev/` | 脚本猫用户脚本开发助手 | [安装](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/scriptcat-dev/SKILL.cat.md) |
 | `synology-office-sheet/` | 读写群晖 Synology Office 电子表格 | [安装](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/synology-office-sheet/SKILL.cat.md) |
 | `wechat-publisher/` | 微信公众号运营助手 — 素材收集、文章编写与发布 | [安装](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/wechat-publisher/SKILL.cat.md) |
 | `xiaohongshu-publisher/` | 小红书运营助手 — 笔记编写、配图生成与发布 | [安装](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/xiaohongshu-publisher/SKILL.cat.md) |

@@ -17,4 +17,4 @@ For our development roadmap, see [Project #1](https://github.com/scriptscat/scri
 ## Tampermonkey Chinese Forum
 > [Click here to visit](https://bbs.tampermonkey.net.cn/)
 
-The Tampermonkey Chinese Forum is a community we created for developing and discussing Tampermonkey-style scripts. The forum has a wealth of script-learning resources and many experienced members, so you can discuss and ask questions there. We also support publishing and installing scripts, so everyone is free to share their own work.
+The Tampermonkey Chinese Forum is a community we created for developing and discussing userscripts. The forum has a wealth of script-learning resources and many experienced members, so you can discuss and ask questions there. We also support publishing and installing scripts, so everyone is free to share their own work.

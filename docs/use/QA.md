@@ -18,9 +18,9 @@ title: 常见问题
 2. **冷启动** — 浏览器刚打开时脚本可能未及时加载，刷新页面重试
 3. **与其他扩展冲突** — 广告拦截扩展（如 uBlock Origin）可能导致脚本报错
 
-#### Q: 脚本在油猴（Tampermonkey）上正常，但在脚本猫上不行？
+#### Q: 脚本在 Tampermonkey 上正常，但在脚本猫上不行？
 
-脚本猫与油猴在部分 API 实现上存在差异。建议更新到最新版本，如问题仍存在可在 [GitHub](https://github.com/scriptscat/scriptcat/issues) 提交 Issue。
+脚本猫与 Tampermonkey 在部分 API 实现上存在差异。建议更新到最新版本，如问题仍存在可在 [GitHub](https://github.com/scriptscat/scriptcat/issues) 提交 Issue。
 
 ## CSP / Trusted Types 限制 {#csp-trusted-types}
 

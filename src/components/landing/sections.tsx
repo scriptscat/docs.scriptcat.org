@@ -521,7 +521,7 @@ export function Features() {
                 </h3>
                 <p className={styles.featDesc}>
                   <Translate id="home.feat.compat.d">
-                    完全兼容油猴脚本格式与 GM API，现有脚本零改动直接迁移，切换毫无成本。
+                    完全兼容 Tampermonkey 脚本格式与 GM API，现有脚本零改动直接迁移，切换毫无成本。
                   </Translate>
                 </p>
                 <span className={styles.featBullet}>
