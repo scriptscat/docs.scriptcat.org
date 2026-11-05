@@ -35,7 +35,7 @@ npx skills add scriptscat/sctl -g
 也可以手动安装：把脚本猫仓库的 `skills/scriptcat-userscript` 和 sctl 仓库的 `skills/sctl` 两个目录链接或复制到代理读取
 skill 的位置，这种方式要自己更新。
 
-装好后，在对话里提到油猴脚本、后台脚本、定时脚本、`.user.js` 或脚本猫，代理就会自动加载对应的 skill，不需要额外指定。
+装好后，在对话里提到用户脚本、后台脚本、定时脚本、`.user.js` 或脚本猫，代理就会自动加载对应的 skill，不需要额外指定。
 
 ## 二、连接脚本猫（可选）
 

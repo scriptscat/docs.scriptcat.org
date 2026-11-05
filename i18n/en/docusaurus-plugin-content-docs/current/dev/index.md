@@ -6,7 +6,7 @@ ScriptCat supports three types of scripts:
 
 | Type | When it runs |
 |---|---|
-| Page scripts | When you open a matching web page; these are what people usually call Tampermonkey scripts |
+| Page scripts | When you open a matching web page; these are what people usually call userscripts |
 | [Background scripts](./background.md) | Without any page, for as long as the browser is open; specific to ScriptCat |
 | [Scheduled scripts](./background.md#scheduled-script-crontab) | On a cron schedule; specific to ScriptCat |
 
@@ -20,11 +20,11 @@ ScriptCat supports three types of scripts:
 
 ## Reference
 
-- [API](./api.md): the Tampermonkey APIs and metadata ScriptCat supports.
+- [API](./api.md): the GM APIs and metadata ScriptCat supports.
 - [CatApi](./cat-api.md): ScriptCat's own extension APIs.
 - [Background scripts](./background.md), [subscriptions](./subscribe.md) and [user config](./config.md): what only
   ScriptCat offers.
 
-To learn userscript development step by step, see our [Tampermonkey Script Development Guide](https://learn.scriptcat.org/).
+To learn userscript development step by step, see our [Userscript Development Guide](https://learn.scriptcat.org/).
 If you find gaps in the documentation, let us know on [GitHub](https://github.com/scriptscat/docs.scriptcat.org), or send
 a PR to help improve it.

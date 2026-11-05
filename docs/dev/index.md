@@ -6,7 +6,7 @@ title: 简介
 
 | 类型 | 什么时候运行 |
 |---|---|
-| 页面脚本 | 打开匹配的网页时运行，也就是通常说的油猴脚本 |
+| 页面脚本 | 打开匹配的网页时运行，也就是通常说的用户脚本 |
 | [后台脚本](./background.md) | 不依赖网页，浏览器开着就一直在后台运行，脚本猫特有 |
 | [定时脚本](./background.md#定时脚本crontab) | 按 cron 表达式定时运行，脚本猫特有 |
 
@@ -19,9 +19,9 @@ title: 简介
 
 ## 参考
 
-- [API 文档](./api.md)：脚本猫支持的油猴 API 与元数据。
+- [API 文档](./api.md)：脚本猫支持的 GM API 与元数据。
 - [CatApi 文档](./cat-api.md)：脚本猫扩展的 API。
 - [后台脚本](./background.md)、[订阅模式](./subscribe.md)、[用户配置](./config.md)：脚本猫特有的能力。
 
-想系统地学习油猴脚本开发，可以看我们维护的[油猴脚本开发指南](https://learn.scriptcat.org/)。文档有不完善的地方，
+想系统地学习用户脚本开发，可以看我们维护的[用户脚本开发指南](https://learn.scriptcat.org/)。文档有不完善的地方，
 欢迎在 [GitHub](https://github.com/scriptscat/docs.scriptcat.org) 反馈，或提交 PR 帮助我们完善。
