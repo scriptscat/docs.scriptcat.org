@@ -88,7 +88,7 @@ agents/
 
 Skill 是結合提示 + 工具腳本 + 參考資料的套件，讓您能夠將領域特定知識和自訂工具注入 Agent。
 
-**官方 Skill 儲存庫：[scriptscat/skills](https://github.com/scriptscat/skills)**
+**官方 Skill 儲存庫：[scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills)**
 
 包含適用於瀏覽器自動化、排程任務、Skill 建立工具、對話/DOM/配置範例等的現成 Skill。
 

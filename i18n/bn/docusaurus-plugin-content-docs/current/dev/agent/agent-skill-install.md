@@ -5,7 +5,7 @@ title: Skill ইনস্টল এবং ব্যবহার
 একটি Skill হল Agent-এর জন্য একটি এক্সটেনশন প্যাকেজ যা ডোমেইন-নির্দিষ্ট জ্ঞান এবং কাস্টম টুল AI-তে ইনজেক্ট করে। এই পৃষ্ঠাটি কীভাবে Skill ইনস্টল, কনফিগার এবং পরিচালনা করতে হয় তা কভার করে।
 
 :::tip অফিসিয়াল Skill রিপোজিটরি
-**[scriptscat/skills](https://github.com/scriptscat/skills)** — ব্রাউজার অটোমেশন, নির্ধারিত কাজ, ফাইল পার্সিং, স্ক্রিপ্ট-উন্নয়ন সহায়তা এবং আরও অনেক কিছুর জন্য প্রস্তুত-ব্যবহারযোগ্য Skill।
+**[scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills)** — ব্রাউজার অটোমেশন, নির্ধারিত কাজ, ফাইল পার্সিং, স্ক্রিপ্ট-উন্নয়ন সহায়তা এবং আরও অনেক কিছুর জন্য প্রস্তুত-ব্যবহারযোগ্য Skill।
 :::
 
 ## ইনস্টলেশন পদ্ধতি
@@ -17,7 +17,7 @@ title: Skill ইনস্টল এবং ব্যবহার
 উদাহরণস্বরূপ, অফিসিয়াল ব্রাউজার-অটোমেশন Skill ইনস্টল করতে:
 
 ```
-https://raw.githubusercontent.com/scriptscat/skills/main/browser-automation/SKILL.cat.md
+https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/browser-automation/SKILL.cat.md
 ```
 
 আপনি এটি ম্যানেজমেন্ট পেজ থেকেও করতে পারেন:
@@ -43,14 +43,14 @@ ZIP-এর ডিরেক্টরি কাঠামোটি স্ট্য�
 
 | Skill | বর্ণনা | ইনস্টল |
 |-------|------|------|
-| [browser-automation](https://github.com/scriptscat/skills/tree/main/browser-automation) | পৃষ্ঠা বিশ্লেষণ, DOM ম্যানিপুলেশন, ফর্ম পূরণ, স্ক্রিনশট, নেভিগেশন | [ইনস্টল](https://raw.githubusercontent.com/scriptscat/skills/main/browser-automation/SKILL.cat.md) |
-| [scheduled-tasks](https://github.com/scriptscat/skills/tree/main/scheduled-tasks) | Cron নির্ধারিত কাজ (LLM / স্ক্রিপ্ট কলব্যাক দ্বারা অটো-রান) | [ইনস্টল](https://raw.githubusercontent.com/scriptscat/skills/main/scheduled-tasks/SKILL.cat.md) |
-| [skill-creator](https://github.com/scriptscat/skills/tree/main/skill-creator) | নতুন Skill তৈরি, পরীক্ষা এবং প্যাকেজ করতে সাহায্য করে | [ইনস্টল](https://raw.githubusercontent.com/scriptscat/skills/main/skill-creator/SKILL.cat.md) |
-| [file-parser](https://github.com/scriptscat/skills/tree/main/file-parser) | Excel, PDF, Word, CSV এবং PPT ফাইল পার্স করে | [ইনস্টল](https://raw.githubusercontent.com/scriptscat/skills/main/file-parser/SKILL.cat.md) |
-| [scriptcat-dev](https://github.com/scriptscat/skills/tree/main/scriptcat-dev) | ScriptCat/Tampermonkey স্ক্রিপ্ট উন্নয়ন সহায়ক | [ইনস্টল](https://raw.githubusercontent.com/scriptscat/skills/main/scriptcat-dev/SKILL.cat.md) |
-| [synology-office-sheet](https://github.com/scriptscat/skills/tree/main/synology-office-sheet) | Synology Office স্প্রেডশিট পড়া/লেখা | [ইনস্টল](https://raw.githubusercontent.com/scriptscat/skills/main/synology-office-sheet/SKILL.cat.md) |
-| [wechat-publisher](https://github.com/scriptscat/skills/tree/main/wechat-publisher) | WeChat অফিসিয়াল অ্যাকাউন্ট অপারেশন সহায়ক | [ইনস্টল](https://raw.githubusercontent.com/scriptscat/skills/main/wechat-publisher/SKILL.cat.md) |
-| [xiaohongshu-publisher](https://github.com/scriptscat/skills/tree/main/xiaohongshu-publisher) | Xiaohongshu (RED) অপারেশন সহায়ক | [ইনস্টল](https://raw.githubusercontent.com/scriptscat/skills/main/xiaohongshu-publisher/SKILL.cat.md) |
+| [browser-automation](https://github.com/scriptscat/scriptcat-skills/tree/main/browser-automation) | পৃষ্ঠা বিশ্লেষণ, DOM ম্যানিপুলেশন, ফর্ম পূরণ, স্ক্রিনশট, নেভিগেশন | [ইনস্টল](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/browser-automation/SKILL.cat.md) |
+| [scheduled-tasks](https://github.com/scriptscat/scriptcat-skills/tree/main/scheduled-tasks) | Cron নির্ধারিত কাজ (LLM / স্ক্রিপ্ট কলব্যাক দ্বারা অটো-রান) | [ইনস্টল](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/scheduled-tasks/SKILL.cat.md) |
+| [skill-creator](https://github.com/scriptscat/scriptcat-skills/tree/main/skill-creator) | নতুন Skill তৈরি, পরীক্ষা এবং প্যাকেজ করতে সাহায্য করে | [ইনস্টল](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/skill-creator/SKILL.cat.md) |
+| [file-parser](https://github.com/scriptscat/scriptcat-skills/tree/main/file-parser) | Excel, PDF, Word, CSV এবং PPT ফাইল পার্স করে | [ইনস্টল](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/file-parser/SKILL.cat.md) |
+| [scriptcat-dev](https://github.com/scriptscat/scriptcat-skills/tree/main/scriptcat-dev) | ScriptCat/Tampermonkey স্ক্রিপ্ট উন্নয়ন সহায়ক | [ইনস্টল](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/scriptcat-dev/SKILL.cat.md) |
+| [synology-office-sheet](https://github.com/scriptscat/scriptcat-skills/tree/main/synology-office-sheet) | Synology Office স্প্রেডশিট পড়া/লেখা | [ইনস্টল](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/synology-office-sheet/SKILL.cat.md) |
+| [wechat-publisher](https://github.com/scriptscat/scriptcat-skills/tree/main/wechat-publisher) | WeChat অফিসিয়াল অ্যাকাউন্ট অপারেশন সহায়ক | [ইনস্টল](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/wechat-publisher/SKILL.cat.md) |
+| [xiaohongshu-publisher](https://github.com/scriptscat/scriptcat-skills/tree/main/xiaohongshu-publisher) | Xiaohongshu (RED) অপারেশন সহায়ক | [ইনস্টল](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/xiaohongshu-publisher/SKILL.cat.md) |
 
 ## একটি Skill কনফিগার করা
 

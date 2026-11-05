@@ -88,7 +88,7 @@ Ajoutez simplement le Fournisseur et la clé API dans « Configuration du modèl
 
 Un Skill est un pack d'extension comprenant des invites, des scripts d'outils et des documents de référence, permettant d'injecter des connaissances spécialisées et des outils personnalisés dans l'Agent.
 
-**Dépôt officiel de Skills : [scriptscat/skills](https://github.com/scriptscat/skills)**
+**Dépôt officiel de Skills : [scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills)**
 
 Contient des Skills prêts à l'emploi pour l'automatisation du navigateur, les tâches planifiées, les outils de création de Skills, et des exemples de Dialogue/DOM/Configuration.
 

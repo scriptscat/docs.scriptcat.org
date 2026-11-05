@@ -6,7 +6,7 @@ title: Skill-beheer-API
 
 Met de Skill-beheer-API kan een script Skill-uitbreidingspakketten opvragen, installeren, verwijderen en aanroepen.
 
-Voor Skill-ontwikkeling en -verpakking, zie de [Skill-ontwikkelgids](../agent-skill-dev). Officiële Skill-voorbeelden: [scriptscat/skills](https://github.com/scriptscat/skills).
+Voor Skill-ontwikkeling en -verpakking, zie de [Skill-ontwikkelgids](../agent-skill-dev). Officiële Skill-voorbeelden: [scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills).
 
 ## list — geïnstalleerde Skills weergeven
 

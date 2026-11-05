@@ -88,7 +88,7 @@ Kullanmak için paneldeki "Model Yapılandırması" altında bir Sağlayıcı ve
 
 Skill, istemler + araç betikleri + referans materyalini birleştiren bir pakettir ve Agent'a alana özgü bilgi ve özel araçlar enjekte etmenizi sağlar.
 
-**Resmi Skill deposu: [scriptscat/skills](https://github.com/scriptscat/skills)**
+**Resmi Skill deposu: [scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills)**
 
 Tarayıcı otomasyonu, zamanlanmış görevler, bir Skill oluşturma aracı, sohbet/DOM/yapılandırma örnekleri ve daha fazlası için kullanıma hazır Skill'ler içerir.
 

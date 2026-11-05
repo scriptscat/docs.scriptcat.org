@@ -246,20 +246,20 @@ return result;
 
 Skill উদাহরণের একটি আনুষ্ঠানিকভাবে রক্ষণাবেক্ষণ করা রিপোজিটরি আছে, যেখানে বেশ কয়েকটি রেডি-টু-ব্যবহার Skill এবং স্ক্রিপ্ট API উদাহরণ রয়েছে:
 
-**[scriptscat/skills](https://github.com/scriptscat/skills)**
+**[scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills)**
 
 **Skill তালিকা:**
 
 | ডিরেক্টরি | বিবরণ | ইনস্টল |
 |------|------|------|
-| `browser-automation/` | পেজ বিশ্লেষণ, DOM ম্যানিপুলেশন, ফর্ম পূরণ, স্ক্রিনশট, নেভিগেশন | [Install](https://raw.githubusercontent.com/scriptscat/skills/main/browser-automation/SKILL.cat.md) |
-| `scheduled-tasks/` | ক্রন নির্ধারিত কাজ (ইন্টারনাল + ইভেন্ট মোড) | [Install](https://raw.githubusercontent.com/scriptscat/skills/main/scheduled-tasks/SKILL.cat.md) |
-| `skill-creator/` | নতুন Skill তৈরি, পরীক্ষা এবং প্যাকেজ করতে সাহায্য করে | [Install](https://raw.githubusercontent.com/scriptscat/skills/main/skill-creator/SKILL.cat.md) |
-| `file-parser/` | সাধারণ ফাইল ফরম্যাট পার্স করে (Excel, PDF, Word, CSV, PPT) | [Install](https://raw.githubusercontent.com/scriptscat/skills/main/file-parser/SKILL.cat.md) |
-| `scriptcat-dev/` | ScriptCat/Tampermonkey স্ক্রিপ্ট ডেভেলপমেন্ট সহকারী | [Install](https://raw.githubusercontent.com/scriptscat/skills/main/scriptcat-dev/SKILL.cat.md) |
-| `synology-office-sheet/` | Synology Office স্প্রেডশিট পড়া/লেখা | [Install](https://raw.githubusercontent.com/scriptscat/skills/main/synology-office-sheet/SKILL.cat.md) |
-| `wechat-publisher/` | WeChat অফিসিয়াল অ্যাকাউন্ট অপারেশন সহকারী — কনটেন্ট সংগ্রহ, নিবন্ধ লেখা এবং প্রকাশনা | [Install](https://raw.githubusercontent.com/scriptscat/skills/main/wechat-publisher/SKILL.cat.md) |
-| `xiaohongshu-publisher/` | Xiaohongshu (RED) অপারেশন সহকারী — নোট লেখা, ইমেজ জেনারেশন এবং প্রকাশনা | [Install](https://raw.githubusercontent.com/scriptscat/skills/main/xiaohongshu-publisher/SKILL.cat.md) |
+| `browser-automation/` | পেজ বিশ্লেষণ, DOM ম্যানিপুলেশন, ফর্ম পূরণ, স্ক্রিনশট, নেভিগেশন | [Install](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/browser-automation/SKILL.cat.md) |
+| `scheduled-tasks/` | ক্রন নির্ধারিত কাজ (ইন্টারনাল + ইভেন্ট মোড) | [Install](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/scheduled-tasks/SKILL.cat.md) |
+| `skill-creator/` | নতুন Skill তৈরি, পরীক্ষা এবং প্যাকেজ করতে সাহায্য করে | [Install](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/skill-creator/SKILL.cat.md) |
+| `file-parser/` | সাধারণ ফাইল ফরম্যাট পার্স করে (Excel, PDF, Word, CSV, PPT) | [Install](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/file-parser/SKILL.cat.md) |
+| `scriptcat-dev/` | ScriptCat/Tampermonkey স্ক্রিপ্ট ডেভেলপমেন্ট সহকারী | [Install](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/scriptcat-dev/SKILL.cat.md) |
+| `synology-office-sheet/` | Synology Office স্প্রেডশিট পড়া/লেখা | [Install](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/synology-office-sheet/SKILL.cat.md) |
+| `wechat-publisher/` | WeChat অফিসিয়াল অ্যাকাউন্ট অপারেশন সহকারী — কনটেন্ট সংগ্রহ, নিবন্ধ লেখা এবং প্রকাশনা | [Install](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/wechat-publisher/SKILL.cat.md) |
+| `xiaohongshu-publisher/` | Xiaohongshu (RED) অপারেশন সহকারী — নোট লেখা, ইমেজ জেনারেশন এবং প্রকাশনা | [Install](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/xiaohongshu-publisher/SKILL.cat.md) |
 
 **উদাহরণ কোড:**
 

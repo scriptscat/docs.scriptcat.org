@@ -5,7 +5,7 @@ title: 安裝和使用 Skills
 Skill 是 Agent 的擴充套件包，用於向 AI 注入特定領域的知識和自訂工具。本頁面介紹如何安裝、設定和管理 Skills。
 
 :::tip 官方 Skill 儲存庫
-**[scriptscat/skills](https://github.com/scriptscat/skills)** — 即用型 Skills，適用於瀏覽器自動化、排程任務、檔案解析、腳本開發輔助等。
+**[scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills)** — 即用型 Skills，適用於瀏覽器自動化、排程任務、檔案解析、腳本開發輔助等。
 :::
 
 ## 安裝方法
@@ -17,7 +17,7 @@ Skill 是 Agent 的擴充套件包，用於向 AI 注入特定領域的知識和
 例如，安裝官方瀏覽器自動化 Skill：
 
 ```
-https://raw.githubusercontent.com/scriptscat/skills/main/browser-automation/SKILL.cat.md
+https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/browser-automation/SKILL.cat.md
 ```
 
 您也可以從管理頁面進行：
@@ -43,14 +43,14 @@ ZIP 的目錄結構應遵循標準 Skill 格式（必須包含 `SKILL.cat.md`）
 
 | Skill | 說明 | 安裝 |
 |-------|------|------|
-| [browser-automation](https://github.com/scriptscat/skills/tree/main/browser-automation) | 頁面分析、DOM 操作、表單填寫、截圖、導航 | [安裝](https://raw.githubusercontent.com/scriptscat/skills/main/browser-automation/SKILL.cat.md) |
-| [scheduled-tasks](https://github.com/scriptscat/skills/tree/main/scheduled-tasks) | Cron 排程任務（由 LLM/腳本回調自動執行） | [安裝](https://raw.githubusercontent.com/scriptscat/skills/main/scheduled-tasks/SKILL.cat.md) |
-| [skill-creator](https://github.com/scriptscat/skills/tree/main/skill-creator) | 協助建立、測試和打包新的 Skills | [安裝](https://raw.githubusercontent.com/scriptscat/skills/main/skill-creator/SKILL.cat.md) |
-| [file-parser](https://github.com/scriptscat/skills/tree/main/file-parser) | 解析 Excel、PDF、Word、CSV 和 PPT 檔案 | [安裝](https://raw.githubusercontent.com/scriptscat/skills/main/file-parser/SKILL.cat.md) |
-| [scriptcat-dev](https://github.com/scriptscat/skills/tree/main/scriptcat-dev) | ScriptCat/Tampermonkey 腳本開發助手 | [安裝](https://raw.githubusercontent.com/scriptscat/skills/main/scriptcat-dev/SKILL.cat.md) |
-| [synology-office-sheet](https://github.com/scriptscat/skills/tree/main/synology-office-sheet) | 讀寫 Synology Office 試算表 | [安裝](https://raw.githubusercontent.com/scriptscat/skills/main/synology-office-sheet/SKILL.cat.md) |
-| [wechat-publisher](https://github.com/scriptscat/skills/tree/main/wechat-publisher) | 微信公眾號運營助手 | [安裝](https://raw.githubusercontent.com/scriptscat/skills/main/wechat-publisher/SKILL.cat.md) |
-| [xiaohongshu-publisher](https://github.com/scriptscat/skills/tree/main/xiaohongshu-publisher) | 小紅書（RED）運營助手 | [安裝](https://raw.githubusercontent.com/scriptscat/skills/main/xiaohongshu-publisher/SKILL.cat.md) |
+| [browser-automation](https://github.com/scriptscat/scriptcat-skills/tree/main/browser-automation) | 頁面分析、DOM 操作、表單填寫、截圖、導航 | [安裝](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/browser-automation/SKILL.cat.md) |
+| [scheduled-tasks](https://github.com/scriptscat/scriptcat-skills/tree/main/scheduled-tasks) | Cron 排程任務（由 LLM/腳本回調自動執行） | [安裝](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/scheduled-tasks/SKILL.cat.md) |
+| [skill-creator](https://github.com/scriptscat/scriptcat-skills/tree/main/skill-creator) | 協助建立、測試和打包新的 Skills | [安裝](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/skill-creator/SKILL.cat.md) |
+| [file-parser](https://github.com/scriptscat/scriptcat-skills/tree/main/file-parser) | 解析 Excel、PDF、Word、CSV 和 PPT 檔案 | [安裝](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/file-parser/SKILL.cat.md) |
+| [scriptcat-dev](https://github.com/scriptscat/scriptcat-skills/tree/main/scriptcat-dev) | ScriptCat/Tampermonkey 腳本開發助手 | [安裝](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/scriptcat-dev/SKILL.cat.md) |
+| [synology-office-sheet](https://github.com/scriptscat/scriptcat-skills/tree/main/synology-office-sheet) | 讀寫 Synology Office 試算表 | [安裝](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/synology-office-sheet/SKILL.cat.md) |
+| [wechat-publisher](https://github.com/scriptscat/scriptcat-skills/tree/main/wechat-publisher) | 微信公眾號運營助手 | [安裝](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/wechat-publisher/SKILL.cat.md) |
+| [xiaohongshu-publisher](https://github.com/scriptscat/scriptcat-skills/tree/main/xiaohongshu-publisher) | 小紅書（RED）運營助手 | [安裝](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/xiaohongshu-publisher/SKILL.cat.md) |
 
 ## 設定 Skill
 

@@ -88,7 +88,7 @@ agents/
 
 Skill은 프롬프트 + 도구 스크립트 + 참조 자료를 결합한 패키지로, Agent에 도메인별 지식과 사용자 지정 도구를 주입할 수 있습니다.
 
-**공식 Skill 저장소: [scriptscat/skills](https://github.com/scriptscat/skills)**
+**공식 Skill 저장소: [scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills)**
 
 브라우저 자동화, 예약 작업, Skill 생성 도구, 대화/DOM/구성 예제 등을 위한 즉시 사용 가능한 Skill이 포함되어 있습니다.
 

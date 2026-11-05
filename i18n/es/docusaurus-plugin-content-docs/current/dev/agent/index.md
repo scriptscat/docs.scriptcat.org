@@ -88,7 +88,7 @@ Agregue un proveedor y clave de API en "Configuración de modelos" en el panel d
 
 Un Skill es un paquete que combina prompts + scripts de herramientas + material de referencia, permitiéndole inyectar conocimiento específico del dominio y herramientas personalizadas en el Agent.
 
-**Repositorio oficial de Skills: [scriptscat/skills](https://github.com/scriptscat/skills)**
+**Repositorio oficial de Skills: [scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills)**
 
 Incluye Skills listos para usar para automatización del navegador, tareas programadas, una herramienta de creación de Skills, ejemplos de conversación/DOM/configuración y más.
 

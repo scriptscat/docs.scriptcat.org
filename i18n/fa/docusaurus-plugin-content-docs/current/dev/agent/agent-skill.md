@@ -6,7 +6,7 @@ title: API مدیریت Skill
 
 API مدیریت Skill به یک اسکریپت اجازه می‌دهد بسته‌های توسعه Skill را پرس‌وجو، نصب، حذف و فراخوانی کند.
 
-برای توسعه و بسته‌بندی Skill، به [راهنمای توسعه Skill](../agent-skill-dev) مراجعه کنید. نمونه‌های رسمی Skill: [scriptscat/skills](https://github.com/scriptscat/skills).
+برای توسعه و بسته‌بندی Skill، به [راهنمای توسعه Skill](../agent-skill-dev) مراجعه کنید. نمونه‌های رسمی Skill: [scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills).
 
 ## list — فهرست Skillهای نصب‌شده
 

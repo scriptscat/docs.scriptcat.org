@@ -5,7 +5,7 @@ title: Skill 설치 및 사용
 Skill은 AI에 도메인별 지식과 사용자 지정 도구를 주입하는 Agent용 확장 패키지입니다. 이 페이지에서는 Skill을 설치, 구성 및 관리하는 방법을 다룹니다.
 
 :::tip 공식 Skill 저장소
-**[scriptscat/skills](https://github.com/scriptscat/skills)** — 브라우저 자동화, 예약 작업, 파일 구문 분석, 스크립트 개발 지원 등을 위한 즉시 사용 가능한 Skill.
+**[scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills)** — 브라우저 자동화, 예약 작업, 파일 구문 분석, 스크립트 개발 지원 등을 위한 즉시 사용 가능한 Skill.
 :::
 
 ## 설치 방법
@@ -17,7 +17,7 @@ Skill은 AI에 도메인별 지식과 사용자 지정 도구를 주입하는 Ag
 예를 들어 공식 브라우저 자동화 Skill을 설치하려면:
 
 ```
-https://raw.githubusercontent.com/scriptscat/skills/main/browser-automation/SKILL.cat.md
+https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/browser-automation/SKILL.cat.md
 ```
 
 관리 페이지에서도 할 수 있습니다:
@@ -43,14 +43,14 @@ ZIP의 디렉터리 구조는 표준 Skill 형식을 따라야 합니다(`SKILL.
 
 | Skill | 설명 | 설치 |
 |-------|------|------|
-| [browser-automation](https://github.com/scriptscat/skills/tree/main/browser-automation) | 페이지 분석, DOM 조작, 양식 작성, 스크린샷, 탐색 | [설치](https://raw.githubusercontent.com/scriptscat/skills/main/browser-automation/SKILL.cat.md) |
-| [scheduled-tasks](https://github.com/scriptscat/skills/tree/main/scheduled-tasks) | Cron 예약 작업 (LLM / 스크립트 콜백에 의한 자동 실행) | [설치](https://raw.githubusercontent.com/scriptscat/skills/main/scheduled-tasks/SKILL.cat.md) |
-| [skill-creator](https://github.com/scriptscat/skills/tree/main/skill-creator) | 새 Skill 생성, 테스트 및 패키징 지원 | [설치](https://raw.githubusercontent.com/scriptscat/skills/main/skill-creator/SKILL.cat.md) |
-| [file-parser](https://github.com/scriptscat/skills/tree/main/file-parser) | Excel, PDF, Word, CSV 및 PPT 파일 구문 분석 | [설치](https://raw.githubusercontent.com/scriptscat/skills/main/file-parser/SKILL.cat.md) |
-| [scriptcat-dev](https://github.com/scriptscat/skills/tree/main/scriptcat-dev) | ScriptCat/Tampermonkey 스크립트 개발 도우미 | [설치](https://raw.githubusercontent.com/scriptscat/skills/main/scriptcat-dev/SKILL.cat.md) |
-| [synology-office-sheet](https://github.com/scriptscat/skills/tree/main/synology-office-sheet) | Synology Office 스프레드시트 읽기/쓰기 | [설치](https://raw.githubusercontent.com/scriptscat/skills/main/synology-office-sheet/SKILL.cat.md) |
-| [wechat-publisher](https://github.com/scriptscat/skills/tree/main/wechat-publisher) | WeChat 공식 계정 운영 도우미 | [설치](https://raw.githubusercontent.com/scriptscat/skills/main/wechat-publisher/SKILL.cat.md) |
-| [xiaohongshu-publisher](https://github.com/scriptscat/skills/tree/main/xiaohongshu-publisher) | Xiaohongshu(RED) 운영 도우미 | [설치](https://raw.githubusercontent.com/scriptscat/skills/main/xiaohongshu-publisher/SKILL.cat.md) |
+| [browser-automation](https://github.com/scriptscat/scriptcat-skills/tree/main/browser-automation) | 페이지 분석, DOM 조작, 양식 작성, 스크린샷, 탐색 | [설치](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/browser-automation/SKILL.cat.md) |
+| [scheduled-tasks](https://github.com/scriptscat/scriptcat-skills/tree/main/scheduled-tasks) | Cron 예약 작업 (LLM / 스크립트 콜백에 의한 자동 실행) | [설치](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/scheduled-tasks/SKILL.cat.md) |
+| [skill-creator](https://github.com/scriptscat/scriptcat-skills/tree/main/skill-creator) | 새 Skill 생성, 테스트 및 패키징 지원 | [설치](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/skill-creator/SKILL.cat.md) |
+| [file-parser](https://github.com/scriptscat/scriptcat-skills/tree/main/file-parser) | Excel, PDF, Word, CSV 및 PPT 파일 구문 분석 | [설치](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/file-parser/SKILL.cat.md) |
+| [scriptcat-dev](https://github.com/scriptscat/scriptcat-skills/tree/main/scriptcat-dev) | ScriptCat/Tampermonkey 스크립트 개발 도우미 | [설치](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/scriptcat-dev/SKILL.cat.md) |
+| [synology-office-sheet](https://github.com/scriptscat/scriptcat-skills/tree/main/synology-office-sheet) | Synology Office 스프레드시트 읽기/쓰기 | [설치](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/synology-office-sheet/SKILL.cat.md) |
+| [wechat-publisher](https://github.com/scriptscat/scriptcat-skills/tree/main/wechat-publisher) | WeChat 공식 계정 운영 도우미 | [설치](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/wechat-publisher/SKILL.cat.md) |
+| [xiaohongshu-publisher](https://github.com/scriptscat/scriptcat-skills/tree/main/xiaohongshu-publisher) | Xiaohongshu(RED) 운영 도우미 | [설치](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/xiaohongshu-publisher/SKILL.cat.md) |
 
 ## Skill 구성
 

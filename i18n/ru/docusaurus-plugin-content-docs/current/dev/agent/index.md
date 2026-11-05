@@ -88,7 +88,7 @@ agents/
 
 Skill — пакет, объединяющий промпты + скрипты инструментов + справочные материалы, позволяющий внедрять в Agent предметные знания и пользовательские инструменты.
 
-**Официальный репозиторий Skill: [scriptscat/skills](https://github.com/scriptscat/skills)**
+**Официальный репозиторий Skill: [scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills)**
 
 Включает готовые Skills для автоматизации браузера, задач по расписанию, инструмента создания Skill, примеров conversation/DOM/config и многого другого.
 

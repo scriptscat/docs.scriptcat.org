@@ -6,7 +6,7 @@ title: Skill 管理 API
 
 Skill 管理 API 允许脚本查询、安装、卸载和调用 Skill 扩展包。
 
-关于 Skill 的开发和打包，请参阅 [Skill 开发指南](../agent-skill-dev)。官方 Skill 示例仓库：[scriptscat/skills](https://github.com/scriptscat/skills)。
+关于 Skill 的开发和打包，请参阅 [Skill 开发指南](../agent-skill-dev)。官方 Skill 示例仓库：[scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills)。
 
 ## list — 列出已安装 Skill
 

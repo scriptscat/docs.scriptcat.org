@@ -5,7 +5,7 @@ title: スキルのインストールと使用方法
 Skillは、AIにドメイン固有の知識とカスタムツールを注入するためのAgent拡張パッケージです。このページでは、Skillのインストール、設定、管理方法を説明します。
 
 :::tip 公式Skillリポジトリ
-**[scriptscat/skills](https://github.com/scriptscat/skills)** — ブラウザ自動化、スケジュールタスク、ファイル解析、スクリプト開発支援など、すぐに使用できるSkillです。
+**[scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills)** — ブラウザ自動化、スケジュールタスク、ファイル解析、スクリプト開発支援など、すぐに使用できるSkillです。
 :::
 
 ## インストール方法
@@ -17,7 +17,7 @@ Skillは、AIにドメイン固有の知識とカスタムツールを注入す�
 例えば、公式のブラウザ自動化Skillをインストールする場合：
 
 ```
-https://raw.githubusercontent.com/scriptscat/skills/main/browser-automation/SKILL.cat.md
+https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/browser-automation/SKILL.cat.md
 ```
 
 管理ページから也可以行えます：
@@ -43,14 +43,14 @@ ZIPのディレクトリ構造は標準のSkill形式に従う必要がありま
 
 | Skill | 説明 | インストール |
 |-------|------|------|
-| [browser-automation](https://github.com/scriptscat/skills/tree/main/browser-automation) | ページ分析、DOM操作、フォーム入力、スクリーンショット、ナビゲーション | [インストール](https://raw.githubusercontent.com/scriptscat/skills/main/browser-automation/SKILL.cat.md) |
-| [scheduled-tasks](https://github.com/scriptscat/skills/tree/main/scheduled-tasks) | Cronスケジュールタスク（LLM/スクリプトコールバックによる自動実行） | [インストール](https://raw.githubusercontent.com/scriptscat/skills/main/scheduled-tasks/SKILL.cat.md) |
-| [skill-creator](https://github.com/scriptscat/skills/tree/main/skill-creator) | 新しいSkillの作成、テスト、パッケージングを支援 | [インストール](https://raw.githubusercontent.com/scriptscat/skills/main/skill-creator/SKILL.cat.md) |
-| [file-parser](https://github.com/scriptscat/skills/tree/main/file-parser) | Excel、PDF、Word、CSV、PPTファイルの解析 | [インストール](https://raw.githubusercontent.com/scriptscat/skills/main/file-parser/SKILL.cat.md) |
-| [scriptcat-dev](https://github.com/scriptscat/skills/tree/main/scriptcat-dev) | ScriptCat/Tampermonkeyスクリプト開発アシスタント | [インストール](https://raw.githubusercontent.com/scriptscat/skills/main/scriptcat-dev/SKILL.cat.md) |
-| [synology-office-sheet](https://github.com/scriptscat/skills/tree/main/synology-office-sheet) | Synology Officeスプレッドシートの読み書き | [インストール](https://raw.githubusercontent.com/scriptscat/skills/main/synology-office-sheet/SKILL.cat.md) |
-| [wechat-publisher](https://github.com/scriptscat/skills/tree/main/wechat-publisher) | WeChat公式アカウント運用アシスタント | [インストール](https://raw.githubusercontent.com/scriptscat/skills/main/wechat-publisher/SKILL.cat.md) |
-| [xiaohongshu-publisher](https://github.com/scriptscat/skills/tree/main/xiaohongshu-publisher) | 小紅書（RED）運用アシスタント | [インストール](https://raw.githubusercontent.com/scriptscat/skills/main/xiaohongshu-publisher/SKILL.cat.md) |
+| [browser-automation](https://github.com/scriptscat/scriptcat-skills/tree/main/browser-automation) | ページ分析、DOM操作、フォーム入力、スクリーンショット、ナビゲーション | [インストール](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/browser-automation/SKILL.cat.md) |
+| [scheduled-tasks](https://github.com/scriptscat/scriptcat-skills/tree/main/scheduled-tasks) | Cronスケジュールタスク（LLM/スクリプトコールバックによる自動実行） | [インストール](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/scheduled-tasks/SKILL.cat.md) |
+| [skill-creator](https://github.com/scriptscat/scriptcat-skills/tree/main/skill-creator) | 新しいSkillの作成、テスト、パッケージングを支援 | [インストール](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/skill-creator/SKILL.cat.md) |
+| [file-parser](https://github.com/scriptscat/scriptcat-skills/tree/main/file-parser) | Excel、PDF、Word、CSV、PPTファイルの解析 | [インストール](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/file-parser/SKILL.cat.md) |
+| [scriptcat-dev](https://github.com/scriptscat/scriptcat-skills/tree/main/scriptcat-dev) | ScriptCat/Tampermonkeyスクリプト開発アシスタント | [インストール](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/scriptcat-dev/SKILL.cat.md) |
+| [synology-office-sheet](https://github.com/scriptscat/scriptcat-skills/tree/main/synology-office-sheet) | Synology Officeスプレッドシートの読み書き | [インストール](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/synology-office-sheet/SKILL.cat.md) |
+| [wechat-publisher](https://github.com/scriptscat/scriptcat-skills/tree/main/wechat-publisher) | WeChat公式アカウント運用アシスタント | [インストール](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/wechat-publisher/SKILL.cat.md) |
+| [xiaohongshu-publisher](https://github.com/scriptscat/scriptcat-skills/tree/main/xiaohongshu-publisher) | 小紅書（RED）運用アシスタント | [インストール](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/xiaohongshu-publisher/SKILL.cat.md) |
 
 ## Skillの設定
 

@@ -246,20 +246,20 @@ return result;
 
 یک مخزن نگهداری‌شده رسمی از مثال‌های Skill وجود دارد که شامل چند Skill آماده و مثال‌های API اسکریپت است:
 
-**[scriptscat/skills](https://github.com/scriptscat/skills)**
+**[scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills)**
 
 **فهرست Skill:**
 
 | دایرکتوری | توضیحات | نصب |
 |------|------|------|
-| `browser-automation/` | تحلیل صفحه، دستکاری DOM، پر کردن فرم، اسکرین‌شات، ناوبری | [نصب](https://raw.githubusercontent.com/scriptscat/skills/main/browser-automation/SKILL.cat.md) |
-| `scheduled-tasks/` | کارهای زمان‌بندی‌شده cron (حالت داخلی + رویداد) | [نصب](https://raw.githubusercontent.com/scriptscat/skills/main/scheduled-tasks/SKILL.cat.md) |
-| `skill-creator/` | کمک به ایجاد، تست و بسته‌بندی Skillهای جدید | [نصب](https://raw.githubusercontent.com/scriptscat/skills/main/skill-creator/SKILL.cat.md) |
-| `file-parser/` | قالب‌های فایل رایج را تجزیه می‌کند (Excel، PDF، Word، CSV، PPT) | [نصب](https://raw.githubusercontent.com/scriptscat/skills/main/file-parser/SKILL.cat.md) |
-| `scriptcat-dev/` | دستیار توسعه اسکریپت ScriptCat/Tampermonkey | [نصب](https://raw.githubusercontent.com/scriptscat/skills/main/scriptcat-dev/SKILL.cat.md) |
-| `synology-office-sheet/` | خواندن/نوشتن صفحات گسترده Synology Office | [نصب](https://raw.githubusercontent.com/scriptscat/skills/main/synology-office-sheet/SKILL.cat.md) |
-| `wechat-publisher/` | دستیار عملیات حساب رسمی WeChat — جمع‌آوری محتوا، نوشتن مقاله و انتشار | [نصب](https://raw.githubusercontent.com/scriptscat/skills/main/wechat-publisher/SKILL.cat.md) |
-| `xiaohongshu-publisher/` | دستیار عملیات Xiaohongshu (RED) — نوشتن یادداشت، تولید تصویر و انتشار | [نصب](https://raw.githubusercontent.com/scriptscat/skills/main/xiaohongshu-publisher/SKILL.cat.md) |
+| `browser-automation/` | تحلیل صفحه، دستکاری DOM، پر کردن فرم، اسکرین‌شات، ناوبری | [نصب](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/browser-automation/SKILL.cat.md) |
+| `scheduled-tasks/` | کارهای زمان‌بندی‌شده cron (حالت داخلی + رویداد) | [نصب](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/scheduled-tasks/SKILL.cat.md) |
+| `skill-creator/` | کمک به ایجاد، تست و بسته‌بندی Skillهای جدید | [نصب](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/skill-creator/SKILL.cat.md) |
+| `file-parser/` | قالب‌های فایل رایج را تجزیه می‌کند (Excel، PDF، Word، CSV، PPT) | [نصب](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/file-parser/SKILL.cat.md) |
+| `scriptcat-dev/` | دستیار توسعه اسکریپت ScriptCat/Tampermonkey | [نصب](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/scriptcat-dev/SKILL.cat.md) |
+| `synology-office-sheet/` | خواندن/نوشتن صفحات گسترده Synology Office | [نصب](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/synology-office-sheet/SKILL.cat.md) |
+| `wechat-publisher/` | دستیار عملیات حساب رسمی WeChat — جمع‌آوری محتوا، نوشتن مقاله و انتشار | [نصب](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/wechat-publisher/SKILL.cat.md) |
+| `xiaohongshu-publisher/` | دستیار عملیات Xiaohongshu (RED) — نوشتن یادداشت، تولید تصویر و انتشار | [نصب](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/xiaohongshu-publisher/SKILL.cat.md) |
 
 **کد مثال:**
 

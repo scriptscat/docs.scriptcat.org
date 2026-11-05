@@ -6,7 +6,7 @@ title: API de gestión de Skills
 
 La API de gestión de Skills permite a un script consultar, instalar, eliminar y llamar paquetes de extensión Skill.
 
-Para el desarrollo y empaquetado de Skills, consulte la [Guía de desarrollo de Skills](../agent-skill-dev). Ejemplos oficiales de Skills: [scriptscat/skills](https://github.com/scriptscat/skills).
+Para el desarrollo y empaquetado de Skills, consulte la [Guía de desarrollo de Skills](../agent-skill-dev). Ejemplos oficiales de Skills: [scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills).
 
 ## list — listar Skills instaladas
 

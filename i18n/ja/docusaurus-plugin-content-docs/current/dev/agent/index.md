@@ -88,7 +88,7 @@ agents/
 
 Skillは、プロンプト + ツールスクリプト + リファレンス資料を組み合わせたパッケージで、ドメイン固有の知識とカスタムツールをAgentに注入できます。
 
-**公式Skillリポジトリ：[scriptscat/skills](https://github.com/scriptscat/skills)**
+**公式Skillリポジトリ：[scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills)**
 
 ブラウザ自動化、スケジュールタスク、Skill作成ツール、会話/DOM/設定の例など、すぐに使えるSkillが含まれています。
 

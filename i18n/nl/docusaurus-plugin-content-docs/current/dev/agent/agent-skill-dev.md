@@ -246,20 +246,20 @@ Inhoud die goed geschikt is als referentiemateriaal:
 
 Er is een officieel onderhouden repository met Skill-voorbeelden, die verschillende kant-en-klare Skills en script-API-voorbeelden bevat:
 
-**[scriptscat/skills](https://github.com/scriptscat/skills)**
+**[scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills)**
 
 **Skill-lijst:**
 
 | Directory | Beschrijving | Installeren |
 |------|------|------|
-| `browser-automation/` | Pagina-analyse, DOM-manipulatie, formulieren invullen, schermafbeeldingen, navigatie | [Installeren](https://raw.githubusercontent.com/scriptscat/skills/main/browser-automation/SKILL.cat.md) |
-| `scheduled-tasks/` | Cron-geplande taken (interne + gebeurtenismodus) | [Installeren](https://raw.githubusercontent.com/scriptscat/skills/main/scheduled-tasks/SKILL.cat.md) |
-| `skill-creator/` | Helpt bij het maken, testen en verpakken van nieuwe Skills | [Installeren](https://raw.githubusercontent.com/scriptscat/skills/main/skill-creator/SKILL.cat.md) |
-| `file-parser/` | Parseert gangbare bestandsindelingen (Excel, PDF, Word, CSV, PPT) | [Installeren](https://raw.githubusercontent.com/scriptscat/skills/main/file-parser/SKILL.cat.md) |
-| `scriptcat-dev/` | ScriptCat/Tampermonkey-scriptontwikkelingsassistent | [Installeren](https://raw.githubusercontent.com/scriptscat/skills/main/scriptcat-dev/SKILL.cat.md) |
-| `synology-office-sheet/` | Synology Office-spreadsheets lezen/schrijven | [Installeren](https://raw.githubusercontent.com/scriptscat/skills/main/synology-office-sheet/SKILL.cat.md) |
-| `wechat-publisher/` | Assistent voor WeChat Official Account-bewerkingen — contentverzameling, artikel schrijven en publiceren | [Installeren](https://raw.githubusercontent.com/scriptscat/skills/main/wechat-publisher/SKILL.cat.md) |
-| `xiaohongshu-publisher/` | Xiaohongshu (RED)-bewerkingenassistent — notities schrijven, afbeeldingen genereren en publiceren | [Installeren](https://raw.githubusercontent.com/scriptscat/skills/main/xiaohongshu-publisher/SKILL.cat.md) |
+| `browser-automation/` | Pagina-analyse, DOM-manipulatie, formulieren invullen, schermafbeeldingen, navigatie | [Installeren](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/browser-automation/SKILL.cat.md) |
+| `scheduled-tasks/` | Cron-geplande taken (interne + gebeurtenismodus) | [Installeren](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/scheduled-tasks/SKILL.cat.md) |
+| `skill-creator/` | Helpt bij het maken, testen en verpakken van nieuwe Skills | [Installeren](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/skill-creator/SKILL.cat.md) |
+| `file-parser/` | Parseert gangbare bestandsindelingen (Excel, PDF, Word, CSV, PPT) | [Installeren](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/file-parser/SKILL.cat.md) |
+| `scriptcat-dev/` | ScriptCat/Tampermonkey-scriptontwikkelingsassistent | [Installeren](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/scriptcat-dev/SKILL.cat.md) |
+| `synology-office-sheet/` | Synology Office-spreadsheets lezen/schrijven | [Installeren](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/synology-office-sheet/SKILL.cat.md) |
+| `wechat-publisher/` | Assistent voor WeChat Official Account-bewerkingen — contentverzameling, artikel schrijven en publiceren | [Installeren](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/wechat-publisher/SKILL.cat.md) |
+| `xiaohongshu-publisher/` | Xiaohongshu (RED)-bewerkingenassistent — notities schrijven, afbeeldingen genereren en publiceren | [Installeren](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/xiaohongshu-publisher/SKILL.cat.md) |
 
 **Voorbeeldcode:**
 

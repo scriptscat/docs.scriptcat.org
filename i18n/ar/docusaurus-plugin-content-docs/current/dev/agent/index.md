@@ -88,7 +88,7 @@ agents/
 
 الـ Skill هي حزمة توسعة تحتوي على مطالبات + سكرپتات أدوات + مواد مرجعية، يمكنها تزويد الـ Agent بمعرفة متخصصة وأدوات مخصصة.
 
-**المستودع الرسمي للـ Skills: [scriptscat/skills](https://github.com/scriptscat/skills)**
+**المستودع الرسمي للـ Skills: [scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills)**
 
 يحتوي على Skills جاهزة للاستخدام لأتمتة المتصفح، المهام المجدولة، أدوات إنشاء الـ Skill، وأمثلة للحوار/DOM/التكوين.
 

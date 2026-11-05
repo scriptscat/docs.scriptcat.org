@@ -88,7 +88,7 @@ Thêm nhà cung cấp và Khóa API trong "Cấu hình mô hình" trên bảng �
 
 Skill là gói kết hợp prompt + script công cụ + tài liệu tham khảo, cho phép bạn inject kiến thức chuyên ngành và công cụ tùy chỉnh vào Agent.
 
-**Kho Skill chính thức: [scriptscat/skills](https://github.com/scriptscat/skills)**
+**Kho Skill chính thức: [scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills)**
 
 Bao gồm Skill sẵn sàng sử dụng cho tự động hóa trình duyệt, tác vụ theo lịch trình, công cụ tạo Skill, ví dụ về trò chuyện/DOM/cấu hình và nhiều hơn nữa.
 

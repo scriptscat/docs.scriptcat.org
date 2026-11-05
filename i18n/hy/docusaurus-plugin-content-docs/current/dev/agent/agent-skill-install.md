@@ -5,7 +5,7 @@ title: Skills-ի տեղադրում և օգտագործում
 Skill-ը Agent-ի ընդլայնման փաթեթ է, որը դոմեն-հատուկ գիտելիքներ և կաստոմ գործիքներ է ներարկում AI-ի մեջ: Այս էջը ներառում է Skills-ի տեղադրման, կարգավորման և կառավարման եղանակները:
 
 :::tip Պաշտոնական Skill պահեստ
-**[scriptscat/skills](https://github.com/scriptscat/skills)** — պատրաստի օգտագործման Skills զննարկչի ավտոմատացման, պլանավորված առաջադրանքների, ֆայլերի վերլուծության, սկրիպտ-մշակման օգնության և այլնի համար:
+**[scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills)** — պատրաստի օգտագործման Skills զննարկչի ավտոմատացման, պլանավորված առաջադրանքների, ֆայլերի վերլուծության, սկրիպտ-մշակման օգնության և այլնի համար:
 :::
 
 ## Տեղադրման մեթոդներ
@@ -17,7 +17,7 @@ Skill-ը Agent-ի ընդլայնման փաթեթ է, որը դոմեն-հատո
 Օրինակ՝ պաշտոնական browser-automation Skill-ը տեղադրելու համար՝
 
 ```
-https://raw.githubusercontent.com/scriptscat/skills/main/browser-automation/SKILL.cat.md
+https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/browser-automation/SKILL.cat.md
 ```
 
 Կարող եք նաև դա անել կառավարման էջից՝
@@ -43,14 +43,14 @@ ZIP-ի դիրեկտորիայի կառուցվածքը պետք է հետևի ս
 
 | Skill | Նկարագրություն | Տեղադրում |
 |-------|------|------|
-| [browser-automation](https://github.com/scriptscat/skills/tree/main/browser-automation) | Էջի վերլուծություն, DOM մանիպուլյացիա, ձևերի լրացում, սքրինշոթներ, նավիգացիա | [Install](https://raw.githubusercontent.com/scriptscat/skills/main/browser-automation/SKILL.cat.md) |
-| [scheduled-tasks](https://github.com/scriptscat/skills/tree/main/scheduled-tasks) | Cron պլանավորված առաջադրանքներ (ավտոմատ գործարկվում են LLM-ի / սկրիպտի կանչով) | [Install](https://raw.githubusercontent.com/scriptscat/skills/main/scheduled-tasks/SKILL.cat.md) |
-| [skill-creator](https://github.com/scriptscat/skills/tree/main/skill-creator) | Օգնում է ստեղծել, թեստավորել և փաթեթավորել նոր Skills | [Install](https://raw.githubusercontent.com/scriptscat/skills/main/skill-creator/SKILL.cat.md) |
-| [file-parser](https://github.com/scriptscat/skills/tree/main/file-parser) | Վերլուծում է Excel, PDF, Word, CSV և PPT ֆայլերը | [Install](https://raw.githubusercontent.com/scriptscat/skills/main/file-parser/SKILL.cat.md) |
-| [scriptcat-dev](https://github.com/scriptscat/skills/tree/main/scriptcat-dev) | ScriptCat/Tampermonkey սկրիպտի մշակման օգնական | [Install](https://raw.githubusercontent.com/scriptscat/skills/main/scriptcat-dev/SKILL.cat.md) |
-| [synology-office-sheet](https://github.com/scriptscat/skills/tree/main/synology-office-sheet) | Synology Office աղյուսակների ընթերցում/գրառում | [Install](https://raw.githubusercontent.com/scriptscat/skills/main/synology-office-sheet/SKILL.cat.md) |
-| [wechat-publisher](https://github.com/scriptscat/skills/tree/main/wechat-publisher) | WeChat պաշտոնական հաշվի գործառնական օգնական | [Install](https://raw.githubusercontent.com/scriptscat/skills/main/wechat-publisher/SKILL.cat.md) |
-| [xiaohongshu-publisher](https://github.com/scriptscat/skills/tree/main/xiaohongshu-publisher) | Xiaohongshu (RED) գործառնական օգնական | [Install](https://raw.githubusercontent.com/scriptscat/skills/main/xiaohongshu-publisher/SKILL.cat.md) |
+| [browser-automation](https://github.com/scriptscat/scriptcat-skills/tree/main/browser-automation) | Էջի վերլուծություն, DOM մանիպուլյացիա, ձևերի լրացում, սքրինշոթներ, նավիգացիա | [Install](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/browser-automation/SKILL.cat.md) |
+| [scheduled-tasks](https://github.com/scriptscat/scriptcat-skills/tree/main/scheduled-tasks) | Cron պլանավորված առաջադրանքներ (ավտոմատ գործարկվում են LLM-ի / սկրիպտի կանչով) | [Install](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/scheduled-tasks/SKILL.cat.md) |
+| [skill-creator](https://github.com/scriptscat/scriptcat-skills/tree/main/skill-creator) | Օգնում է ստեղծել, թեստավորել և փաթեթավորել նոր Skills | [Install](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/skill-creator/SKILL.cat.md) |
+| [file-parser](https://github.com/scriptscat/scriptcat-skills/tree/main/file-parser) | Վերլուծում է Excel, PDF, Word, CSV և PPT ֆայլերը | [Install](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/file-parser/SKILL.cat.md) |
+| [scriptcat-dev](https://github.com/scriptscat/scriptcat-skills/tree/main/scriptcat-dev) | ScriptCat/Tampermonkey սկրիպտի մշակման օգնական | [Install](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/scriptcat-dev/SKILL.cat.md) |
+| [synology-office-sheet](https://github.com/scriptscat/scriptcat-skills/tree/main/synology-office-sheet) | Synology Office աղյուսակների ընթերցում/գրառում | [Install](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/synology-office-sheet/SKILL.cat.md) |
+| [wechat-publisher](https://github.com/scriptscat/scriptcat-skills/tree/main/wechat-publisher) | WeChat պաշտոնական հաշվի գործառնական օգնական | [Install](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/wechat-publisher/SKILL.cat.md) |
+| [xiaohongshu-publisher](https://github.com/scriptscat/scriptcat-skills/tree/main/xiaohongshu-publisher) | Xiaohongshu (RED) գործառնական օգնական | [Install](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/xiaohongshu-publisher/SKILL.cat.md) |
 
 ## Skill-ի կարգավորում
 

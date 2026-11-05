@@ -6,7 +6,7 @@ title: API quản lý Skills
 
 API quản lý Skills cho phép script truy vấn, cài đặt, xóa và gọi các gói tiện ích mở rộng Skill.
 
-Để phát triển và đóng gói Skills, xem [Hướng dẫn phát triển Skills](../agent-skill-dev). Ví dụ Skills chính thức: [scriptscat/skills](https://github.com/scriptscat/skills).
+Để phát triển và đóng gói Skills, xem [Hướng dẫn phát triển Skills](../agent-skill-dev). Ví dụ Skills chính thức: [scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills).
 
 ## list — liệt kê Skills đã cài đặt
 

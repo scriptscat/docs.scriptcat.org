@@ -246,20 +246,20 @@ return result;
 
 여러 즉시 사용 가능한 Skill과 스크립트 API 예제를 포함하는 공식 관리 Skill 예제 저장소가 있습니다:
 
-**[scriptscat/skills](https://github.com/scriptscat/skills)**
+**[scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills)**
 
 **Skill 목록:**
 
 | 디렉터리 | 설명 | 설치 |
 |------|------|------|
-| `browser-automation/` | 페이지 분석, DOM 조작, 양식 작성, 스크린샷, 탐색 | [설치](https://raw.githubusercontent.com/scriptscat/skills/main/browser-automation/SKILL.cat.md) |
-| `scheduled-tasks/` | Cron 예약 작업 (내부 + 이벤트 모드) | [설치](https://raw.githubusercontent.com/scriptscat/skills/main/scheduled-tasks/SKILL.cat.md) |
-| `skill-creator/` | 새 Skill 생성, 테스트 및 패키징 지원 | [설치](https://raw.githubusercontent.com/scriptscat/skills/main/skill-creator/SKILL.cat.md) |
-| `file-parser/` | 일반 파일 형식 구문 분석 (Excel, PDF, Word, CSV, PPT) | [설치](https://raw.githubusercontent.com/scriptscat/skills/main/file-parser/SKILL.cat.md) |
-| `scriptcat-dev/` | ScriptCat/Tampermonkey 스크립트 개발 도우미 | [설치](https://raw.githubusercontent.com/scriptscat/skills/main/scriptcat-dev/SKILL.cat.md) |
-| `synology-office-sheet/` | Synology Office 스프레드시트 읽기/쓰기 | [설치](https://raw.githubusercontent.com/scriptscat/skills/main/synology-office-sheet/SKILL.cat.md) |
-| `wechat-publisher/` | WeChat 공식 계정 운영 도우미 — 콘텐츠 수집, 기사 작성 및 게시 | [설치](https://raw.githubusercontent.com/scriptscat/skills/main/wechat-publisher/SKILL.cat.md) |
-| `xiaohongshu-publisher/` | Xiaohongshu(RED) 운영 도우미 — 노트 작성, 이미지 생성 및 게시 | [설치](https://raw.githubusercontent.com/scriptscat/skills/main/xiaohongshu-publisher/SKILL.cat.md) |
+| `browser-automation/` | 페이지 분석, DOM 조작, 양식 작성, 스크린샷, 탐색 | [설치](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/browser-automation/SKILL.cat.md) |
+| `scheduled-tasks/` | Cron 예약 작업 (내부 + 이벤트 모드) | [설치](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/scheduled-tasks/SKILL.cat.md) |
+| `skill-creator/` | 새 Skill 생성, 테스트 및 패키징 지원 | [설치](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/skill-creator/SKILL.cat.md) |
+| `file-parser/` | 일반 파일 형식 구문 분석 (Excel, PDF, Word, CSV, PPT) | [설치](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/file-parser/SKILL.cat.md) |
+| `scriptcat-dev/` | ScriptCat/Tampermonkey 스크립트 개발 도우미 | [설치](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/scriptcat-dev/SKILL.cat.md) |
+| `synology-office-sheet/` | Synology Office 스프레드시트 읽기/쓰기 | [설치](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/synology-office-sheet/SKILL.cat.md) |
+| `wechat-publisher/` | WeChat 공식 계정 운영 도우미 — 콘텐츠 수집, 기사 작성 및 게시 | [설치](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/wechat-publisher/SKILL.cat.md) |
+| `xiaohongshu-publisher/` | Xiaohongshu(RED) 운영 도우미 — 노트 작성, 이미지 생성 및 게시 | [설치](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/xiaohongshu-publisher/SKILL.cat.md) |
 
 **예제 코드:**
 

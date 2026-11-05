@@ -6,7 +6,7 @@ title: Skill Management API
 
 The Skill Management API lets a script query, install, uninstall, and invoke Skill packages.
 
-For Skill development and packaging, see the [Skill Development Guide](../agent-skill-dev). Official Skill example repository: [scriptscat/skills](https://github.com/scriptscat/skills).
+For Skill development and packaging, see the [Skill Development Guide](../agent-skill-dev). Official Skill example repository: [scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills).
 
 ## list — List Installed Skills
 

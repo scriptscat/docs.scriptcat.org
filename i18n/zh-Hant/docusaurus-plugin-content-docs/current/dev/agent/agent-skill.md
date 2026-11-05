@@ -6,7 +6,7 @@ title: Skill 管理 API
 
 Skill 管理 API 讓腳本可以查詢、安裝、移除和呼叫 Skill 擴充套件包。
 
-有關 Skill 的開發和打包，請參閱 [Skill 開發指南](../agent-skill-dev)。官方 Skill 範例：[scriptscat/skills](https://github.com/scriptscat/skills)。
+有關 Skill 的開發和打包，請參閱 [Skill 開發指南](../agent-skill-dev)。官方 Skill 範例：[scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills)。
 
 ## list — 列出已安裝的 Skills
 

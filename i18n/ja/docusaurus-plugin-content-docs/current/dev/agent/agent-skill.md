@@ -6,7 +6,7 @@ title: Skill管理API
 
 Skill管理APIにより、スクリプトはSkill拡張パッケージのクエリ、インストール、削除、呼び出しができます。
 
-Skillの開発とパッケージングについては、[Skill開発ガイド](../agent-skill-dev)を参照してください。公式Skill例：[scriptscat/skills](https://github.com/scriptscat/skills)。
+Skillの開発とパッケージングについては、[Skill開発ガイド](../agent-skill-dev)を参照してください。公式Skill例：[scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills)。
 
 ## list — インストール済みSkillの一覧
 

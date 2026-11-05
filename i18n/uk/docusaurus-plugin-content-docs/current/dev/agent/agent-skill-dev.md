@@ -246,20 +246,20 @@ return result;
 
 Існує офіційно підтримуваний репозиторій прикладів Skill, що містить кілька готових до використання Skill та прикладів скриптових API:
 
-**[scriptscat/skills](https://github.com/scriptscat/skills)**
+**[scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills)**
 
 **Список Skill:**
 
 | Каталог | Опис | Встановлення |
 |------|------|------|
-| `browser-automation/` | Аналіз сторінок, операції з DOM, заповнення форм, скріншоти, навігація | [Встановити](https://raw.githubusercontent.com/scriptscat/skills/main/browser-automation/SKILL.cat.md) |
-| `scheduled-tasks/` | Cron-заплановані завдання (внутрішній + режим подій) | [Встановити](https://raw.githubusercontent.com/scriptscat/skills/main/scheduled-tasks/SKILL.cat.md) |
-| `skill-creator/` | Допомагає створювати, тестувати та пакувати нові Skill | [Встановити](https://raw.githubusercontent.com/scriptscat/skills/main/skill-creator/SKILL.cat.md) |
-| `file-parser/` | Аналізує поширені формати файлів (Excel, PDF, Word, CSV, PPT) | [Встановити](https://raw.githubusercontent.com/scriptscat/skills/main/file-parser/SKILL.cat.md) |
-| `scriptcat-dev/` | Асистент розробки скриптів ScriptCat/Tampermonkey | [Встановити](https://raw.githubusercontent.com/scriptscat/skills/main/scriptcat-dev/SKILL.cat.md) |
-| `synology-office-sheet/` | Читання/запис електронних таблиць Synology Office | [Встановити](https://raw.githubusercontent.com/scriptscat/skills/main/synology-office-sheet/SKILL.cat.md) |
-| `wechat-publisher/` | Асистент операцій з офіційним акаунтом WeChat — збір контенту, написання та публікація статей | [Встановити](https://raw.githubusercontent.com/scriptscat/skills/main/wechat-publisher/SKILL.cat.md) |
-| `xiaohongshu-publisher/` | Асистент операцій Xiaohongshu (RED) — написання нотаток, генерація зображень та публікація | [Встановити](https://raw.githubusercontent.com/scriptscat/skills/main/xiaohongshu-publisher/SKILL.cat.md) |
+| `browser-automation/` | Аналіз сторінок, операції з DOM, заповнення форм, скріншоти, навігація | [Встановити](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/browser-automation/SKILL.cat.md) |
+| `scheduled-tasks/` | Cron-заплановані завдання (внутрішній + режим подій) | [Встановити](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/scheduled-tasks/SKILL.cat.md) |
+| `skill-creator/` | Допомагає створювати, тестувати та пакувати нові Skill | [Встановити](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/skill-creator/SKILL.cat.md) |
+| `file-parser/` | Аналізує поширені формати файлів (Excel, PDF, Word, CSV, PPT) | [Встановити](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/file-parser/SKILL.cat.md) |
+| `scriptcat-dev/` | Асистент розробки скриптів ScriptCat/Tampermonkey | [Встановити](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/scriptcat-dev/SKILL.cat.md) |
+| `synology-office-sheet/` | Читання/запис електронних таблиць Synology Office | [Встановити](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/synology-office-sheet/SKILL.cat.md) |
+| `wechat-publisher/` | Асистент операцій з офіційним акаунтом WeChat — збір контенту, написання та публікація статей | [Встановити](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/wechat-publisher/SKILL.cat.md) |
+| `xiaohongshu-publisher/` | Асистент операцій Xiaohongshu (RED) — написання нотаток, генерація зображень та публікація | [Встановити](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/xiaohongshu-publisher/SKILL.cat.md) |
 
 **Приклад коду:**
 

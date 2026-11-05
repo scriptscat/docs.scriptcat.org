@@ -6,7 +6,7 @@ title: API Manajemen Skill
 
 API manajemen Skill memungkinkan skrip untuk mengkueri, memasang, menghapus, dan memanggil paket ekstensi Skill.
 
-Untuk pengembangan dan pengemasan Skill, lihat [Panduan Pengembangan Skill](../agent-skill-dev). Contoh Skill resmi: [scriptscat/skills](https://github.com/scriptscat/skills).
+Untuk pengembangan dan pengemasan Skill, lihat [Panduan Pengembangan Skill](../agent-skill-dev). Contoh Skill resmi: [scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills).
 
 ## list — daftar Skill yang terpasang
 

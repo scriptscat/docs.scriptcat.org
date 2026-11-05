@@ -30,18 +30,18 @@ title: 用 AI 开发脚本
 
 ## 二、安装两个 skill
 
-把两个仓库克隆到本地，再把 skill 目录链接到 AI 工具读取 skill 的位置。以 Claude Code 为例：
+用 [`npx skills`](https://skills.sh/) 安装（需要 Node.js）。它可以把 skill 装进 Claude Code、Codex、Cursor 等多个代理，执行时会让你
+选择装进哪些代理：
 
 ```bash
-git clone --depth 1 https://github.com/scriptscat/scriptcat.git
-git clone --depth 1 https://github.com/scriptscat/sctl.git
-mkdir -p ~/.claude/skills
-ln -s "$PWD/scriptcat/skills/scriptcat-userscript" ~/.claude/skills/scriptcat-userscript
-ln -s "$PWD/sctl/skills/sctl" ~/.claude/skills/sctl
+npx skills add scriptscat/scriptcat -g
+npx skills add scriptscat/sctl -g
 ```
 
-Codex 把上面的 `~/.claude/skills` 换成 `~/.codex/skills`。用链接而不是复制，之后在两个仓库里 `git pull` 就能拿到更新。
-无法创建符号链接的系统（如未开启开发者模式的 Windows）可以直接复制这两个目录，更新时需要重新复制。
+检查更新用 `npx skills check -g`，更新用 `npx skills update -g`。
+
+也可以手动安装：把脚本猫仓库的 `skills/scriptcat-userscript` 和 sctl 仓库的 `skills/sctl` 两个目录链接或复制到代理读取
+skill 的位置，这种方式要自己更新。
 
 装好后，在对话里提到油猴脚本、后台脚本、定时脚本、`.user.js` 或脚本猫，代理就会自动加载对应的 skill，不需要额外指定。
 

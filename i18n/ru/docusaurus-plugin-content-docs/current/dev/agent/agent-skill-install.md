@@ -5,7 +5,7 @@ title: Установка и использование Skills
 Skill — пакет расширения для Agent, который внедряет предметные знания и пользовательские инструменты в AI. На этой странице описано, как устанавливать, настраивать и управлять Skills.
 
 :::tip Официальный репозиторий Skill
-**[scriptscat/skills](https://github.com/scriptscat/skills)** — готовые Skills для автоматизации браузера, задач по расписанию, разбора файлов, помощника разработки скриптов и многого другого.
+**[scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills)** — готовые Skills для автоматизации браузера, задач по расписанию, разбора файлов, помощника разработки скриптов и многого другого.
 :::
 
 ## Способы установки
@@ -17,7 +17,7 @@ Skill — пакет расширения для Agent, который внед�
 Например, установка официального Skill browser-automation:
 
 ```
-https://raw.githubusercontent.com/scriptscat/skills/main/browser-automation/SKILL.cat.md
+https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/browser-automation/SKILL.cat.md
 ```
 
 Также можно сделать это из панели управления:
@@ -43,14 +43,14 @@ ScriptCat автоматически загрузит `SKILL.cat.md` вмест�
 
 | Skill | Описание | Установка |
 |-------|------|------|
-| [browser-automation](https://github.com/scriptscat/skills/tree/main/browser-automation) | Анализ страниц, операции DOM, заполнение форм, скриншоты, навигация | [Установить](https://raw.githubusercontent.com/scriptscat/skills/main/browser-automation/SKILL.cat.md) |
-| [scheduled-tasks](https://github.com/scriptscat/skills/tree/main/scheduled-tasks) | Задачи по расписанию (автовыполнение LLM / колбэки скриптов) | [Установить](https://raw.githubusercontent.com/scriptscat/skills/main/scheduled-tasks/SKILL.cat.md) |
-| [skill-creator](https://github.com/scriptscat/skills/tree/main/skill-creator) | Помогает создавать, тестировать и упаковывать новые Skills | [Установить](https://raw.githubusercontent.com/scriptscat/skills/main/skill-creator/SKILL.cat.md) |
-| [file-parser](https://github.com/scriptscat/skills/tree/main/file-parser) | Разбор файлов Excel, PDF, Word, CSV и PPT | [Установить](https://raw.githubusercontent.com/scriptscat/skills/main/file-parser/SKILL.cat.md) |
-| [scriptcat-dev](https://github.com/scriptscat/skills/tree/main/scriptcat-dev) | Помощник разработки скриптов ScriptCat/Tampermonkey | [Установить](https://raw.githubusercontent.com/scriptscat/skills/main/scriptcat-dev/SKILL.cat.md) |
-| [synology-office-sheet](https://github.com/scriptscat/skills/tree/main/synology-office-sheet) | Чтение/запись таблиц Synology Office | [Установить](https://raw.githubusercontent.com/scriptscat/skills/main/synology-office-sheet/SKILL.cat.md) |
-| [wechat-publisher](https://github.com/scriptscat/skills/tree/main/wechat-publisher) | Помощник по работе с официальным аккаунтом WeChat | [Установить](https://raw.githubusercontent.com/scriptscat/skills/main/wechat-publisher/SKILL.cat.md) |
-| [xiaohongshu-publisher](https://github.com/scriptscat/skills/tree/main/xiaohongshu-publisher) | Помощник по работе с Xiaohongshu (RED) | [Установить](https://raw.githubusercontent.com/scriptscat/skills/main/xiaohongshu-publisher/SKILL.cat.md) |
+| [browser-automation](https://github.com/scriptscat/scriptcat-skills/tree/main/browser-automation) | Анализ страниц, операции DOM, заполнение форм, скриншоты, навигация | [Установить](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/browser-automation/SKILL.cat.md) |
+| [scheduled-tasks](https://github.com/scriptscat/scriptcat-skills/tree/main/scheduled-tasks) | Задачи по расписанию (автовыполнение LLM / колбэки скриптов) | [Установить](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/scheduled-tasks/SKILL.cat.md) |
+| [skill-creator](https://github.com/scriptscat/scriptcat-skills/tree/main/skill-creator) | Помогает создавать, тестировать и упаковывать новые Skills | [Установить](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/skill-creator/SKILL.cat.md) |
+| [file-parser](https://github.com/scriptscat/scriptcat-skills/tree/main/file-parser) | Разбор файлов Excel, PDF, Word, CSV и PPT | [Установить](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/file-parser/SKILL.cat.md) |
+| [scriptcat-dev](https://github.com/scriptscat/scriptcat-skills/tree/main/scriptcat-dev) | Помощник разработки скриптов ScriptCat/Tampermonkey | [Установить](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/scriptcat-dev/SKILL.cat.md) |
+| [synology-office-sheet](https://github.com/scriptscat/scriptcat-skills/tree/main/synology-office-sheet) | Чтение/запись таблиц Synology Office | [Установить](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/synology-office-sheet/SKILL.cat.md) |
+| [wechat-publisher](https://github.com/scriptscat/scriptcat-skills/tree/main/wechat-publisher) | Помощник по работе с официальным аккаунтом WeChat | [Установить](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/wechat-publisher/SKILL.cat.md) |
+| [xiaohongshu-publisher](https://github.com/scriptscat/scriptcat-skills/tree/main/xiaohongshu-publisher) | Помощник по работе с Xiaohongshu (RED) | [Установить](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/xiaohongshu-publisher/SKILL.cat.md) |
 
 ## Настройка Skill
 

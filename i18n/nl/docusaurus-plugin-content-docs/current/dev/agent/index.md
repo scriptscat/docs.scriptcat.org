@@ -88,7 +88,7 @@ Voeg een Provider en API-sleutel toe onder "Modelconfiguratie" in het dashboard 
 
 Een Skill is een pakket dat prompts + toolscripts + referentiemateriaal combineert, waarmee u domeinspecifieke kennis en aangepaste tools aan de Agent kunt toevoegen.
 
-**Officiële Skill-repository: [scriptscat/skills](https://github.com/scriptscat/skills)**
+**Officiële Skill-repository: [scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills)**
 
 Bevat kant-en-klare Skills voor browserautomatisering, geplande taken, een Skill-aanmaaktool, gespreks-/DOM-/configuratievoorbeelden en meer.
 

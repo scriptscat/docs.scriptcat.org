@@ -246,20 +246,20 @@ Referans materyal için uygun içerikler:
 
 Birkaç kullanıma hazır Skill ve betik API örneği içeren, resmi olarak bakımı yapılan bir Skill örnekleri deposu vardır:
 
-**[scriptscat/skills](https://github.com/scriptscat/skills)**
+**[scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills)**
 
 **Skill listesi:**
 
 | Dizin | Açıklama | Kurulum |
 |------|------|------|
-| `browser-automation/` | Sayfa analizi, DOM işlemleri, form doldurma, ekran görüntüleri, gezinme | [Kur](https://raw.githubusercontent.com/scriptscat/skills/main/browser-automation/SKILL.cat.md) |
-| `scheduled-tasks/` | Cron zamanlanmış görevler (dahili + olay modu) | [Kur](https://raw.githubusercontent.com/scriptscat/skills/main/scheduled-tasks/SKILL.cat.md) |
-| `skill-creator/` | Yeni Skill'ler oluşturmaya, test etmeye ve paketlemeye yardımcı olur | [Kur](https://raw.githubusercontent.com/scriptscat/skills/main/skill-creator/SKILL.cat.md) |
-| `file-parser/` | Yaygın dosya biçimlerini ayrıştırır (Excel, PDF, Word, CSV, PPT) | [Kur](https://raw.githubusercontent.com/scriptscat/skills/main/file-parser/SKILL.cat.md) |
-| `scriptcat-dev/` | ScriptCat/Tampermonkey betik geliştirme asistanı | [Kur](https://raw.githubusercontent.com/scriptscat/skills/main/scriptcat-dev/SKILL.cat.md) |
-| `synology-office-sheet/` | Synology Office elektronik tablolarını okuma/yazma | [Kur](https://raw.githubusercontent.com/scriptscat/skills/main/synology-office-sheet/SKILL.cat.md) |
-| `wechat-publisher/` | WeChat Resmi Hesap işlemleri asistanı — içerik toplama, makale yazma ve yayınlama | [Kur](https://raw.githubusercontent.com/scriptscat/skills/main/wechat-publisher/SKILL.cat.md) |
-| `xiaohongshu-publisher/` | Xiaohongshu (RED) işlemleri asistanı — not yazma, görsel oluşturma ve yayınlama | [Kur](https://raw.githubusercontent.com/scriptscat/skills/main/xiaohongshu-publisher/SKILL.cat.md) |
+| `browser-automation/` | Sayfa analizi, DOM işlemleri, form doldurma, ekran görüntüleri, gezinme | [Kur](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/browser-automation/SKILL.cat.md) |
+| `scheduled-tasks/` | Cron zamanlanmış görevler (dahili + olay modu) | [Kur](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/scheduled-tasks/SKILL.cat.md) |
+| `skill-creator/` | Yeni Skill'ler oluşturmaya, test etmeye ve paketlemeye yardımcı olur | [Kur](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/skill-creator/SKILL.cat.md) |
+| `file-parser/` | Yaygın dosya biçimlerini ayrıştırır (Excel, PDF, Word, CSV, PPT) | [Kur](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/file-parser/SKILL.cat.md) |
+| `scriptcat-dev/` | ScriptCat/Tampermonkey betik geliştirme asistanı | [Kur](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/scriptcat-dev/SKILL.cat.md) |
+| `synology-office-sheet/` | Synology Office elektronik tablolarını okuma/yazma | [Kur](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/synology-office-sheet/SKILL.cat.md) |
+| `wechat-publisher/` | WeChat Resmi Hesap işlemleri asistanı — içerik toplama, makale yazma ve yayınlama | [Kur](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/wechat-publisher/SKILL.cat.md) |
+| `xiaohongshu-publisher/` | Xiaohongshu (RED) işlemleri asistanı — not yazma, görsel oluşturma ve yayınlama | [Kur](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/xiaohongshu-publisher/SKILL.cat.md) |
 
 **Örnek kod:**
 

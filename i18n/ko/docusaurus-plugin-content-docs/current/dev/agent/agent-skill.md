@@ -6,7 +6,7 @@ title: Skill 관리 API
 
 Skill 관리 API를 사용하면 스크립트가 Skill 확장 패키지를 쿼리, 설치, 제거 및 호출할 수 있습니다.
 
-Skill 개발 및 패키징은 [Skill 개발 가이드](../agent-skill-dev)를 참조하세요. 공식 Skill 예제: [scriptscat/skills](https://github.com/scriptscat/skills).
+Skill 개발 및 패키징은 [Skill 개발 가이드](../agent-skill-dev)를 참조하세요. 공식 Skill 예제: [scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills).
 
 ## list — 설치된 Skill 나열
 

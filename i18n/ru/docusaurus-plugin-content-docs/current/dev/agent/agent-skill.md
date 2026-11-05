@@ -6,7 +6,7 @@ title: API управления Skill
 
 API управления Skill позволяет скрипту запрашивать, устанавливать, удалять и вызывать пакеты Skill.
 
-О разработке и упаковке Skill см. [Руководство по разработке Skill](../agent-skill-dev). Официальный репозиторий примеров Skill: [scriptscat/skills](https://github.com/scriptscat/skills).
+О разработке и упаковке Skill см. [Руководство по разработке Skill](../agent-skill-dev). Официальный репозиторий примеров Skill: [scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills).
 
 ## list — список установленных Skills
 

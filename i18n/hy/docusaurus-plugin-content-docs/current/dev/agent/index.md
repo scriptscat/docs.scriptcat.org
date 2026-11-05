@@ -88,7 +88,7 @@ agents/
 
 Skill-ը փաթեթ է, որը համատեղում է պրոմպտները + գործիքի սկրիպտները + հղման նյութը՝ թույլ տալով ձեզ դոմեն-հատուկ գիտելիքներ և կաստոմ գործիքներ ներարկել Agent-ի մեջ:
 
-**Պաշտոնական Skill պահեստ. [scriptscat/skills](https://github.com/scriptscat/skills)**
+**Պաշտոնական Skill պահեստ. [scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills)**
 
 Ներառում է պատրաստի օգտագործման Skills զննարկչի ավտոմատացման, պլանավորված առաջադրանքների, Skill ստեղծման գործիքի, զրույցի/DOM/կոնֆիգ օրինակների և այլնի համար:
 

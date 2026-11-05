@@ -6,7 +6,7 @@ title: Skill Yönetim API'si
 
 Skill yönetim API'si, bir betiğin Skill uzantı paketlerini sorgulamasını, kurmasını, kaldırmasını ve çağırmasını sağlar.
 
-Skill geliştirme ve paketleme için [Skill Geliştirme Rehberi](../agent-skill-dev) bölümüne bakın. Resmi Skill örnekleri: [scriptscat/skills](https://github.com/scriptscat/skills).
+Skill geliştirme ve paketleme için [Skill Geliştirme Rehberi](../agent-skill-dev) bölümüne bakın. Resmi Skill örnekleri: [scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills).
 
 ## list — kurulu Skill'leri listele
 

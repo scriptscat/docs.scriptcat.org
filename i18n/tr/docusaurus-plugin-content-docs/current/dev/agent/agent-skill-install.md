@@ -5,7 +5,7 @@ title: Skill'leri Kurma ve Kullanma
 Skill, AI'ya alana özgü bilgi ve özel araçlar enjekte eden Agent için bir uzantı paketidir. Bu sayfa Skill'lerin nasıl kurulacağını, yapılandırılacağını ve yönetileceğini kapsar.
 
 :::tip Resmi Skill deposu
-**[scriptscat/skills](https://github.com/scriptscat/skills)** — tarayıcı otomasyonu, zamanlanmış görevler, dosya ayrıştırma, betik geliştirme yardımı ve daha fazlası için kullanıma hazır Skill'ler.
+**[scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills)** — tarayıcı otomasyonu, zamanlanmış görevler, dosya ayrıştırma, betik geliştirme yardımı ve daha fazlası için kullanıma hazır Skill'ler.
 :::
 
 ## Kurulum yöntemleri
@@ -17,7 +17,7 @@ Tarayıcınızın adres çubuğunda bir `SKILL.cat.md` URL'sini doğrudan açın
 Örneğin, resmi tarayıcı otomasyonu Skill'ini kurmak için:
 
 ```
-https://raw.githubusercontent.com/scriptscat/skills/main/browser-automation/SKILL.cat.md
+https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/browser-automation/SKILL.cat.md
 ```
 
 Bunu yönetim sayfasından da yapabilirsiniz:
@@ -43,14 +43,14 @@ ZIP'in dizin yapısı standart Skill biçimini izlemelidir (`SKILL.cat.md` içer
 
 | Skill | Açıklama | Kurulum |
 |-------|------|------|
-| [browser-automation](https://github.com/scriptscat/skills/tree/main/browser-automation) | Sayfa analizi, DOM işlemleri, form doldurma, ekran görüntüleri, gezinme | [Kur](https://raw.githubusercontent.com/scriptscat/skills/main/browser-automation/SKILL.cat.md) |
-| [scheduled-tasks](https://github.com/scriptscat/skills/tree/main/scheduled-tasks) | Cron zamanlanmış görevler (LLM / betik geri çağrısıyla otomatik çalıştırma) | [Kur](https://raw.githubusercontent.com/scriptscat/skills/main/scheduled-tasks/SKILL.cat.md) |
-| [skill-creator](https://github.com/scriptscat/skills/tree/main/skill-creator) | Yeni Skill'ler oluşturmaya, test etmeye ve paketlemeye yardımcı olur | [Kur](https://raw.githubusercontent.com/scriptscat/skills/main/skill-creator/SKILL.cat.md) |
-| [file-parser](https://github.com/scriptscat/skills/tree/main/file-parser) | Excel, PDF, Word, CSV ve PPT dosyalarını ayrıştırır | [Kur](https://raw.githubusercontent.com/scriptscat/skills/main/file-parser/SKILL.cat.md) |
-| [scriptcat-dev](https://github.com/scriptscat/skills/tree/main/scriptcat-dev) | ScriptCat/Tampermonkey betik geliştirme asistanı | [Kur](https://raw.githubusercontent.com/scriptscat/skills/main/scriptcat-dev/SKILL.cat.md) |
-| [synology-office-sheet](https://github.com/scriptscat/skills/tree/main/synology-office-sheet) | Synology Office elektronik tablolarını okuma/yazma | [Kur](https://raw.githubusercontent.com/scriptscat/skills/main/synology-office-sheet/SKILL.cat.md) |
-| [wechat-publisher](https://github.com/scriptscat/skills/tree/main/wechat-publisher) | WeChat Resmi Hesap işlemleri asistanı | [Kur](https://raw.githubusercontent.com/scriptscat/skills/main/wechat-publisher/SKILL.cat.md) |
-| [xiaohongshu-publisher](https://github.com/scriptscat/skills/tree/main/xiaohongshu-publisher) | Xiaohongshu (RED) işlemleri asistanı | [Kur](https://raw.githubusercontent.com/scriptscat/skills/main/xiaohongshu-publisher/SKILL.cat.md) |
+| [browser-automation](https://github.com/scriptscat/scriptcat-skills/tree/main/browser-automation) | Sayfa analizi, DOM işlemleri, form doldurma, ekran görüntüleri, gezinme | [Kur](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/browser-automation/SKILL.cat.md) |
+| [scheduled-tasks](https://github.com/scriptscat/scriptcat-skills/tree/main/scheduled-tasks) | Cron zamanlanmış görevler (LLM / betik geri çağrısıyla otomatik çalıştırma) | [Kur](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/scheduled-tasks/SKILL.cat.md) |
+| [skill-creator](https://github.com/scriptscat/scriptcat-skills/tree/main/skill-creator) | Yeni Skill'ler oluşturmaya, test etmeye ve paketlemeye yardımcı olur | [Kur](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/skill-creator/SKILL.cat.md) |
+| [file-parser](https://github.com/scriptscat/scriptcat-skills/tree/main/file-parser) | Excel, PDF, Word, CSV ve PPT dosyalarını ayrıştırır | [Kur](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/file-parser/SKILL.cat.md) |
+| [scriptcat-dev](https://github.com/scriptscat/scriptcat-skills/tree/main/scriptcat-dev) | ScriptCat/Tampermonkey betik geliştirme asistanı | [Kur](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/scriptcat-dev/SKILL.cat.md) |
+| [synology-office-sheet](https://github.com/scriptscat/scriptcat-skills/tree/main/synology-office-sheet) | Synology Office elektronik tablolarını okuma/yazma | [Kur](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/synology-office-sheet/SKILL.cat.md) |
+| [wechat-publisher](https://github.com/scriptscat/scriptcat-skills/tree/main/wechat-publisher) | WeChat Resmi Hesap işlemleri asistanı | [Kur](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/wechat-publisher/SKILL.cat.md) |
+| [xiaohongshu-publisher](https://github.com/scriptscat/scriptcat-skills/tree/main/xiaohongshu-publisher) | Xiaohongshu (RED) işlemleri asistanı | [Kur](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/xiaohongshu-publisher/SKILL.cat.md) |
 
 ## Bir Skill'i yapılandırma
 

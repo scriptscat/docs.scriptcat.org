@@ -6,7 +6,7 @@ title: Skill կառավարման API
 
 Skill կառավարման API-ն թույլ է տալիս սկրիպտին հարցում կատարել, տեղադրել, հեռացնել և կանչել Skill ընդլայնման փաթեթներ:
 
-Skill-ի մշակման և փաթեթավորման համար տեսեք [Skill մշակման ուղեցույցը](../agent-skill-dev): Պաշտոնական Skill օրինակներ. [scriptscat/skills](https://github.com/scriptscat/skills):
+Skill-ի մշակման և փաթեթավորման համար տեսեք [Skill մշակման ուղեցույցը](../agent-skill-dev): Պաշտոնական Skill օրինակներ. [scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills):
 
 ## list — ցուցակագրել տեղադրված Skills-ը
 

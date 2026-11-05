@@ -5,7 +5,7 @@ title: Installer et utiliser des Skills
 Un Skill est un pack d'extension pour Agent qui injecte des connaissances spécialisées et des outils personnalisés dans l'IA. Cette page explique comment installer, configurer et gérer des Skills.
 
 :::tip Dépôt officiel de Skills
-**[scriptscat/skills](https://github.com/scriptscat/skills)** — des Skills prêts à l'emploi pour l'automatisation du navigateur, les tâches planifiées, l'analyse de fichiers, l'assistance au développement de scripts, et plus encore.
+**[scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills)** — des Skills prêts à l'emploi pour l'automatisation du navigateur, les tâches planifiées, l'analyse de fichiers, l'assistance au développement de scripts, et plus encore.
 :::
 
 ## Méthodes d'installation
@@ -17,7 +17,7 @@ Ouvrez une URL `SKILL.cat.md` directement dans la barre d'adresse de votre navig
 Par exemple, pour installer le Skill officiel d'automatisation du navigateur :
 
 ```
-https://raw.githubusercontent.com/scriptscat/skills/main/browser-automation/SKILL.cat.md
+https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/browser-automation/SKILL.cat.md
 ```
 
 Vous pouvez aussi procéder depuis la page de gestion :
@@ -43,14 +43,14 @@ Faites un clic droit sur **Copier le lien**, puis collez le lien dans le champ U
 
 | Skill | Description | Installation |
 |-------|------|------|
-| [browser-automation](https://github.com/scriptscat/skills/tree/main/browser-automation) | Analyse de page, manipulation du DOM, remplissage de formulaires, captures d'écran, navigation | [Installer](https://raw.githubusercontent.com/scriptscat/skills/main/browser-automation/SKILL.cat.md) |
-| [scheduled-tasks](https://github.com/scriptscat/skills/tree/main/scheduled-tasks) | Tâches planifiées Cron (exécution automatique par le LLM / rappel de script) | [Installer](https://raw.githubusercontent.com/scriptscat/skills/main/scheduled-tasks/SKILL.cat.md) |
-| [skill-creator](https://github.com/scriptscat/skills/tree/main/skill-creator) | Aide à créer, tester et empaqueter de nouveaux Skills | [Installer](https://raw.githubusercontent.com/scriptscat/skills/main/skill-creator/SKILL.cat.md) |
-| [file-parser](https://github.com/scriptscat/skills/tree/main/file-parser) | Analyse les fichiers Excel, PDF, Word, CSV et PPT | [Installer](https://raw.githubusercontent.com/scriptscat/skills/main/file-parser/SKILL.cat.md) |
-| [scriptcat-dev](https://github.com/scriptscat/skills/tree/main/scriptcat-dev) | Assistant de développement de scripts ScriptCat/Tampermonkey | [Installer](https://raw.githubusercontent.com/scriptscat/skills/main/scriptcat-dev/SKILL.cat.md) |
-| [synology-office-sheet](https://github.com/scriptscat/skills/tree/main/synology-office-sheet) | Lecture/écriture de feuilles de calcul Synology Office | [Installer](https://raw.githubusercontent.com/scriptscat/skills/main/synology-office-sheet/SKILL.cat.md) |
-| [wechat-publisher](https://github.com/scriptscat/skills/tree/main/wechat-publisher) | Assistant de gestion de compte officiel WeChat | [Installer](https://raw.githubusercontent.com/scriptscat/skills/main/wechat-publisher/SKILL.cat.md) |
-| [xiaohongshu-publisher](https://github.com/scriptscat/skills/tree/main/xiaohongshu-publisher) | Assistant de gestion Xiaohongshu (RED) | [Installer](https://raw.githubusercontent.com/scriptscat/skills/main/xiaohongshu-publisher/SKILL.cat.md) |
+| [browser-automation](https://github.com/scriptscat/scriptcat-skills/tree/main/browser-automation) | Analyse de page, manipulation du DOM, remplissage de formulaires, captures d'écran, navigation | [Installer](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/browser-automation/SKILL.cat.md) |
+| [scheduled-tasks](https://github.com/scriptscat/scriptcat-skills/tree/main/scheduled-tasks) | Tâches planifiées Cron (exécution automatique par le LLM / rappel de script) | [Installer](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/scheduled-tasks/SKILL.cat.md) |
+| [skill-creator](https://github.com/scriptscat/scriptcat-skills/tree/main/skill-creator) | Aide à créer, tester et empaqueter de nouveaux Skills | [Installer](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/skill-creator/SKILL.cat.md) |
+| [file-parser](https://github.com/scriptscat/scriptcat-skills/tree/main/file-parser) | Analyse les fichiers Excel, PDF, Word, CSV et PPT | [Installer](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/file-parser/SKILL.cat.md) |
+| [scriptcat-dev](https://github.com/scriptscat/scriptcat-skills/tree/main/scriptcat-dev) | Assistant de développement de scripts ScriptCat/Tampermonkey | [Installer](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/scriptcat-dev/SKILL.cat.md) |
+| [synology-office-sheet](https://github.com/scriptscat/scriptcat-skills/tree/main/synology-office-sheet) | Lecture/écriture de feuilles de calcul Synology Office | [Installer](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/synology-office-sheet/SKILL.cat.md) |
+| [wechat-publisher](https://github.com/scriptscat/scriptcat-skills/tree/main/wechat-publisher) | Assistant de gestion de compte officiel WeChat | [Installer](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/wechat-publisher/SKILL.cat.md) |
+| [xiaohongshu-publisher](https://github.com/scriptscat/scriptcat-skills/tree/main/xiaohongshu-publisher) | Assistant de gestion Xiaohongshu (RED) | [Installer](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/xiaohongshu-publisher/SKILL.cat.md) |
 
 ## Configurer un Skill
 

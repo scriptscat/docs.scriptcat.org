@@ -88,7 +88,7 @@ agents/
 
 একটি Skill হল একটি প্যাকেজ যা prompt + টুল স্ক্রিপ্ট + রেফারেন্স উপাদান একত্রিত করে, যা আপনাকে ডোমেইন-নির্দিষ্ট জ্ঞান এবং কাস্টম টুল Agent-এ ইনজেক্ট করতে দেয়।
 
-**অফিসিয়াল Skill রিপোজিটরি: [scriptscat/skills](https://github.com/scriptscat/skills)**
+**অফিসিয়াল Skill রিপোজিটরি: [scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills)**
 
 ব্রাউজার অটোমেশন, নির্ধারিত কাজ, একটি Skill-নির্মাণ টুল, কথোপকথন/DOM/কনফিগ উদাহরণ এবং আরও অনেক কিছুর জন্য প্রস্তুত-ব্যবহারযোগ্য Skill অন্তর্ভুক্ত।
 

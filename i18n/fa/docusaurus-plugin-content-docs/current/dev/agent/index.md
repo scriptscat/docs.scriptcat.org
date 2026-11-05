@@ -88,7 +88,7 @@ agents/
 
 یک Skill بسته‌ای است که prompt + اسکریپت‌های ابزار + مواد مرجع را ترکیب می‌کند و به شما امکان می‌دهد دانش حوزه‌ای و ابزارهای سفارشی را به Agent تزریق کنید.
 
-**مخزن رسمی Skill: [scriptscat/skills](https://github.com/scriptscat/skills)**
+**مخزن رسمی Skill: [scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills)**
 
 شامل Skillهای آماده برای اتوماسیون مرورگر، کارهای زمان‌بندی‌شده، ابزار ایجاد Skill، نمونه‌های گفتگو/DOM/پیکربندی و موارد دیگر است.
 

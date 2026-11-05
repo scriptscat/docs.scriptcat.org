@@ -5,7 +5,7 @@ title: Memasang dan Menggunakan Skill
 Skill adalah paket ekstensi untuk Agent yang menyuntikkan pengetahuan khusus domain dan alat kustom ke dalam AI. Halaman ini mencakup cara memasang, mengonfigurasi, dan mengelola Skill.
 
 :::tip Repositori Skill resmi
-**[scriptscat/skills](https://github.com/scriptscat/skills)** — Skill siap pakai untuk otomatisasi browser, tugas terjadwal, penguraian file, bantuan pengembangan skrip, dan lainnya.
+**[scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills)** — Skill siap pakai untuk otomatisasi browser, tugas terjadwal, penguraian file, bantuan pengembangan skrip, dan lainnya.
 :::
 
 ## Metode pemasangan
@@ -17,7 +17,7 @@ Buka URL `SKILL.cat.md` langsung di bilah alamat browser Anda; ScriptCat akan me
 Misalnya, untuk memasang Skill otomatisasi browser resmi:
 
 ```
-https://raw.githubusercontent.com/scriptscat/skills/main/browser-automation/SKILL.cat.md
+https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/browser-automation/SKILL.cat.md
 ```
 
 Anda juga dapat melakukannya dari halaman manajemen:
@@ -43,14 +43,14 @@ Klik kanan **Salin tautan**, lalu tempel tautan ke bidang URL Manajemen Skills u
 
 | Skill | Deskripsi | Pasang |
 |-------|------|------|
-| [browser-automation](https://github.com/scriptscat/skills/tree/main/browser-automation) | Analisis halaman, manipulasi DOM, pengisian formulir, tangkapan layar, navigasi | [Pasang](https://raw.githubusercontent.com/scriptscat/skills/main/browser-automation/SKILL.cat.md) |
-| [scheduled-tasks](https://github.com/scriptscat/skills/tree/main/scheduled-tasks) | Tugas terjadwal cron (dijalankan otomatis oleh LLM / panggilan balik skrip) | [Pasang](https://raw.githubusercontent.com/scriptscat/skills/main/scheduled-tasks/SKILL.cat.md) |
-| [skill-creator](https://github.com/scriptscat/skills/tree/main/skill-creator) | Membantu membuat, menguji, dan mengemas Skill baru | [Pasang](https://raw.githubusercontent.com/scriptscat/skills/main/skill-creator/SKILL.cat.md) |
-| [file-parser](https://github.com/scriptscat/skills/tree/main/file-parser) | Mengurai file Excel, PDF, Word, CSV, dan PPT | [Pasang](https://raw.githubusercontent.com/scriptscat/skills/main/file-parser/SKILL.cat.md) |
-| [scriptcat-dev](https://github.com/scriptscat/skills/tree/main/scriptcat-dev) | Asisten pengembangan skrip ScriptCat/Tampermonkey | [Pasang](https://raw.githubusercontent.com/scriptscat/skills/main/scriptcat-dev/SKILL.cat.md) |
-| [synology-office-sheet](https://github.com/scriptscat/skills/tree/main/synology-office-sheet) | Membaca/menulis spreadsheet Synology Office | [Pasang](https://raw.githubusercontent.com/scriptscat/skills/main/synology-office-sheet/SKILL.cat.md) |
-| [wechat-publisher](https://github.com/scriptscat/skills/tree/main/wechat-publisher) | Asisten operasi Akun Resmi WeChat | [Pasang](https://raw.githubusercontent.com/scriptscat/skills/main/wechat-publisher/SKILL.cat.md) |
-| [xiaohongshu-publisher](https://github.com/scriptscat/skills/tree/main/xiaohongshu-publisher) | Asisten operasi Xiaohongshu (RED) | [Pasang](https://raw.githubusercontent.com/scriptscat/skills/main/xiaohongshu-publisher/SKILL.cat.md) |
+| [browser-automation](https://github.com/scriptscat/scriptcat-skills/tree/main/browser-automation) | Analisis halaman, manipulasi DOM, pengisian formulir, tangkapan layar, navigasi | [Pasang](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/browser-automation/SKILL.cat.md) |
+| [scheduled-tasks](https://github.com/scriptscat/scriptcat-skills/tree/main/scheduled-tasks) | Tugas terjadwal cron (dijalankan otomatis oleh LLM / panggilan balik skrip) | [Pasang](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/scheduled-tasks/SKILL.cat.md) |
+| [skill-creator](https://github.com/scriptscat/scriptcat-skills/tree/main/skill-creator) | Membantu membuat, menguji, dan mengemas Skill baru | [Pasang](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/skill-creator/SKILL.cat.md) |
+| [file-parser](https://github.com/scriptscat/scriptcat-skills/tree/main/file-parser) | Mengurai file Excel, PDF, Word, CSV, dan PPT | [Pasang](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/file-parser/SKILL.cat.md) |
+| [scriptcat-dev](https://github.com/scriptscat/scriptcat-skills/tree/main/scriptcat-dev) | Asisten pengembangan skrip ScriptCat/Tampermonkey | [Pasang](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/scriptcat-dev/SKILL.cat.md) |
+| [synology-office-sheet](https://github.com/scriptscat/scriptcat-skills/tree/main/synology-office-sheet) | Membaca/menulis spreadsheet Synology Office | [Pasang](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/synology-office-sheet/SKILL.cat.md) |
+| [wechat-publisher](https://github.com/scriptscat/scriptcat-skills/tree/main/wechat-publisher) | Asisten operasi Akun Resmi WeChat | [Pasang](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/wechat-publisher/SKILL.cat.md) |
+| [xiaohongshu-publisher](https://github.com/scriptscat/scriptcat-skills/tree/main/xiaohongshu-publisher) | Asisten operasi Xiaohongshu (RED) | [Pasang](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/xiaohongshu-publisher/SKILL.cat.md) |
 
 ## Mengonfigurasi Skill
 

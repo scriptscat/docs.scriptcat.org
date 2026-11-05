@@ -88,7 +88,7 @@ Tambahkan Penyedia dan Kunci API di bawah "Konfigurasi Model" di dasbor untuk me
 
 Skill adalah paket yang menggabungkan prompt + skrip alat + materi referensi, memungkinkan Anda menyuntikkan pengetahuan khusus domain dan alat kustom ke dalam Agent.
 
-**Repositori Skill resmi: [scriptscat/skills](https://github.com/scriptscat/skills)**
+**Repositori Skill resmi: [scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills)**
 
 Termasuk Skill siap pakai untuk otomatisasi browser, tugas terjadwal, alat pembuat Skill, contoh percakapan/DOM/config, dan lainnya.
 

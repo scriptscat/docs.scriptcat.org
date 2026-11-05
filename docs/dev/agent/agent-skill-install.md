@@ -5,7 +5,7 @@ title: Skill 安装与使用
 Skill 是 Agent 的扩展能力包，为 AI 注入专业领域知识和自定义工具。本页介绍如何安装、配置和管理 Skill。
 
 :::tip 官方 Skill 仓库
-**[scriptscat/skills](https://github.com/scriptscat/skills)** — 包含浏览器自动化、定时任务、文件解析、脚本开发助手等开箱即用的 Skill。
+**[scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills)** — 包含浏览器自动化、定时任务、文件解析、脚本开发助手等开箱即用的 Skill。
 :::
 
 ## 安装方式
@@ -17,7 +17,7 @@ Skill 是 Agent 的扩展能力包，为 AI 注入专业领域知识和自定义
 例如安装官方的 browser-automation Skill：
 
 ```
-https://raw.githubusercontent.com/scriptscat/skills/main/browser-automation/SKILL.cat.md
+https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/browser-automation/SKILL.cat.md
 ```
 
 也可以在管理页面操作：
@@ -43,14 +43,14 @@ ZIP 包的目录结构应符合标准 Skill 格式（包含 `SKILL.cat.md`）。
 
 | Skill | 说明 | 安装 |
 |-------|------|------|
-| [browser-automation](https://github.com/scriptscat/skills/tree/main/browser-automation) | 页面分析、DOM 操作、表单填写、截图、导航 | [安装](https://raw.githubusercontent.com/scriptscat/skills/main/browser-automation/SKILL.cat.md) |
-| [scheduled-tasks](https://github.com/scriptscat/skills/tree/main/scheduled-tasks) | Cron 定时任务（LLM 自动执行 / 脚本回调） | [安装](https://raw.githubusercontent.com/scriptscat/skills/main/scheduled-tasks/SKILL.cat.md) |
-| [skill-creator](https://github.com/scriptscat/skills/tree/main/skill-creator) | 辅助创建、测试和打包新 Skill | [安装](https://raw.githubusercontent.com/scriptscat/skills/main/skill-creator/SKILL.cat.md) |
-| [file-parser](https://github.com/scriptscat/skills/tree/main/file-parser) | 解析 Excel、PDF、Word、CSV、PPT 文件 | [安装](https://raw.githubusercontent.com/scriptscat/skills/main/file-parser/SKILL.cat.md) |
-| [scriptcat-dev](https://github.com/scriptscat/skills/tree/main/scriptcat-dev) | 脚本猫/油猴脚本开发助手 | [安装](https://raw.githubusercontent.com/scriptscat/skills/main/scriptcat-dev/SKILL.cat.md) |
-| [synology-office-sheet](https://github.com/scriptscat/skills/tree/main/synology-office-sheet) | 读写群晖 Synology Office 电子表格 | [安装](https://raw.githubusercontent.com/scriptscat/skills/main/synology-office-sheet/SKILL.cat.md) |
-| [wechat-publisher](https://github.com/scriptscat/skills/tree/main/wechat-publisher) | 微信公众号运营助手 | [安装](https://raw.githubusercontent.com/scriptscat/skills/main/wechat-publisher/SKILL.cat.md) |
-| [xiaohongshu-publisher](https://github.com/scriptscat/skills/tree/main/xiaohongshu-publisher) | 小红书运营助手 | [安装](https://raw.githubusercontent.com/scriptscat/skills/main/xiaohongshu-publisher/SKILL.cat.md) |
+| [browser-automation](https://github.com/scriptscat/scriptcat-skills/tree/main/browser-automation) | 页面分析、DOM 操作、表单填写、截图、导航 | [安装](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/browser-automation/SKILL.cat.md) |
+| [scheduled-tasks](https://github.com/scriptscat/scriptcat-skills/tree/main/scheduled-tasks) | Cron 定时任务（LLM 自动执行 / 脚本回调） | [安装](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/scheduled-tasks/SKILL.cat.md) |
+| [skill-creator](https://github.com/scriptscat/scriptcat-skills/tree/main/skill-creator) | 辅助创建、测试和打包新 Skill | [安装](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/skill-creator/SKILL.cat.md) |
+| [file-parser](https://github.com/scriptscat/scriptcat-skills/tree/main/file-parser) | 解析 Excel、PDF、Word、CSV、PPT 文件 | [安装](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/file-parser/SKILL.cat.md) |
+| [scriptcat-dev](https://github.com/scriptscat/scriptcat-skills/tree/main/scriptcat-dev) | 脚本猫/油猴脚本开发助手 | [安装](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/scriptcat-dev/SKILL.cat.md) |
+| [synology-office-sheet](https://github.com/scriptscat/scriptcat-skills/tree/main/synology-office-sheet) | 读写群晖 Synology Office 电子表格 | [安装](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/synology-office-sheet/SKILL.cat.md) |
+| [wechat-publisher](https://github.com/scriptscat/scriptcat-skills/tree/main/wechat-publisher) | 微信公众号运营助手 | [安装](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/wechat-publisher/SKILL.cat.md) |
+| [xiaohongshu-publisher](https://github.com/scriptscat/scriptcat-skills/tree/main/xiaohongshu-publisher) | 小红书运营助手 | [安装](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/xiaohongshu-publisher/SKILL.cat.md) |
 
 ## 配置 Skill
 

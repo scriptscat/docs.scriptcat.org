@@ -246,20 +246,20 @@ return result;
 
 Գոյություն ունի Skill օրինակների պաշտոնապես պահպանվող պահեստ, որը պարունակում է մի քանի պատրաստի օգտագործման Skills և սկրիպտ API օրինակներ՝
 
-**[scriptscat/skills](https://github.com/scriptscat/skills)**
+**[scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills)**
 
 **Skill ցուցակ.**
 
 | Դիրեկտորիա | Նկարագրություն | Տեղադրում |
 |------|------|------|
-| `browser-automation/` | Էջի վերլուծություն, DOM մանիպուլյացիա, ձևերի լրացում, սքրինշոթներ, նավիգացիա | [Install](https://raw.githubusercontent.com/scriptscat/skills/main/browser-automation/SKILL.cat.md) |
-| `scheduled-tasks/` | Cron պլանավորված առաջադրանքներ (ներքին + իրադարձությունների ռեժիմ) | [Install](https://raw.githubusercontent.com/scriptscat/skills/main/scheduled-tasks/SKILL.cat.md) |
-| `skill-creator/` | Օգնում է ստեղծել, փորձարկել և փաթեթավորել նոր Skills | [Install](https://raw.githubusercontent.com/scriptscat/skills/main/skill-creator/SKILL.cat.md) |
-| `file-parser/` | Վերլուծում է ընդհանուր ֆայլերի ձևաչափերը (Excel, PDF, Word, CSV, PPT) | [Install](https://raw.githubusercontent.com/scriptscat/skills/main/file-parser/SKILL.cat.md) |
-| `scriptcat-dev/` | ScriptCat/Tampermonkey սկրիպտի մշակման օգնական | [Install](https://raw.githubusercontent.com/scriptscat/skills/main/scriptcat-dev/SKILL.cat.md) |
-| `synology-office-sheet/` | Synology Office աղյուսակների ընթերցում/գրառում | [Install](https://raw.githubusercontent.com/scriptscat/skills/main/synology-office-sheet/SKILL.cat.md) |
-| `wechat-publisher/` | WeChat պաշտոնական հաշվի գործառնական օգնական — բովանդակության հավաքում, հոդված գրել և հրապարակում | [Install](https://raw.githubusercontent.com/scriptscat/skills/main/wechat-publisher/SKILL.cat.md) |
-| `xiaohongshu-publisher/` | Xiaohongshu (RED) գործառնական օգնական — նշումներ գրել, պատկերներ ստեղծել և հրապարակել | [Install](https://raw.githubusercontent.com/scriptscat/skills/main/xiaohongshu-publisher/SKILL.cat.md) |
+| `browser-automation/` | Էջի վերլուծություն, DOM մանիպուլյացիա, ձևերի լրացում, սքրինշոթներ, նավիգացիա | [Install](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/browser-automation/SKILL.cat.md) |
+| `scheduled-tasks/` | Cron պլանավորված առաջադրանքներ (ներքին + իրադարձությունների ռեժիմ) | [Install](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/scheduled-tasks/SKILL.cat.md) |
+| `skill-creator/` | Օգնում է ստեղծել, փորձարկել և փաթեթավորել նոր Skills | [Install](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/skill-creator/SKILL.cat.md) |
+| `file-parser/` | Վերլուծում է ընդհանուր ֆայլերի ձևաչափերը (Excel, PDF, Word, CSV, PPT) | [Install](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/file-parser/SKILL.cat.md) |
+| `scriptcat-dev/` | ScriptCat/Tampermonkey սկրիպտի մշակման օգնական | [Install](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/scriptcat-dev/SKILL.cat.md) |
+| `synology-office-sheet/` | Synology Office աղյուսակների ընթերցում/գրառում | [Install](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/synology-office-sheet/SKILL.cat.md) |
+| `wechat-publisher/` | WeChat պաշտոնական հաշվի գործառնական օգնական — բովանդակության հավաքում, հոդված գրել և հրապարակում | [Install](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/wechat-publisher/SKILL.cat.md) |
+| `xiaohongshu-publisher/` | Xiaohongshu (RED) գործառնական օգնական — նշումներ գրել, պատկերներ ստեղծել և հրապարակել | [Install](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/xiaohongshu-publisher/SKILL.cat.md) |
 
 **Օրինակի կոդ.**
 

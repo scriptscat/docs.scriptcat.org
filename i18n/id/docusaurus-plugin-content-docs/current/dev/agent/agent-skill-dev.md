@@ -246,20 +246,20 @@ Konten yang cocok sebagai materi referensi:
 
 Ada repositori contoh Skill yang dikelola resmi, berisi beberapa Skill siap pakai dan contoh API skrip:
 
-**[scriptscat/skills](https://github.com/scriptscat/skills)**
+**[scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills)**
 
 **Daftar Skill:**
 
 | Direktori | Deskripsi | Pasang |
 |------|------|------|
-| `browser-automation/` | Analisis halaman, manipulasi DOM, pengisian formulir, tangkapan layar, navigasi | [Pasang](https://raw.githubusercontent.com/scriptscat/skills/main/browser-automation/SKILL.cat.md) |
-| `scheduled-tasks/` | Tugas terjadwal cron (mode internal + peristiwa) | [Pasang](https://raw.githubusercontent.com/scriptscat/skills/main/scheduled-tasks/SKILL.cat.md) |
-| `skill-creator/` | Membantu membuat, menguji, dan mengemas Skill baru | [Pasang](https://raw.githubusercontent.com/scriptscat/skills/main/skill-creator/SKILL.cat.md) |
-| `file-parser/` | Mengurai format file umum (Excel, PDF, Word, CSV, PPT) | [Pasang](https://raw.githubusercontent.com/scriptscat/skills/main/file-parser/SKILL.cat.md) |
-| `scriptcat-dev/` | Asisten pengembangan skrip ScriptCat/Tampermonkey | [Pasang](https://raw.githubusercontent.com/scriptscat/skills/main/scriptcat-dev/SKILL.cat.md) |
-| `synology-office-sheet/` | Membaca/menulis spreadsheet Synology Office | [Pasang](https://raw.githubusercontent.com/scriptscat/skills/main/synology-office-sheet/SKILL.cat.md) |
-| `wechat-publisher/` | Asisten operasi Akun Resmi WeChat — pengumpulan konten, penulisan artikel, dan publikasi | [Pasang](https://raw.githubusercontent.com/scriptscat/skills/main/wechat-publisher/SKILL.cat.md) |
-| `xiaohongshu-publisher/` | Asisten operasi Xiaohongshu (RED) — penulisan catatan, pembuatan gambar, dan publikasi | [Pasang](https://raw.githubusercontent.com/scriptscat/skills/main/xiaohongshu-publisher/SKILL.cat.md) |
+| `browser-automation/` | Analisis halaman, manipulasi DOM, pengisian formulir, tangkapan layar, navigasi | [Pasang](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/browser-automation/SKILL.cat.md) |
+| `scheduled-tasks/` | Tugas terjadwal cron (mode internal + peristiwa) | [Pasang](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/scheduled-tasks/SKILL.cat.md) |
+| `skill-creator/` | Membantu membuat, menguji, dan mengemas Skill baru | [Pasang](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/skill-creator/SKILL.cat.md) |
+| `file-parser/` | Mengurai format file umum (Excel, PDF, Word, CSV, PPT) | [Pasang](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/file-parser/SKILL.cat.md) |
+| `scriptcat-dev/` | Asisten pengembangan skrip ScriptCat/Tampermonkey | [Pasang](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/scriptcat-dev/SKILL.cat.md) |
+| `synology-office-sheet/` | Membaca/menulis spreadsheet Synology Office | [Pasang](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/synology-office-sheet/SKILL.cat.md) |
+| `wechat-publisher/` | Asisten operasi Akun Resmi WeChat — pengumpulan konten, penulisan artikel, dan publikasi | [Pasang](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/wechat-publisher/SKILL.cat.md) |
+| `xiaohongshu-publisher/` | Asisten operasi Xiaohongshu (RED) — penulisan catatan, pembuatan gambar, dan publikasi | [Pasang](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/xiaohongshu-publisher/SKILL.cat.md) |
 
 **Contoh kode:**
 

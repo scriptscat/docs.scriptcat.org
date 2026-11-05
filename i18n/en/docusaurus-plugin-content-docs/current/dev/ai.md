@@ -36,19 +36,18 @@ install and check yourself.
 
 ## 2. Install the two skills
 
-Clone both repositories and link the skill directories to where your AI tool reads skills. For Claude Code:
+Install with [`npx skills`](https://skills.sh/) (requires Node.js). It installs a skill into several agents at once,
+such as Claude Code, Codex and Cursor, and asks which agents to install into:
 
 ```bash
-git clone --depth 1 https://github.com/scriptscat/scriptcat.git
-git clone --depth 1 https://github.com/scriptscat/sctl.git
-mkdir -p ~/.claude/skills
-ln -s "$PWD/scriptcat/skills/scriptcat-userscript" ~/.claude/skills/scriptcat-userscript
-ln -s "$PWD/sctl/skills/sctl" ~/.claude/skills/sctl
+npx skills add scriptscat/scriptcat -g
+npx skills add scriptscat/sctl -g
 ```
 
-For Codex, use `~/.codex/skills` instead of `~/.claude/skills`. Linking rather than copying means a `git pull` in either
-repository updates the skill. On systems that cannot create symbolic links (for example Windows without Developer Mode),
-copy the two directories instead and copy them again to update.
+Run `npx skills check -g` to check for updates and `npx skills update -g` to install them.
+
+You can also install by hand: link or copy `skills/scriptcat-userscript` from the ScriptCat repository and `skills/sctl`
+from the sctl repository to where your agent reads skills. You then update them yourself.
 
 Once installed, the agent loads the right skill by itself whenever you mention a userscript, background script,
 scheduled script, `.user.js` or ScriptCat — there is nothing else to configure.

@@ -88,7 +88,7 @@ Add a Provider and API Key under "Model Configuration" in the dashboard to use i
 
 A Skill is a package combining prompts + tool scripts + reference material, letting you inject domain-specific knowledge and custom tools into the Agent.
 
-**Official Skill repository: [scriptscat/skills](https://github.com/scriptscat/skills)**
+**Official Skill repository: [scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills)**
 
 Includes ready-to-use Skills for browser automation, scheduled tasks, a Skill-creation tool, conversation/DOM/config examples, and more.
 

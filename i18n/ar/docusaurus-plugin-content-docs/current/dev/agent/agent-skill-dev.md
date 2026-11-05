@@ -246,20 +246,20 @@ return result;
 
 يوجد مستودع أمثلة Skills تتم صيانته رسمياً، يحتوي على عدة Skills جاهزة للاستخدام وأمثلة لواجهات برمجة السكرپتات:
 
-**[scriptscat/skills](https://github.com/scriptscat/skills)**
+**[scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills)**
 
 **قائمة Skills:**
 
 | الدليل | الوصف | التثبيت |
 |------|------|------|
-| `browser-automation/` | تحليل الصفحات، معالجة الـ DOM، تعبئة النماذج، لقطات الشاشة، التنقل | [تثبيت](https://raw.githubusercontent.com/scriptscat/skills/main/browser-automation/SKILL.cat.md) |
-| `scheduled-tasks/` | مهام Cron المجدولة (وضع داخلي + حدث) | [تثبيت](https://raw.githubusercontent.com/scriptscat/skills/main/scheduled-tasks/SKILL.cat.md) |
-| `skill-creator/` | يساعد في إنشاء واختبار وتعبئة Skills جديدة | [تثبيت](https://raw.githubusercontent.com/scriptscat/skills/main/skill-creator/SKILL.cat.md) |
-| `file-parser/` | يحلل صيغ الملفات الشائعة (Excel, PDF, Word, CSV, PPT) | [تثبيت](https://raw.githubusercontent.com/scriptscat/skills/main/file-parser/SKILL.cat.md) |
-| `scriptcat-dev/` | مساعد تطوير سكرپتات ScriptCat/Tampermonkey | [تثبيت](https://raw.githubusercontent.com/scriptscat/skills/main/scriptcat-dev/SKILL.cat.md) |
-| `synology-office-sheet/` | قراءة/كتابة جداول بيانات Synology Office | [تثبيت](https://raw.githubusercontent.com/scriptscat/skills/main/synology-office-sheet/SKILL.cat.md) |
-| `wechat-publisher/` | مساعد عمليات الحساب الرسمي WeChat — جمع المحتوى وكتابة المقالات والنشر | [تثبيت](https://raw.githubusercontent.com/scriptscat/skills/main/wechat-publisher/SKILL.cat.md) |
-| `xiaohongshu-publisher/` | مساعد عمليات Xiaohongshu (RED) — كتابة الملاحظات وتوليد الصور والنشر | [تثبيت](https://raw.githubusercontent.com/scriptscat/skills/main/xiaohongshu-publisher/SKILL.cat.md) |
+| `browser-automation/` | تحليل الصفحات، معالجة الـ DOM، تعبئة النماذج، لقطات الشاشة، التنقل | [تثبيت](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/browser-automation/SKILL.cat.md) |
+| `scheduled-tasks/` | مهام Cron المجدولة (وضع داخلي + حدث) | [تثبيت](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/scheduled-tasks/SKILL.cat.md) |
+| `skill-creator/` | يساعد في إنشاء واختبار وتعبئة Skills جديدة | [تثبيت](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/skill-creator/SKILL.cat.md) |
+| `file-parser/` | يحلل صيغ الملفات الشائعة (Excel, PDF, Word, CSV, PPT) | [تثبيت](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/file-parser/SKILL.cat.md) |
+| `scriptcat-dev/` | مساعد تطوير سكرپتات ScriptCat/Tampermonkey | [تثبيت](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/scriptcat-dev/SKILL.cat.md) |
+| `synology-office-sheet/` | قراءة/كتابة جداول بيانات Synology Office | [تثبيت](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/synology-office-sheet/SKILL.cat.md) |
+| `wechat-publisher/` | مساعد عمليات الحساب الرسمي WeChat — جمع المحتوى وكتابة المقالات والنشر | [تثبيت](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/wechat-publisher/SKILL.cat.md) |
+| `xiaohongshu-publisher/` | مساعد عمليات Xiaohongshu (RED) — كتابة الملاحظات وتوليد الصور والنشر | [تثبيت](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/xiaohongshu-publisher/SKILL.cat.md) |
 
 **أمثلة الأكواد:**
 

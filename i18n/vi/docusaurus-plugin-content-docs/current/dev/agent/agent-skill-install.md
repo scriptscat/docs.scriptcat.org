@@ -5,7 +5,7 @@ title: Cài đặt và sử dụng Skills
 Skill là một gói tiện ích mở rộng cho Agent, giúp inject kiến thức chuyên môn và các công cụ tùy chỉnh vào AI. Trang này hướng dẫn cách cài đặt, cấu hình và quản lý Skills.
 
 :::tip Kho Skills chính thức
-**[scriptscat/skills](https://github.com/scriptscat/skills)** — Các Skills sẵn sàng sử dụng cho tự động hóa trình duyệt, tác vụ theo lịch trình, phân tích tệp, hỗ trợ phát triển script và nhiều hơn nữa.
+**[scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills)** — Các Skills sẵn sàng sử dụng cho tự động hóa trình duyệt, tác vụ theo lịch trình, phân tích tệp, hỗ trợ phát triển script và nhiều hơn nữa.
 :::
 
 ## Phương thức cài đặt
@@ -17,7 +17,7 @@ Mở trực tiếp URL `SKILL.cat.md` trong thanh địa chỉ của trình duy�
 Ví dụ, để cài đặt Skill tự động hóa trình duyệt chính thức:
 
 ```
-https://raw.githubusercontent.com/scriptscat/skills/main/browser-automation/SKILL.cat.md
+https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/browser-automation/SKILL.cat.md
 ```
 
 Bạn cũng có thể thực hiện từ trang quản lý:
@@ -43,14 +43,14 @@ Nhấp chuột phải **Sao chép liên kết**, sau đó dán liên kết vào 
 
 | Skill | Mô tả | Cài đặt |
 |-------|------|------|
-| [browser-automation](https://github.com/scriptscat/skills/tree/main/browser-automation) | Phân tích trang, thao tác DOM, điền biểu mẫu, chụp ảnh màn hình, điều hướng | [Cài đặt](https://raw.githubusercontent.com/scriptscat/skills/main/browser-automation/SKILL.cat.md) |
-| [scheduled-tasks](https://github.com/scriptscat/skills/tree/main/scheduled-tasks) | Tác vụ Cron theo lịch trình (tự động chạy bởi LLM/callback script) | [Cài đặt](https://raw.githubusercontent.com/scriptscat/skills/main/scheduled-tasks/SKILL.cat.md) |
-| [skill-creator](https://github.com/scriptscat/skills/tree/main/skill-creator) | Hỗ trợ tạo, kiểm tra và đóng gói Skills mới | [Cài đặt](https://raw.githubusercontent.com/scriptscat/skills/main/skill-creator/SKILL.cat.md) |
-| [file-parser](https://github.com/scriptscat/skills/tree/main/file-parser) | Phân tích tệp Excel, PDF, Word, CSV và PPT | [Cài đặt](https://raw.githubusercontent.com/scriptscat/skills/main/file-parser/SKILL.cat.md) |
-| [scriptcat-dev](https://github.com/scriptscat/skills/tree/main/scriptcat-dev) | Trợ lý phát triển script ScriptCat/Tampermonkey | [Cài đặt](https://raw.githubusercontent.com/scriptscat/skills/main/scriptcat-dev/SKILL.cat.md) |
-| [synology-office-sheet](https://github.com/scriptscat/skills/tree/main/synology-office-sheet) | Đọc/ghi bảng tính Synology Office | [Cài đặt](https://raw.githubusercontent.com/scriptscat/skills/main/synology-office-sheet/SKILL.cat.md) |
-| [wechat-publisher](https://github.com/scriptscat/skills/tree/main/wechat-publisher) | Trợ lý vận hành tài khoản chính thức WeChat | [Cài đặt](https://raw.githubusercontent.com/scriptscat/skills/main/wechat-publisher/SKILL.cat.md) |
-| [xiaohongshu-publisher](https://github.com/scriptscat/skills/tree/main/xiaohongshu-publisher) | Trợ lý vận hành Xiaohongshu (RED) | [Cài đặt](https://raw.githubusercontent.com/scriptscat/skills/main/xiaohongshu-publisher/SKILL.cat.md) |
+| [browser-automation](https://github.com/scriptscat/scriptcat-skills/tree/main/browser-automation) | Phân tích trang, thao tác DOM, điền biểu mẫu, chụp ảnh màn hình, điều hướng | [Cài đặt](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/browser-automation/SKILL.cat.md) |
+| [scheduled-tasks](https://github.com/scriptscat/scriptcat-skills/tree/main/scheduled-tasks) | Tác vụ Cron theo lịch trình (tự động chạy bởi LLM/callback script) | [Cài đặt](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/scheduled-tasks/SKILL.cat.md) |
+| [skill-creator](https://github.com/scriptscat/scriptcat-skills/tree/main/skill-creator) | Hỗ trợ tạo, kiểm tra và đóng gói Skills mới | [Cài đặt](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/skill-creator/SKILL.cat.md) |
+| [file-parser](https://github.com/scriptscat/scriptcat-skills/tree/main/file-parser) | Phân tích tệp Excel, PDF, Word, CSV và PPT | [Cài đặt](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/file-parser/SKILL.cat.md) |
+| [scriptcat-dev](https://github.com/scriptscat/scriptcat-skills/tree/main/scriptcat-dev) | Trợ lý phát triển script ScriptCat/Tampermonkey | [Cài đặt](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/scriptcat-dev/SKILL.cat.md) |
+| [synology-office-sheet](https://github.com/scriptscat/scriptcat-skills/tree/main/synology-office-sheet) | Đọc/ghi bảng tính Synology Office | [Cài đặt](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/synology-office-sheet/SKILL.cat.md) |
+| [wechat-publisher](https://github.com/scriptscat/scriptcat-skills/tree/main/wechat-publisher) | Trợ lý vận hành tài khoản chính thức WeChat | [Cài đặt](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/wechat-publisher/SKILL.cat.md) |
+| [xiaohongshu-publisher](https://github.com/scriptscat/scriptcat-skills/tree/main/xiaohongshu-publisher) | Trợ lý vận hành Xiaohongshu (RED) | [Cài đặt](https://raw.githubusercontent.com/scriptscat/scriptcat-skills/main/xiaohongshu-publisher/SKILL.cat.md) |
 
 ## Cấu hình Skill
 

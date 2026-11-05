@@ -6,7 +6,7 @@ title: واجهة برمجة إدارة Skills
 
 تتيح واجهة برمجة إدارة Skills للسكرپت الاستعلام عن حزم توسعة Skill وتثبيتها وإزالتها واستدعاءها.
 
-لتطوير وتعبئة Skills، راجع [دليل تطوير Skills](../agent-skill-dev). أمثلة Skills الرسمية: [scriptscat/skills](https://github.com/scriptscat/skills).
+لتطوير وتعبئة Skills، راجع [دليل تطوير Skills](../agent-skill-dev). أمثلة Skills الرسمية: [scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills).
 
 ## list — سرد Skills المثبتة
 

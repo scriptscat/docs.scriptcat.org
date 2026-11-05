@@ -88,7 +88,7 @@ agents/
 
 Skill 是提示词 + 工具脚本 + 参考资料的扩展包，可以为 Agent 注入专业领域知识和自定义工具。
 
-**官方 Skill 仓库：[scriptscat/skills](https://github.com/scriptscat/skills)**
+**官方 Skill 仓库：[scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills)**
 
 包含浏览器自动化、定时任务、Skill 创建工具、对话/DOM/配置示例等开箱即用的 Skill。
 

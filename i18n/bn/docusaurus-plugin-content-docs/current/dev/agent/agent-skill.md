@@ -6,7 +6,7 @@ title: Skill ম্যানেজমেন্ট API
 
 Skill ম্যানেজমেন্ট API একটি স্ক্রিপ্টকে Skill এক্সটেনশন প্যাকেজ জিজ্ঞাসা, ইনস্টল, অপসারণ এবং কল করতে দেয়।
 
-Skill উন্নয়ন এবং প্যাকেজিংয়ের জন্য, [Skill উন্নয়ন গাইড](../agent-skill-dev) দেখুন। অফিসিয়াল Skill উদাহরণ: [scriptscat/skills](https://github.com/scriptscat/skills)।
+Skill উন্নয়ন এবং প্যাকেজিংয়ের জন্য, [Skill উন্নয়ন গাইড](../agent-skill-dev) দেখুন। অফিসিয়াল Skill উদাহরণ: [scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills)।
 
 ## list — ইনস্টল করা Skill তালিকা করুন
 

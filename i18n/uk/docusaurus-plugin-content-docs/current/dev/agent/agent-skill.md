@@ -6,7 +6,7 @@ title: API керування Skill
 
 API керування Skill дозволяє скрипту запитувати, встановлювати, видаляти та викликати пакети розширень Skill.
 
-Для розробки та пакування Skill дивіться [Посібник з розробки Skill](../agent-skill-dev). Офіційні приклади Skill: [scriptscat/skills](https://github.com/scriptscat/skills).
+Для розробки та пакування Skill дивіться [Посібник з розробки Skill](../agent-skill-dev). Офіційні приклади Skill: [scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills).
 
 ## list — список встановлених Skill
 

@@ -88,7 +88,7 @@ Aggiungere un Provider e chiave API sotto "Configurazione modello" nella dashboa
 
 Uno Skill è un pacchetto che combina prompt + script strumenti + materiale di riferimento, permettendo di iniettare conoscenza specifica del dominio e strumenti personalizzati nell'Agent.
 
-**Repository ufficiale Skill: [scriptscat/skills](https://github.com/scriptscat/skills)**
+**Repository ufficiale Skill: [scriptscat/scriptcat-skills](https://github.com/scriptscat/scriptcat-skills)**
 
 Include Skill pronti all'uso per automazione browser, task programmati, uno strumento di creazione Skill, esempi di conversazione/DOM/configurazione e altro.
 
