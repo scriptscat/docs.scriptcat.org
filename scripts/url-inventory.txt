@@ -21,6 +21,7 @@
 /ar/docs/dev/agent/agent-skill/index.html
 /ar/docs/dev/agent/agent-task/index.html
 /ar/docs/dev/agent/index.html
+/ar/docs/dev/ai/index.html
 /ar/docs/dev/api/index.html
 /ar/docs/dev/background/index.html
 /ar/docs/dev/cat-api/index.html
@@ -73,6 +74,7 @@
 /bn/docs/dev/agent/agent-skill/index.html
 /bn/docs/dev/agent/agent-task/index.html
 /bn/docs/dev/agent/index.html
+/bn/docs/dev/ai/index.html
 /bn/docs/dev/api/index.html
 /bn/docs/dev/background/index.html
 /bn/docs/dev/cat-api/index.html
@@ -125,6 +127,7 @@
 /de/docs/dev/agent/agent-skill/index.html
 /de/docs/dev/agent/agent-task/index.html
 /de/docs/dev/agent/index.html
+/de/docs/dev/ai/index.html
 /de/docs/dev/api/index.html
 /de/docs/dev/background/index.html
 /de/docs/dev/cat-api/index.html
@@ -176,6 +179,7 @@
 /docs/dev/agent/agent-skill/index.html
 /docs/dev/agent/agent-task/index.html
 /docs/dev/agent/index.html
+/docs/dev/ai/index.html
 /docs/dev/api/index.html
 /docs/dev/background/index.html
 /docs/dev/cat-api/index.html
@@ -224,6 +228,7 @@
 /en/docs/dev/agent/agent-skill/index.html
 /en/docs/dev/agent/agent-task/index.html
 /en/docs/dev/agent/index.html
+/en/docs/dev/ai/index.html
 /en/docs/dev/api/index.html
 /en/docs/dev/background/index.html
 /en/docs/dev/cat-api/index.html
@@ -276,6 +281,7 @@
 /es/docs/dev/agent/agent-skill/index.html
 /es/docs/dev/agent/agent-task/index.html
 /es/docs/dev/agent/index.html
+/es/docs/dev/ai/index.html
 /es/docs/dev/api/index.html
 /es/docs/dev/background/index.html
 /es/docs/dev/cat-api/index.html
@@ -328,6 +334,7 @@
 /fa/docs/dev/agent/agent-skill/index.html
 /fa/docs/dev/agent/agent-task/index.html
 /fa/docs/dev/agent/index.html
+/fa/docs/dev/ai/index.html
 /fa/docs/dev/api/index.html
 /fa/docs/dev/background/index.html
 /fa/docs/dev/cat-api/index.html
@@ -380,6 +387,7 @@
 /fr/docs/dev/agent/agent-skill/index.html
 /fr/docs/dev/agent/agent-task/index.html
 /fr/docs/dev/agent/index.html
+/fr/docs/dev/ai/index.html
 /fr/docs/dev/api/index.html
 /fr/docs/dev/background/index.html
 /fr/docs/dev/cat-api/index.html
@@ -432,6 +440,7 @@
 /hy/docs/dev/agent/agent-skill/index.html
 /hy/docs/dev/agent/agent-task/index.html
 /hy/docs/dev/agent/index.html
+/hy/docs/dev/ai/index.html
 /hy/docs/dev/api/index.html
 /hy/docs/dev/background/index.html
 /hy/docs/dev/cat-api/index.html
@@ -484,6 +493,7 @@
 /id/docs/dev/agent/agent-skill/index.html
 /id/docs/dev/agent/agent-task/index.html
 /id/docs/dev/agent/index.html
+/id/docs/dev/ai/index.html
 /id/docs/dev/api/index.html
 /id/docs/dev/background/index.html
 /id/docs/dev/cat-api/index.html
@@ -537,6 +547,7 @@
 /it/docs/dev/agent/agent-skill/index.html
 /it/docs/dev/agent/agent-task/index.html
 /it/docs/dev/agent/index.html
+/it/docs/dev/ai/index.html
 /it/docs/dev/api/index.html
 /it/docs/dev/background/index.html
 /it/docs/dev/cat-api/index.html
@@ -589,6 +600,7 @@
 /ja/docs/dev/agent/agent-skill/index.html
 /ja/docs/dev/agent/agent-task/index.html
 /ja/docs/dev/agent/index.html
+/ja/docs/dev/ai/index.html
 /ja/docs/dev/api/index.html
 /ja/docs/dev/background/index.html
 /ja/docs/dev/cat-api/index.html
@@ -641,6 +653,7 @@
 /ko/docs/dev/agent/agent-skill/index.html
 /ko/docs/dev/agent/agent-task/index.html
 /ko/docs/dev/agent/index.html
+/ko/docs/dev/ai/index.html
 /ko/docs/dev/api/index.html
 /ko/docs/dev/background/index.html
 /ko/docs/dev/cat-api/index.html
@@ -693,6 +706,7 @@
 /nl/docs/dev/agent/agent-skill/index.html
 /nl/docs/dev/agent/agent-task/index.html
 /nl/docs/dev/agent/index.html
+/nl/docs/dev/ai/index.html
 /nl/docs/dev/api/index.html
 /nl/docs/dev/background/index.html
 /nl/docs/dev/cat-api/index.html
@@ -746,6 +760,7 @@
 /pt/docs/dev/agent/agent-skill/index.html
 /pt/docs/dev/agent/agent-task/index.html
 /pt/docs/dev/agent/index.html
+/pt/docs/dev/ai/index.html
 /pt/docs/dev/api/index.html
 /pt/docs/dev/background/index.html
 /pt/docs/dev/cat-api/index.html
@@ -798,6 +813,7 @@
 /ru/docs/dev/agent/agent-skill/index.html
 /ru/docs/dev/agent/agent-task/index.html
 /ru/docs/dev/agent/index.html
+/ru/docs/dev/ai/index.html
 /ru/docs/dev/api/index.html
 /ru/docs/dev/background/index.html
 /ru/docs/dev/cat-api/index.html
@@ -851,6 +867,7 @@
 /tr/docs/dev/agent/agent-skill/index.html
 /tr/docs/dev/agent/agent-task/index.html
 /tr/docs/dev/agent/index.html
+/tr/docs/dev/ai/index.html
 /tr/docs/dev/api/index.html
 /tr/docs/dev/background/index.html
 /tr/docs/dev/cat-api/index.html
@@ -903,6 +920,7 @@
 /uk/docs/dev/agent/agent-skill/index.html
 /uk/docs/dev/agent/agent-task/index.html
 /uk/docs/dev/agent/index.html
+/uk/docs/dev/ai/index.html
 /uk/docs/dev/api/index.html
 /uk/docs/dev/background/index.html
 /uk/docs/dev/cat-api/index.html
@@ -956,6 +974,7 @@
 /vi/docs/dev/agent/agent-skill/index.html
 /vi/docs/dev/agent/agent-task/index.html
 /vi/docs/dev/agent/index.html
+/vi/docs/dev/ai/index.html
 /vi/docs/dev/api/index.html
 /vi/docs/dev/background/index.html
 /vi/docs/dev/cat-api/index.html
@@ -1008,6 +1027,7 @@
 /zh-Hant/docs/dev/agent/agent-skill/index.html
 /zh-Hant/docs/dev/agent/agent-task/index.html
 /zh-Hant/docs/dev/agent/index.html
+/zh-Hant/docs/dev/ai/index.html
 /zh-Hant/docs/dev/api/index.html
 /zh-Hant/docs/dev/background/index.html
 /zh-Hant/docs/dev/cat-api/index.html

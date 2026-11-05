@@ -45,6 +45,7 @@ const sidebars = {
   ],
   dev: [
     "dev/index",
+    "dev/ai",
     "dev/background",
     "dev/cloudcat",
     "dev/subscribe",
