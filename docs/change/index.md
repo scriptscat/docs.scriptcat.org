@@ -13,6 +13,39 @@ Beta 版本更新日志请查看 [Beta 更新日志](./beta-changelog.md)
 
 ⚠️ 请注意，如果你使用的 Windows 8/7/XP 系统，或者浏览器内核版本低于\<120，需要自行手动安装[旧版脚本猫](https://bbs.tampermonkey.net.cn/thread-3068-1-1.html)，v0.16.x 是最后一个支持 Manifest V2 的版本，安装步骤可以参考：[加载解压缩方式安装扩展](/docs/use/use/#%E5%8A%A0%E8%BD%BD%E8%A7%A3%E5%8E%8B%E7%BC%A9%E6%96%B9%E5%BC%8F%E5%AE%89%E8%A3%85%E6%89%A9%E5%B1%95)。
 
+<a name="1.5.1"></a>
+
+## 1.5.1 (2026-11-09)
+
+本次更新修复了 Firefox 从 0.16 升级到 1.x 后脚本丢失的问题；外部接入新增通过 sctl 运行后台/定时脚本并读取运行日志，日志页支持复制与导出，并兼容 `@support` 元数据。
+
+### 🚀 主要新功能
+
+- ✨ 外部接入：支持通过 [sctl](https://github.com/scriptscat/sctl) 触发后台/定时脚本运行并读取脚本运行日志（需 sctl v0.4.0 及以上） ([#1825](https://github.com/scriptscat/scriptcat/pull/1825)) (by @CodFrm)
+- ✨ 外部接入：每个浏览器作为独立实例连接 sctl，支持命名与改名；连接被拒绝时停止重连并说明原因 ([#1821](https://github.com/scriptscat/scriptcat/pull/1821), [#1820](https://github.com/scriptscat/scriptcat/pull/1820)) (by @CodFrm)
+- ✨ 日志页支持复制日志行与导出日志 [#1810](https://github.com/scriptscat/scriptcat/issues/1810) ([#1813](https://github.com/scriptscat/scriptcat/pull/1813)) (by @CodFrm)
+
+### 🧩 GM API 变更
+
+- ✨ 兼容 `@support` 元数据，脚本列表新增独立的「反馈问题」入口 [#1811](https://github.com/scriptscat/scriptcat/issues/1811) ([#1830](https://github.com/scriptscat/scriptcat/pull/1830)) (by @CodFrm)
+
+### 🐛 Bug 修复
+
+- 🐛 修复 Firefox 从 0.16 升级到 1.x 时 IndexedDB 数据不迁移导致脚本丢失 ([#1804](https://github.com/scriptscat/scriptcat/pull/1804)) (by @CodFrm)
+- 🐛 修复 360 X 浏览器从网页新开标签安装脚本时安装页加载失败 [#1816](https://github.com/scriptscat/scriptcat/issues/1816) ([#1818](https://github.com/scriptscat/scriptcat/pull/1818)) (by @CodFrm)
+- 🐛 外部接入：隐身窗口进程不再连接 sctl，避免与普通进程每 2 秒互相顶替 ([#1819](https://github.com/scriptscat/scriptcat/pull/1819)) (by @CodFrm)
+- 🐛 修复 Popup 不显示仅匹配 iframe 的未启用脚本 [#1808](https://github.com/scriptscat/scriptcat/issues/1808) ([#1837](https://github.com/scriptscat/scriptcat/pull/1837)) (by @CodFrm)
+- 🐛 修复 Popup 展开分组再收起后底部留下大块空白 ([#1829](https://github.com/scriptscat/scriptcat/pull/1829)) (by @CodFrm)
+
+### 🎨 UI 改进
+
+- 💄 安装页桌面端主操作移入身份卡，滚出可视区后吸底；「本会话允许」收进下拉菜单 ([#1817](https://github.com/scriptscat/scriptcat/pull/1817)) (by @CodFrm)
+- 💄 优化选项页：搜索框清除按钮、提示样式、空状态，回收站内删除无需二次确认等 ([#1831](https://github.com/scriptscat/scriptcat/pull/1831)) (by @CodFrm)
+
+### 其它
+
+- 📝 新增 scriptcat-userscript Skill，指导 AI 编码代理编写页面/后台/定时脚本并通过 sctl 安装与验证，可用 `npx skills add scriptscat/scriptcat -g` 安装 ([#1824](https://github.com/scriptscat/scriptcat/pull/1824), [#1827](https://github.com/scriptscat/scriptcat/pull/1827)) (by @CodFrm)
+
 <a name="1.5.0"></a>
 
 ## 1.5.0 (2026-10-23)

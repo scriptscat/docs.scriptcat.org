@@ -10,6 +10,39 @@ For Beta version changelog, please see [Beta Changelog](./beta-changelog.md)
 
 ⚠️ Please note that if you are using Windows 8/7/XP, or your browser kernel version is lower than 120, you need to manually install the [legacy version of ScriptCat](https://github.com/scriptscat/scriptcat/releases). v0.16.x is the last version that supports Manifest V2. Installation steps can be found at: [Install Extension by Loading Unpacked](/use/use.md#load-unpacked-extension-installation).
 
+<a name="1.5.1"></a>
+
+## 1.5.1 (2026-11-09)
+
+This release fixes scripts going missing when Firefox users upgrade from 0.16 to 1.x. External Access can now run background/scheduled scripts and read their logs through sctl, the log page supports copying and exporting, and the `@support` metadata key is recognized.
+
+### 🚀 Major New Features
+
+- ✨ External Access: trigger background/scheduled scripts and read script run logs through [sctl](https://github.com/scriptscat/sctl) (requires sctl v0.4.0 or later) ([#1825](https://github.com/scriptscat/scriptcat/pull/1825)) (by @CodFrm)
+- ✨ External Access: each browser connects to sctl as its own named, renamable instance; when a connection is rejected, ScriptCat stops reconnecting and explains why ([#1821](https://github.com/scriptscat/scriptcat/pull/1821), [#1820](https://github.com/scriptscat/scriptcat/pull/1820)) (by @CodFrm)
+- ✨ The log page can copy log lines and export logs [#1810](https://github.com/scriptscat/scriptcat/issues/1810) ([#1813](https://github.com/scriptscat/scriptcat/pull/1813)) (by @CodFrm)
+
+### 🧩 GM API Changes
+
+- ✨ Support the `@support` metadata key; the script list gets a separate "Report an issue" entry [#1811](https://github.com/scriptscat/scriptcat/issues/1811) ([#1830](https://github.com/scriptscat/scriptcat/pull/1830)) (by @CodFrm)
+
+### 🐛 Bug Fixes
+
+- 🐛 Fix scripts being lost when Firefox upgrades from 0.16 to 1.x because IndexedDB data was not migrated ([#1804](https://github.com/scriptscat/scriptcat/pull/1804)) (by @CodFrm)
+- 🐛 Fix the install page failing to load in 360 X when a script is installed from a web page in a new tab [#1816](https://github.com/scriptscat/scriptcat/issues/1816) ([#1818](https://github.com/scriptscat/scriptcat/pull/1818)) (by @CodFrm)
+- 🐛 External Access: the incognito (split) process no longer connects to sctl, so it stops displacing the normal process every 2 seconds ([#1819](https://github.com/scriptscat/scriptcat/pull/1819)) (by @CodFrm)
+- 🐛 Fix the popup not showing disabled scripts that only match iframes [#1808](https://github.com/scriptscat/scriptcat/issues/1808) ([#1837](https://github.com/scriptscat/scriptcat/pull/1837)) (by @CodFrm)
+- 🐛 Fix a large blank area at the bottom of the popup after expanding and collapsing a group ([#1829](https://github.com/scriptscat/scriptcat/pull/1829)) (by @CodFrm)
+
+### 🎨 UI Improvements
+
+- 💄 On desktop, the install page's primary actions move into the identity card and stick to the bottom once scrolled out of view; "Allow for this session" moves into a dropdown ([#1817](https://github.com/scriptscat/scriptcat/pull/1817)) (by @CodFrm)
+- 💄 Options page polish: a clear button in search boxes, toast styling, empty states, and no extra confirmation when deleting from the recycle bin ([#1831](https://github.com/scriptscat/scriptcat/pull/1831)) (by @CodFrm)
+
+### Others
+
+- 📝 New scriptcat-userscript Skill that guides AI coding agents to write page/background/scheduled scripts and install and verify them through sctl; install it with `npx skills add scriptscat/scriptcat -g` ([#1824](https://github.com/scriptscat/scriptcat/pull/1824), [#1827](https://github.com/scriptscat/scriptcat/pull/1827)) (by @CodFrm)
+
 <a name="1.5.0"></a>
 
 ## 1.5.0 (2026-10-23)
