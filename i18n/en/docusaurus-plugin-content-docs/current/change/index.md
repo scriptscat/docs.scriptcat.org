@@ -10,6 +10,34 @@ For Beta version changelog, please see [Beta Changelog](./beta-changelog.md)
 
 ⚠️ Please note that if you are using Windows 8/7/XP, or your browser kernel version is lower than 120, you need to manually install the [legacy version of ScriptCat](https://github.com/scriptscat/scriptcat/releases). v0.16.x is the last version that supports Manifest V2. Installation steps can be found at: [Install Extension by Loading Unpacked](/use/use.md#load-unpacked-extension-installation).
 
+<a name="1.5.2"></a>
+
+## 1.5.2 (2026-11-16)
+
+This release fixes several Firefox issues: `GM_xmlhttpRequest` failing immediately on http URLs, a popup that was too narrow, and filter menus that would not open. Link import now accepts script-site and GitHub / Gist page links directly, and update checks no longer wrongly report some scripts as up to date.
+
+### 🚀 Major New Features
+
+- ✨ Link import accepts Greasy Fork, ScriptCat and OpenUserJS script page links as well as GitHub file pages and Gist pages, converting them to install links automatically [#1841](https://github.com/scriptscat/scriptcat/issues/1841) ([#1851](https://github.com/scriptscat/scriptcat/pull/1851)) (by @CodFrm)
+
+### 🐛 Bug Fixes
+
+- 🐛 Fix `GM_xmlhttpRequest` firing `onerror` immediately for `http://` URLs on Firefox [#1846](https://github.com/scriptscat/scriptcat/issues/1846) ([#1855](https://github.com/scriptscat/scriptcat/pull/1855)) (by @CodFrm)
+- 🐛 Fix the Firefox popup being only 304px wide with its right side cut off [#1849](https://github.com/scriptscat/scriptcat/issues/1849) ([#1850](https://github.com/scriptscat/scriptcat/pull/1850)) (by @Hawaiipotato)
+- 🐛 Fix script list filter menus not opening on Firefox; the batch action bar uses clearer solid buttons, and batch update checks report progress and results [#1839](https://github.com/scriptscat/scriptcat/issues/1839) ([#1843](https://github.com/scriptscat/scriptcat/pull/1843)) (by @CodFrm)
+- 🐛 Fix update checks wrongly reporting "already up to date" for scripts without `@updateURL` when the derived meta.js does not exist [#1840](https://github.com/scriptscat/scriptcat/issues/1840) ([#1845](https://github.com/scriptscat/scriptcat/pull/1845)) (by @CodFrm)
+- 🐛 Fix the popup notification dot reappearing after the notice has been read ([#1853](https://github.com/scriptscat/scriptcat/pull/1853)) (by @CodFrm)
+- 🐛 Fix long version numbers overflowing on the import page [#1858](https://github.com/scriptscat/scriptcat/issues/1858) ([#1859](https://github.com/scriptscat/scriptcat/pull/1859)) (by @CodFrm)
+
+### 🎨 UI Improvements
+
+- 💄 Polish 8 narrow-screen layouts and messages across the install page, log page, batch update, script list and network rules ([#1844](https://github.com/scriptscat/scriptcat/pull/1844)) (by @CodFrm)
+- 💄 Clearer "Permission changes" display on the update page; fix a blank strip showing at the bottom of the install page when overscrolling ([#1847](https://github.com/scriptscat/scriptcat/pull/1847)) (by @CodFrm)
+
+### 🔒 Security Improvements
+
+- 🔒 The Baidu Netdisk precreate request now uses https so the access_token is no longer sent in plain text ([#1855](https://github.com/scriptscat/scriptcat/pull/1855)) (by @CodFrm)
+
 <a name="1.5.1"></a>
 
 ## 1.5.1 (2026-11-09)

@@ -13,6 +13,34 @@ Beta 版本更新日志请查看 [Beta 更新日志](./beta-changelog.md)
 
 ⚠️ 请注意，如果你使用的 Windows 8/7/XP 系统，或者浏览器内核版本低于\<120，需要自行手动安装[旧版脚本猫](https://bbs.tampermonkey.net.cn/thread-3068-1-1.html)，v0.16.x 是最后一个支持 Manifest V2 的版本，安装步骤可以参考：[加载解压缩方式安装扩展](/docs/use/use/#%E5%8A%A0%E8%BD%BD%E8%A7%A3%E5%8E%8B%E7%BC%A9%E6%96%B9%E5%BC%8F%E5%AE%89%E8%A3%85%E6%89%A9%E5%B1%95)。
 
+<a name="1.5.2"></a>
+
+## 1.5.2 (2026-11-16)
+
+本次更新修复了 Firefox 上 `GM_xmlhttpRequest` 请求 http 地址直接失败、popup 宽度不足、筛选菜单点不开等问题；链接导入支持直接粘贴脚本站与 GitHub / Gist 的页面链接，并修复了部分脚本检查更新误报「已是最新版本」。
+
+### 🚀 主要新功能
+
+- ✨ 链接导入支持粘贴 Greasy Fork、ScriptCat、OpenUserJS 的脚本页面链接以及 GitHub 文件页、Gist 页面链接，自动转换为安装链接 [#1841](https://github.com/scriptscat/scriptcat/issues/1841) ([#1851](https://github.com/scriptscat/scriptcat/pull/1851)) (by @CodFrm)
+
+### 🐛 Bug 修复
+
+- 🐛 修复 Firefox 上 `GM_xmlhttpRequest` 请求 `http://` 地址时直接触发 `onerror` [#1846](https://github.com/scriptscat/scriptcat/issues/1846) ([#1855](https://github.com/scriptscat/scriptcat/pull/1855)) (by @CodFrm)
+- 🐛 修复 Firefox 下 popup 窗口宽度只有 304px、右侧内容被裁切 [#1849](https://github.com/scriptscat/scriptcat/issues/1849) ([#1850](https://github.com/scriptscat/scriptcat/pull/1850)) (by @Hawaiipotato)
+- 🐛 修复 Firefox 下脚本列表的筛选菜单点击后不展开；批量操作栏按钮改为更易辨认的实底样式，批量检查更新会提示进度与结果 [#1839](https://github.com/scriptscat/scriptcat/issues/1839) ([#1843](https://github.com/scriptscat/scriptcat/pull/1843)) (by @CodFrm)
+- 🐛 修复未声明 `@updateURL` 的脚本在推算出的 meta.js 不存在时，检查更新误报「已是最新版本」 [#1840](https://github.com/scriptscat/scriptcat/issues/1840) ([#1845](https://github.com/scriptscat/scriptcat/pull/1845)) (by @CodFrm)
+- 🐛 修复 popup 通知读过后红点又重新出现 ([#1853](https://github.com/scriptscat/scriptcat/pull/1853)) (by @CodFrm)
+- 🐛 修复导入页超长版本号溢出 [#1858](https://github.com/scriptscat/scriptcat/issues/1858) ([#1859](https://github.com/scriptscat/scriptcat/pull/1859)) (by @CodFrm)
+
+### 🎨 UI 改进
+
+- 💄 优化安装页、日志页、批量更新、脚本列表、网络规则等 8 处窄屏布局与提示文案 ([#1844](https://github.com/scriptscat/scriptcat/pull/1844)) (by @CodFrm)
+- 💄 优化更新页「权限变化」的展示，修复安装页滚动到底回弹时底部露出空白 ([#1847](https://github.com/scriptscat/scriptcat/pull/1847)) (by @CodFrm)
+
+### 🔒 安全性改进
+
+- 🔒 百度网盘预创建接口改用 https，避免 access_token 明文传输 ([#1855](https://github.com/scriptscat/scriptcat/pull/1855)) (by @CodFrm)
+
 <a name="1.5.1"></a>
 
 ## 1.5.1 (2026-11-09)
