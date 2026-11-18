@@ -202,29 +202,17 @@
   "home.dev.title2": {
     "message": "محیط اجرای کد"
   },
-  "home.feat.api.d": {
-    "message": "غنی‌تر از GM: ذخیره‌سازی فایل، وظایف زمان‌بندی‌شده و درخواست‌های بین‌دامنه‌ای در دسترس شما."
-  },
-  "home.feat.api.t": {
-    "message": "APIهای قدرتمند"
-  },
-  "home.feat.bg.d": {
-    "message": "ویژه: اسکریپت‌ها بدون باز بودن تب، در پس‌زمینه به اجرا ادامه می‌دهند."
-  },
-  "home.feat.bg.t": {
-    "message": "اسکریپت‌های پس‌زمینه"
-  },
   "home.feat.compat.b": {
     "message": "پشتیبانی از APIهای GM_* · بلوک متادیتای یکسان"
   },
   "home.feat.compat.d": {
     "message": "کاملاً سازگار با فرمت اسکریپت کاربری و APIهای GM — اسکریپت‌های موجود را بدون هیچ تغییری و بدون هزینه مهاجرت منتقل کنید."
   },
+  "home.feat.compat.l": {
+    "message": "راهنمای مهاجرت"
+  },
   "home.feat.compat.t": {
     "message": "سازگار با Tampermonkey"
-  },
-  "home.feat.devTag": {
-    "message": "توسعه‌دهنده"
   },
   "home.feat.eyebrow": {
     "message": "امکانات اصلی · WHY SCRIPTCAT"
@@ -232,11 +220,17 @@
   "home.feat.secure.d": {
     "message": "مجوزهای شفاف و قابل کنترل و رفتار قابل مشاهده — اسکریپت‌های مخرب در همان ابتدا متوقف می‌شوند."
   },
+  "home.feat.secure.l": {
+    "message": "نحوه کار مجوزها"
+  },
   "home.feat.secure.t": {
     "message": "امن و قابل اعتماد"
   },
   "home.feat.store.d": {
     "message": "هزاران اسکریپت انجمن را در یک کلیک نصب کنید، یا آثار خود را منتشر کنید و اکوسیستم را با هم بسازید."
+  },
+  "home.link.store": {
+    "message": "رفتن به فروشگاه اسکریپت"
   },
   "home.feat.store.t": {
     "message": "فروشگاه اسکریپت"
@@ -246,6 +240,9 @@
   },
   "home.feat.sync.d": {
     "message": "اسکریپت‌ها و تنظیمات بین دستگاه‌ها همگام می‌شوند — هنگام تعویض یا نصب مجدد چیزی از دست نمی‌رود."
+  },
+  "home.feat.sync.l": {
+    "message": "تنظیم همگام‌سازی"
   },
   "home.feat.sync.t": {
     "message": "همگام‌سازی ابری"
@@ -277,26 +274,17 @@
   "home.hero.mock.adblock": {
     "message": "رد شدن خودکار از تبلیغ"
   },
-  "home.hero.mock.add": {
-    "message": "افزودن از فروشگاه اسکریپت"
-  },
   "home.hero.mock.dark": {
     "message": "حالت تاریک صفحات"
   },
   "home.hero.mock.running": {
     "message": "۳ اسکریپت در حال اجرا در این صفحه"
   },
-  "home.hero.mock.skip": {
-    "message": "رد شدن از تبلیغ"
-  },
   "home.hero.mock.speed": {
     "message": "کنترل سرعت ویدیو"
   },
   "home.hero.moreBrowsers": {
     "message": "مرورگرهای بیشتر"
-  },
-  "home.hero.subhead": {
-    "message": "تبلیغات را مسدود کنید، ویدیو را ارتقا دهید، کارهای تکراری را خودکار کنید — اسکریپت‌های انجمن را در یک کلیک از فروشگاه نصب کنید، همراه با اسکریپت‌های پس‌زمینه و APIهای قدرتمند برای توسعه‌دهندگان. سازگار با Tampermonkey، پس اسکریپت‌های فعلی شما بدون هزینه منتقل می‌شوند."
   },
   "home.hero.title1": {
     "message": "به مرورگرتان"
@@ -306,9 +294,6 @@
   },
   "home.hero.title3": {
     "message": "ابرقدرت بدهید"
-  },
-  "home.hero.trust": {
-    "message": "کار می‌کند روی Chrome · Edge · Firefox — کاملاً رایگان و متن‌باز"
   },
   "home.install.chrome": {
     "message": "افزودن به Chrome"
@@ -324,6 +309,9 @@
   },
   "home.install.manual": {
     "message": "دانلود بسته و نصب دستی"
+  },
+  "home.nav.ai": {
+    "message": "AI"
   },
   "home.nav.changelog": {
     "message": "تغییرات"
@@ -373,29 +361,14 @@
   "home.sc.featured.btn": {
     "message": "مرور اسکریپت‌های ویدیو"
   },
-  "home.sc.featured.c1": {
-    "message": "کنترل سرعت"
-  },
-  "home.sc.featured.c2": {
-    "message": "مسدودسازی تبلیغ"
-  },
-  "home.sc.featured.c3": {
-    "message": "دانلود"
-  },
   "home.sc.featured.c4": {
     "message": "تصویر در تصویر"
   },
   "home.sc.featured.d": {
     "message": "کنترل سرعت، رد خودکار تبلیغ، دانلود یک‌کلیکی، تصویر در تصویر — تجربه‌ای بهتر از Bilibili / YouTube / Netflix."
   },
-  "home.sc.featured.sites": {
-    "message": "پشتیبانی از ۲۰+ سایت ویدیویی"
-  },
   "home.sc.featured.t": {
     "message": "ویدیو، کاملاً ارتقا یافته"
-  },
-  "home.sc.featured.tag": {
-    "message": "محبوب‌ترین"
   },
   "home.sc.read.d": {
     "message": "حالت تاریک، ترجمه صفحه، مطالعه غوطه‌ور."
@@ -460,6 +433,9 @@
   "home.step3.d": {
     "message": "روی نصب کلیک کنید و اسکریپت بلافاصله روی صفحه اثر می‌گذارد."
   },
+  "home.step3.l": {
+    "message": "نحوه نصب اسکریپت‌ها"
+  },
   "home.step3.p": {
     "message": "نصب‌شده · اکنون فعال"
   },
@@ -468,9 +444,6 @@
   },
   "home.trust.contributors": {
     "message": "مشارکت‌کنندگان"
-  },
-  "home.trust.eyebrow": {
-    "message": "مورد اعتماد کاربران و توسعه‌دهندگان در سراسر جهان"
   },
   "home.trust.scripts": {
     "message": "اسکریپت‌های انجمن"
@@ -712,6 +685,129 @@
   "home.search.kw.video": {
     "message": "ویدیو",
     "description": "Search keyword for video"
+  },
+  "home.hero.lead": {
+    "message": "تبلیغات را مسدود کنید، ویدیو را ارتقا دهید، کارهای تکراری را خودکار کنید — اسکریپت‌های انجمن را با یک کلیک از فروشگاه نصب کنید. سازگار با Tampermonkey، همراه با اسکریپت‌های پس‌زمینه، API غنی و اتصال به هوش مصنوعی برای توسعه‌دهندگان."
+  },
+  "home.hero.demo.ad": {
+    "message": "تبلیغ ویدیویی"
+  },
+  "home.hero.demo.adWait": {
+    "message": "رد کردن پس از ۱۵ ثانیه"
+  },
+  "home.hero.demo.popup": {
+    "message": "پیشنهاد ویژه!"
+  },
+  "home.hero.demo.popupSub": {
+    "message": "کلیک کنید، جایزه بگیرید!"
+  },
+  "home.hero.demo.blocked": {
+    "message": "۳ تبلیغ مسدود شد"
+  },
+  "home.sc.video.t": {
+    "message": "ویدیو · ارتقا"
+  },
+  "home.sc.adblock.h": {
+    "message": "خداحافظی با تبلیغات و پنجره‌های بازشو"
+  },
+  "home.sc.shop.h": {
+    "message": "کمترین قیمت واقعی، در یک نگاه"
+  },
+  "home.sc.auto.h": {
+    "message": "کارهای تکراری را به اسکریپت بسپارید"
+  },
+  "home.sc.read.h": {
+    "message": "متن‌های بلند خارجی، با خیال راحت بخوانید"
+  },
+  "home.sc.stage.running": {
+    "message": "{name} · در حال اجرا"
+  },
+  "home.sc.stage.read": {
+    "message": "ترجمه غوطه‌ور"
+  },
+  "home.sc.stage.blocked": {
+    "message": "{count} مورد مسدود شد"
+  },
+  "home.sc.stage.skipped": {
+    "message": "خودکار رد شد"
+  },
+  "home.sc.stage.lowest": {
+    "message": "کف قیمت تاریخی {price}"
+  },
+  "home.sc.stage.coupon": {
+    "message": "کوپن اعمال شد · {amount} تخفیف"
+  },
+  "home.sc.stage.tasks": {
+    "message": "کارهای روزانه"
+  },
+  "home.sc.stage.task1": {
+    "message": "ثبت‌نام روزانه"
+  },
+  "home.sc.stage.task2": {
+    "message": "دریافت امتیاز"
+  },
+  "home.sc.stage.task3": {
+    "message": "انجام وظایف مرور"
+  },
+  "home.sc.stage.readSrc": {
+    "message": "Userscripts let you reshape any website to fit the way you read, watch and shop. Install one, and the page changes instantly — no extension to build, no code to write."
+  },
+  "home.sc.stage.readDst": {
+    "message": "اسکریپت‌های کاربری به شما امکان می‌دهند هر وب‌سایتی را مطابق شیوه خواندن، تماشا و خرید خودتان تغییر دهید. یکی را نصب کنید تا صفحه فوراً تغییر کند — بدون ساختن افزونه و بدون نوشتن حتی یک خط کد."
+  },
+  "home.sc.stage.readChip": {
+    "message": "ترجمه شد · حالت مطالعه فعال"
+  },
+  "home.feat.compat.run": {
+    "message": "همان اسکریپت، بدون تغییر"
+  },
+  "home.ai.eyebrow": {
+    "message": "اتصال به هوش مصنوعی · AI READY"
+  },
+  "home.ai.title1": {
+    "message": "بگذارید هوش مصنوعی "
+  },
+  "home.ai.title2": {
+    "message": "اسکریپت‌هایتان را بنویسد و اجرا کند"
+  },
+  "home.ai.sub": {
+    "message": "با خط فرمان sctl، عامل‌های کدنویسی هوش مصنوعی مانند Claude Code و Codex می‌توانند برای ScriptCat اسکریپت بنویسند، آن را در مرورگر شما نصب کنند تا نتیجه را بررسی کنند، و مشکلات را خودشان رفع کرده و دوباره امتحان کنند."
+  },
+  "home.ai.agents.t": {
+    "message": "عامل‌های کدنویسی هوش مصنوعی"
+  },
+  "home.ai.agents.d": {
+    "message": "دو skill یعنی scriptcat-userscript و sctl را به Claude Code یا Codex بدهید تا شیوه نوشتن اسکریپت‌های ScriptCat را بداند، آن‌ها را در مرورگر شما بررسی کند و خودش اصلاحشان کند."
+  },
+  "home.ai.agents.l": {
+    "message": "توسعه اسکریپت با هوش مصنوعی"
+  },
+  "home.ai.sctl.t": {
+    "message": "خط فرمان sctl"
+  },
+  "home.ai.sctl.d": {
+    "message": "از ترمینال اسکریپت‌ها را فهرست، نصب و اجرا کنید و لاگ‌هایشان را بخوانید؛ یا تب‌ها و صفحات را کنترل کنید و CDP را به Playwright بسپارید."
+  },
+  "home.ai.sctl.l": {
+    "message": "شروع کار با sctl"
+  },
+  "home.ai.term.prompt": {
+    "message": "یک اسکریپت بنویس که ویدیوهای Bilibili به‌طور پیش‌فرض با کیفیت 1080p پخش شوند، بعد آن را در مرورگرم نصب کن و امتحانش کن"
+  },
+  "home.ai.term.wrote": {
+    "message": "{file} نوشته شد"
+  },
+  "home.ai.term.installed": {
+    "message": "در ScriptCat نصب شد"
+  },
+  "home.ai.term.verified": {
+    "message": "بدون خطا — کیفیت روی 1080p تنظیم شد"
+  },
+  "home.dev.bgRunning": {
+    "message": "اجرا در پس‌زمینه"
+  },
+  "home.dev.log.trigger": {
+    "message": "اجرای زمان‌بندی‌شده"
   },
   "ad.label": {
     "message": "Advertisement",

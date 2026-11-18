@@ -202,29 +202,17 @@
   "home.dev.title2": {
     "message": "середовище виконання коду"
   },
-  "home.feat.api.d": {
-    "message": "Багатше, ніж GM: зберігання файлів, заплановані завдання та міждоменні запити під рукою."
-  },
-  "home.feat.api.t": {
-    "message": "Потужні API"
-  },
-  "home.feat.bg.d": {
-    "message": "Унікально: скрипти продовжують працювати у фоновому режимі без відкритої вкладки."
-  },
-  "home.feat.bg.t": {
-    "message": "Фонові скрипти"
-  },
   "home.feat.compat.b": {
     "message": "Підтримка API GM_* · ідентичний блок метаданих"
   },
   "home.feat.compat.d": {
     "message": "Повна сумісність із форматом юзерскриптів та API GM — перенесіть наявні скрипти без жодних змін і без витрат на перехід."
   },
+  "home.feat.compat.l": {
+    "message": "Посібник із переходу"
+  },
   "home.feat.compat.t": {
     "message": "Сумісний із Tampermonkey"
-  },
-  "home.feat.devTag": {
-    "message": "Розробник"
   },
   "home.feat.eyebrow": {
     "message": "Ключові можливості · WHY SCRIPTCAT"
@@ -232,11 +220,17 @@
   "home.feat.secure.d": {
     "message": "Прозорі, контрольовані дозволи та видима поведінка — шкідливі скрипти зупиняються на джерелі."
   },
+  "home.feat.secure.l": {
+    "message": "Як працюють дозволи"
+  },
   "home.feat.secure.t": {
     "message": "Безпечно та надійно"
   },
   "home.feat.store.d": {
     "message": "Встановіть тисячі скриптів спільноти одним кліком або опублікуйте власні та будуйте екосистему разом."
+  },
+  "home.link.store": {
+    "message": "До магазину скриптів"
   },
   "home.feat.store.t": {
     "message": "Магазин скриптів"
@@ -246,6 +240,9 @@
   },
   "home.feat.sync.d": {
     "message": "Скрипти та налаштування синхронізуються між пристроями — нічого не втрачається під час переходу або перевстановлення."
+  },
+  "home.feat.sync.l": {
+    "message": "Налаштувати синхронізацію"
   },
   "home.feat.sync.t": {
     "message": "Хмарна синхронізація"
@@ -277,26 +274,17 @@
   "home.hero.mock.adblock": {
     "message": "Автоматичний пропуск реклами"
   },
-  "home.hero.mock.add": {
-    "message": "Додати з магазину скриптів"
-  },
   "home.hero.mock.dark": {
     "message": "Темний режим для сторінок"
   },
   "home.hero.mock.running": {
     "message": "3 скрипти працюють на цій сторінці"
   },
-  "home.hero.mock.skip": {
-    "message": "Пропустити рекламу"
-  },
   "home.hero.mock.speed": {
     "message": "Контроль швидкості відео"
   },
   "home.hero.moreBrowsers": {
     "message": "Більше браузерів"
-  },
-  "home.hero.subhead": {
-    "message": "Блокуйте рекламу, покращуйте відео, автоматизуйте рутину — встановлюйте скрипти спільноти з магазину одним кліком, з фоновими скриптами та потужними API для розробників. Сумісний із Tampermonkey, тому ваші наявні скрипти переносяться безкоштовно."
   },
   "home.hero.title1": {
     "message": "Дайте вашому браузеру"
@@ -306,9 +294,6 @@
   },
   "home.hero.title3": {
     "message": "суперсили"
-  },
-  "home.hero.trust": {
-    "message": "Працює на Chrome · Edge · Firefox — повністю безкоштовно та з відкритим кодом"
   },
   "home.install.chrome": {
     "message": "Додати до Chrome"
@@ -324,6 +309,9 @@
   },
   "home.install.manual": {
     "message": "Завантажити пакет і встановити вручну"
+  },
+  "home.nav.ai": {
+    "message": "ШІ"
   },
   "home.nav.changelog": {
     "message": "Журнал змін"
@@ -373,29 +361,14 @@
   "home.sc.featured.btn": {
     "message": "Переглянути відеоскрипти"
   },
-  "home.sc.featured.c1": {
-    "message": "Контроль швидкості"
-  },
-  "home.sc.featured.c2": {
-    "message": "Блокування реклами"
-  },
-  "home.sc.featured.c3": {
-    "message": "Завантаження"
-  },
   "home.sc.featured.c4": {
     "message": "Картинка в картинці"
   },
   "home.sc.featured.d": {
     "message": "Контроль швидкості, автопропуск реклами, завантаження одним кліком, картинка в картинці — кращий Bilibili / YouTube / Netflix."
   },
-  "home.sc.featured.sites": {
-    "message": "Підтримка 20+ відеосайтів"
-  },
   "home.sc.featured.t": {
     "message": "Відео, повністю покращене"
-  },
-  "home.sc.featured.tag": {
-    "message": "Найпопулярніше"
   },
   "home.sc.read.d": {
     "message": "Темний режим, переклад сторінок, занурювальне читання."
@@ -460,6 +433,9 @@
   "home.step3.d": {
     "message": "Натисніть «Встановити» — і скрипт одразу почне діяти на сторінці."
   },
+  "home.step3.l": {
+    "message": "Як встановлювати скрипти"
+  },
   "home.step3.p": {
     "message": "Встановлено · Активний зараз"
   },
@@ -468,9 +444,6 @@
   },
   "home.trust.contributors": {
     "message": "Учасники"
-  },
-  "home.trust.eyebrow": {
-    "message": "НАМ ДОВІРЯЮТЬ КОРИСТУВАЧІ ТА РОЗРОБНИКИ ПО ВСЬОМУ СВІТУ"
   },
   "home.trust.scripts": {
     "message": "Скрипти спільноти"
@@ -712,6 +685,129 @@
   "home.search.kw.video": {
     "message": "відео",
     "description": "Search keyword for video"
+  },
+  "home.hero.lead": {
+    "message": "Блокуйте рекламу, покращуйте відео, автоматизуйте рутину — встановлюйте скрипти спільноти з магазину одним кліком. Сумісний із Tampermonkey, а для розробників — фонові скрипти, багатий API та інтеграція зі ШІ."
+  },
+  "home.hero.demo.ad": {
+    "message": "Реклама"
+  },
+  "home.hero.demo.adWait": {
+    "message": "Пропуск через 15 с"
+  },
+  "home.hero.demo.popup": {
+    "message": "Тільки сьогодні!"
+  },
+  "home.hero.demo.popupSub": {
+    "message": "Клікни — забери подарунок!"
+  },
+  "home.hero.demo.blocked": {
+    "message": "Заблоковано 3 оголошення"
+  },
+  "home.sc.video.t": {
+    "message": "Відео · Покращення"
+  },
+  "home.sc.adblock.h": {
+    "message": "Реклама й спливаючі вікна — геть"
+  },
+  "home.sc.shop.h": {
+    "message": "Справжня найнижча ціна — з першого погляду"
+  },
+  "home.sc.auto.h": {
+    "message": "Доручіть рутину скриптам"
+  },
+  "home.sc.read.h": {
+    "message": "Довгі іноземні тексти — читати зручно"
+  },
+  "home.sc.stage.running": {
+    "message": "{name} · Працює"
+  },
+  "home.sc.stage.read": {
+    "message": "Занурювальний переклад"
+  },
+  "home.sc.stage.blocked": {
+    "message": "Заблоковано {count}"
+  },
+  "home.sc.stage.skipped": {
+    "message": "Пропущено автоматично"
+  },
+  "home.sc.stage.lowest": {
+    "message": "Найнижча ціна {price}"
+  },
+  "home.sc.stage.coupon": {
+    "message": "Купон застосовано · знижка {amount}"
+  },
+  "home.sc.stage.tasks": {
+    "message": "Щоденні завдання"
+  },
+  "home.sc.stage.task1": {
+    "message": "Щоденна відмітка"
+  },
+  "home.sc.stage.task2": {
+    "message": "Отримати бали"
+  },
+  "home.sc.stage.task3": {
+    "message": "Виконати завдання з перегляду"
+  },
+  "home.sc.stage.readSrc": {
+    "message": "Userscripts let you reshape any website to fit the way you read, watch and shop. Install one, and the page changes instantly — no extension to build, no code to write."
+  },
+  "home.sc.stage.readDst": {
+    "message": "Юзерскрипти дають змогу переробити будь-який сайт під те, як ви читаєте, дивитеся й купуєте. Встановіть один — і сторінка миттєво зміниться: без розробки розширень і без жодного рядка коду."
+  },
+  "home.sc.stage.readChip": {
+    "message": "Перекладено · Режим читання"
+  },
+  "home.feat.compat.run": {
+    "message": "Працює без жодних змін"
+  },
+  "home.ai.eyebrow": {
+    "message": "Інтеграція ШІ · AI READY"
+  },
+  "home.ai.title1": {
+    "message": "Нехай ШІ "
+  },
+  "home.ai.title2": {
+    "message": "пише й запускає ваші скрипти"
+  },
+  "home.ai.sub": {
+    "message": "Через CLI sctl ШІ-агенти для програмування, як-от Claude Code і Codex, можуть писати скрипти для ScriptCat, встановлювати їх у ваш браузер, щоб перевірити результат, і самі виправляти знайдене, перш ніж спробувати знову."
+  },
+  "home.ai.agents.t": {
+    "message": "ШІ-агенти для програмування"
+  },
+  "home.ai.agents.d": {
+    "message": "Додайте Claude Code чи Codex навички scriptcat-userscript і sctl — і агент знатиме, як пишуться скрипти ScriptCat, зможе перевірити їх у вашому браузері й сам виправити."
+  },
+  "home.ai.agents.l": {
+    "message": "Розробка скриптів зі ШІ"
+  },
+  "home.ai.sctl.t": {
+    "message": "Командний рядок sctl"
+  },
+  "home.ai.sctl.d": {
+    "message": "Переглядайте, встановлюйте й запускайте скрипти та читайте їхні логи з термінала — або керуйте вкладками й сторінками чи передайте CDP у Playwright."
+  },
+  "home.ai.sctl.l": {
+    "message": "Початок роботи з sctl"
+  },
+  "home.ai.term.prompt": {
+    "message": "Напиши скрипт, щоб відео на Bilibili за замовчуванням вмикалися в 1080p, потім встанови його в мій браузер і перевір"
+  },
+  "home.ai.term.wrote": {
+    "message": "Створено {file}"
+  },
+  "home.ai.term.installed": {
+    "message": "Встановлено в ScriptCat"
+  },
+  "home.ai.term.verified": {
+    "message": "Помилок немає — якість перемкнено на 1080p"
+  },
+  "home.dev.bgRunning": {
+    "message": "Працює у фоні"
+  },
+  "home.dev.log.trigger": {
+    "message": "запуск за розкладом"
   },
   "ad.label": {
     "message": "Advertisement",

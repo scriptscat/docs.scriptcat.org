@@ -55,7 +55,7 @@ Three things to know:
 | `docs/` | Chinese docs (default locale). Three sections: `use/` guides, `dev/` API docs, `change/` changelogs |
 | `i18n/<locale>/` | Per-locale doc mirrors and UI strings |
 | `src/pages/` | Custom pages (`index.tsx` landing page, `uninstall.tsx` feedback survey) |
-| `src/components/landing/` | Landing page sections (`sections.tsx`, `LandingNav.tsx`, `shared.tsx`) |
+| `src/components/landing/` | Landing page: one component + CSS module per section (`Hero`, `Scenes`, `Steps`, `Features`, `AI`, `Developers`, `Closing`), shared animation helpers in `motion.tsx`, plus `LandingNav.tsx` and `shared.tsx` |
 | `src/theme/` | Docusaurus theme overrides (custom `Footer`, `Root` language-detection redirect) |
 | `src/service/` | API layer (calls `https://scriptcat.org/api/v2`) |
 | `scripts/` | Check scripts, `check-config.json`, `url-inventory.txt` route baseline |
@@ -81,11 +81,12 @@ Changelogs under `change/` are not translated into Russian: the Russian routes c
 - Component-scoped styles via CSS Modules (`.module.css`)
 - Theme colors through Infima CSS variables (primary: `#4594d5`)
 - Dark mode via the `[data-theme="dark"]` selector; for components that must react to theme changes use `useTheme()` from `src/components/useTheme.ts`
-- The landing page's mock code cards are width-sensitive (`.codeCard` is a fixed 360px, and the editor mock's line numbers are a hardcoded 11 `<span>`s). Translated copy that is too long wraps and desyncs the gutter — see [agents/i18n.md](./agents/i18n.md).
+- The landing page's mock code cards are width-sensitive (`.code` in `features.module.css` is a fixed 360px, and the editor mock in `Developers.tsx` has a hardcoded 11-line gutter). Translated copy that is too long wraps and desyncs the gutter — see [agents/i18n.md](./agents/i18n.md).
+- **RTL locales (ar, fa) get every stylesheet run through RTLCSS**, which flips `left`/`right`, `translateX`, `transform-origin`, gradient angles and `text-align` automatically. Write plain LTR CSS; a hand-written `[dir="rtl"]` override for something RTLCSS already mirrors gets flipped a second time. Put `/* rtl:ignore */` before a declaration that must stay physical — see [agents/i18n.md](./agents/i18n.md) §8.
 
 ## Key dependencies
 
-**@iconify/react** (icons), **react-device-detect** (browser detection for the install guide, dynamically imported), **clsx**. There is deliberately **no UI framework** — see "Bundle budget" below. The two components that would otherwise call for one are in-house: `src/components/landing/Dropdown.tsx` (menus) and `src/components/uninstall/ui.tsx` (card / button / radio / textarea / alert / toast).
+**@iconify/react** (icons), **react-device-detect** (browser detection for the install guide, dynamically imported), **clsx**, **motion** (landing-page animation only — see "Bundle budget"). There is deliberately **no UI framework** — see "Bundle budget" below. The two components that would otherwise call for one are in-house: `src/components/landing/Dropdown.tsx` (menus) and `src/components/uninstall/ui.tsx` (card / button / radio / textarea / alert / toast).
 
 ### Icons
 
@@ -101,9 +102,10 @@ Import individual icons, never a whole collection. `import { icons } from "@icon
 
 - **Don't add a UI framework.** antd is the usual temptation and a good measure of the price: its `Dropdown` alone is ~280 KB (cssinjs + rc-trigger + rc-menu + theme tokens), and a form page on its `Card`/`Radio`/`Input`/`Form` runs ~500 KB — more than the rest of the site's JS put together, for controls that are a `<label>` and an `<input>` underneath. Extend `landing/Dropdown.tsx` or `uninstall/ui.tsx` instead.
 - **In `uninstall/ui.module.css`, never set a property that the page also sets with a Tailwind utility.** A CSS-module class and a utility class have equal specificity, so which one wins depends on their order in the bundled `styles.css` — not something either file controls. Margins and the overridden font sizes live only on the page; sizes that belong to the primitive (button height, radius) live only in the module and are selected by prop.
+- **`motion` is for the homepage only.** Import it from `src/components/landing/*` (through `motion.tsx`'s `MotionProvider`, which is `LazyMotion strict` — use `m.*`, not `motion.*`) and never from `src/theme/` or anything a docs page renders, so it stays in a homepage-only chunk (~162 KB raw / ~55 KB gzip) instead of `main.js`. Scroll-reveal content must stay visible in the SSR HTML: animate with keyframes on `whileInView` and hide via the `.reveal` / `[data-lp-motion]` CSS gate, not with `initial`.
 - **`@docsearch/react` must stay on v4.** v3 has no `version` / `useDocSearchKeyboardEvents` / `useTheme` subpath entries, so Docusaurus aliases all three to the package root — which resolves through `main` to the CommonJS `dist/umd` build, a second un-shakeable copy of the whole library (~205 KB, modal included) in `main.js` alongside the ESM one. v4 ships those subpaths for real, so only the search *button* is eager and the modal splits into its own lazily-fetched chunk.
 
-To see where the bytes are: `npx docusaurus build --locale zh-Hans --bundle-analyzer`, then read the report at <http://127.0.0.1:8888>. For reference, the homepage loads ~550 KB of JS, `/uninstall/` ~965 KB and a docs page ~1.1 MB — the bulk of the last two being `docs/change/index.md`, which compiles to a 320 KB chunk that Docusaurus prefetches from the navbar link.
+To see where the bytes are: `npx docusaurus build --locale zh-Hans --bundle-analyzer`, then read the report at <http://127.0.0.1:8888>. For reference, the homepage loads ~750 KB of JS (`main.js` ~507 KB + the motion chunk ~162 KB + the page ~75 KB, measured 2026-11), `/uninstall/` ~965 KB and a docs page ~1.1 MB — the bulk of the last two being `docs/change/index.md`, which compiles to a 320 KB chunk that Docusaurus prefetches from the navbar link.
 
 ## Conventions index
 

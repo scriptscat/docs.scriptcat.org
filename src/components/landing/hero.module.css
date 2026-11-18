@@ -1,0 +1,743 @@
+/* Hero — copy on the inline-start side, the live browser demo on the other.
+   Entrance is plain CSS (.rise) so the LCP headline paints with the HTML and
+   never waits on JS. */
+
+.hero {
+  position: relative;
+  overflow: hidden;
+  /* top = fixed nav (~68px) + ~40px; anything more reads as dead space */
+  padding: 108px 48px 104px;
+  background: linear-gradient(180deg, var(--lp-bg-blue), var(--lp-bg) 85%);
+}
+
+/* ---- ambient background ------------------------------------------------ */
+.bg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  -webkit-mask-image: linear-gradient(#000 65%, transparent);
+  mask-image: linear-gradient(#000 65%, transparent);
+}
+.grid {
+  position: absolute;
+  inset: 0;
+  background-image: radial-gradient(rgba(18, 150, 219, 0.16) 1.2px, transparent 1.2px);
+  background-size: 24px 24px;
+  -webkit-mask-image: radial-gradient(ellipse 70% 60% at 65% 40%, #000 20%, transparent 75%);
+  mask-image: radial-gradient(ellipse 70% 60% at 65% 40%, #000 20%, transparent 75%);
+}
+:global([data-theme="dark"]) .grid {
+  background-image: radial-gradient(rgba(92, 187, 242, 0.12) 1.2px, transparent 1.2px);
+}
+.blob {
+  position: absolute;
+  border-radius: 50%;
+  filter: blur(70px);
+}
+.blob1 {
+  width: 520px;
+  height: 520px;
+  right: -120px;
+  top: -140px;
+  background: rgba(66, 180, 245, 0.35);
+  animation: drift1 16s ease-in-out infinite alternate;
+}
+.blob2 {
+  width: 420px;
+  height: 420px;
+  left: -160px;
+  bottom: -100px;
+  background: rgba(255, 122, 61, 0.22);
+  animation: drift2 19s ease-in-out infinite alternate;
+}
+.blob3 {
+  width: 300px;
+  height: 300px;
+  left: 42%;
+  top: 30%;
+  background: rgba(108, 92, 231, 0.14);
+  animation: drift1 22s ease-in-out infinite alternate-reverse;
+}
+@keyframes drift1 {
+  to {
+    transform: translate(-80px, 60px) scale(1.12);
+  }
+}
+@keyframes drift2 {
+  to {
+    transform: translate(90px, -50px) scale(1.08);
+  }
+}
+
+/* ---- layout ------------------------------------------------------------- */
+.inner {
+  position: relative;
+  max-width: 1200px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1.15fr);
+  gap: 56px;
+  align-items: center;
+}
+.copy {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.rise {
+  animation: rise 0.9s var(--lp-ease) both;
+  animation-delay: calc(0.1s + var(--i, 0) * 0.08s);
+}
+@keyframes rise {
+  from {
+    opacity: 0;
+    transform: translateY(28px);
+    filter: blur(8px);
+  }
+}
+
+.h1 {
+  margin: 22px 0 0;
+  font-family: var(--lp-font-display);
+  font-size: 66px;
+  font-weight: 900;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: var(--lp-ink);
+}
+.line {
+  display: block;
+}
+.grad {
+  background: linear-gradient(100deg, #ff7a3d 0%, #ff9a5a 30%, #ffd08a 50%, #ff9a5a 70%, #ff7a3d 100%);
+  background-size: 220% 100%;
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  animation: shimmer 6s linear infinite;
+}
+@keyframes shimmer {
+  to {
+    background-position: -220% 0;
+  }
+}
+.en {
+  margin-top: 14px;
+  font-family: var(--lp-font-display);
+  font-size: 20px;
+  font-weight: 700;
+  color: var(--lp-brand);
+}
+.lead {
+  margin: 18px 0 0;
+  max-width: 540px;
+  font-size: 17px;
+  line-height: 1.75;
+  color: var(--lp-text);
+  text-wrap: pretty;
+}
+/* .rise keeps its animation filled, which makes every animated row its own
+   stacking context; the later .stats row would then paint over the install
+   dropdown that hangs out of this one. */
+.ctas {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 30px;
+}
+
+.stats {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 18px 30px;
+  margin: 38px 0 0;
+  padding-top: 26px;
+  border-top: 1px dashed var(--lp-border);
+}
+.stat {
+  display: flex;
+  flex-direction: column-reverse;
+}
+.statNum {
+  margin: 0;
+  font-family: var(--lp-font-display);
+  font-size: 30px;
+  font-weight: 800;
+  line-height: 1.15;
+  color: var(--lp-ink);
+  font-variant-numeric: tabular-nums;
+}
+.statLabel {
+  font-size: 13px;
+  color: var(--lp-muted);
+}
+.statBrand {
+  color: var(--lp-brand);
+}
+.statAccent {
+  color: var(--lp-accent-deep);
+}
+.statMint {
+  color: var(--lp-mint);
+}
+
+/* ---- demo browser ------------------------------------------------------- */
+.visual {
+  position: relative;
+  perspective: 1400px;
+}
+.tilt {
+  position: relative;
+  transform-style: preserve-3d;
+}
+.bw {
+  position: relative;
+  height: 440px;
+  border-radius: 18px;
+  background: var(--lp-surface);
+  border: 1px solid var(--lp-border);
+  box-shadow: var(--lp-shadow-lg);
+  overflow: hidden;
+  user-select: none;
+}
+.bar {
+  height: 44px;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 0 14px;
+  border-bottom: 1px solid var(--lp-border);
+  background: color-mix(in srgb, var(--lp-bg-blue) 60%, var(--lp-surface));
+}
+.dots {
+  display: flex;
+  gap: 6px;
+}
+.dots i {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+.addr {
+  flex: 1;
+  min-width: 0;
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  height: 28px;
+  padding: 0 12px;
+  border-radius: 8px;
+  background: var(--lp-surface);
+  border: 1px solid var(--lp-border);
+  font-family: var(--lp-font-mono);
+  font-size: 12px;
+  color: var(--lp-muted);
+  white-space: nowrap;
+  overflow: hidden;
+}
+.ext {
+  position: relative;
+  width: 32px;
+  height: 28px;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  background: var(--lp-brand-soft);
+}
+.extCount {
+  position: absolute;
+  top: -5px;
+  inset-inline-end: -6px;
+  min-width: 17px;
+  height: 17px;
+  padding: 0 4px;
+  border-radius: 9px;
+  background: var(--lp-accent);
+  color: #fff;
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 17px;
+  text-align: center;
+  box-shadow: 0 0 0 2px var(--lp-surface);
+}
+
+/* The fake web page stays light in both themes so the night-mode switch
+   always reads as a change. */
+.site {
+  --s-bg: #fff;
+  --s-line: rgba(14, 34, 51, 0.09);
+  --s-ink: rgba(14, 34, 51, 0.2);
+  position: absolute;
+  inset: 44px 0 0;
+  padding: 16px;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) 132px;
+  grid-template-rows: auto 1fr;
+  gap: 14px;
+  background: var(--s-bg);
+  transition: background 0.7s ease;
+}
+.night {
+  --s-bg: #10161f;
+  --s-line: rgba(255, 255, 255, 0.08);
+  --s-ink: rgba(255, 255, 255, 0.2);
+}
+.siteHead {
+  grid-column: 1 / -1;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+.siteLogo {
+  width: 26px;
+  height: 26px;
+  border-radius: 7px;
+  background: var(--s-ink);
+  transition: background 0.7s;
+}
+.siteNav {
+  width: 46px;
+  height: 8px;
+  border-radius: 4px;
+  background: var(--s-line);
+  transition: background 0.7s;
+}
+.siteMain {
+  min-width: 0;
+}
+.video {
+  position: relative;
+  aspect-ratio: 16 / 9;
+  border-radius: 12px;
+  overflow: hidden;
+  background: linear-gradient(135deg, #1a8fd0, #0b3b5e 55%, #081b2b);
+}
+.play {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 52px;
+  height: 52px;
+  margin: -26px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: rgba(255, 255, 255, 0.92);
+  color: var(--lp-brand-deep);
+  font-size: 22px;
+}
+.vbar {
+  position: absolute;
+  left: 12px;
+  right: 12px;
+  bottom: 10px;
+  height: 4px;
+  border-radius: 2px;
+  background: rgba(255, 255, 255, 0.25);
+  overflow: hidden;
+}
+.vfill {
+  height: 100%;
+  background: var(--lp-accent);
+  transform-origin: 0 50%;
+  transform: scaleX(0.2);
+}
+.speed {
+  position: absolute;
+  left: 12px;
+  top: 12px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 9px;
+  border-radius: 8px;
+  background: rgba(8, 20, 32, 0.75);
+  color: #fff;
+  font-family: var(--lp-font-mono);
+  font-size: 12px;
+  font-weight: 800;
+  opacity: 0;
+}
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  text-align: center;
+  background: repeating-linear-gradient(45deg, #ffcf4d 0 14px, #ffc12e 14px 28px);
+  color: #5c3b00;
+  font-size: 15px;
+  font-weight: 900;
+}
+.overlay small,
+.popup small {
+  display: block;
+  margin-top: 3px;
+  font-size: 11px;
+  font-weight: 700;
+  opacity: 0.85;
+}
+.lines {
+  display: flex;
+  flex-direction: column;
+  gap: 9px;
+  margin-top: 14px;
+}
+.lines i {
+  height: 9px;
+  border-radius: 5px;
+  background: var(--s-line);
+  transition: background 0.7s;
+}
+.lines i:first-child {
+  width: 62%;
+  height: 13px;
+  background: var(--s-ink);
+}
+.side {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.adbox {
+  height: 92px;
+  flex: none;
+  overflow: hidden;
+  border-radius: 10px;
+  display: grid;
+  place-items: center;
+  color: #7a4a00;
+  font-size: 13px;
+  font-weight: 900;
+  background: repeating-linear-gradient(-45deg, #ffe08a 0 10px, #ffd25e 10px 20px);
+}
+.rel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.rel b {
+  width: 34px;
+  height: 26px;
+  flex: none;
+  border-radius: 6px;
+  background: var(--s-line);
+  transition: background 0.7s;
+}
+.rel i {
+  flex: 1;
+  height: 8px;
+  border-radius: 4px;
+  background: var(--s-line);
+  transition: background 0.7s;
+}
+.popup {
+  position: absolute;
+  inset-inline-end: 150px;
+  bottom: 16px;
+  width: 168px;
+  padding: 12px;
+  border-radius: 12px;
+  background: #ff4f6a;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 900;
+  box-shadow: 0 10px 24px rgba(255, 79, 106, 0.4);
+}
+.popupX {
+  position: absolute;
+  top: 6px;
+  inset-inline-end: 8px;
+  font-size: 12px;
+  opacity: 0.8;
+}
+
+/* ScriptCat popup */
+.panel {
+  position: absolute;
+  top: 52px;
+  inset-inline-end: 12px;
+  z-index: 5;
+  width: 244px;
+  padding: 10px;
+  border-radius: 14px;
+  background: var(--lp-surface);
+  border: 1px solid var(--lp-border);
+  box-shadow: var(--lp-shadow-lg);
+  transform-origin: 90% 0;
+  opacity: 0;
+}
+.panelHead {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 4px 4px 10px;
+  border-bottom: 1px solid var(--lp-border);
+}
+.panelHead b {
+  display: block;
+  font-size: 13px;
+  color: var(--lp-ink);
+}
+.panelHead span {
+  font-size: 11px;
+  color: var(--lp-muted);
+}
+.panelBadge {
+  width: 30px;
+  height: 30px;
+  flex: none;
+  border-radius: 9px;
+  display: grid;
+  place-items: center;
+  background: linear-gradient(135deg, var(--lp-brand-bright), var(--lp-brand-deep));
+}
+.row {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  padding: 9px 4px;
+}
+.row + .row {
+  border-top: 1px solid var(--lp-border);
+}
+.rowChip {
+  width: 28px;
+  height: 28px;
+  flex: none;
+  border-radius: 8px;
+  display: grid;
+  place-items: center;
+  font-size: 15px;
+}
+.rowName {
+  flex: 1;
+  min-width: 0;
+  font-size: 12.5px;
+  font-weight: 700;
+  color: var(--lp-ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.sw {
+  position: relative;
+  width: 34px;
+  height: 20px;
+  flex: none;
+  border-radius: 10px;
+  background: color-mix(in srgb, var(--lp-ink) 18%, transparent);
+  transition: background 0.25s;
+}
+.sw::after {
+  content: "";
+  position: absolute;
+  top: 2px;
+  inset-inline-start: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background: #fff;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.3);
+  transition: transform 0.3s cubic-bezier(0.5, 1.6, 0.4, 1);
+}
+.swOn {
+  background: var(--lp-mint);
+}
+.swOn::after {
+  transform: translateX(14px);
+}
+
+/* cursor + click ripple use physical left/top: their coordinates are
+   measured in physical px (offsetLeft), RTL or not. */
+.cursor {
+  position: absolute;
+  /* rtl:ignore */ left: 0;
+  top: 0;
+  z-index: 9;
+  width: 22px;
+  height: 22px;
+  pointer-events: none;
+  opacity: 0;
+  filter: drop-shadow(0 2px 3px rgba(0, 0, 0, 0.35));
+}
+.ripple {
+  position: absolute;
+  z-index: 8;
+  width: 34px;
+  height: 34px;
+  margin: -17px;
+  border-radius: 50%;
+  border: 2px solid var(--lp-brand);
+  pointer-events: none;
+  opacity: 0;
+}
+.toast {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 16px;
+  z-index: 6;
+  width: max-content;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 9px 14px;
+  border-radius: 12px;
+  background: #0e2233;
+  color: #fff;
+  font-size: 13px;
+  font-weight: 700;
+  white-space: nowrap;
+  box-shadow: var(--lp-shadow-soft);
+  opacity: 0;
+}
+.toastOk {
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  background: var(--lp-mint);
+  font-size: 12px;
+}
+
+/* reduced motion: the finished frame, no loop */
+.bwStatic .panel,
+.bwStatic .speed {
+  opacity: 1;
+}
+.bwStatic .adbox,
+.bwStatic .overlay,
+.bwStatic .popup {
+  display: none;
+}
+
+/* floating chips around the browser */
+.float {
+  position: absolute;
+  z-index: 10;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 10px 14px;
+  border-radius: 14px;
+  background: var(--lp-surface);
+  border: 1px solid var(--lp-border);
+  box-shadow: var(--lp-shadow-soft);
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--lp-ink);
+  white-space: nowrap;
+  animation: bob 5s ease-in-out infinite;
+}
+.float small {
+  display: block;
+  font-size: 11px;
+  font-weight: 600;
+  color: var(--lp-muted);
+}
+.floatRing {
+  width: 30px;
+  height: 30px;
+  flex: none;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-size: 15px;
+}
+.float1 {
+  inset-inline-start: -44px;
+  bottom: 64px;
+}
+.float2 {
+  inset-inline-end: -22px;
+  bottom: -22px;
+  animation-delay: 1.3s;
+}
+@keyframes bob {
+  50% {
+    transform: translateY(-8px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .rise,
+  .blob,
+  .grad,
+  .float {
+    animation: none;
+  }
+}
+
+/* ---- responsive --------------------------------------------------------- */
+@media (max-width: 1100px) {
+  .inner {
+    grid-template-columns: 1fr;
+    gap: 56px;
+  }
+  .copy {
+    align-items: center;
+    text-align: center;
+  }
+  .ctas,
+  .stats {
+    justify-content: center;
+  }
+  .visual {
+    max-width: 680px;
+    width: 100%;
+    margin: 0 auto;
+  }
+}
+@media (max-width: 640px) {
+  .hero {
+    padding: 92px 20px 72px;
+  }
+  .h1 {
+    font-size: 44px;
+  }
+  .en {
+    font-size: 17px;
+  }
+  .lead {
+    font-size: 15.5px;
+  }
+  .stats {
+    gap: 14px 22px;
+  }
+  .statNum {
+    font-size: 24px;
+  }
+  .bw {
+    height: 360px;
+  }
+  .site {
+    grid-template-columns: minmax(0, 1fr) 84px;
+    padding: 12px;
+    gap: 10px;
+  }
+  .adbox {
+    height: 64px;
+  }
+  .popup {
+    inset-inline-end: 96px;
+    width: 140px;
+    font-size: 12px;
+  }
+  .panel {
+    width: 220px;
+  }
+  .float1 {
+    inset-inline-start: -6px;
+    top: -28px;
+    bottom: auto;
+  }
+  .float2 {
+    inset-inline-end: -6px;
+  }
+}

@@ -1,0 +1,255 @@
+/* AI — terminal transcript + three entry cards. */
+
+.ai {
+  overflow: hidden;
+  background: linear-gradient(180deg, var(--lp-bg), color-mix(in srgb, var(--lp-violet-soft) 55%, var(--lp-bg)) 50%, var(--lp-bg));
+}
+.aurora {
+  position: absolute;
+  inset: 10% -10% auto;
+  height: 70%;
+  pointer-events: none;
+  background:
+    radial-gradient(40% 50% at 25% 40%, rgba(108, 92, 231, 0.18), transparent 70%),
+    radial-gradient(35% 45% at 75% 55%, rgba(18, 150, 219, 0.16), transparent 70%),
+    radial-gradient(30% 40% at 55% 20%, rgba(255, 122, 61, 0.1), transparent 70%);
+  filter: blur(20px);
+  animation: aurora 18s ease-in-out infinite alternate;
+}
+@keyframes aurora {
+  to {
+    transform: translate3d(4%, -3%, 0) scale(1.08) rotate(2deg);
+  }
+}
+.hl {
+  background: linear-gradient(100deg, var(--lp-violet), var(--lp-brand) 60%, var(--lp-brand-bright));
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+}
+
+.body {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: minmax(0, 1.25fr) minmax(0, 1fr);
+  gap: 28px;
+  align-items: center;
+}
+
+/* ---- terminal ----------------------------------------------------------- */
+.term {
+  overflow: hidden;
+  border-radius: 18px;
+  background: #0b1520;
+  border: 1px solid #1d2c3a;
+  box-shadow: var(--lp-shadow-lg), 0 0 0 1px rgba(108, 92, 231, 0.08);
+}
+.termBar {
+  display: flex;
+  align-items: center;
+  gap: 7px;
+  padding: 13px 16px;
+  background: #0e1a27;
+  border-bottom: 1px solid #1a2836;
+}
+.termBar i {
+  width: 11px;
+  height: 11px;
+  border-radius: 50%;
+}
+.termBar span {
+  flex: 1;
+  margin-inline-end: 44px;
+  text-align: center;
+  font-family: var(--lp-font-mono);
+  font-size: 12px;
+  color: #6f8aa0;
+}
+.termBody {
+  min-height: 360px;
+  padding: 18px 20px 22px;
+  font-family: var(--lp-font-mono);
+  font-size: 13.5px;
+  line-height: 1.7;
+  color: #c9d6e2;
+  /* rtl:ignore */ direction: ltr;
+  /* rtl:ignore */ text-align: left;
+}
+.line {
+  display: flex;
+  gap: 10px;
+  padding: 3px 0;
+}
+.lineHidden {
+  visibility: hidden;
+}
+.mark {
+  flex: none;
+  width: 1.1em;
+  font-weight: 800;
+}
+.lineText {
+  min-width: 0;
+  white-space: pre-wrap;
+  word-break: break-word;
+}
+.prompt {
+  margin: 2px -10px 10px;
+  padding: 9px 10px;
+  border-radius: 9px;
+  background: rgba(108, 92, 231, 0.12);
+  color: #e6e0ff;
+}
+.prompt .mark {
+  color: #a99cff;
+}
+.agent {
+  margin-bottom: 6px;
+  color: #c9d6e2;
+}
+.agent .mark {
+  color: #ff9a5a;
+}
+.cmd .mark {
+  color: #6cc6ff;
+}
+.cmd .lineText {
+  color: #9fd3f5;
+}
+.ok {
+  margin-bottom: 6px;
+}
+.ok .mark,
+.ok .lineText {
+  color: #5fe3b8;
+}
+.caret {
+  display: inline-block;
+  width: 0.55em;
+  height: 1.1em;
+  margin-inline-start: 2px;
+  vertical-align: -0.2em;
+  background: currentColor;
+  animation: caret 1s steps(1) infinite;
+}
+@keyframes caret {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* ---- cards ------------------------------------------------------------- */
+.cards {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+.card {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  gap: 16px;
+  padding: 22px;
+  border-radius: 18px;
+  background: color-mix(in srgb, var(--lp-surface) 88%, transparent);
+  border: 1px solid var(--lp-border);
+  box-shadow: var(--lp-shadow-card);
+  -webkit-backdrop-filter: blur(8px);
+  backdrop-filter: blur(8px);
+  text-decoration: none;
+  transition: translate 0.25s ease, box-shadow 0.25s ease, border-color 0.25s ease;
+}
+.card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  background: radial-gradient(360px circle at var(--mx, 50%) var(--my, 50%), rgba(108, 92, 231, 0.12), transparent 60%);
+  transition: opacity 0.3s ease;
+}
+.card:hover {
+  translate: 0 -3px;
+  text-decoration: none;
+  border-color: color-mix(in srgb, var(--lp-violet) 30%, var(--lp-border));
+  box-shadow: var(--lp-shadow-soft);
+}
+.card:hover::before {
+  opacity: 1;
+}
+.cardIcon {
+  width: 46px;
+  height: 46px;
+  flex: none;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  font-size: 23px;
+}
+.cardText {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  min-width: 0;
+}
+.cardTitle {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: var(--lp-font-display);
+  font-size: 18px;
+  font-weight: 800;
+  color: var(--lp-ink);
+}
+.cardDesc {
+  font-size: 14px;
+  line-height: 1.65;
+  color: var(--lp-text);
+}
+.cardLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  margin-top: 2px;
+  font-size: 14px;
+  font-weight: 800;
+}
+.cardLink svg {
+  transition: transform 0.2s ease;
+}
+.card:hover .cardLink svg {
+  transform: translateX(4px);
+}
+:global([dir="rtl"]) .cardLink svg {
+  /* rtl:ignore */ transform: scaleX(-1);
+}
+:global([dir="rtl"]) .card:hover .cardLink svg {
+  /* rtl:ignore */ transform: scaleX(-1) translateX(4px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .aurora,
+  .caret {
+    animation: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .body {
+    grid-template-columns: 1fr;
+    max-width: 680px;
+  }
+}
+@media (max-width: 640px) {
+  .termBody {
+    min-height: 0;
+    padding: 14px;
+    font-size: 12px;
+  }
+  .card {
+    padding: 18px;
+  }
+}

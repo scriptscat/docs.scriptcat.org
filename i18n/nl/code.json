@@ -202,29 +202,17 @@
   "home.dev.title2": {
     "message": "coderuntime"
   },
-  "home.feat.api.d": {
-    "message": "Rijker dan GM: bestandsopslag, geplande taken en cross-origin-verzoeken binnen handbereik."
-  },
-  "home.feat.api.t": {
-    "message": "Krachtige API's"
-  },
-  "home.feat.bg.d": {
-    "message": "Uniek: scripts blijven op de achtergrond draaien zonder een open tabblad."
-  },
-  "home.feat.bg.t": {
-    "message": "Achtergrondscripts"
-  },
   "home.feat.compat.b": {
     "message": "Ondersteunt GM_*-API's · identiek metadatablok"
   },
   "home.feat.compat.d": {
     "message": "Volledig compatibel met het userscript-formaat en GM-API's — bestaande scripts migreren zonder wijzigingen en zonder omschakelingskosten."
   },
+  "home.feat.compat.l": {
+    "message": "Migratiehandleiding"
+  },
   "home.feat.compat.t": {
     "message": "Tampermonkey-compatibel"
-  },
-  "home.feat.devTag": {
-    "message": "Ontwikkelaar"
   },
   "home.feat.eyebrow": {
     "message": "Kerntoepassingen · WAAROM SCRIPTCAT"
@@ -232,11 +220,17 @@
   "home.feat.secure.d": {
     "message": "Transparante, controleerbare machtigingen en zichtbaar gedrag — kwaadaardige scripts worden aan de bron gestopt."
   },
+  "home.feat.secure.l": {
+    "message": "Hoe machtigingen werken"
+  },
   "home.feat.secure.t": {
     "message": "Veilig & betrouwbaar"
   },
   "home.feat.store.d": {
     "message": "Installeer duizenden communityscripts in één klik, of publiceer uw eigen en bouw samen het ecosysteem."
+  },
+  "home.link.store": {
+    "message": "Naar de scriptwinkel"
   },
   "home.feat.store.t": {
     "message": "Scriptwinkel"
@@ -246,6 +240,9 @@
   },
   "home.feat.sync.d": {
     "message": "Scripts en instellingen synchroniseren tussen apparaten — niets gaat verloren bij wisselen of herinstalleren."
+  },
+  "home.feat.sync.l": {
+    "message": "Synchronisatie instellen"
   },
   "home.feat.sync.t": {
     "message": "Cloudsync"
@@ -277,26 +274,17 @@
   "home.hero.mock.adblock": {
     "message": "Advertenties automatisch overslaan"
   },
-  "home.hero.mock.add": {
-    "message": "Toevoegen uit scriptwinkel"
-  },
   "home.hero.mock.dark": {
     "message": "Donkere modus voor pagina's"
   },
   "home.hero.mock.running": {
     "message": "3 scripts draaien op deze pagina"
   },
-  "home.hero.mock.skip": {
-    "message": "Advertenties overslaan"
-  },
   "home.hero.mock.speed": {
     "message": "Videosnelheid regelen"
   },
   "home.hero.moreBrowsers": {
     "message": "Meer browsers"
-  },
-  "home.hero.subhead": {
-    "message": "Blokkeer advertenties, verbeter video, automatiseer het saaie werk — installeer communityscripts in één klik uit de winkel, met achtergrondscripts en krachtige API's voor ontwikkelaars. Tampermonkey-compatibel, dus uw bestaande scripts migreren zonder kosten."
   },
   "home.hero.title1": {
     "message": "Geef uw browser"
@@ -306,9 +294,6 @@
   },
   "home.hero.title3": {
     "message": "superkrachten"
-  },
-  "home.hero.trust": {
-    "message": "Werkt op Chrome · Edge · Firefox — volledig gratis & open source"
   },
   "home.install.chrome": {
     "message": "Toevoegen aan Chrome"
@@ -324,6 +309,9 @@
   },
   "home.install.manual": {
     "message": "Pakket downloaden en handmatig installeren"
+  },
+  "home.nav.ai": {
+    "message": "AI"
   },
   "home.nav.changelog": {
     "message": "Wijzigingslogboek"
@@ -373,29 +361,14 @@
   "home.sc.featured.btn": {
     "message": "Videoscripts bekijken"
   },
-  "home.sc.featured.c1": {
-    "message": "Snelheidsregeling"
-  },
-  "home.sc.featured.c2": {
-    "message": "Advertentieblokkering"
-  },
-  "home.sc.featured.c3": {
-    "message": "Downloaden"
-  },
   "home.sc.featured.c4": {
     "message": "Beeld-in-beeld"
   },
   "home.sc.featured.d": {
     "message": "Snelheidsregeling, automatisch advertenties overslaan, downloaden met één klik, beeld-in-beeld — een betere Bilibili / YouTube / Netflix."
   },
-  "home.sc.featured.sites": {
-    "message": "Ondersteunt 20+ videosites"
-  },
   "home.sc.featured.t": {
     "message": "Video, volledig verbeterd"
-  },
-  "home.sc.featured.tag": {
-    "message": "Meest populair"
   },
   "home.sc.read.d": {
     "message": "Donkere modus, paginavetaling, immersief lezen."
@@ -460,6 +433,9 @@
   "home.step3.d": {
     "message": "Klik op installeren en het script werkt meteen op de pagina."
   },
+  "home.step3.l": {
+    "message": "Handleiding scripts installeren"
+  },
   "home.step3.p": {
     "message": "Geïnstalleerd · nu actief"
   },
@@ -468,9 +444,6 @@
   },
   "home.trust.contributors": {
     "message": "Bijdragers"
-  },
-  "home.trust.eyebrow": {
-    "message": "VERTROUWD DOOR GEBRUIKERS & ONTWIKKELAARS WERELDWIJD"
   },
   "home.trust.scripts": {
     "message": "Communityscripts"
@@ -712,6 +685,129 @@
   "home.search.kw.video": {
     "message": "video",
     "description": "Search keyword for video"
+  },
+  "home.hero.lead": {
+    "message": "Blokkeer advertenties, geef video's een boost, automatiseer het saaie werk — installeer communityscripts in één klik uit de winkel. Tampermonkey-compatibel, met achtergrondscripts, een uitgebreide API en AI-integratie voor ontwikkelaars."
+  },
+  "home.hero.demo.ad": {
+    "message": "Advertentie"
+  },
+  "home.hero.demo.adWait": {
+    "message": "Overslaan in 15 s"
+  },
+  "home.hero.demo.popup": {
+    "message": "Tijdelijke actie!"
+  },
+  "home.hero.demo.popupSub": {
+    "message": "Klik voor een geheim cadeau"
+  },
+  "home.hero.demo.blocked": {
+    "message": "3 advertenties geblokkeerd"
+  },
+  "home.sc.video.t": {
+    "message": "Video · Verbetering"
+  },
+  "home.sc.adblock.h": {
+    "message": "Advertenties en pop-ups, weggeveegd"
+  },
+  "home.sc.shop.h": {
+    "message": "Zie meteen de echte laagste prijs"
+  },
+  "home.sc.auto.h": {
+    "message": "Laat scripts het repetitieve werk doen"
+  },
+  "home.sc.read.h": {
+    "message": "Lange buitenlandse teksten, prettig leesbaar"
+  },
+  "home.sc.stage.running": {
+    "message": "{name} · Actief"
+  },
+  "home.sc.stage.read": {
+    "message": "Immersief Vertalen"
+  },
+  "home.sc.stage.blocked": {
+    "message": "{count} geblokkeerd"
+  },
+  "home.sc.stage.skipped": {
+    "message": "Automatisch overgeslagen"
+  },
+  "home.sc.stage.lowest": {
+    "message": "Laagste ooit {price}"
+  },
+  "home.sc.stage.coupon": {
+    "message": "Bon toegepast · {amount} korting"
+  },
+  "home.sc.stage.tasks": {
+    "message": "Dagelijkse taken"
+  },
+  "home.sc.stage.task1": {
+    "message": "Dagelijkse check-in"
+  },
+  "home.sc.stage.task2": {
+    "message": "Punten ophalen"
+  },
+  "home.sc.stage.task3": {
+    "message": "Surftaken voltooien"
+  },
+  "home.sc.stage.readSrc": {
+    "message": "Userscripts let you reshape any website to fit the way you read, watch and shop. Install one, and the page changes instantly — no extension to build, no code to write."
+  },
+  "home.sc.stage.readDst": {
+    "message": "Met userscripts past u elke website aan aan de manier waarop u leest, kijkt en winkelt. Installeer er één en de pagina verandert direct — geen extensie bouwen, geen code schrijven."
+  },
+  "home.sc.stage.readChip": {
+    "message": "Vertaald · Leesmodus aan"
+  },
+  "home.feat.compat.run": {
+    "message": "Draait zonder aanpassing"
+  },
+  "home.ai.eyebrow": {
+    "message": "AI-integratie · AI READY"
+  },
+  "home.ai.title1": {
+    "message": "Laat AI "
+  },
+  "home.ai.title2": {
+    "message": "uw scripts schrijven en uitvoeren"
+  },
+  "home.ai.sub": {
+    "message": "Met de sctl-CLI kunnen AI-codeeragents zoals Claude Code en Codex scripts voor ScriptCat schrijven, ze in uw browser installeren om het resultaat te controleren, en gevonden problemen zelf oplossen voordat ze het opnieuw proberen."
+  },
+  "home.ai.agents.t": {
+    "message": "AI-codeeragents"
+  },
+  "home.ai.agents.d": {
+    "message": "Geef Claude Code of Codex de skills scriptcat-userscript en sctl, en het weet hoe ScriptCat-scripts worden geschreven — en kan ze in uw browser controleren en zelf repareren."
+  },
+  "home.ai.agents.l": {
+    "message": "Scripts ontwikkelen met AI"
+  },
+  "home.ai.sctl.t": {
+    "message": "sctl-opdrachtregel"
+  },
+  "home.ai.sctl.d": {
+    "message": "Scripts weergeven, installeren en uitvoeren en hun logs lezen vanuit de terminal — of tabbladen en pagina's besturen, of CDP doorgeven aan Playwright."
+  },
+  "home.ai.sctl.l": {
+    "message": "Aan de slag met sctl"
+  },
+  "home.ai.term.prompt": {
+    "message": "Schrijf een script dat Bilibili-video's standaard op 1080p zet, installeer het daarna in mijn browser en probeer het uit"
+  },
+  "home.ai.term.wrote": {
+    "message": "{file} geschreven"
+  },
+  "home.ai.term.installed": {
+    "message": "Geïnstalleerd in ScriptCat"
+  },
+  "home.ai.term.verified": {
+    "message": "Geen fouten — kwaliteit omgezet naar 1080p"
+  },
+  "home.dev.bgRunning": {
+    "message": "Draait op achtergrond"
+  },
+  "home.dev.log.trigger": {
+    "message": "geplande uitvoering"
   },
   "ad.label": {
     "message": "Advertisement",

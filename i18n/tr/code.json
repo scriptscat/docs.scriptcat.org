@@ -202,29 +202,17 @@
   "home.dev.title2": {
     "message": "kod çalıştırma ortamına"
   },
-  "home.feat.api.d": {
-    "message": "GM'den daha zengin: dosya depolama, zamanlanmış görevler ve çapraz kaynak istekleri parmaklarınızın ucunda."
-  },
-  "home.feat.api.t": {
-    "message": "Güçlü API'ler"
-  },
-  "home.feat.bg.d": {
-    "message": "Eşsiz: komut dosyaları açık sekme olmadan arka planda çalışmaya devam eder."
-  },
-  "home.feat.bg.t": {
-    "message": "Arka plan komut dosyaları"
-  },
   "home.feat.compat.b": {
     "message": "GM_* API desteği · birebir aynı meta veri bloğu"
   },
   "home.feat.compat.d": {
     "message": "Kullanıcı komut dosyası formatı ve GM API'leriyle tam uyumlu — mevcut komut dosyalarınızı sıfır değişiklikle ve geçiş maliyeti olmadan taşıyın."
   },
+  "home.feat.compat.l": {
+    "message": "Geçiş rehberi"
+  },
   "home.feat.compat.t": {
     "message": "Tampermonkey uyumlu"
-  },
-  "home.feat.devTag": {
-    "message": "Geliştirici"
   },
   "home.feat.eyebrow": {
     "message": "Temel özellikler · WHY SCRIPTCAT"
@@ -232,11 +220,17 @@
   "home.feat.secure.d": {
     "message": "Şeffaf, kontrol edilebilir izinler ve görünür davranış — kötü amaçlı komut dosyaları kaynağında durdurulur."
   },
+  "home.feat.secure.l": {
+    "message": "İzinler nasıl çalışır"
+  },
   "home.feat.secure.t": {
     "message": "Güvenli ve güvenilir"
   },
   "home.feat.store.d": {
     "message": "Binlerce topluluk komut dosyasını tek tıkla kurun veya kendi eserlerinizi yayınlayıp ekosistemi birlikte inşa edin."
+  },
+  "home.link.store": {
+    "message": "Komut dosyası mağazasına git"
   },
   "home.feat.store.t": {
     "message": "Komut dosyası mağazası"
@@ -246,6 +240,9 @@
   },
   "home.feat.sync.d": {
     "message": "Komut dosyaları ve ayarlar cihazlar arasında senkronize olur — geçiş veya yeniden kurulumda hiçbir şey kaybolmaz."
+  },
+  "home.feat.sync.l": {
+    "message": "Senkronizasyonu ayarla"
   },
   "home.feat.sync.t": {
     "message": "Bulut senkronizasyonu"
@@ -277,26 +274,17 @@
   "home.hero.mock.adblock": {
     "message": "Reklamları otomatik atla"
   },
-  "home.hero.mock.add": {
-    "message": "Komut dosyası mağazasından ekle"
-  },
   "home.hero.mock.dark": {
     "message": "Sayfalar için karanlık mod"
   },
   "home.hero.mock.running": {
     "message": "Bu sayfada çalışan 3 komut dosyası"
   },
-  "home.hero.mock.skip": {
-    "message": "Reklamları atla"
-  },
   "home.hero.mock.speed": {
     "message": "Video hız kontrolü"
   },
   "home.hero.moreBrowsers": {
     "message": "Daha fazla tarayıcı"
-  },
-  "home.hero.subhead": {
-    "message": "Reklamları engelleyin, videoyu hızlandırın, sıkıcı işleri otomatikleştirin — mağazadan topluluk komut dosyalarını tek tıkla kurun; geliştiriciler için arka plan komut dosyaları ve güçlü API'ler de dahil. Tampermonkey uyumludur, mevcut komut dosyalarınız sıfır maliyetle taşınır."
   },
   "home.hero.title1": {
     "message": "Tarayıcınıza"
@@ -306,9 +294,6 @@
   },
   "home.hero.title3": {
     "message": "süper güçler verin"
-  },
-  "home.hero.trust": {
-    "message": "Chrome · Edge · Firefox'ta çalışır — tamamen ücretsiz ve açık kaynak"
   },
   "home.install.chrome": {
     "message": "Chrome'a Ekle"
@@ -324,6 +309,9 @@
   },
   "home.install.manual": {
     "message": "Paketi indir ve elle kur"
+  },
+  "home.nav.ai": {
+    "message": "AI"
   },
   "home.nav.changelog": {
     "message": "Değişiklik günlüğü"
@@ -373,29 +361,14 @@
   "home.sc.featured.btn": {
     "message": "Video komut dosyalarına göz at"
   },
-  "home.sc.featured.c1": {
-    "message": "Hız kontrolü"
-  },
-  "home.sc.featured.c2": {
-    "message": "Reklam engelleme"
-  },
-  "home.sc.featured.c3": {
-    "message": "İndirme"
-  },
   "home.sc.featured.c4": {
     "message": "Resim içinde resim"
   },
   "home.sc.featured.d": {
     "message": "Hız kontrolü, otomatik reklam atlama, tek tıkla indirme, resim içinde resim — daha iyi bir Bilibili / YouTube / Netflix."
   },
-  "home.sc.featured.sites": {
-    "message": "20'den fazla video sitesi desteklenir"
-  },
   "home.sc.featured.t": {
     "message": "Video, tamamen geliştirildi"
-  },
-  "home.sc.featured.tag": {
-    "message": "En popüler"
   },
   "home.sc.read.d": {
     "message": "Karanlık mod, sayfa çevirisi, sürükleyici okuma."
@@ -460,6 +433,9 @@
   "home.step3.d": {
     "message": "Kur'a tıklayın, komut dosyası sayfada hemen etkisini gösterir."
   },
+  "home.step3.l": {
+    "message": "Komut dosyaları nasıl kurulur"
+  },
   "home.step3.p": {
     "message": "Kuruldu · Şu an aktif"
   },
@@ -468,9 +444,6 @@
   },
   "home.trust.contributors": {
     "message": "Katkıda Bulunanlar"
-  },
-  "home.trust.eyebrow": {
-    "message": "DÜNYA ÇAPINDA KULLANICILAR VE GELİŞTİRİCİLER TARAFINDAN GÜVENİLİR"
   },
   "home.trust.scripts": {
     "message": "Topluluk komut dosyaları"
@@ -712,6 +685,129 @@
   "home.search.kw.video": {
     "message": "video",
     "description": "Search keyword for video"
+  },
+  "home.hero.lead": {
+    "message": "Reklamları engelleyin, videoları güçlendirin, sıkıcı işleri otomatikleştirin — topluluk komut dosyalarını mağazadan tek tıkla kurun. Tampermonkey uyumludur; geliştiriciler için arka plan komut dosyaları, zengin bir API ve AI entegrasyonu sunar."
+  },
+  "home.hero.demo.ad": {
+    "message": "Video reklamı"
+  },
+  "home.hero.demo.adWait": {
+    "message": "15 sn sonra geç"
+  },
+  "home.hero.demo.popup": {
+    "message": "Sınırlı teklif!"
+  },
+  "home.hero.demo.popupSub": {
+    "message": "Gizemli hediye için tıkla!"
+  },
+  "home.hero.demo.blocked": {
+    "message": "3 reklam engellendi"
+  },
+  "home.sc.video.t": {
+    "message": "Video · İyileştirme"
+  },
+  "home.sc.adblock.h": {
+    "message": "Reklamlar ve pop-up'lar, bir çırpıda yok"
+  },
+  "home.sc.shop.h": {
+    "message": "Gerçek en düşük fiyatı bir bakışta görün"
+  },
+  "home.sc.auto.h": {
+    "message": "Tekrarlayan işleri komut dosyalarına bırakın"
+  },
+  "home.sc.read.h": {
+    "message": "Uzun yabancı metinler, rahatça okunur"
+  },
+  "home.sc.stage.running": {
+    "message": "{name} · Çalışıyor"
+  },
+  "home.sc.stage.read": {
+    "message": "Sürükleyici Çeviri"
+  },
+  "home.sc.stage.blocked": {
+    "message": "{count} engellendi"
+  },
+  "home.sc.stage.skipped": {
+    "message": "Otomatik atlandı"
+  },
+  "home.sc.stage.lowest": {
+    "message": "Rekor düşük {price}"
+  },
+  "home.sc.stage.coupon": {
+    "message": "Kupon uygulandı · {amount} indirim"
+  },
+  "home.sc.stage.tasks": {
+    "message": "Günlük görevler"
+  },
+  "home.sc.stage.task1": {
+    "message": "Günlük yoklama"
+  },
+  "home.sc.stage.task2": {
+    "message": "Puanları topla"
+  },
+  "home.sc.stage.task3": {
+    "message": "Gezinme görevlerini tamamla"
+  },
+  "home.sc.stage.readSrc": {
+    "message": "Userscripts let you reshape any website to fit the way you read, watch and shop. Install one, and the page changes instantly — no extension to build, no code to write."
+  },
+  "home.sc.stage.readDst": {
+    "message": "Kullanıcı komut dosyaları, herhangi bir web sitesini okuma, izleme ve alışveriş alışkanlıklarınıza göre yeniden şekillendirmenizi sağlar. Birini kurun, sayfa anında değişsin — ne eklenti geliştirmeniz ne de kod yazmanız gerekir."
+  },
+  "home.sc.stage.readChip": {
+    "message": "Çevrildi · Okuma modu açık"
+  },
+  "home.feat.compat.run": {
+    "message": "Olduğu gibi çalışır"
+  },
+  "home.ai.eyebrow": {
+    "message": "AI entegrasyonu · AI READY"
+  },
+  "home.ai.title1": {
+    "message": "Komut dosyalarınızı "
+  },
+  "home.ai.title2": {
+    "message": "AI yazsın ve çalıştırsın"
+  },
+  "home.ai.sub": {
+    "message": "sctl komut satırı aracıyla Claude Code ve Codex gibi AI kodlama ajanları ScriptCat için doğrudan komut dosyası yazabilir, sonucu görmek için tarayıcınıza kurabilir ve bulduğu sorunları düzeltip yeniden deneyebilir."
+  },
+  "home.ai.agents.t": {
+    "message": "AI kodlama ajanları"
+  },
+  "home.ai.agents.d": {
+    "message": "Claude Code veya Codex'e scriptcat-userscript ve sctl becerilerini ekleyin; ScriptCat komut dosyalarının nasıl yazıldığını bilsin, sonucu tarayıcınızda doğrulasın ve sorunları kendisi düzeltsin."
+  },
+  "home.ai.agents.l": {
+    "message": "AI ile komut dosyası geliştirin"
+  },
+  "home.ai.sctl.t": {
+    "message": "sctl komut satırı"
+  },
+  "home.ai.sctl.d": {
+    "message": "Terminalden komut dosyalarını listeleyin, kurun, çalıştırın ve günlüklerini okuyun — ya da sekmeleri ve sayfaları yönetin veya CDP'yi Playwright'a devredin."
+  },
+  "home.ai.sctl.l": {
+    "message": "sctl ile başlayın"
+  },
+  "home.ai.term.prompt": {
+    "message": "Bilibili videolarını varsayılan olarak 1080p'ye geçiren bir komut dosyası yaz, sonra tarayıcıma kurup dene"
+  },
+  "home.ai.term.wrote": {
+    "message": "{file} yazıldı"
+  },
+  "home.ai.term.installed": {
+    "message": "ScriptCat'e kuruldu"
+  },
+  "home.ai.term.verified": {
+    "message": "Hata yok — kalite 1080p'ye geçirildi"
+  },
+  "home.dev.bgRunning": {
+    "message": "Arka planda çalışıyor"
+  },
+  "home.dev.log.trigger": {
+    "message": "zamanlanmış çalıştırma"
   },
   "ad.label": {
     "message": "Advertisement",

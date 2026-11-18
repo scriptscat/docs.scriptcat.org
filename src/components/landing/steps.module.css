@@ -1,0 +1,209 @@
+/* Get started — three step cards on a self-drawing track. */
+
+.steps {
+  background: linear-gradient(180deg, var(--lp-bg), var(--lp-bg-warm) 30%, var(--lp-bg-warm) 70%, var(--lp-bg));
+}
+
+.row {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 28px;
+}
+/* the track runs from the first number node to the last: each node's centre
+   sits 48px (card padding 26 + node radius 22) into its card */
+.track {
+  position: absolute;
+  top: 48px;
+  inset-inline-start: 48px;
+  inset-inline-end: calc((100% - 56px) / 3 - 48px);
+  height: 3px;
+  border-radius: 3px;
+  background: var(--lp-border);
+}
+.trackFill {
+  height: 100%;
+  border-radius: 3px;
+  background: linear-gradient(90deg, var(--lp-brand), var(--lp-accent), var(--lp-mint));
+  transform-origin: 0 50%;
+}
+:global([data-lp-motion]) .trackFill {
+  transform: scaleX(0);
+}
+
+.card {
+  position: relative;
+  padding: 26px;
+  border-radius: 20px;
+  background: var(--lp-surface);
+  border: 1px solid var(--lp-border);
+  box-shadow: var(--lp-shadow-card);
+  transition: box-shadow 0.25s ease, translate 0.25s ease;
+}
+.card:hover {
+  translate: 0 -4px;
+  box-shadow: var(--lp-shadow-soft);
+}
+.head {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.node {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  color: #fff;
+  font-family: var(--lp-font-display);
+  font-size: 17px;
+  font-weight: 900;
+  box-shadow: 0 0 0 6px var(--lp-surface), 0 8px 18px -6px rgba(14, 34, 51, 0.35);
+}
+.chip {
+  width: 48px;
+  height: 48px;
+  border-radius: 14px;
+  display: grid;
+  place-items: center;
+  font-size: 24px;
+}
+.title {
+  margin: 22px 0 8px;
+  font-family: var(--lp-font-display);
+  font-size: 21px;
+  font-weight: 800;
+  color: var(--lp-ink);
+}
+.desc {
+  margin: 0;
+  min-height: 3.4em;
+  font-size: 14.5px;
+  line-height: 1.7;
+  color: var(--lp-text);
+}
+.more {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: fit-content;
+  margin-top: 10px;
+  font-size: 14px;
+  font-weight: 800;
+  text-decoration: none;
+}
+.more:hover {
+  text-decoration: none;
+}
+.more svg {
+  transition: transform 0.2s ease;
+}
+.more:hover svg {
+  transform: translateX(4px);
+}
+/* mirror the arrow glyph in RTL (RTLCSS flips the hover nudge, not glyphs) */
+:global([dir="rtl"]) .more svg {
+  /* rtl:ignore */ transform: scaleX(-1);
+}
+:global([dir="rtl"]) .more:hover svg {
+  /* rtl:ignore */ transform: scaleX(-1) translateX(4px);
+}
+.preview {
+  position: relative;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  margin-top: 18px;
+  padding: 11px 14px;
+  border-radius: 12px;
+  background: var(--lp-bg-blue);
+  font-size: 13.5px;
+  font-weight: 700;
+}
+.previewText {
+  color: var(--lp-ink);
+}
+
+/* 01 — a bar fills along the bottom of the pill, over and over */
+.fxProgress::after {
+  content: "";
+  position: absolute;
+  inset-inline-start: 0;
+  bottom: 0;
+  height: 3px;
+  width: 100%;
+  background: currentColor;
+  transform-origin: 0 50%;
+  animation: fill 2.6s var(--lp-ease) infinite;
+}
+@keyframes fill {
+  0% {
+    transform: scaleX(0);
+    opacity: 1;
+  }
+  70% {
+    transform: scaleX(1);
+    opacity: 1;
+  }
+  100% {
+    transform: scaleX(1);
+    opacity: 0;
+  }
+}
+
+/* 02 — a blinking caret after the query */
+.fxCaret .previewText::after {
+  content: "";
+  display: inline-block;
+  width: 2px;
+  height: 1.05em;
+  margin-inline-start: 3px;
+  vertical-align: -0.15em;
+  background: currentColor;
+  animation: caret 1s steps(1) infinite;
+}
+@keyframes caret {
+  50% {
+    opacity: 0;
+  }
+}
+
+/* 03 — the check icon sends out a ring */
+.fxPulse svg {
+  border-radius: 50%;
+  animation: pulse 2.2s ease-out infinite;
+}
+@keyframes pulse {
+  0% {
+    box-shadow: 0 0 0 0 color-mix(in srgb, currentColor 45%, transparent);
+  }
+  70%,
+  100% {
+    box-shadow: 0 0 0 9px transparent;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .fxProgress::after,
+  .fxCaret .previewText::after,
+  .fxPulse svg {
+    animation: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .row {
+    grid-template-columns: 1fr;
+    max-width: 520px;
+  }
+  .track {
+    display: none;
+  }
+  .desc {
+    min-height: 0;
+  }
+}

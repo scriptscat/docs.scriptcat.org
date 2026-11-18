@@ -372,14 +372,8 @@
   "home.hero.title3": {
     "message": "суперспособности"
   },
-  "home.hero.subhead": {
-    "message": "Блокируйте рекламу, улучшайте видео, автоматизируйте рутину — устанавливайте скрипты сообщества из магазина в один клик; для разработчиков — фоновые скрипты и мощные API. Совместим с Tampermonkey: существующие скрипты переносятся без затрат."
-  },
   "home.hero.browse": {
     "message": "Смотреть скрипты"
-  },
-  "home.hero.trust": {
-    "message": "Работает в Chrome · Edge · Firefox — полностью бесплатно и open source"
   },
   "home.hero.mock.speed": {
     "message": "Управление скоростью видео"
@@ -390,14 +384,8 @@
   "home.hero.mock.dark": {
     "message": "Тёмная тема для страниц"
   },
-  "home.hero.mock.skip": {
-    "message": "Пропуск рекламы"
-  },
   "home.hero.mock.running": {
     "message": "На этой странице работают 3 скрипта"
-  },
-  "home.hero.mock.add": {
-    "message": "Добавить из магазина скриптов"
   },
   "home.hero.chip.installed": {
     "message": "Скрипт установлен"
@@ -407,9 +395,6 @@
   },
   "home.hero.chip.background": {
     "message": "3 скрипта работают в фоне"
-  },
-  "home.trust.eyebrow": {
-    "message": "ДОВЕРИЕ ПОЛЬЗОВАТЕЛЕЙ И РАЗРАБОТЧИКОВ ПО ВСЕМУ МИРУ"
   },
   "home.trust.users": {
     "message": "Установок"
@@ -438,32 +423,17 @@
   "home.sc.sub": {
     "message": "Возьмите скрипт из магазина — реклама, видео, покупки, продуктивность: всё сделано за вас."
   },
-  "home.sc.featured.tag": {
-    "message": "Самое популярное"
-  },
   "home.sc.featured.t": {
     "message": "Видео — полностью улучшено"
   },
   "home.sc.featured.d": {
     "message": "Скорость, автопропуск рекламы, скачивание в один клик, картинка в картинке — удобнее Bilibili / YouTube / Netflix."
   },
-  "home.sc.featured.c1": {
-    "message": "Скорость"
-  },
-  "home.sc.featured.c2": {
-    "message": "Блокировка рекламы"
-  },
-  "home.sc.featured.c3": {
-    "message": "Скачивание"
-  },
   "home.sc.featured.c4": {
     "message": "Картинка в картинке"
   },
   "home.sc.featured.btn": {
     "message": "Видеоскрипты"
-  },
-  "home.sc.featured.sites": {
-    "message": "Поддержка 20+ видеосайтов"
   },
   "home.sc.adblock.t": {
     "message": "Блокировка рекламы · Чистый веб"
@@ -537,6 +507,9 @@
   "home.step3.d": {
     "message": "Нажмите «Установить» — скрипт сразу заработает на странице."
   },
+  "home.step3.l": {
+    "message": "Как устанавливать скрипты"
+  },
   "home.step3.p": {
     "message": "Установлен · Уже активен"
   },
@@ -558,6 +531,9 @@
   "home.feat.compat.d": {
     "message": "Полная совместимость с форматом userscript и GM API — миграция существующих скриптов без изменений и без затрат на переход."
   },
+  "home.feat.compat.l": {
+    "message": "Руководство по переходу"
+  },
   "home.feat.compat.b": {
     "message": "Поддержка GM_* API · тот же блок метаданных"
   },
@@ -567,11 +543,17 @@
   "home.feat.store.d": {
     "message": "Устанавливайте тысячи скриптов сообщества в один клик или публикуйте свои — развиваем экосистему вместе."
   },
+  "home.link.store": {
+    "message": "В магазин скриптов"
+  },
   "home.feat.secure.t": {
     "message": "Безопасность и надёжность"
   },
   "home.feat.secure.d": {
     "message": "Прозрачные и управляемые разрешения, видимое поведение — вредоносные скрипты останавливаются на входе."
+  },
+  "home.feat.secure.l": {
+    "message": "Как работают разрешения"
   },
   "home.feat.sync.t": {
     "message": "Облачная синхронизация"
@@ -579,20 +561,8 @@
   "home.feat.sync.d": {
     "message": "Скрипты и настройки синхронизируются между устройствами — ничего не теряется при смене или переустановке."
   },
-  "home.feat.bg.t": {
-    "message": "Фоновые скрипты"
-  },
-  "home.feat.bg.d": {
-    "message": "Уникально: скрипты продолжают работать в фоне без открытой вкладки."
-  },
-  "home.feat.api.t": {
-    "message": "Мощные API"
-  },
-  "home.feat.api.d": {
-    "message": "Богаче GM: файловое хранилище, планировщик задач и кросс-доменные запросы под рукой."
-  },
-  "home.feat.devTag": {
-    "message": "Для разработчиков"
+  "home.feat.sync.l": {
+    "message": "Настроить синхронизацию"
   },
   "home.dev.eyebrow": {
     "message": "Для разработчиков · FOR DEVELOPERS"
@@ -698,6 +668,9 @@
   "home.nav.dev": {
     "message": "Разработчикам"
   },
+  "home.nav.ai": {
+    "message": "ИИ"
+  },
   "home.nav.changelog": {
     "message": "История изменений"
   },
@@ -712,6 +685,129 @@
   },
   "home.nav.theme": {
     "message": "Сменить тему"
+  },
+  "home.hero.lead": {
+    "message": "Блокируйте рекламу, прокачайте видео, автоматизируйте рутину — устанавливайте скрипты сообщества из магазина в один клик. Совместим с Tampermonkey, а для разработчиков — фоновые скрипты, богатый API и интеграция с ИИ."
+  },
+  "home.hero.demo.ad": {
+    "message": "Видеореклама"
+  },
+  "home.hero.demo.adWait": {
+    "message": "Пропуск через 15 с"
+  },
+  "home.hero.demo.popup": {
+    "message": "Только сегодня!"
+  },
+  "home.hero.demo.popupSub": {
+    "message": "Жмите — вас ждёт подарок!"
+  },
+  "home.hero.demo.blocked": {
+    "message": "Скрыто 3 рекламных блока"
+  },
+  "home.sc.video.t": {
+    "message": "Видео · Улучшение"
+  },
+  "home.sc.adblock.h": {
+    "message": "Ни рекламы, ни всплывающих окон"
+  },
+  "home.sc.shop.h": {
+    "message": "Реальная минимальная цена — как на ладони"
+  },
+  "home.sc.auto.h": {
+    "message": "Повторяющиеся дела — скриптам"
+  },
+  "home.sc.read.h": {
+    "message": "Длинные статьи на чужом языке — читать удобно"
+  },
+  "home.sc.stage.running": {
+    "message": "{name} · Работает"
+  },
+  "home.sc.stage.read": {
+    "message": "Иммерсивный перевод"
+  },
+  "home.sc.stage.blocked": {
+    "message": "Заблокировано: {count}"
+  },
+  "home.sc.stage.skipped": {
+    "message": "Реклама пропущена"
+  },
+  "home.sc.stage.lowest": {
+    "message": "Мин. за всё время {price}"
+  },
+  "home.sc.stage.coupon": {
+    "message": "Купон применён · скидка {amount}"
+  },
+  "home.sc.stage.tasks": {
+    "message": "Ежедневные задания"
+  },
+  "home.sc.stage.task1": {
+    "message": "Ежедневный чек-ин"
+  },
+  "home.sc.stage.task2": {
+    "message": "Получить баллы"
+  },
+  "home.sc.stage.task3": {
+    "message": "Выполнить задания на просмотр"
+  },
+  "home.sc.stage.readSrc": {
+    "message": "Userscripts let you reshape any website to fit the way you read, watch and shop. Install one, and the page changes instantly — no extension to build, no code to write."
+  },
+  "home.sc.stage.readDst": {
+    "message": "Юзерскрипты позволяют перестроить любой сайт под то, как вы читаете, смотрите и делаете покупки. Установите один — и страница сразу меняется: не нужно ни собирать расширение, ни писать код."
+  },
+  "home.sc.stage.readChip": {
+    "message": "Переведено · Режим чтения включён"
+  },
+  "home.feat.compat.run": {
+    "message": "Работает без изменений"
+  },
+  "home.ai.eyebrow": {
+    "message": "Интеграция с ИИ · AI READY"
+  },
+  "home.ai.title1": {
+    "message": "Пусть ИИ "
+  },
+  "home.ai.title2": {
+    "message": "пишет и запускает ваши скрипты"
+  },
+  "home.ai.sub": {
+    "message": "Через CLI sctl ИИ-агенты для программирования, такие как Claude Code и Codex, пишут скрипты для ScriptCat, устанавливают их в ваш браузер, проверяют результат и сами исправляют найденные ошибки, прежде чем попробовать снова."
+  },
+  "home.ai.agents.t": {
+    "message": "ИИ-агенты для кода"
+  },
+  "home.ai.agents.d": {
+    "message": "Подключите к Claude Code или Codex навыки scriptcat-userscript и sctl — и агент будет знать, как пишутся скрипты ScriptCat, проверит их в вашем браузере и сам исправит ошибки."
+  },
+  "home.ai.agents.l": {
+    "message": "Разработка скриптов с ИИ"
+  },
+  "home.ai.sctl.t": {
+    "message": "Командная строка sctl"
+  },
+  "home.ai.sctl.d": {
+    "message": "Список, установка и запуск скриптов, чтение логов — прямо из терминала. А ещё управление вкладками и страницами или передача CDP в Playwright."
+  },
+  "home.ai.sctl.l": {
+    "message": "Начало работы с sctl"
+  },
+  "home.ai.term.prompt": {
+    "message": "Напиши скрипт: на Bilibili по умолчанию включать 1080p, потом установи его в браузер и проверь"
+  },
+  "home.ai.term.wrote": {
+    "message": "Создан {file}"
+  },
+  "home.ai.term.installed": {
+    "message": "Установлено в ScriptCat"
+  },
+  "home.ai.term.verified": {
+    "message": "Ошибок нет — качество переключено на 1080p"
+  },
+  "home.dev.bgRunning": {
+    "message": "Работает в фоне"
+  },
+  "home.dev.log.trigger": {
+    "message": "запуск по расписанию"
   },
   "ad.label": {
     "message": "Реклама",

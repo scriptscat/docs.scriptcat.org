@@ -834,29 +834,17 @@
   "home.dev.title2": {
     "message": "代码运行时"
   },
-  "home.feat.api.d": {
-    "message": "比 GM 更丰富：文件存储、定时任务、跨域请求随手可用。"
-  },
-  "home.feat.api.t": {
-    "message": "强大 API"
-  },
-  "home.feat.bg.d": {
-    "message": "独有能力：无需开着标签页，脚本也能后台常驻运行。"
-  },
-  "home.feat.bg.t": {
-    "message": "后台脚本"
-  },
   "home.feat.compat.b": {
     "message": "支持 GM_* API · 元数据头完全一致"
   },
   "home.feat.compat.d": {
     "message": "完全兼容 Tampermonkey 脚本格式与 GM API，现有脚本零改动直接迁移，切换毫无成本。"
   },
+  "home.feat.compat.l": {
+    "message": "了解迁移"
+  },
   "home.feat.compat.t": {
     "message": "兼容 Tampermonkey"
-  },
-  "home.feat.devTag": {
-    "message": "开发者"
   },
   "home.feat.eyebrow": {
     "message": "核心能力 · WHY SCRIPTCAT"
@@ -864,11 +852,17 @@
   "home.feat.secure.d": {
     "message": "权限透明可控，脚本行为可见，从源头拒绝恶意脚本。"
   },
+  "home.feat.secure.l": {
+    "message": "了解权限声明"
+  },
   "home.feat.secure.t": {
     "message": "安全可靠"
   },
   "home.feat.store.d": {
     "message": "上万款社区脚本一键安装，也能发布你的作品，与社区共建生态。"
+  },
+  "home.link.store": {
+    "message": "去脚本商店"
   },
   "home.feat.store.t": {
     "message": "脚本商店"
@@ -878,6 +872,9 @@
   },
   "home.feat.sync.d": {
     "message": "脚本与配置多端云同步，换设备、重装也不丢失。"
+  },
+  "home.feat.sync.l": {
+    "message": "了解同步"
   },
   "home.feat.sync.t": {
     "message": "云端同步"
@@ -909,26 +906,17 @@
   "home.hero.mock.adblock": {
     "message": "自动跳过广告"
   },
-  "home.hero.mock.add": {
-    "message": "从脚本商店添加"
-  },
   "home.hero.mock.dark": {
     "message": "网页夜间模式"
   },
   "home.hero.mock.running": {
     "message": "本页 3 个脚本运行中"
   },
-  "home.hero.mock.skip": {
-    "message": "自动跳广告"
-  },
   "home.hero.mock.speed": {
     "message": "视频倍速控制"
   },
   "home.hero.moreBrowsers": {
     "message": "更多浏览器"
-  },
-  "home.hero.subhead": {
-    "message": "去广告、增强视频、自动化操作 —— 从脚本商店一键安装社区脚本，也能为开发者提供后台脚本与强大 API。兼容 Tampermonkey，现有脚本零成本迁移。"
   },
   "home.hero.title1": {
     "message": "给浏览器"
@@ -938,9 +926,6 @@
   },
   "home.hero.title3": {
     "message": "超能力"
-  },
-  "home.hero.trust": {
-    "message": "支持 Chrome · Edge · Firefox，完全免费开源"
   },
   "home.install.chrome": {
     "message": "添加到 Chrome 浏览器"
@@ -956,6 +941,9 @@
   },
   "home.install.manual": {
     "message": "下载安装包手动安装"
+  },
+  "home.nav.ai": {
+    "message": "AI"
   },
   "home.nav.changelog": {
     "message": "更新日志"
@@ -1005,29 +993,14 @@
   "home.sc.featured.btn": {
     "message": "浏览视频脚本"
   },
-  "home.sc.featured.c1": {
-    "message": "倍速播放"
-  },
-  "home.sc.featured.c2": {
-    "message": "去广告"
-  },
-  "home.sc.featured.c3": {
-    "message": "视频下载"
-  },
   "home.sc.featured.c4": {
     "message": "画中画"
   },
   "home.sc.featured.d": {
     "message": "倍速播放、自动跳广告、一键下载、画中画 —— 让 Bilibili / YouTube / Netflix 更好用。"
   },
-  "home.sc.featured.sites": {
-    "message": "支持 20+ 视频网站"
-  },
   "home.sc.featured.t": {
     "message": "视频体验，全面增强"
-  },
-  "home.sc.featured.tag": {
-    "message": "最受欢迎"
   },
   "home.sc.read.d": {
     "message": "夜间模式、网页翻译、沉浸式阅读体验。"
@@ -1092,6 +1065,9 @@
   "home.step3.d": {
     "message": "点击安装，脚本立刻在对应网页生效，即装即用。"
   },
+  "home.step3.l": {
+    "message": "如何安装脚本"
+  },
   "home.step3.p": {
     "message": "已安装 · 立即生效"
   },
@@ -1101,9 +1077,6 @@
   "home.trust.contributors": {
     "message": "开源贡献者"
   },
-  "home.trust.eyebrow": {
-    "message": "深受全球用户与开发者信赖 · TRUSTED WORLDWIDE"
-  },
   "home.trust.scripts": {
     "message": "社区脚本"
   },
@@ -1112,5 +1085,128 @@
   },
   "home.trust.users": {
     "message": "装机用户"
+  },
+  "home.hero.lead": {
+    "message": "去广告、增强视频、自动化操作 —— 从脚本商店一键安装社区脚本。兼容 Tampermonkey，还为开发者准备了后台脚本、丰富 API 与 AI 接入。"
+  },
+  "home.hero.demo.ad": {
+    "message": "贴片广告"
+  },
+  "home.hero.demo.adWait": {
+    "message": "15 秒后可关闭"
+  },
+  "home.hero.demo.popup": {
+    "message": "限时特惠！"
+  },
+  "home.hero.demo.popupSub": {
+    "message": "点我领取神秘大礼"
+  },
+  "home.hero.demo.blocked": {
+    "message": "已拦截 3 处广告"
+  },
+  "home.sc.video.t": {
+    "message": "视频 · 增强"
+  },
+  "home.sc.adblock.h": {
+    "message": "广告和弹窗，一扫而空"
+  },
+  "home.sc.shop.h": {
+    "message": "历史低价，一眼看穿"
+  },
+  "home.sc.auto.h": {
+    "message": "重复的事，交给脚本"
+  },
+  "home.sc.read.h": {
+    "message": "外文长文，读得舒服"
+  },
+  "home.sc.stage.running": {
+    "message": "{name} · 运行中"
+  },
+  "home.sc.stage.read": {
+    "message": "沉浸式翻译"
+  },
+  "home.sc.stage.blocked": {
+    "message": "已拦截 {count} 个"
+  },
+  "home.sc.stage.skipped": {
+    "message": "已自动跳过"
+  },
+  "home.sc.stage.lowest": {
+    "message": "历史最低 {price}"
+  },
+  "home.sc.stage.coupon": {
+    "message": "已领券 · 立减 {amount}"
+  },
+  "home.sc.stage.tasks": {
+    "message": "每日任务"
+  },
+  "home.sc.stage.task1": {
+    "message": "每日签到"
+  },
+  "home.sc.stage.task2": {
+    "message": "领取积分"
+  },
+  "home.sc.stage.task3": {
+    "message": "完成浏览任务"
+  },
+  "home.sc.stage.readSrc": {
+    "message": "Userscripts let you reshape any website to fit the way you read, watch and shop. Install one, and the page changes instantly — no extension to build, no code to write."
+  },
+  "home.sc.stage.readDst": {
+    "message": "用户脚本让你按自己的习惯，重塑任何网站的阅读、观看与购物体验。装上一个，页面立刻改变 —— 无需开发扩展，也不用写一行代码。"
+  },
+  "home.sc.stage.readChip": {
+    "message": "已翻译 · 阅读模式已开启"
+  },
+  "home.feat.compat.run": {
+    "message": "同一脚本，直接运行"
+  },
+  "home.ai.eyebrow": {
+    "message": "AI 接入 · AI READY"
+  },
+  "home.ai.title1": {
+    "message": "让 AI 帮你"
+  },
+  "home.ai.title2": {
+    "message": "写脚本、跑脚本"
+  },
+  "home.ai.sub": {
+    "message": "通过 sctl 命令行，Claude Code、Codex 等 AI 编码代理可以直接为脚本猫编写脚本，装进你的浏览器验证效果，发现问题自己改完再试。"
+  },
+  "home.ai.agents.t": {
+    "message": "AI 编码代理"
+  },
+  "home.ai.agents.d": {
+    "message": "给 Claude Code、Codex 装上 scriptcat-userscript 与 sctl 两个 skill，它就懂脚本猫的写法，还能在你的浏览器里验证效果、自己修复。"
+  },
+  "home.ai.agents.l": {
+    "message": "用 AI 开发脚本"
+  },
+  "home.ai.sctl.t": {
+    "message": "sctl 命令行"
+  },
+  "home.ai.sctl.d": {
+    "message": "在终端里列出、安装、运行脚本并读取日志；也能操作标签页与页面，或把 CDP 交给 Playwright。"
+  },
+  "home.ai.sctl.l": {
+    "message": "sctl 入门"
+  },
+  "home.ai.term.prompt": {
+    "message": "帮我写个脚本：B 站视频默认切到 1080P，然后装到浏览器里试试"
+  },
+  "home.ai.term.wrote": {
+    "message": "已编写 {file}"
+  },
+  "home.ai.term.installed": {
+    "message": "已安装到脚本猫"
+  },
+  "home.ai.term.verified": {
+    "message": "没有报错，画质已切换为 1080P"
+  },
+  "home.dev.bgRunning": {
+    "message": "后台运行中"
+  },
+  "home.dev.log.trigger": {
+    "message": "定时触发"
   }
 }
