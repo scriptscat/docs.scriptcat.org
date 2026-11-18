@@ -389,29 +389,17 @@
   "home.dev.title2": {
     "message": "môi trường chạy mã"
   },
-  "home.feat.api.d": {
-    "message": "Phong phú hơn GM: lưu trữ tệp, tác vụ đã lên lịch và yêu cầu chéo nguồn gốc trong tầm tay."
-  },
-  "home.feat.api.t": {
-    "message": "API mạnh mẽ"
-  },
-  "home.feat.bg.d": {
-    "message": "Độc đáo: script tiếp tục chạy trong nền mà không cần mở tab."
-  },
-  "home.feat.bg.t": {
-    "message": "Script nền"
-  },
   "home.feat.compat.b": {
     "message": "Hỗ trợ API GM_* · khối siêu dữ liệu giống hệt"
   },
   "home.feat.compat.d": {
     "message": "Tương thích hoàn toàn với định dạng script người dùng và API GM — di chuyển script hiện có mà không cần thay đổi gì và không tốn chi phí chuyển đổi."
   },
+  "home.feat.compat.l": {
+    "message": "Hướng dẫn chuyển đổi"
+  },
   "home.feat.compat.t": {
     "message": "Tương thích Tampermonkey"
-  },
-  "home.feat.devTag": {
-    "message": "Nhà phát triển"
   },
   "home.feat.eyebrow": {
     "message": "Tính năng cốt lõi · VÌ SAO SCRIPTCAT"
@@ -419,11 +407,17 @@
   "home.feat.secure.d": {
     "message": "Quyền minh bạch và kiểm soát được, hành vi hiển thị rõ — script độc hại bị chặn từ gốc."
   },
+  "home.feat.secure.l": {
+    "message": "Cách hoạt động của quyền"
+  },
   "home.feat.secure.t": {
     "message": "An toàn và đáng tin cậy"
   },
   "home.feat.store.d": {
     "message": "Cài đặt hàng nghìn script cộng đồng chỉ một cú nhấp, hoặc xuất bản script của bạn và cùng nhau xây dựng hệ sinh thái."
+  },
+  "home.link.store": {
+    "message": "Đến cửa hàng script"
   },
   "home.feat.store.t": {
     "message": "Cửa hàng script"
@@ -433,6 +427,9 @@
   },
   "home.feat.sync.d": {
     "message": "Script và cài đặt đồng bộ giữa các thiết bị — không mất gì khi đổi máy hoặc cài lại."
+  },
+  "home.feat.sync.l": {
+    "message": "Thiết lập đồng bộ"
   },
   "home.feat.sync.t": {
     "message": "Đồng bộ đám mây"
@@ -464,26 +461,17 @@
   "home.hero.mock.adblock": {
     "message": "Tự động bỏ qua quảng cáo"
   },
-  "home.hero.mock.add": {
-    "message": "Thêm từ cửa hàng script"
-  },
   "home.hero.mock.dark": {
     "message": "Chế độ tối cho trang web"
   },
   "home.hero.mock.running": {
     "message": "3 script đang chạy trên trang này"
   },
-  "home.hero.mock.skip": {
-    "message": "Bỏ qua quảng cáo"
-  },
   "home.hero.mock.speed": {
     "message": "Điều chỉnh tốc độ video"
   },
   "home.hero.moreBrowsers": {
     "message": "Trình duyệt khác"
-  },
-  "home.hero.subhead": {
-    "message": "Chặn quảng cáo, tăng cường video, tự động hóa những việc nhàm chán — cài script cộng đồng từ cửa hàng chỉ một cú nhấp, với script nền và API mạnh mẽ cho nhà phát triển. Tương thích Tampermonkey, nên script hiện có của bạn di chuyển miễn phí."
   },
   "home.hero.title1": {
     "message": "Trao cho trình duyệt của bạn"
@@ -493,9 +481,6 @@
   },
   "home.hero.title3": {
     "message": "siêu năng lực"
-  },
-  "home.hero.trust": {
-    "message": "Hoạt động trên Chrome · Edge · Firefox — hoàn toàn miễn phí và mã nguồn mở"
   },
   "home.install.chrome": {
     "message": "Thêm vào Chrome"
@@ -511,6 +496,9 @@
   },
   "home.install.manual": {
     "message": "Tải gói và cài đặt thủ công"
+  },
+  "home.nav.ai": {
+    "message": "AI"
   },
   "home.nav.changelog": {
     "message": "Nhật ký thay đổi"
@@ -560,29 +548,14 @@
   "home.sc.featured.btn": {
     "message": "Duyệt script video"
   },
-  "home.sc.featured.c1": {
-    "message": "Điều chỉnh tốc độ"
-  },
-  "home.sc.featured.c2": {
-    "message": "Chặn quảng cáo"
-  },
-  "home.sc.featured.c3": {
-    "message": "Tải xuống"
-  },
   "home.sc.featured.c4": {
     "message": "Hình trong hình"
   },
   "home.sc.featured.d": {
     "message": "Điều chỉnh tốc độ, tự động bỏ qua quảng cáo, tải xuống một cú nhấp, hình trong hình — Bilibili / YouTube / Netflix tốt hơn."
   },
-  "home.sc.featured.sites": {
-    "message": "Hỗ trợ hơn 20 trang video"
-  },
   "home.sc.featured.t": {
     "message": "Video, nâng cấp toàn diện"
-  },
-  "home.sc.featured.tag": {
-    "message": "Phổ biến nhất"
   },
   "home.sc.read.d": {
     "message": "Chế độ tối, dịch trang, đọc đắm chìm."
@@ -647,6 +620,9 @@
   "home.step3.d": {
     "message": "Nhấp cài đặt và script có hiệu lực trên trang ngay lập tức."
   },
+  "home.step3.l": {
+    "message": "Cách cài đặt script"
+  },
   "home.step3.p": {
     "message": "Đã cài · Đang hoạt động"
   },
@@ -655,9 +631,6 @@
   },
   "home.trust.contributors": {
     "message": "Người đóng góp"
-  },
-  "home.trust.eyebrow": {
-    "message": "ĐƯỢC NGƯỜI DÙNG VÀ NHÀ PHÁT TRIỂN TOÀN CẦU TIN CẬY"
   },
   "home.trust.scripts": {
     "message": "Script cộng đồng"
@@ -703,6 +676,129 @@
   "home.search.kw.video": {
     "message": "video",
     "description": "Search keyword for video"
+  },
+  "home.hero.lead": {
+    "message": "Chặn quảng cáo, nâng cấp video, tự động hóa việc lặt vặt — cài script cộng đồng từ cửa hàng chỉ với một cú nhấp. Tương thích Tampermonkey, kèm script chạy nền, API phong phú và tích hợp AI cho nhà phát triển."
+  },
+  "home.hero.demo.ad": {
+    "message": "Quảng cáo"
+  },
+  "home.hero.demo.adWait": {
+    "message": "Bỏ qua sau 15s"
+  },
+  "home.hero.demo.popup": {
+    "message": "Ưu đãi có hạn!"
+  },
+  "home.hero.demo.popupSub": {
+    "message": "Nhấp để nhận quà bí ẩn"
+  },
+  "home.hero.demo.blocked": {
+    "message": "Đã chặn 3 quảng cáo"
+  },
+  "home.sc.video.t": {
+    "message": "Video · Nâng cấp"
+  },
+  "home.sc.adblock.h": {
+    "message": "Quảng cáo và cửa sổ bật lên, quét sạch"
+  },
+  "home.sc.shop.h": {
+    "message": "Giá thấp nhất thật sự, nhìn là thấy"
+  },
+  "home.sc.auto.h": {
+    "message": "Việc lặp đi lặp lại, cứ để script lo"
+  },
+  "home.sc.read.h": {
+    "message": "Bài dài tiếng nước ngoài, đọc thật thoải mái"
+  },
+  "home.sc.stage.running": {
+    "message": "{name} · Đang chạy"
+  },
+  "home.sc.stage.read": {
+    "message": "Dịch đắm chìm"
+  },
+  "home.sc.stage.blocked": {
+    "message": "Đã chặn {count}"
+  },
+  "home.sc.stage.skipped": {
+    "message": "Đã tự động bỏ qua"
+  },
+  "home.sc.stage.lowest": {
+    "message": "Thấp nhất lịch sử {price}"
+  },
+  "home.sc.stage.coupon": {
+    "message": "Đã áp mã · Giảm {amount}"
+  },
+  "home.sc.stage.tasks": {
+    "message": "Nhiệm vụ hằng ngày"
+  },
+  "home.sc.stage.task1": {
+    "message": "Điểm danh hằng ngày"
+  },
+  "home.sc.stage.task2": {
+    "message": "Nhận điểm thưởng"
+  },
+  "home.sc.stage.task3": {
+    "message": "Hoàn thành nhiệm vụ duyệt web"
+  },
+  "home.sc.stage.readSrc": {
+    "message": "Userscripts let you reshape any website to fit the way you read, watch and shop. Install one, and the page changes instantly — no extension to build, no code to write."
+  },
+  "home.sc.stage.readDst": {
+    "message": "Script người dùng giúp bạn định hình lại mọi trang web theo cách bạn đọc, xem và mua sắm. Cài một cái, trang thay đổi ngay — không cần làm phần mở rộng, cũng không phải viết dòng code nào."
+  },
+  "home.sc.stage.readChip": {
+    "message": "Đã dịch · Đã bật chế độ đọc"
+  },
+  "home.feat.compat.run": {
+    "message": "Cùng script, chạy ngay"
+  },
+  "home.ai.eyebrow": {
+    "message": "Tích hợp AI · AI READY"
+  },
+  "home.ai.title1": {
+    "message": "Để AI "
+  },
+  "home.ai.title2": {
+    "message": "viết và chạy script cho bạn"
+  },
+  "home.ai.sub": {
+    "message": "Với CLI sctl, các AI agent lập trình như Claude Code và Codex có thể viết script cho ScriptCat, cài vào trình duyệt của bạn để kiểm tra kết quả, rồi tự sửa lỗi phát hiện được trước khi thử lại."
+  },
+  "home.ai.agents.t": {
+    "message": "AI agent lập trình"
+  },
+  "home.ai.agents.d": {
+    "message": "Trang bị cho Claude Code hoặc Codex hai skill scriptcat-userscript và sctl, chúng sẽ hiểu cách viết script ScriptCat, đồng thời kiểm tra kết quả ngay trong trình duyệt của bạn và tự khắc phục."
+  },
+  "home.ai.agents.l": {
+    "message": "Phát triển script với AI"
+  },
+  "home.ai.sctl.t": {
+    "message": "Dòng lệnh sctl"
+  },
+  "home.ai.sctl.d": {
+    "message": "Liệt kê, cài đặt, chạy script và đọc log ngay trong terminal — hoặc điều khiển tab và trang, hay chuyển CDP cho Playwright."
+  },
+  "home.ai.sctl.l": {
+    "message": "Bắt đầu với sctl"
+  },
+  "home.ai.term.prompt": {
+    "message": "Viết giúp tôi một script: video Bilibili mặc định chuyển sang 1080p, rồi cài vào trình duyệt chạy thử"
+  },
+  "home.ai.term.wrote": {
+    "message": "Đã viết {file}"
+  },
+  "home.ai.term.installed": {
+    "message": "Đã cài vào ScriptCat"
+  },
+  "home.ai.term.verified": {
+    "message": "Không có lỗi — chất lượng đã chuyển sang 1080p"
+  },
+  "home.dev.bgRunning": {
+    "message": "Đang chạy nền"
+  },
+  "home.dev.log.trigger": {
+    "message": "chạy theo lịch"
   },
   "ad.label": {
     "message": "Advertisement",

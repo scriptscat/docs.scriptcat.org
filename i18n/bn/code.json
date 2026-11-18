@@ -202,29 +202,17 @@
   "home.dev.title2": {
     "message": "কোড রানটাইমে"
   },
-  "home.feat.api.d": {
-    "message": "GM-এর চেয়ে সমৃদ্ধ: ফাইল স্টোরেজ, নির্ধারিত কাজ এবং ক্রস-অরিজিন অনুরোধ আপনার নখদর্পণে।"
-  },
-  "home.feat.api.t": {
-    "message": "শক্তিশালী API"
-  },
-  "home.feat.bg.d": {
-    "message": "অনন্য: খোলা ট্যাব ছাড়াই স্ক্রিপ্টগুলো ব্যাকগ্রাউন্ডে চলতে থাকে।"
-  },
-  "home.feat.bg.t": {
-    "message": "ব্যাকগ্রাউন্ড স্ক্রিপ্ট"
-  },
   "home.feat.compat.b": {
     "message": "GM_* API সমর্থন · একই মেটাডেটা ব্লক"
   },
   "home.feat.compat.d": {
     "message": "ইউজারস্ক্রিপ্ট ফরম্যাট এবং GM API-এর সাথে সম্পূর্ণ সামঞ্জস্যপূর্ণ — বিদ্যমান স্ক্রিপ্টগুলো শূন্য পরিবর্তনে এবং কোনো স্যুইচিং খরচ ছাড়াই স্থানান্তর করুন।"
   },
+  "home.feat.compat.l": {
+    "message": "মাইগ্রেশন নির্দেশিকা"
+  },
   "home.feat.compat.t": {
     "message": "Tampermonkey সামঞ্জস্যপূর্ণ"
-  },
-  "home.feat.devTag": {
-    "message": "ডেভেলপার"
   },
   "home.feat.eyebrow": {
     "message": "মূল বৈশিষ্ট্য · WHY SCRIPTCAT"
@@ -232,11 +220,17 @@
   "home.feat.secure.d": {
     "message": "স্বচ্ছ, নিয়ন্ত্রণযোগ্য অনুমতি এবং দৃশ্যমান আচরণ — ক্ষতিকারক স্ক্রিপ্ট উৎসেই থামানো হয়।"
   },
+  "home.feat.secure.l": {
+    "message": "অনুমতি কীভাবে কাজ করে"
+  },
   "home.feat.secure.t": {
     "message": "নিরাপদ ও নির্ভরযোগ্য"
   },
   "home.feat.store.d": {
     "message": "এক ক্লিকে হাজারো কমিউনিটি স্ক্রিপ্ট ইনস্টল করুন, অথবা নিজের কাজ প্রকাশ করুন এবং একসাথে ইকোসিস্টেম গড়ে তুলুন।"
+  },
+  "home.link.store": {
+    "message": "স্ক্রিপ্ট স্টোরে যান"
   },
   "home.feat.store.t": {
     "message": "স্ক্রিপ্ট স্টোর"
@@ -246,6 +240,9 @@
   },
   "home.feat.sync.d": {
     "message": "স্ক্রিপ্ট ও সেটিংস ডিভাইস জুড়ে সিঙ্ক হয় — স্যুইচ বা পুনঃইনস্টল করলে কিছু হারায় না।"
+  },
+  "home.feat.sync.l": {
+    "message": "সিঙ্ক সেট আপ করুন"
   },
   "home.feat.sync.t": {
     "message": "ক্লাউড সিঙ্ক"
@@ -277,26 +274,17 @@
   "home.hero.mock.adblock": {
     "message": "বিজ্ঞাপন অটো-স্কিপ"
   },
-  "home.hero.mock.add": {
-    "message": "স্ক্রিপ্ট স্টোর থেকে যোগ করুন"
-  },
   "home.hero.mock.dark": {
     "message": "পেজের জন্য ডার্ক মোড"
   },
   "home.hero.mock.running": {
     "message": "এই পেজে ৩টি স্ক্রিপ্ট চলছে"
   },
-  "home.hero.mock.skip": {
-    "message": "বিজ্ঞাপন স্কিপ"
-  },
   "home.hero.mock.speed": {
     "message": "ভিডিও গতি নিয়ন্ত্রণ"
   },
   "home.hero.moreBrowsers": {
     "message": "আরও ব্রাউজার"
-  },
-  "home.hero.subhead": {
-    "message": "বিজ্ঞাপন ব্লক করুন, ভিডিও উন্নত করুন, বিরক্তিকর কাজ অটোমেট করুন — স্টোর থেকে এক ক্লিকে কমিউনিটি স্ক্রিপ্ট ইনস্টল করুন, ডেভেলপারদের জন্য ব্যাকগ্রাউন্ড স্ক্রিপ্ট ও শক্তিশালী API সহ। Tampermonkey সামঞ্জস্যপূর্ণ, তাই আপনার বিদ্যমান স্ক্রিপ্টগুলো শূন্য খরচে স্থানান্তরিত হয়।"
   },
   "home.hero.title1": {
     "message": "আপনার ব্রাউজারকে"
@@ -306,9 +294,6 @@
   },
   "home.hero.title3": {
     "message": "সুপারপাওয়ার দিন"
-  },
-  "home.hero.trust": {
-    "message": "Chrome · Edge · Firefox-এ কাজ করে — সম্পূর্ণ ফ্রি ও ওপেন সোর্স"
   },
   "home.install.chrome": {
     "message": "Chrome-এ যোগ করুন"
@@ -324,6 +309,9 @@
   },
   "home.install.manual": {
     "message": "প্যাকেজ ডাউনলোড করে ম্যানুয়ালি ইনস্টল করুন"
+  },
+  "home.nav.ai": {
+    "message": "AI"
   },
   "home.nav.changelog": {
     "message": "পরিবর্তন লগ"
@@ -373,29 +361,14 @@
   "home.sc.featured.btn": {
     "message": "ভিডিও স্ক্রিপ্ট ব্রাউজ করুন"
   },
-  "home.sc.featured.c1": {
-    "message": "গতি নিয়ন্ত্রণ"
-  },
-  "home.sc.featured.c2": {
-    "message": "বিজ্ঞাপন ব্লক"
-  },
-  "home.sc.featured.c3": {
-    "message": "ডাউনলোড"
-  },
   "home.sc.featured.c4": {
     "message": "পিকচার-ইন-পিকচার"
   },
   "home.sc.featured.d": {
     "message": "গতি নিয়ন্ত্রণ, অটো-স্কিপ বিজ্ঞাপন, এক ক্লিকে ডাউনলোড, পিকচার-ইন-পিকচার — আরও ভালো Bilibili / YouTube / Netflix।"
   },
-  "home.sc.featured.sites": {
-    "message": "২০+ ভিডিও সাইট সমর্থন করে"
-  },
   "home.sc.featured.t": {
     "message": "ভিডিও, সম্পূর্ণ উন্নত"
-  },
-  "home.sc.featured.tag": {
-    "message": "সবচেয়ে জনপ্রিয়"
   },
   "home.sc.read.d": {
     "message": "ডার্ক মোড, পেজ অনুবাদ, নিমগ্ন পড়া।"
@@ -460,6 +433,9 @@
   "home.step3.d": {
     "message": "ইনস্টল ক্লিক করুন এবং স্ক্রিপ্ট পেজে সঙ্গে সঙ্গে কার্যকর হয়।"
   },
+  "home.step3.l": {
+    "message": "কীভাবে স্ক্রিপ্ট ইনস্টল করবেন"
+  },
   "home.step3.p": {
     "message": "ইনস্টল হয়েছে · এখন সক্রিয়"
   },
@@ -468,9 +444,6 @@
   },
   "home.trust.contributors": {
     "message": "অবদানকারী"
-  },
-  "home.trust.eyebrow": {
-    "message": "বিশ্বজুড়ে ব্যবহারকারী ও ডেভেলপারদের আস্থাভাজন"
   },
   "home.trust.scripts": {
     "message": "কমিউনিটি স্ক্রিপ্ট"
@@ -712,6 +685,129 @@
   "home.search.kw.video": {
     "message": "ভিডিও",
     "description": "Search keyword for video"
+  },
+  "home.hero.lead": {
+    "message": "বিজ্ঞাপন ব্লক করুন, ভিডিও আরও উন্নত করুন, একঘেয়ে কাজ অটোমেট করুন — স্টোর থেকে এক ক্লিকে কমিউনিটি স্ক্রিপ্ট ইনস্টল করুন। Tampermonkey সামঞ্জস্যপূর্ণ, আর ডেভেলপারদের জন্য রয়েছে ব্যাকগ্রাউন্ড স্ক্রিপ্ট, সমৃদ্ধ API ও AI ইন্টিগ্রেশন।"
+  },
+  "home.hero.demo.ad": {
+    "message": "ভিডিও বিজ্ঞাপন"
+  },
+  "home.hero.demo.adWait": {
+    "message": "১৫ সেকেন্ডে স্কিপ"
+  },
+  "home.hero.demo.popup": {
+    "message": "সীমিত সময়ের অফার!"
+  },
+  "home.hero.demo.popupSub": {
+    "message": "ক্লিক করে রহস্যময় উপহার নিন"
+  },
+  "home.hero.demo.blocked": {
+    "message": "৩টি বিজ্ঞাপন ব্লক হয়েছে"
+  },
+  "home.sc.video.t": {
+    "message": "ভিডিও · উন্নতকরণ"
+  },
+  "home.sc.adblock.h": {
+    "message": "বিজ্ঞাপন আর পপআপ, নিমেষে উধাও"
+  },
+  "home.sc.shop.h": {
+    "message": "আসল সর্বনিম্ন দাম, এক নজরে"
+  },
+  "home.sc.auto.h": {
+    "message": "একঘেয়ে কাজ, স্ক্রিপ্টের হাতে"
+  },
+  "home.sc.read.h": {
+    "message": "বিদেশি ভাষার লম্বা লেখা, আরামে পড়ুন"
+  },
+  "home.sc.stage.running": {
+    "message": "{name} · চলছে"
+  },
+  "home.sc.stage.read": {
+    "message": "নিমগ্ন অনুবাদ"
+  },
+  "home.sc.stage.blocked": {
+    "message": "{count}টি ব্লক হয়েছে"
+  },
+  "home.sc.stage.skipped": {
+    "message": "অটো-স্কিপ হয়েছে"
+  },
+  "home.sc.stage.lowest": {
+    "message": "রেকর্ড সর্বনিম্ন {price}"
+  },
+  "home.sc.stage.coupon": {
+    "message": "কুপন প্রয়োগ হয়েছে · {amount} ছাড়"
+  },
+  "home.sc.stage.tasks": {
+    "message": "দৈনিক কাজ"
+  },
+  "home.sc.stage.task1": {
+    "message": "দৈনিক চেক-ইন"
+  },
+  "home.sc.stage.task2": {
+    "message": "পয়েন্ট সংগ্রহ"
+  },
+  "home.sc.stage.task3": {
+    "message": "ব্রাউজিং টাস্ক সম্পন্ন"
+  },
+  "home.sc.stage.readSrc": {
+    "message": "Userscripts let you reshape any website to fit the way you read, watch and shop. Install one, and the page changes instantly — no extension to build, no code to write."
+  },
+  "home.sc.stage.readDst": {
+    "message": "ইউজারস্ক্রিপ্ট দিয়ে আপনি যেকোনো ওয়েবসাইটকে নিজের পড়া, দেখা আর কেনাকাটার ধরন অনুযায়ী বদলে নিতে পারেন। একটি ইনস্টল করুন, পেজ সঙ্গে সঙ্গে বদলে যাবে — এক্সটেনশন বানাতে হবে না, কোডও লিখতে হবে না।"
+  },
+  "home.sc.stage.readChip": {
+    "message": "অনূদিত · পঠন মোড চালু"
+  },
+  "home.feat.compat.run": {
+    "message": "একই স্ক্রিপ্ট, সরাসরি চলে"
+  },
+  "home.ai.eyebrow": {
+    "message": "AI ইন্টিগ্রেশন · AI READY"
+  },
+  "home.ai.title1": {
+    "message": "AI-কে দিয়ে "
+  },
+  "home.ai.title2": {
+    "message": "স্ক্রিপ্ট লেখান ও চালান"
+  },
+  "home.ai.sub": {
+    "message": "sctl কমান্ড লাইনের মাধ্যমে Claude Code, Codex-এর মতো AI কোডিং এজেন্ট সরাসরি ScriptCat-এর জন্য স্ক্রিপ্ট লিখতে, আপনার ব্রাউজারে ইনস্টল করে ফল যাচাই করতে এবং সমস্যা পেলে নিজেই ঠিক করে আবার চেষ্টা করতে পারে।"
+  },
+  "home.ai.agents.t": {
+    "message": "AI কোডিং এজেন্ট"
+  },
+  "home.ai.agents.d": {
+    "message": "Claude Code বা Codex-এ scriptcat-userscript ও sctl — এই দুটি skill যোগ করুন; তখন এজেন্ট ScriptCat স্ক্রিপ্ট লেখার নিয়ম জানবে, আপনার ব্রাউজারে যাচাই করবে এবং নিজেই ঠিক করে নেবে।"
+  },
+  "home.ai.agents.l": {
+    "message": "AI দিয়ে স্ক্রিপ্ট তৈরি করুন"
+  },
+  "home.ai.sctl.t": {
+    "message": "sctl কমান্ড লাইন"
+  },
+  "home.ai.sctl.d": {
+    "message": "টার্মিনাল থেকে স্ক্রিপ্টের তালিকা দেখুন, ইনস্টল করুন, চালান ও লগ পড়ুন; ট্যাব ও পেজ নিয়ন্ত্রণ করুন, কিংবা CDP তুলে দিন Playwright-এর হাতে।"
+  },
+  "home.ai.sctl.l": {
+    "message": "sctl দিয়ে শুরু করুন"
+  },
+  "home.ai.term.prompt": {
+    "message": "একটা স্ক্রিপ্ট লিখে দাও: Bilibili ভিডিও ডিফল্টভাবে 1080p-তে চলবে, তারপর আমার ব্রাউজারে ইনস্টল করে চালিয়ে দেখো"
+  },
+  "home.ai.term.wrote": {
+    "message": "{file} লেখা হয়েছে"
+  },
+  "home.ai.term.installed": {
+    "message": "ScriptCat-এ ইনস্টল হয়েছে"
+  },
+  "home.ai.term.verified": {
+    "message": "কোনো ত্রুটি নেই — কোয়ালিটি 1080p-তে বদলানো হয়েছে"
+  },
+  "home.dev.bgRunning": {
+    "message": "ব্যাকগ্রাউন্ডে চলছে"
+  },
+  "home.dev.log.trigger": {
+    "message": "নির্ধারিত রান"
   },
   "ad.label": {
     "message": "Advertisement",

@@ -389,29 +389,17 @@
   "home.dev.title2": {
     "message": "程式碼執行環境"
   },
-  "home.feat.api.d": {
-    "message": "比 GM 更豐富：檔案儲存、定時任務與跨域請求，盡在掌握。"
-  },
-  "home.feat.api.t": {
-    "message": "強大的 API"
-  },
-  "home.feat.bg.d": {
-    "message": "獨一無二：無需開啟分頁，腳本也能在背景持續執行。"
-  },
-  "home.feat.bg.t": {
-    "message": "背景腳本"
-  },
   "home.feat.compat.b": {
     "message": "支援 GM_* API · 相同的中繼資料區塊"
   },
   "home.feat.compat.d": {
     "message": "與使用者腳本格式及 GM API 完全相容 — 現有腳本零修改遷移，無切換成本。"
   },
+  "home.feat.compat.l": {
+    "message": "了解遷移"
+  },
   "home.feat.compat.t": {
     "message": "相容 Tampermonkey"
-  },
-  "home.feat.devTag": {
-    "message": "開發者"
   },
   "home.feat.eyebrow": {
     "message": "核心功能 · 為什麼選擇 SCRIPTCAT"
@@ -419,11 +407,17 @@
   "home.feat.secure.d": {
     "message": "透明可控的權限與可見的行為 — 惡意腳本在源頭就被攔截。"
   },
+  "home.feat.secure.l": {
+    "message": "了解權限宣告"
+  },
   "home.feat.secure.t": {
     "message": "安全可靠"
   },
   "home.feat.store.d": {
     "message": "一鍵安裝數千個社群腳本，或發布你自己的腳本，一起打造生態系。"
+  },
+  "home.link.store": {
+    "message": "前往腳本商店"
   },
   "home.feat.store.t": {
     "message": "腳本商店"
@@ -433,6 +427,9 @@
   },
   "home.feat.sync.d": {
     "message": "腳本與設定跨裝置同步 — 換機或重裝都不遺失。"
+  },
+  "home.feat.sync.l": {
+    "message": "了解同步"
   },
   "home.feat.sync.t": {
     "message": "雲端同步"
@@ -464,26 +461,17 @@
   "home.hero.mock.adblock": {
     "message": "自動跳過廣告"
   },
-  "home.hero.mock.add": {
-    "message": "從腳本商店新增"
-  },
   "home.hero.mock.dark": {
     "message": "頁面深色模式"
   },
   "home.hero.mock.running": {
     "message": "此頁面有 3 個腳本正在執行"
   },
-  "home.hero.mock.skip": {
-    "message": "跳過廣告"
-  },
   "home.hero.mock.speed": {
     "message": "影片速度控制"
   },
   "home.hero.moreBrowsers": {
     "message": "更多瀏覽器"
-  },
-  "home.hero.subhead": {
-    "message": "封鎖廣告、強化影片、自動化繁瑣事務 — 從商店一鍵安裝社群腳本，並為開發者提供背景腳本與強大 API。相容 Tampermonkey，現有腳本零成本遷移。"
   },
   "home.hero.title1": {
     "message": "賦予瀏覽器"
@@ -493,9 +481,6 @@
   },
   "home.hero.title3": {
     "message": "超能力"
-  },
-  "home.hero.trust": {
-    "message": "適用於 Chrome · Edge · Firefox — 完全免費且開源"
   },
   "home.install.chrome": {
     "message": "新增至 Chrome"
@@ -511,6 +496,9 @@
   },
   "home.install.manual": {
     "message": "下載安裝包並手動安裝"
+  },
+  "home.nav.ai": {
+    "message": "AI"
   },
   "home.nav.changelog": {
     "message": "更新日誌"
@@ -560,29 +548,14 @@
   "home.sc.featured.btn": {
     "message": "瀏覽影片腳本"
   },
-  "home.sc.featured.c1": {
-    "message": "速度控制"
-  },
-  "home.sc.featured.c2": {
-    "message": "廣告封鎖"
-  },
-  "home.sc.featured.c3": {
-    "message": "下載"
-  },
   "home.sc.featured.c4": {
     "message": "畫中畫"
   },
   "home.sc.featured.d": {
     "message": "速度控制、自動跳過廣告、一鍵下載、畫中畫 — 更好的 Bilibili / YouTube / Netflix 體驗。"
   },
-  "home.sc.featured.sites": {
-    "message": "支援 20+ 個影片網站"
-  },
   "home.sc.featured.t": {
     "message": "全面強化影片體驗"
-  },
-  "home.sc.featured.tag": {
-    "message": "最受歡迎"
   },
   "home.sc.read.d": {
     "message": "深色模式、網頁翻譯、沉浸式閱讀。"
@@ -647,6 +620,9 @@
   "home.step3.d": {
     "message": "點擊安裝，腳本立即在頁面上生效。"
   },
+  "home.step3.l": {
+    "message": "如何安裝腳本"
+  },
   "home.step3.p": {
     "message": "已安裝 · 立即生效"
   },
@@ -655,9 +631,6 @@
   },
   "home.trust.contributors": {
     "message": "貢獻者"
-  },
-  "home.trust.eyebrow": {
-    "message": "深受全球使用者與開發者信賴"
   },
   "home.trust.scripts": {
     "message": "社群腳本"
@@ -703,6 +676,129 @@
   "home.search.kw.video": {
     "message": "影片",
     "description": "Search keyword for video"
+  },
+  "home.hero.lead": {
+    "message": "去除廣告、強化影片、自動化操作 — 從腳本商店一鍵安裝社群腳本。相容 Tampermonkey，還為開發者準備了背景腳本、豐富的 API 與 AI 整合。"
+  },
+  "home.hero.demo.ad": {
+    "message": "插播廣告"
+  },
+  "home.hero.demo.adWait": {
+    "message": "15 秒後可關閉"
+  },
+  "home.hero.demo.popup": {
+    "message": "限時特惠！"
+  },
+  "home.hero.demo.popupSub": {
+    "message": "點我領取神秘大禮"
+  },
+  "home.hero.demo.blocked": {
+    "message": "已攔截 3 則廣告"
+  },
+  "home.sc.video.t": {
+    "message": "影片 · 強化"
+  },
+  "home.sc.adblock.h": {
+    "message": "廣告和彈窗，一掃而空"
+  },
+  "home.sc.shop.h": {
+    "message": "歷史低價，一眼看穿"
+  },
+  "home.sc.auto.h": {
+    "message": "重複的事，交給腳本"
+  },
+  "home.sc.read.h": {
+    "message": "外文長文，讀得舒服"
+  },
+  "home.sc.stage.running": {
+    "message": "{name} · 執行中"
+  },
+  "home.sc.stage.read": {
+    "message": "沉浸式翻譯"
+  },
+  "home.sc.stage.blocked": {
+    "message": "已攔截 {count} 個"
+  },
+  "home.sc.stage.skipped": {
+    "message": "已自動跳過"
+  },
+  "home.sc.stage.lowest": {
+    "message": "歷史最低 {price}"
+  },
+  "home.sc.stage.coupon": {
+    "message": "已領券 · 現折 {amount}"
+  },
+  "home.sc.stage.tasks": {
+    "message": "每日任務"
+  },
+  "home.sc.stage.task1": {
+    "message": "每日簽到"
+  },
+  "home.sc.stage.task2": {
+    "message": "領取點數"
+  },
+  "home.sc.stage.task3": {
+    "message": "完成瀏覽任務"
+  },
+  "home.sc.stage.readSrc": {
+    "message": "Userscripts let you reshape any website to fit the way you read, watch and shop. Install one, and the page changes instantly — no extension to build, no code to write."
+  },
+  "home.sc.stage.readDst": {
+    "message": "使用者腳本讓你依自己的習慣，重塑任何網站的閱讀、觀看與購物體驗。裝上一個，頁面立刻改變 —— 不必開發擴充功能，也不用寫一行程式碼。"
+  },
+  "home.sc.stage.readChip": {
+    "message": "已翻譯 · 閱讀模式已開啟"
+  },
+  "home.feat.compat.run": {
+    "message": "同一腳本，直接執行"
+  },
+  "home.ai.eyebrow": {
+    "message": "AI 整合 · AI READY"
+  },
+  "home.ai.title1": {
+    "message": "讓 AI 幫你"
+  },
+  "home.ai.title2": {
+    "message": "寫腳本、跑腳本"
+  },
+  "home.ai.sub": {
+    "message": "透過 sctl 命令列，Claude Code、Codex 等 AI 程式設計代理可以直接為 ScriptCat 撰寫腳本，安裝到你的瀏覽器驗證效果，發現問題自己修正後再試。"
+  },
+  "home.ai.agents.t": {
+    "message": "AI 程式設計代理"
+  },
+  "home.ai.agents.d": {
+    "message": "為 Claude Code、Codex 裝上 scriptcat-userscript 與 sctl 兩個 skill，它就懂 ScriptCat 腳本的寫法，還能在你的瀏覽器裡驗證效果、自行修復。"
+  },
+  "home.ai.agents.l": {
+    "message": "用 AI 開發腳本"
+  },
+  "home.ai.sctl.t": {
+    "message": "sctl 命令列"
+  },
+  "home.ai.sctl.d": {
+    "message": "在終端機中列出、安裝、執行腳本並讀取日誌；也能操作分頁與頁面，或把 CDP 交給 Playwright。"
+  },
+  "home.ai.sctl.l": {
+    "message": "sctl 入門"
+  },
+  "home.ai.term.prompt": {
+    "message": "幫我寫個腳本：Bilibili 影片預設切到 1080P，然後裝到瀏覽器裡試試"
+  },
+  "home.ai.term.wrote": {
+    "message": "已撰寫 {file}"
+  },
+  "home.ai.term.installed": {
+    "message": "已安裝到 ScriptCat"
+  },
+  "home.ai.term.verified": {
+    "message": "沒有錯誤，畫質已切換為 1080P"
+  },
+  "home.dev.bgRunning": {
+    "message": "背景執行中"
+  },
+  "home.dev.log.trigger": {
+    "message": "排程觸發"
   },
   "ad.label": {
     "message": "Advertisement",

@@ -296,29 +296,17 @@
   "home.dev.title2": {
     "message": "environnement d'exécution"
   },
-  "home.feat.api.d": {
-    "message": "Plus riche que GM : stockage de fichiers, tâches planifiées et requêtes cross-origin à portée de main."
-  },
-  "home.feat.api.t": {
-    "message": "APIs puissantes"
-  },
-  "home.feat.bg.d": {
-    "message": "Unique : les scripts continuent de tourner en arrière-plan sans onglet ouvert."
-  },
-  "home.feat.bg.t": {
-    "message": "Scripts en arrière-plan"
-  },
   "home.feat.compat.b": {
     "message": "Prend en charge les APIs GM_* · bloc de métadonnées identique"
   },
   "home.feat.compat.d": {
     "message": "Entièrement compatible avec le format des scripts utilisateur et les APIs GM — migrez vos scripts existants sans aucune modification et sans coût de changement."
   },
+  "home.feat.compat.l": {
+    "message": "Guide de migration"
+  },
   "home.feat.compat.t": {
     "message": "Compatible Tampermonkey"
-  },
-  "home.feat.devTag": {
-    "message": "Développeur"
   },
   "home.feat.eyebrow": {
     "message": "Fonctionnalités clés · POURQUOI SCRIPTCAT"
@@ -326,11 +314,17 @@
   "home.feat.secure.d": {
     "message": "Des permissions transparentes et contrôlables, un comportement visible — les scripts malveillants stoppés à la source."
   },
+  "home.feat.secure.l": {
+    "message": "Fonctionnement des autorisations"
+  },
   "home.feat.secure.t": {
     "message": "Sûr et fiable"
   },
   "home.feat.store.d": {
     "message": "Installez des milliers de scripts communautaires en un clic, ou publiez les vôtres et construisons l'écosystème ensemble."
+  },
+  "home.link.store": {
+    "message": "Aller au magasin de scripts"
   },
   "home.feat.store.t": {
     "message": "Magasin de scripts"
@@ -340,6 +334,9 @@
   },
   "home.feat.sync.d": {
     "message": "Scripts et réglages synchronisés entre appareils — rien de perdu en cas de changement ou de réinstallation."
+  },
+  "home.feat.sync.l": {
+    "message": "Configurer la synchronisation"
   },
   "home.feat.sync.t": {
     "message": "Synchronisation cloud"
@@ -371,26 +368,17 @@
   "home.hero.mock.adblock": {
     "message": "Sauter les pubs automatiquement"
   },
-  "home.hero.mock.add": {
-    "message": "Ajouter depuis le magasin de scripts"
-  },
   "home.hero.mock.dark": {
     "message": "Mode sombre pour les pages"
   },
   "home.hero.mock.running": {
     "message": "3 scripts en cours d'exécution sur cette page"
   },
-  "home.hero.mock.skip": {
-    "message": "Sauter les pubs"
-  },
   "home.hero.mock.speed": {
     "message": "Contrôle de la vitesse vidéo"
   },
   "home.hero.moreBrowsers": {
     "message": "Plus de navigateurs"
-  },
-  "home.hero.subhead": {
-    "message": "Bloquez les pubs, boostez la vidéo, automatisez le superflu — installez des scripts communautaires depuis le magasin en un clic, avec des scripts en arrière-plan et des APIs puissantes pour les développeurs. Compatible Tampermonkey : vos scripts existants migrent sans coût."
   },
   "home.hero.title1": {
     "message": "Donnez à votre navigateur"
@@ -400,9 +388,6 @@
   },
   "home.hero.title3": {
     "message": "des super-pouvoirs"
-  },
-  "home.hero.trust": {
-    "message": "Fonctionne sur Chrome · Edge · Firefox — entièrement gratuit et open source"
   },
   "home.install.chrome": {
     "message": "Ajouter à Chrome"
@@ -418,6 +403,9 @@
   },
   "home.install.manual": {
     "message": "Télécharger le paquet et installer manuellement"
+  },
+  "home.nav.ai": {
+    "message": "IA"
   },
   "home.nav.changelog": {
     "message": "Journal des modifications"
@@ -467,29 +455,14 @@
   "home.sc.featured.btn": {
     "message": "Parcourir les scripts vidéo"
   },
-  "home.sc.featured.c1": {
-    "message": "Contrôle de vitesse"
-  },
-  "home.sc.featured.c2": {
-    "message": "Anti-pub"
-  },
-  "home.sc.featured.c3": {
-    "message": "Téléchargement"
-  },
   "home.sc.featured.c4": {
     "message": "Image dans l'image"
   },
   "home.sc.featured.d": {
     "message": "Contrôle de vitesse, saut de pubs automatique, téléchargement en un clic, image dans l'image — un meilleur Bilibili / YouTube / Netflix."
   },
-  "home.sc.featured.sites": {
-    "message": "Prend en charge plus de 20 sites vidéo"
-  },
   "home.sc.featured.t": {
     "message": "La vidéo, entièrement améliorée"
-  },
-  "home.sc.featured.tag": {
-    "message": "Le plus populaire"
   },
   "home.sc.read.d": {
     "message": "Mode sombre, traduction de pages, lecture immersive."
@@ -554,6 +527,9 @@
   "home.step3.d": {
     "message": "Cliquez sur installer et le script prend effet sur la page immédiatement."
   },
+  "home.step3.l": {
+    "message": "Comment installer des scripts"
+  },
   "home.step3.p": {
     "message": "Installé · Actif maintenant"
   },
@@ -562,9 +538,6 @@
   },
   "home.trust.contributors": {
     "message": "Contributeurs"
-  },
-  "home.trust.eyebrow": {
-    "message": "APPROUVÉ PAR LES UTILISATEURS ET DÉVELOPPEURS DU MONDE ENTIER"
   },
   "home.trust.scripts": {
     "message": "Scripts communautaires"
@@ -662,6 +635,129 @@
   "home.search.kw.video": {
     "message": "vidéo",
     "description": "Search keyword for video"
+  },
+  "home.hero.lead": {
+    "message": "Bloquez les pubs, boostez vos vidéos, automatisez les tâches répétitives — installez en un clic des scripts communautaires depuis le magasin. Compatible Tampermonkey, avec scripts d'arrière-plan, API riche et intégration IA pour les développeurs."
+  },
+  "home.hero.demo.ad": {
+    "message": "Publicité"
+  },
+  "home.hero.demo.adWait": {
+    "message": "Passer dans 15 s"
+  },
+  "home.hero.demo.popup": {
+    "message": "Offre limitée !"
+  },
+  "home.hero.demo.popupSub": {
+    "message": "Gagnez un cadeau mystère !"
+  },
+  "home.hero.demo.blocked": {
+    "message": "3 pubs bloquées"
+  },
+  "home.sc.video.t": {
+    "message": "Vidéo · Amélioration"
+  },
+  "home.sc.adblock.h": {
+    "message": "Pubs et popups, balayées d'un coup"
+  },
+  "home.sc.shop.h": {
+    "message": "Repérez le vrai prix le plus bas"
+  },
+  "home.sc.auto.h": {
+    "message": "Confiez les corvées aux scripts"
+  },
+  "home.sc.read.h": {
+    "message": "Longs textes étrangers, lus sans effort"
+  },
+  "home.sc.stage.running": {
+    "message": "{name} · Actif"
+  },
+  "home.sc.stage.read": {
+    "message": "Traduction immersive"
+  },
+  "home.sc.stage.blocked": {
+    "message": "{count} bloqués"
+  },
+  "home.sc.stage.skipped": {
+    "message": "Pub sautée"
+  },
+  "home.sc.stage.lowest": {
+    "message": "Au plus bas {price}"
+  },
+  "home.sc.stage.coupon": {
+    "message": "Coupon appliqué · {amount} de remise"
+  },
+  "home.sc.stage.tasks": {
+    "message": "Tâches du jour"
+  },
+  "home.sc.stage.task1": {
+    "message": "Pointage quotidien"
+  },
+  "home.sc.stage.task2": {
+    "message": "Récupérer les points"
+  },
+  "home.sc.stage.task3": {
+    "message": "Finir les tâches de navigation"
+  },
+  "home.sc.stage.readSrc": {
+    "message": "Userscripts let you reshape any website to fit the way you read, watch and shop. Install one, and the page changes instantly — no extension to build, no code to write."
+  },
+  "home.sc.stage.readDst": {
+    "message": "Les scripts utilisateur vous permettent de remodeler n'importe quel site selon votre façon de lire, de regarder et d'acheter. Installez-en un, et la page change aussitôt — aucune extension à développer, aucun code à écrire."
+  },
+  "home.sc.stage.readChip": {
+    "message": "Traduit · Mode lecture activé"
+  },
+  "home.feat.compat.run": {
+    "message": "Fonctionne tel quel"
+  },
+  "home.ai.eyebrow": {
+    "message": "Intégration IA · AI READY"
+  },
+  "home.ai.title1": {
+    "message": "Laissez l'IA "
+  },
+  "home.ai.title2": {
+    "message": "écrire et lancer vos scripts"
+  },
+  "home.ai.sub": {
+    "message": "Avec la ligne de commande sctl, des agents de codage IA comme Claude Code et Codex écrivent des scripts ScriptCat, les installent dans votre navigateur pour vérifier le résultat, puis corrigent ce qu'ils trouvent avant de réessayer."
+  },
+  "home.ai.agents.t": {
+    "message": "Agents de codage IA"
+  },
+  "home.ai.agents.d": {
+    "message": "Donnez à Claude Code ou Codex les skills scriptcat-userscript et sctl : il saura écrire des scripts ScriptCat, les vérifier dans votre navigateur et les corriger lui-même."
+  },
+  "home.ai.agents.l": {
+    "message": "Développer des scripts avec l'IA"
+  },
+  "home.ai.sctl.t": {
+    "message": "Ligne de commande sctl"
+  },
+  "home.ai.sctl.d": {
+    "message": "Listez, installez et exécutez des scripts et lisez leurs journaux depuis le terminal — pilotez aussi onglets et pages, ou confiez CDP à Playwright."
+  },
+  "home.ai.sctl.l": {
+    "message": "Premiers pas avec sctl"
+  },
+  "home.ai.term.prompt": {
+    "message": "Écris-moi un script qui passe les vidéos Bilibili en 1080p par défaut, puis installe-le dans mon navigateur et teste-le"
+  },
+  "home.ai.term.wrote": {
+    "message": "{file} écrit"
+  },
+  "home.ai.term.installed": {
+    "message": "Installé dans ScriptCat"
+  },
+  "home.ai.term.verified": {
+    "message": "Aucune erreur — qualité passée en 1080p"
+  },
+  "home.dev.bgRunning": {
+    "message": "Actif en arrière-plan"
+  },
+  "home.dev.log.trigger": {
+    "message": "exécution planifiée"
   },
   "ad.label": {
     "message": "Advertisement",

@@ -202,29 +202,17 @@
   "home.dev.title2": {
     "message": "코드 런타임으로"
   },
-  "home.feat.api.d": {
-    "message": "GM보다 풍부합니다: 파일 저장, 예약 작업, 크로스 오리진 요청을 손쉽게 사용하세요."
-  },
-  "home.feat.api.t": {
-    "message": "강력한 API"
-  },
-  "home.feat.bg.d": {
-    "message": "특별함: 탭을 열지 않아도 스크립트가 백그라운드에서 계속 실행됩니다."
-  },
-  "home.feat.bg.t": {
-    "message": "백그라운드 스크립트"
-  },
   "home.feat.compat.b": {
     "message": "GM_* API 지원 · 동일한 메타데이터 블록"
   },
   "home.feat.compat.d": {
     "message": "유저스크립트 형식과 GM API와 완벽하게 호환 — 기존 스크립트를 변경 없이, 전환 비용 없이 마이그레이션하세요."
   },
+  "home.feat.compat.l": {
+    "message": "마이그레이션 가이드"
+  },
   "home.feat.compat.t": {
     "message": "Tampermonkey 호환"
-  },
-  "home.feat.devTag": {
-    "message": "개발자"
   },
   "home.feat.eyebrow": {
     "message": "핵심 기능 · WHY SCRIPTCAT"
@@ -232,11 +220,17 @@
   "home.feat.secure.d": {
     "message": "투명하고 통제 가능한 권한과 보이는 동작 — 악성 스크립트를 원천에서 차단합니다."
   },
+  "home.feat.secure.l": {
+    "message": "권한 작동 방식"
+  },
   "home.feat.secure.t": {
     "message": "안전하고 신뢰할 수 있음"
   },
   "home.feat.store.d": {
     "message": "수천 개의 커뮤니티 스크립트를 한 번의 클릭으로 설치하거나, 직접 게시하여 생태계를 함께 만들어 가세요."
+  },
+  "home.link.store": {
+    "message": "스크립트 스토어로 가기"
   },
   "home.feat.store.t": {
     "message": "스크립트 스토어"
@@ -246,6 +240,9 @@
   },
   "home.feat.sync.d": {
     "message": "스크립트와 설정이 여러 기기에서 동기화됩니다 — 기기를 바꾸거나 재설치해도 잃는 것이 없습니다."
+  },
+  "home.feat.sync.l": {
+    "message": "동기화 설정"
   },
   "home.feat.sync.t": {
     "message": "클라우드 동기화"
@@ -277,26 +274,17 @@
   "home.hero.mock.adblock": {
     "message": "광고 자동 건너뛰기"
   },
-  "home.hero.mock.add": {
-    "message": "스크립트 스토어에서 추가"
-  },
   "home.hero.mock.dark": {
     "message": "페이지 다크 모드"
   },
   "home.hero.mock.running": {
     "message": "이 페이지에서 실행 중인 스크립트 3개"
   },
-  "home.hero.mock.skip": {
-    "message": "광고 건너뛰기"
-  },
   "home.hero.mock.speed": {
     "message": "비디오 속도 조절"
   },
   "home.hero.moreBrowsers": {
     "message": "더 많은 브라우저"
-  },
-  "home.hero.subhead": {
-    "message": "광고 차단, 비디오 업그레이드, 지루한 작업 자동화 — 스토어에서 커뮤니티 스크립트를 한 번의 클릭으로 설치하세요. 개발자를 위한 백그라운드 스크립트와 강력한 API도 제공합니다. Tampermonkey와 호환되므로 기존 스크립트를 비용 없이 옮길 수 있습니다."
   },
   "home.hero.title1": {
     "message": "브라우저에"
@@ -306,9 +294,6 @@
   },
   "home.hero.title3": {
     "message": "초능력을"
-  },
-  "home.hero.trust": {
-    "message": "Chrome · Edge · Firefox에서 작동 — 완전 무료 및 오픈소스"
   },
   "home.install.chrome": {
     "message": "Chrome에 추가"
@@ -324,6 +309,9 @@
   },
   "home.install.manual": {
     "message": "패키지 다운로드 및 수동 설치"
+  },
+  "home.nav.ai": {
+    "message": "AI"
   },
   "home.nav.changelog": {
     "message": "변경 로그"
@@ -373,29 +361,14 @@
   "home.sc.featured.btn": {
     "message": "비디오 스크립트 둘러보기"
   },
-  "home.sc.featured.c1": {
-    "message": "속도 조절"
-  },
-  "home.sc.featured.c2": {
-    "message": "광고 차단"
-  },
-  "home.sc.featured.c3": {
-    "message": "다운로드"
-  },
   "home.sc.featured.c4": {
     "message": "화면 속 화면"
   },
   "home.sc.featured.d": {
     "message": "속도 조절, 광고 자동 건너뛰기, 원클릭 다운로드, 화면 속 화면 — 더 나은 Bilibili / YouTube / Netflix."
   },
-  "home.sc.featured.sites": {
-    "message": "20개 이상의 비디오 사이트 지원"
-  },
   "home.sc.featured.t": {
     "message": "비디오, 완전히 업그레이드"
-  },
-  "home.sc.featured.tag": {
-    "message": "가장 인기"
   },
   "home.sc.read.d": {
     "message": "다크 모드, 페이지 번역, 몰입형 읽기."
@@ -460,6 +433,9 @@
   "home.step3.d": {
     "message": "설치를 클릭하면 스크립트가 즉시 페이지에서 작동합니다."
   },
+  "home.step3.l": {
+    "message": "스크립트 설치 방법"
+  },
   "home.step3.p": {
     "message": "설치됨 · 지금 활성"
   },
@@ -468,9 +444,6 @@
   },
   "home.trust.contributors": {
     "message": "기여자"
-  },
-  "home.trust.eyebrow": {
-    "message": "전 세계 사용자와 개발자가 신뢰합니다"
   },
   "home.trust.scripts": {
     "message": "커뮤니티 스크립트"
@@ -712,6 +685,129 @@
   "home.search.kw.video": {
     "message": "비디오",
     "description": "Search keyword for video"
+  },
+  "home.hero.lead": {
+    "message": "광고 차단, 비디오 업그레이드, 반복 작업 자동화 — 스토어에서 커뮤니티 스크립트를 한 번의 클릭으로 설치하세요. Tampermonkey와 호환되며, 개발자를 위한 백그라운드 스크립트, 풍부한 API, AI 연동도 제공합니다."
+  },
+  "home.hero.demo.ad": {
+    "message": "비디오 광고"
+  },
+  "home.hero.demo.adWait": {
+    "message": "15초 후 건너뛰기"
+  },
+  "home.hero.demo.popup": {
+    "message": "한정 특가!"
+  },
+  "home.hero.demo.popupSub": {
+    "message": "클릭하고 깜짝 선물 받기"
+  },
+  "home.hero.demo.blocked": {
+    "message": "광고 3개 차단됨"
+  },
+  "home.sc.video.t": {
+    "message": "비디오 · 향상"
+  },
+  "home.sc.adblock.h": {
+    "message": "광고도 팝업도, 말끔하게"
+  },
+  "home.sc.shop.h": {
+    "message": "역대 최저가, 한눈에"
+  },
+  "home.sc.auto.h": {
+    "message": "반복 작업은 스크립트에게"
+  },
+  "home.sc.read.h": {
+    "message": "긴 외국어 글도 편안하게"
+  },
+  "home.sc.stage.running": {
+    "message": "{name} · 실행 중"
+  },
+  "home.sc.stage.read": {
+    "message": "몰입형 번역"
+  },
+  "home.sc.stage.blocked": {
+    "message": "{count}개 차단됨"
+  },
+  "home.sc.stage.skipped": {
+    "message": "자동 건너뜀"
+  },
+  "home.sc.stage.lowest": {
+    "message": "역대 최저 {price}"
+  },
+  "home.sc.stage.coupon": {
+    "message": "쿠폰 적용 · {amount} 할인"
+  },
+  "home.sc.stage.tasks": {
+    "message": "오늘의 할 일"
+  },
+  "home.sc.stage.task1": {
+    "message": "매일 출석 체크"
+  },
+  "home.sc.stage.task2": {
+    "message": "포인트 받기"
+  },
+  "home.sc.stage.task3": {
+    "message": "둘러보기 미션 완료"
+  },
+  "home.sc.stage.readSrc": {
+    "message": "Userscripts let you reshape any website to fit the way you read, watch and shop. Install one, and the page changes instantly — no extension to build, no code to write."
+  },
+  "home.sc.stage.readDst": {
+    "message": "사용자 스크립트로 어떤 웹사이트든 내가 읽고, 보고, 쇼핑하는 방식에 맞게 바꿀 수 있습니다. 하나만 설치하면 페이지가 바로 바뀝니다 — 확장 프로그램을 만들 필요도, 코드를 작성할 필요도 없습니다."
+  },
+  "home.sc.stage.readChip": {
+    "message": "번역됨 · 읽기 모드 켜짐"
+  },
+  "home.feat.compat.run": {
+    "message": "수정 없이 바로 실행"
+  },
+  "home.ai.eyebrow": {
+    "message": "AI 연동 · AI READY"
+  },
+  "home.ai.title1": {
+    "message": "AI가 "
+  },
+  "home.ai.title2": {
+    "message": "스크립트 작성부터 실행까지"
+  },
+  "home.ai.sub": {
+    "message": "sctl 명령줄을 통해 Claude Code, Codex 같은 AI 코딩 에이전트가 ScriptCat 스크립트를 직접 작성하고, 브라우저에 설치해 결과를 확인하며, 문제를 발견하면 스스로 고쳐 다시 시도합니다."
+  },
+  "home.ai.agents.t": {
+    "message": "AI 코딩 에이전트"
+  },
+  "home.ai.agents.d": {
+    "message": "Claude Code나 Codex에 scriptcat-userscript와 sctl 두 가지 skill을 설치하면 ScriptCat 스크립트 작성법을 이해하고, 브라우저에서 결과를 확인하며 스스로 수정까지 합니다."
+  },
+  "home.ai.agents.l": {
+    "message": "AI로 스크립트 개발하기"
+  },
+  "home.ai.sctl.t": {
+    "message": "sctl 명령줄"
+  },
+  "home.ai.sctl.d": {
+    "message": "터미널에서 스크립트를 조회·설치·실행하고 로그를 확인하세요. 탭과 페이지를 조작하거나 CDP를 Playwright에 넘길 수도 있습니다."
+  },
+  "home.ai.sctl.l": {
+    "message": "sctl 시작하기"
+  },
+  "home.ai.term.prompt": {
+    "message": "Bilibili 영상을 기본 1080P로 바꾸는 스크립트를 작성해서 브라우저에 설치하고 테스트해 줘"
+  },
+  "home.ai.term.wrote": {
+    "message": "{file} 작성됨"
+  },
+  "home.ai.term.installed": {
+    "message": "ScriptCat에 설치됨"
+  },
+  "home.ai.term.verified": {
+    "message": "오류 없음, 화질이 1080P로 전환됨"
+  },
+  "home.dev.bgRunning": {
+    "message": "백그라운드 실행 중"
+  },
+  "home.dev.log.trigger": {
+    "message": "예약 실행"
   },
   "ad.label": {
     "message": "Advertisement",

@@ -1,0 +1,507 @@
+/* Why ScriptCat — bento grid. */
+
+.features {
+  overflow: hidden;
+}
+
+.bento {
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-areas:
+    "compat compat store"
+    "secure sync store";
+  gap: 20px;
+}
+.compat {
+  grid-area: compat;
+}
+.store {
+  grid-area: store;
+}
+.secure {
+  grid-area: secure;
+}
+.sync {
+  grid-area: sync;
+}
+
+.tile {
+  display: flex;
+}
+/* --mx/--my are written by spotlight() on pointer move */
+/* .tileInner is the <Link>: undo the theme's link colour and underline */
+.tileInner {
+  position: relative;
+  display: block;
+  flex: 1;
+  color: inherit;
+  text-decoration: none;
+  overflow: hidden;
+  padding: 28px;
+  border-radius: 22px;
+  background: var(--lp-surface);
+  border: 1px solid var(--lp-border);
+  box-shadow: var(--lp-shadow-card);
+  transition: box-shadow 0.25s ease, border-color 0.25s ease, translate 0.25s ease;
+}
+.tileInner::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  opacity: 0;
+  background: radial-gradient(420px circle at var(--mx, 50%) var(--my, 50%), color-mix(in srgb, var(--lp-brand) 12%, transparent), transparent 60%);
+  transition: opacity 0.3s ease;
+}
+.tileInner:hover {
+  color: inherit;
+  text-decoration: none;
+  translate: 0 -3px;
+  border-color: color-mix(in srgb, var(--lp-brand) 30%, var(--lp-border));
+  box-shadow: var(--lp-shadow-soft);
+}
+.tileInner:hover::before {
+  opacity: 1;
+}
+.tileInner:focus-visible {
+  outline: 2px solid var(--lp-brand);
+  outline-offset: 3px;
+}
+
+.more {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  width: fit-content;
+  margin-top: 14px;
+  font-size: 14.5px;
+  font-weight: 800;
+}
+.more svg {
+  transition: transform 0.2s ease;
+}
+.tileInner:hover .more svg {
+  transform: translateX(4px);
+}
+/* mirror the arrow glyph in RTL (RTLCSS flips the hover nudge, not glyphs) */
+:global([dir="rtl"]) .more svg {
+  /* rtl:ignore */ transform: scaleX(-1);
+}
+:global([dir="rtl"]) .tileInner:hover .more svg {
+  /* rtl:ignore */ transform: scaleX(-1) translateX(4px);
+}
+
+.icon {
+  width: 50px;
+  height: 50px;
+  border-radius: 15px;
+  display: grid;
+  place-items: center;
+  font-size: 24px;
+}
+.title {
+  margin: 18px 0 8px;
+  font-family: var(--lp-font-display);
+  font-size: 22px;
+  font-weight: 800;
+  color: var(--lp-ink);
+}
+.desc {
+  position: relative;
+  margin: 0;
+  font-size: 15px;
+  line-height: 1.7;
+  color: var(--lp-text);
+}
+
+/* ---- compat tile -------------------------------------------------------- */
+.compat .tileInner {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+  background: linear-gradient(135deg, var(--lp-surface) 40%, var(--lp-bg-blue));
+}
+.compatText {
+  position: relative;
+  flex: 1;
+  min-width: 0;
+}
+.bullet {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  margin-top: 16px;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--lp-mint);
+}
+/* Width-sensitive: see agents/i18n.md §5. The translated @name line must not
+   be longer than the original longest line, or it wraps. */
+.code {
+  position: relative;
+  width: 360px;
+  flex: none;
+  overflow: hidden;
+  border-radius: 14px;
+  background: var(--lp-code-bg);
+  box-shadow: 0 20px 40px -18px rgba(8, 20, 32, 0.6);
+}
+.codeBar {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 11px 14px;
+  background: var(--lp-code-bar);
+}
+.codeBar i {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.codeBar span {
+  /* rtl:ignore */ margin-left: 8px;
+  font-family: var(--lp-font-mono);
+  font-size: 11.5px;
+  color: #6f8aa0;
+}
+.codeBody {
+  padding: 14px 16px 6px;
+  font-family: var(--lp-font-mono);
+  font-size: 12.5px;
+  line-height: 1.95;
+  white-space: pre;
+}
+:global([data-lp-motion]) .codeLine {
+  clip-path: inset(0 100% 0 0);
+}
+.cComment {
+  color: #5b7a92;
+}
+.cMeta {
+  color: #9fd3f5;
+}
+.cGrant {
+  color: #ffb27d;
+}
+.runsOn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 6px 12px 12px;
+  padding: 9px 12px;
+  border-radius: 10px;
+  background: rgba(255, 255, 255, 0.05);
+  font-size: 12px;
+}
+.runsLabel {
+  color: #9fb4c6;
+  font-weight: 600;
+}
+.flip {
+  position: relative;
+  display: inline-grid;
+  height: 1.6em;
+  overflow: hidden;
+  font-weight: 800;
+  color: #5fe3b8;
+}
+.flip span {
+  grid-area: 1 / 1;
+  display: inline-flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 5px;
+  animation: flip 5s var(--lp-ease) infinite;
+}
+.flip span:last-child {
+  color: #6cc6ff;
+  animation-delay: -2.5s;
+}
+@keyframes flip {
+  0%,
+  42% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  50%,
+  92% {
+    transform: translateY(-110%);
+    opacity: 0;
+  }
+  92.01% {
+    transform: translateY(110%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+/* ---- store tile --------------------------------------------------------- */
+.store .tileInner {
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(180deg, var(--lp-surface), color-mix(in srgb, var(--lp-accent-soft) 60%, var(--lp-surface)));
+}
+.marquee {
+  position: relative;
+  flex: 1;
+  min-height: 230px;
+  margin: 22px -28px -28px;
+  overflow: hidden;
+  -webkit-mask-image: linear-gradient(transparent, #000 18%, #000 82%, transparent);
+  mask-image: linear-gradient(transparent, #000 18%, #000 82%, transparent);
+}
+.marqueeTrack {
+  position: absolute;
+  inset-inline: 22px;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  animation: marquee 22s linear infinite;
+}
+.marquee:hover .marqueeTrack {
+  animation-play-state: paused;
+}
+/* -50% of the doubled list, minus half of one gap so the seam lines up */
+@keyframes marquee {
+  to {
+    transform: translateY(calc(-50% - 5px));
+  }
+}
+.script {
+  display: flex;
+  align-items: center;
+  gap: 11px;
+  padding: 11px 12px;
+  border-radius: 13px;
+  background: var(--lp-surface);
+  border: 1px solid var(--lp-border);
+  box-shadow: 0 6px 14px -10px rgba(14, 34, 51, 0.3);
+}
+.scriptChip {
+  width: 32px;
+  height: 32px;
+  flex: none;
+  border-radius: 9px;
+  display: grid;
+  place-items: center;
+  font-size: 16px;
+}
+.scriptName {
+  flex: 1;
+  min-width: 0;
+  font-size: 13.5px;
+  font-weight: 700;
+  color: var(--lp-ink);
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.scriptN {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-family: var(--lp-font-mono);
+  font-size: 11.5px;
+  color: var(--lp-muted);
+}
+
+/* ---- secure tile -------------------------------------------------------- */
+.scan {
+  position: relative;
+  height: 128px;
+  margin: -6px -6px 0;
+  overflow: hidden;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  background: radial-gradient(circle at 50% 50%, var(--lp-mint-soft), transparent 70%);
+}
+.scanBeam {
+  position: absolute;
+  width: 260px;
+  height: 260px;
+  border-radius: 50%;
+  background: conic-gradient(from 0deg, transparent 0 300deg, color-mix(in srgb, var(--lp-mint) 35%, transparent) 360deg);
+  animation: spin 3.6s linear infinite;
+}
+@keyframes spin {
+  to {
+    transform: rotate(1turn);
+  }
+}
+.shield {
+  position: relative;
+  width: 58px;
+  height: 58px;
+  border-radius: 18px;
+  display: grid;
+  place-items: center;
+  background: var(--lp-mint);
+  color: #fff;
+  font-size: 28px;
+  box-shadow: 0 10px 22px -8px rgba(11, 130, 100, 0.6);
+}
+.perm {
+  position: absolute;
+  padding: 4px 8px;
+  border-radius: 7px;
+  background: var(--lp-surface);
+  border: 1px solid var(--lp-border);
+  font-family: var(--lp-font-mono);
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--lp-mint);
+  animation: blip 3.6s ease-in-out infinite;
+}
+.perm1 {
+  left: 8%;
+  top: 22%;
+}
+.perm2 {
+  right: 8%;
+  top: 34%;
+  animation-delay: 1.2s;
+}
+.perm3 {
+  left: 20%;
+  bottom: 14%;
+  animation-delay: 2.4s;
+}
+@keyframes blip {
+  0%,
+  100% {
+    opacity: 0.45;
+    transform: scale(0.96);
+  }
+  12% {
+    opacity: 1;
+    transform: scale(1.06);
+  }
+  30% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+/* ---- sync tile ---------------------------------------------------------- */
+.devices {
+  height: 128px;
+  margin: -6px -6px 0;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  background: radial-gradient(circle at 50% 50%, var(--lp-brand-soft), transparent 70%);
+}
+.device {
+  width: 52px;
+  height: 52px;
+  flex: none;
+  border-radius: 16px;
+  display: grid;
+  place-items: center;
+  background: var(--lp-surface);
+  border: 1px solid var(--lp-border);
+  color: var(--lp-brand-deep);
+  font-size: 24px;
+  box-shadow: var(--lp-shadow-card);
+}
+.cloud {
+  width: 62px;
+  height: 62px;
+  background: linear-gradient(135deg, var(--lp-brand-bright), var(--lp-brand-deep));
+  color: #fff;
+  font-size: 28px;
+  border: none;
+}
+.wire {
+  position: relative;
+  width: 56px;
+  height: 2px;
+  background: repeating-linear-gradient(90deg, var(--lp-border) 0 6px, transparent 6px 10px);
+}
+.wire i {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: var(--lp-brand);
+  box-shadow: 0 0 10px var(--lp-brand);
+  animation: travel 1.8s ease-in-out infinite;
+}
+.wireRev i {
+  animation-direction: reverse;
+  animation-delay: 0.9s;
+}
+@keyframes travel {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(48px);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .flip span,
+  .marqueeTrack,
+  .scanBeam,
+  .perm,
+  .wire i {
+    animation: none;
+  }
+  .flip span:last-child {
+    display: none;
+  }
+}
+
+@media (max-width: 1100px) {
+  .bento {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-areas:
+      "compat compat"
+      "store secure"
+      "store sync";
+  }
+}
+@media (max-width: 760px) {
+  .bento {
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "compat"
+      "store"
+      "secure"
+      "sync";
+  }
+  .compat .tileInner {
+    flex-direction: column;
+    align-items: stretch;
+  }
+  .code {
+    width: 100%;
+  }
+  .codeBody {
+    font-size: 11.5px;
+  }
+  .marquee {
+    min-height: 200px;
+    flex: none;
+  }
+  .tileInner {
+    padding: 22px;
+  }
+  .marquee {
+    margin: 18px -22px -22px;
+  }
+}

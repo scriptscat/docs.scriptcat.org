@@ -1,4 +1,6 @@
 import { useState } from "react";
+import clsx from "clsx";
+import { m, useMotionValueEvent, useScroll } from "motion/react";
 import { Icon } from "../Icon";
 import { Dropdown, type DropdownItem } from "./Dropdown";
 import Translate, { translate } from "@docusaurus/Translate";
@@ -9,11 +11,16 @@ import styles from "./landing.module.css";
 import stats from "@site/src/data/landing-stats.json";
 import { LINKS, abbr, usePrimaryInstall } from "./shared";
 
-// Custom landing-page navbar, faithful to the Pencil design. The global
-// Docusaurus navbar is hidden on the homepage (see custom.css) so this one
-// takes its place; docs pages keep the standard navbar.
+// Custom landing-page navbar. The global Docusaurus navbar is hidden on the
+// homepage (see custom.css) so this one takes its place; docs pages keep the
+// standard navbar. It floats transparently over the hero and frosts once the
+// page scrolls beneath it; a hairline along its bottom edge tracks reading
+// progress.
 export function LandingNav() {
   const [open, setOpen] = useState(false);
+  const { scrollY, scrollYProgress } = useScroll();
+  const [scrolled, setScrolled] = useState(false);
+  useMotionValueEvent(scrollY, "change", (y) => setScrolled(y > 16));
   const logo = useBaseUrl("/img/logo.png");
   // These are plain <a> (not <Link>), so baseUrl — which carries the active
   // locale, e.g. /ru/ — has to be applied by hand. withBaseUrl leaves the
@@ -25,6 +32,8 @@ export function LandingNav() {
     { label: <Translate id="home.nav.docs">文档</Translate>, href: withBaseUrl(LINKS.docs) },
     { label: <Translate id="home.nav.store">脚本商店</Translate>, href: LINKS.store },
     { label: <Translate id="home.nav.dev">开发者</Translate>, href: withBaseUrl(LINKS.dev) },
+    // In-page anchor to the AI section; no baseUrl involved.
+    { label: <Translate id="home.nav.ai">AI</Translate>, href: "#ai" },
     {
       label: <Translate id="home.nav.changelog">更新日志</Translate>,
       href: withBaseUrl(LINKS.changelog),
@@ -32,7 +41,7 @@ export function LandingNav() {
   ];
 
   return (
-    <nav className={styles.lnav}>
+    <nav className={clsx(styles.lnav, (scrolled || open) && styles.lnavScrolled)}>
       <div className={styles.lnavInner}>
         <a className={styles.lnavBrand} href={home}>
           <img src={logo} width={34} height={34} alt="ScriptCat" className={styles.lnavLogo} />
@@ -70,6 +79,12 @@ export function LandingNav() {
           </button>
         </div>
       </div>
+
+      <m.div
+        className={styles.lnavProgress}
+        style={{ scaleX: scrollYProgress, opacity: scrolled ? 1 : 0 }}
+        aria-hidden
+      />
 
       {open && (
         <div className={styles.lnavPanel}>

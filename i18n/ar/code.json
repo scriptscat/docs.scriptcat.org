@@ -389,29 +389,17 @@
   "home.dev.title2": {
     "message": "بيئة تشغيل الكود"
   },
-  "home.feat.api.d": {
-    "message": "أغنى من GM: تخزين الملفات والمهام المجدولة والطلبات عبر النطاقات بين يديك."
-  },
-  "home.feat.api.t": {
-    "message": "واجهات برمجة قوية"
-  },
-  "home.feat.bg.d": {
-    "message": "ميزة فريدة: السكرپتات تستمر في العمل في الخلفية دون تبويب مفتوح."
-  },
-  "home.feat.bg.t": {
-    "message": "سكرپتات الخلفية"
-  },
   "home.feat.compat.b": {
     "message": "يدعم واجهات GM_* · كتلة بيانات وصفية متطابقة"
   },
   "home.feat.compat.d": {
     "message": "متوافق تمامًا مع صيغة سكرپتات المستخدم وواجهات GM — انقل سكرپتاتك الحالية دون أي تعديلات وبدون تكلفة انتقال."
   },
+  "home.feat.compat.l": {
+    "message": "دليل الانتقال"
+  },
   "home.feat.compat.t": {
     "message": "متوافق مع Tampermonkey"
-  },
-  "home.feat.devTag": {
-    "message": "مطور"
   },
   "home.feat.eyebrow": {
     "message": "الميزات الأساسية · لماذا ScriptCat"
@@ -419,11 +407,17 @@
   "home.feat.secure.d": {
     "message": "أذونات شفافة وقابلة للتحكم وسلوك مرئي — السكرپتات الضارة تتوقف عند المصدر."
   },
+  "home.feat.secure.l": {
+    "message": "كيف تعمل الأذونات"
+  },
   "home.feat.secure.t": {
     "message": "آمن وموثوق"
   },
   "home.feat.store.d": {
     "message": "ثبّت آلاف السكرپتات المجتمعية بنقرة واحدة، أو انشر سكرپتاتك وابنِ النظام البيئي معًا."
+  },
+  "home.link.store": {
+    "message": "إلى متجر السكرپتات"
   },
   "home.feat.store.t": {
     "message": "متجر السكرپتات"
@@ -433,6 +427,9 @@
   },
   "home.feat.sync.d": {
     "message": "السكرپتات والإعدادات تتزامن بين الأجهزة — لا شيء يضيع عند التغيير أو إعادة التثبيت."
+  },
+  "home.feat.sync.l": {
+    "message": "إعداد المزامنة"
   },
   "home.feat.sync.t": {
     "message": "مزامنة سحابية"
@@ -464,26 +461,17 @@
   "home.hero.mock.adblock": {
     "message": "تخطي الإعلانات تلقائيًا"
   },
-  "home.hero.mock.add": {
-    "message": "أضف من متجر السكرپتات"
-  },
   "home.hero.mock.dark": {
     "message": "الوضع الداكن للصفحات"
   },
   "home.hero.mock.running": {
     "message": "3 سكرپتات تعمل على هذه الصفحة"
   },
-  "home.hero.mock.skip": {
-    "message": "تخطي الإعلانات"
-  },
   "home.hero.mock.speed": {
     "message": "التحكم في سرعة الفيديو"
   },
   "home.hero.moreBrowsers": {
     "message": "متصفحات أخرى"
-  },
-  "home.hero.subhead": {
-    "message": "احجب الإعلانات، عزز الفيديو، وأتمت الأشياء المملة — ثبّت السكرپتات المجتمعية من المتجر بنقرة واحدة، مع سكرپتات الخلفية وواجهات برمجة قوية للمطورين. متوافق مع Tampermonkey، فسكرپتاتك الحالية تنتقل دون أي تكلفة."
   },
   "home.hero.title1": {
     "message": "امنح متصفحك"
@@ -493,9 +481,6 @@
   },
   "home.hero.title3": {
     "message": "قوى خارقة"
-  },
-  "home.hero.trust": {
-    "message": "يعمل على Chrome · Edge · Firefox — مجاني ومفتوح المصدر بالكامل"
   },
   "home.install.chrome": {
     "message": "أضف إلى Chrome"
@@ -511,6 +496,9 @@
   },
   "home.install.manual": {
     "message": "حمّل الحزمة وثبّتها يدويًا"
+  },
+  "home.nav.ai": {
+    "message": "AI"
   },
   "home.nav.changelog": {
     "message": "سجل التغييرات"
@@ -560,29 +548,14 @@
   "home.sc.featured.btn": {
     "message": "تصفح سكرپتات الفيديو"
   },
-  "home.sc.featured.c1": {
-    "message": "التحكم في السرعة"
-  },
-  "home.sc.featured.c2": {
-    "message": "حجب الإعلانات"
-  },
-  "home.sc.featured.c3": {
-    "message": "تنزيل"
-  },
   "home.sc.featured.c4": {
     "message": "صورة داخل صورة"
   },
   "home.sc.featured.d": {
     "message": "التحكم في السرعة، تخطي الإعلانات تلقائيًا، تنزيل بنقرة واحدة، صورة داخل صورة — Bilibili / YouTube / Netflix أفضل."
   },
-  "home.sc.featured.sites": {
-    "message": "يدعم أكثر من 20 موقع فيديو"
-  },
   "home.sc.featured.t": {
     "message": "الفيديو، محسّن بالكامل"
-  },
-  "home.sc.featured.tag": {
-    "message": "الأكثر شعبية"
   },
   "home.sc.read.d": {
     "message": "الوضع الداكن، ترجمة الصفحات، قراءة غامرة."
@@ -647,6 +620,9 @@
   "home.step3.d": {
     "message": "انقر تثبيت ويعمل السكرپت على الصفحة فورًا."
   },
+  "home.step3.l": {
+    "message": "كيفية تثبيت السكرپتات"
+  },
   "home.step3.p": {
     "message": "مثبَّت · نشط الآن"
   },
@@ -655,9 +631,6 @@
   },
   "home.trust.contributors": {
     "message": "المساهمون"
-  },
-  "home.trust.eyebrow": {
-    "message": "موثوق من المستخدمين والمطورين حول العالم"
   },
   "home.trust.scripts": {
     "message": "سكرپتات مجتمعية"
@@ -703,6 +676,129 @@
   "home.search.kw.video": {
     "message": "فيديو",
     "description": "Search keyword for video"
+  },
+  "home.hero.lead": {
+    "message": "احجب الإعلانات، وعزّز الفيديو، وأتمت المهام المملة — ثبّت سكرپتات المجتمع من المتجر بنقرة واحدة. متوافق مع Tampermonkey، ويوفّر للمطورين سكرپتات الخلفية وواجهات برمجة غنية وتكاملًا مع الذكاء الاصطناعي."
+  },
+  "home.hero.demo.ad": {
+    "message": "إعلان فيديو"
+  },
+  "home.hero.demo.adWait": {
+    "message": "التخطي بعد 15 ث"
+  },
+  "home.hero.demo.popup": {
+    "message": "عرض لفترة محدودة!"
+  },
+  "home.hero.demo.popupSub": {
+    "message": "انقر لتحصل على هدية غامضة"
+  },
+  "home.hero.demo.blocked": {
+    "message": "تم حجب 3 إعلانات"
+  },
+  "home.sc.video.t": {
+    "message": "فيديو · تحسين"
+  },
+  "home.sc.adblock.h": {
+    "message": "وداعًا للإعلانات والنوافذ المنبثقة"
+  },
+  "home.sc.shop.h": {
+    "message": "اكتشف أدنى سعر حقيقي"
+  },
+  "home.sc.auto.h": {
+    "message": "دع السكرپتات تتولى المهام المتكررة"
+  },
+  "home.sc.read.h": {
+    "message": "مقالات أجنبية طويلة، بقراءة مريحة"
+  },
+  "home.sc.stage.running": {
+    "message": "{name} · قيد التشغيل"
+  },
+  "home.sc.stage.read": {
+    "message": "الترجمة الغامرة"
+  },
+  "home.sc.stage.blocked": {
+    "message": "تم حجب {count}"
+  },
+  "home.sc.stage.skipped": {
+    "message": "تم التخطي تلقائيًا"
+  },
+  "home.sc.stage.lowest": {
+    "message": "أدنى سعر تاريخي {price}"
+  },
+  "home.sc.stage.coupon": {
+    "message": "تم تطبيق الكوبون · خصم {amount}"
+  },
+  "home.sc.stage.tasks": {
+    "message": "المهام اليومية"
+  },
+  "home.sc.stage.task1": {
+    "message": "تسجيل يومي"
+  },
+  "home.sc.stage.task2": {
+    "message": "جمع النقاط"
+  },
+  "home.sc.stage.task3": {
+    "message": "إكمال مهام التصفح"
+  },
+  "home.sc.stage.readSrc": {
+    "message": "Userscripts let you reshape any website to fit the way you read, watch and shop. Install one, and the page changes instantly — no extension to build, no code to write."
+  },
+  "home.sc.stage.readDst": {
+    "message": "تتيح لك سكرپتات المستخدم إعادة تشكيل أي موقع ليناسب طريقتك في القراءة والمشاهدة والتسوق. ثبّت سكرپتًا واحدًا وستتغير الصفحة فورًا — دون بناء إضافة ودون كتابة أي كود."
+  },
+  "home.sc.stage.readChip": {
+    "message": "تمت الترجمة · وضع القراءة مفعّل"
+  },
+  "home.feat.compat.run": {
+    "message": "السكرپت نفسه يعمل مباشرة"
+  },
+  "home.ai.eyebrow": {
+    "message": "تكامل الذكاء الاصطناعي · AI READY"
+  },
+  "home.ai.title1": {
+    "message": "دع الذكاء الاصطناعي "
+  },
+  "home.ai.title2": {
+    "message": "يكتب سكرپتاتك ويشغّلها"
+  },
+  "home.ai.sub": {
+    "message": "عبر سطر الأوامر sctl، يمكن لوكلاء البرمجة بالذكاء الاصطناعي مثل Claude Code و Codex كتابة سكرپتات لـ ScriptCat، وتثبيتها في متصفحك للتحقق من النتيجة، وإصلاح ما يجدونه من مشاكل ثم إعادة المحاولة."
+  },
+  "home.ai.agents.t": {
+    "message": "وكلاء البرمجة بالذكاء الاصطناعي"
+  },
+  "home.ai.agents.d": {
+    "message": "زوّد Claude Code أو Codex بمهارتَي scriptcat-userscript و sctl، فيعرف طريقة كتابة سكرپتات ScriptCat، ويتحقق منها في متصفحك ويصلحها بنفسه."
+  },
+  "home.ai.agents.l": {
+    "message": "طوّر السكرپتات بالذكاء الاصطناعي"
+  },
+  "home.ai.sctl.t": {
+    "message": "سطر أوامر sctl"
+  },
+  "home.ai.sctl.d": {
+    "message": "اعرض السكرپتات وثبّتها وشغّلها واقرأ سجلاتها من الطرفية — أو تحكّم في التبويبات والصفحات، أو مرّر CDP إلى Playwright."
+  },
+  "home.ai.sctl.l": {
+    "message": "البدء مع sctl"
+  },
+  "home.ai.term.prompt": {
+    "message": "اكتب لي سكرپتًا يجعل فيديوهات Bilibili تعمل بدقة 1080p افتراضيًا، ثم ثبّته في متصفحي وجرّبه"
+  },
+  "home.ai.term.wrote": {
+    "message": "تمت كتابة {file}"
+  },
+  "home.ai.term.installed": {
+    "message": "تم التثبيت في ScriptCat"
+  },
+  "home.ai.term.verified": {
+    "message": "لا أخطاء — تم تبديل الجودة إلى 1080p"
+  },
+  "home.dev.bgRunning": {
+    "message": "يعمل في الخلفية"
+  },
+  "home.dev.log.trigger": {
+    "message": "تشغيل مجدول"
   },
   "ad.label": {
     "message": "Advertisement",

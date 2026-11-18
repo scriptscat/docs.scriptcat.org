@@ -389,29 +389,17 @@
   "home.dev.title2": {
     "message": "コード実行環境に変える"
   },
-  "home.feat.api.d": {
-    "message": "GM より豊富: ファイルストレージ、スケジュールタスク、クロスオリジンリクエストをすぐに使えます。"
-  },
-  "home.feat.api.t": {
-    "message": "強力な API"
-  },
-  "home.feat.bg.d": {
-    "message": "独自機能: タブを開かなくてもスクリプトはバックグラウンドで動き続けます。"
-  },
-  "home.feat.bg.t": {
-    "message": "バックグラウンドスクリプト"
-  },
   "home.feat.compat.b": {
     "message": "GM_* API 対応 · 同一のメタデータブロック"
   },
   "home.feat.compat.d": {
     "message": "ユーザースクリプト形式と GM API に完全互換 — 既存のスクリプトを変更なしで移行でき、切り替えコストはゼロです。"
   },
+  "home.feat.compat.l": {
+    "message": "移行ガイド"
+  },
   "home.feat.compat.t": {
     "message": "Tampermonkey 互換"
-  },
-  "home.feat.devTag": {
-    "message": "開発者"
   },
   "home.feat.eyebrow": {
     "message": "コア機能 · SCRIPTCAT を選ぶ理由"
@@ -419,11 +407,17 @@
   "home.feat.secure.d": {
     "message": "透過的で制御可能な権限と目に見える動作 — 悪意のあるスクリプトは発生源で止められます。"
   },
+  "home.feat.secure.l": {
+    "message": "権限の仕組み"
+  },
   "home.feat.secure.t": {
     "message": "安全・信頼"
   },
   "home.feat.store.d": {
     "message": "何千ものコミュニティスクリプトをワンクリックでインストール。自分のスクリプトを公開して、エコシステムを一緒に育てましょう。"
+  },
+  "home.link.store": {
+    "message": "スクリプトストアへ"
   },
   "home.feat.store.t": {
     "message": "スクリプトストア"
@@ -433,6 +427,9 @@
   },
   "home.feat.sync.d": {
     "message": "スクリプトと設定を端末間で同期 — 乗り換えや再インストールでも何も失いません。"
+  },
+  "home.feat.sync.l": {
+    "message": "同期を設定"
   },
   "home.feat.sync.t": {
     "message": "クラウド同期"
@@ -464,26 +461,17 @@
   "home.hero.mock.adblock": {
     "message": "広告を自動スキップ"
   },
-  "home.hero.mock.add": {
-    "message": "スクリプトストアから追加"
-  },
   "home.hero.mock.dark": {
     "message": "ページのダークモード"
   },
   "home.hero.mock.running": {
     "message": "このページで 3 つのスクリプトが実行中"
   },
-  "home.hero.mock.skip": {
-    "message": "広告をスキップ"
-  },
   "home.hero.mock.speed": {
     "message": "動画の速度調整"
   },
   "home.hero.moreBrowsers": {
     "message": "他のブラウザ"
-  },
-  "home.hero.subhead": {
-    "message": "広告をブロックし、動画を強化し、面倒なことを自動化 — ストアからコミュニティスクリプトをワンクリックでインストール。開発者向けのバックグラウンドスクリプトと強力な API も完備。Tampermonkey 互換なので、既存のスクリプトはコストゼロで移行できます。"
   },
   "home.hero.title1": {
     "message": "ブラウザに"
@@ -493,9 +481,6 @@
   },
   "home.hero.title3": {
     "message": "超パワーを"
-  },
-  "home.hero.trust": {
-    "message": "Chrome · Edge · Firefox 対応 — 完全無料・オープンソース"
   },
   "home.install.chrome": {
     "message": "Chrome に追加"
@@ -511,6 +496,9 @@
   },
   "home.install.manual": {
     "message": "パッケージをダウンロードして手動インストール"
+  },
+  "home.nav.ai": {
+    "message": "AI"
   },
   "home.nav.changelog": {
     "message": "更新履歴"
@@ -560,29 +548,14 @@
   "home.sc.featured.btn": {
     "message": "動画スクリプトを見る"
   },
-  "home.sc.featured.c1": {
-    "message": "速度調整"
-  },
-  "home.sc.featured.c2": {
-    "message": "広告ブロック"
-  },
-  "home.sc.featured.c3": {
-    "message": "ダウンロード"
-  },
   "home.sc.featured.c4": {
     "message": "ピクチャーインピクチャー"
   },
   "home.sc.featured.d": {
     "message": "速度調整、広告自動スキップ、ワンクリックダウンロード、ピクチャーインピクチャー — より良い Bilibili / YouTube / Netflix。"
   },
-  "home.sc.featured.sites": {
-    "message": "20 以上の動画サイトに対応"
-  },
   "home.sc.featured.t": {
     "message": "動画を完全に強化"
-  },
-  "home.sc.featured.tag": {
-    "message": "一番人気"
   },
   "home.sc.read.d": {
     "message": "ダークモード、ページ翻訳、没入型リーディング。"
@@ -647,6 +620,9 @@
   "home.step3.d": {
     "message": "インストールをクリックすると、スクリプトがすぐにページで有効になります。"
   },
+  "home.step3.l": {
+    "message": "スクリプトのインストール方法"
+  },
   "home.step3.p": {
     "message": "インストール済み · 有効中"
   },
@@ -655,9 +631,6 @@
   },
   "home.trust.contributors": {
     "message": "コントリビューター"
-  },
-  "home.trust.eyebrow": {
-    "message": "世界中のユーザーと開発者に信頼されています"
   },
   "home.trust.scripts": {
     "message": "コミュニティスクリプト"
@@ -703,6 +676,129 @@
   "home.search.kw.video": {
     "message": "動画",
     "description": "Search keyword for video"
+  },
+  "home.hero.lead": {
+    "message": "広告ブロック、動画の強化、面倒な作業の自動化 — ストアからコミュニティスクリプトをワンクリックでインストール。Tampermonkey 互換で、開発者向けにはバックグラウンドスクリプト、豊富な API、AI 連携も用意しています。"
+  },
+  "home.hero.demo.ad": {
+    "message": "動画広告"
+  },
+  "home.hero.demo.adWait": {
+    "message": "15 秒後にスキップ可"
+  },
+  "home.hero.demo.popup": {
+    "message": "期間限定セール！"
+  },
+  "home.hero.demo.popupSub": {
+    "message": "クリックで豪華プレゼント"
+  },
+  "home.hero.demo.blocked": {
+    "message": "広告を 3 件ブロック"
+  },
+  "home.sc.video.t": {
+    "message": "動画 · 強化"
+  },
+  "home.sc.adblock.h": {
+    "message": "広告もポップアップも、一掃"
+  },
+  "home.sc.shop.h": {
+    "message": "過去最安値が、ひと目でわかる"
+  },
+  "home.sc.auto.h": {
+    "message": "繰り返し作業は、スクリプトにおまかせ"
+  },
+  "home.sc.read.h": {
+    "message": "外国語の長文も、快適に読める"
+  },
+  "home.sc.stage.running": {
+    "message": "{name} · 実行中"
+  },
+  "home.sc.stage.read": {
+    "message": "没入型翻訳"
+  },
+  "home.sc.stage.blocked": {
+    "message": "{count} 件ブロック"
+  },
+  "home.sc.stage.skipped": {
+    "message": "自動スキップ済み"
+  },
+  "home.sc.stage.lowest": {
+    "message": "過去最安 {price}"
+  },
+  "home.sc.stage.coupon": {
+    "message": "クーポン適用 · {amount} 引き"
+  },
+  "home.sc.stage.tasks": {
+    "message": "デイリータスク"
+  },
+  "home.sc.stage.task1": {
+    "message": "毎日のチェックイン"
+  },
+  "home.sc.stage.task2": {
+    "message": "ポイントを受け取る"
+  },
+  "home.sc.stage.task3": {
+    "message": "閲覧タスクを完了"
+  },
+  "home.sc.stage.readSrc": {
+    "message": "Userscripts let you reshape any website to fit the way you read, watch and shop. Install one, and the page changes instantly — no extension to build, no code to write."
+  },
+  "home.sc.stage.readDst": {
+    "message": "ユーザースクリプトを使えば、あらゆるサイトを自分の読み方・見方・買い方に合わせて作り変えられます。ひとつ入れるだけでページはすぐに変わります — 拡張機能を開発する必要も、コードを書く必要もありません。"
+  },
+  "home.sc.stage.readChip": {
+    "message": "翻訳済み · 読書モード オン"
+  },
+  "home.feat.compat.run": {
+    "message": "そのまま動作"
+  },
+  "home.ai.eyebrow": {
+    "message": "AI 連携 · AI READY"
+  },
+  "home.ai.title1": {
+    "message": "AI が"
+  },
+  "home.ai.title2": {
+    "message": "スクリプトを書いて、動かす"
+  },
+  "home.ai.sub": {
+    "message": "sctl コマンドラインを通じて、Claude Code や Codex などの AI コーディングエージェントが ScriptCat 用のスクリプトを直接書き、ブラウザにインストールして動作を確認し、問題があれば自ら修正して再試行します。"
+  },
+  "home.ai.agents.t": {
+    "message": "AI コーディングエージェント"
+  },
+  "home.ai.agents.d": {
+    "message": "Claude Code や Codex に scriptcat-userscript と sctl の 2 つの skill を入れれば、ScriptCat スクリプトの書き方を理解し、あなたのブラウザで動作を確認して自分で修正までこなします。"
+  },
+  "home.ai.agents.l": {
+    "message": "AI でスクリプトを開発"
+  },
+  "home.ai.sctl.t": {
+    "message": "sctl コマンドライン"
+  },
+  "home.ai.sctl.d": {
+    "message": "ターミナルからスクリプトの一覧表示・インストール・実行やログの確認ができ、タブやページの操作、Playwright への CDP の受け渡しも可能です。"
+  },
+  "home.ai.sctl.l": {
+    "message": "sctl 入門"
+  },
+  "home.ai.term.prompt": {
+    "message": "Bilibili の動画をデフォルトで 1080P にするスクリプトを書いて、ブラウザにインストールして試してみて"
+  },
+  "home.ai.term.wrote": {
+    "message": "{file} を作成しました"
+  },
+  "home.ai.term.installed": {
+    "message": "ScriptCat にインストールしました"
+  },
+  "home.ai.term.verified": {
+    "message": "エラーなし、画質を 1080P に切り替えました"
+  },
+  "home.dev.bgRunning": {
+    "message": "バックグラウンド実行中"
+  },
+  "home.dev.log.trigger": {
+    "message": "スケジュール実行"
   },
   "ad.label": {
     "message": "Advertisement",

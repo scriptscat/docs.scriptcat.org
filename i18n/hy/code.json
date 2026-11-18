@@ -202,29 +202,17 @@
   "home.dev.title2": {
     "message": "կոդի կատարման միջավայր"
   },
-  "home.feat.api.d": {
-    "message": "Ավելի հարուստ, քան GM-ը՝ ֆայլերի պահպանում, պլանավորված առաջադրանքներ և միջդոմենային հարցումներ ձեռքի տակ։"
-  },
-  "home.feat.api.t": {
-    "message": "Հզոր API-ներ"
-  },
-  "home.feat.bg.d": {
-    "message": "Եզակի՝ սկրիպտները շարունակում են աշխատել ֆոնում՝ առանց բաց ներդիրի։"
-  },
-  "home.feat.bg.t": {
-    "message": "Ֆոնային սկրիպտներ"
-  },
   "home.feat.compat.b": {
     "message": "GM_* API աջակցություն · նույնական մետատվյալների բլոկ"
   },
   "home.feat.compat.d": {
     "message": "Ամբողջովին համատեղելի օգտագործողի սկրիպտների ձևաչափի և GM API-ների հետ՝ գոյություն ունեցող սկրիպտները տեղափոխեք առանց որևէ փոփոխության և առանց անցման ծախսերի։"
   },
+  "home.feat.compat.l": {
+    "message": "Անցման ուղեցույց"
+  },
   "home.feat.compat.t": {
     "message": "Համատեղելի Tampermonkey-ի հետ"
-  },
-  "home.feat.devTag": {
-    "message": "Մշակող"
   },
   "home.feat.eyebrow": {
     "message": "Հիմնական հնարավորություններ · WHY SCRIPTCAT"
@@ -232,11 +220,17 @@
   "home.feat.secure.d": {
     "message": "Թափանցիկ, վերահսկելի թույլտվություններ և տեսանելի վարքագիծ՝ վնասակար սկրիպտները կանգնեցվում են աղբյուրում։"
   },
+  "home.feat.secure.l": {
+    "message": "Ինչպես են աշխատում թույլտվությունները"
+  },
   "home.feat.secure.t": {
     "message": "Անվտանգ և հուսալի"
   },
   "home.feat.store.d": {
     "message": "Տեղադրեք հազարավոր համայնքային սկրիպտներ մեկ սեղմումով կամ հրապարակեք ձեր աշխատանքները և միասին կառուցեք էկոհամակարգը։"
+  },
+  "home.link.store": {
+    "message": "Անցնել սկրիպտների խանութ"
   },
   "home.feat.store.t": {
     "message": "Սկրիպտների խանութ"
@@ -246,6 +240,9 @@
   },
   "home.feat.sync.d": {
     "message": "Սկրիպտներն ու կարգավորումները համաժամացվում են սարքերի միջև՝ ոչինչ չի կորչում սարքը փոխելիս կամ վերատեղադրելիս։"
+  },
+  "home.feat.sync.l": {
+    "message": "Կարգավորել համաժամացումը"
   },
   "home.feat.sync.t": {
     "message": "Ամպային համաժամացում"
@@ -277,26 +274,17 @@
   "home.hero.mock.adblock": {
     "message": "Գովազդի ավտոմատ բաց թողնում"
   },
-  "home.hero.mock.add": {
-    "message": "Ավելացնել սկրիպտների խանութից"
-  },
   "home.hero.mock.dark": {
     "message": "Մուգ ռեժիմ էջերի համար"
   },
   "home.hero.mock.running": {
     "message": "3 սկրիպտ աշխատում է այս էջում"
   },
-  "home.hero.mock.skip": {
-    "message": "Բաց թողնել գովազդը"
-  },
   "home.hero.mock.speed": {
     "message": "Վիդեոյի արագության կառավարում"
   },
   "home.hero.moreBrowsers": {
     "message": "Ավելի շատ բրաուզերներ"
-  },
-  "home.hero.subhead": {
-    "message": "Արգելափակեք գովազդը, բարելավեք վիդեոն, ավտոմատացրեք ձանձրալի գործերը՝ խանութից մեկ սեղմումով տեղադրեք համայնքային սկրիպտներ, ֆոնային սկրիպտներով և հզոր API-ներով մշակողների համար։ Համատեղելի է Tampermonkey-ի հետ, ուստի ձեր գոյություն ունեցող սկրիպտները տեղափոխվում են առանց ծախսերի։"
   },
   "home.hero.title1": {
     "message": "Ձեր բրաուզերին"
@@ -306,9 +294,6 @@
   },
   "home.hero.title3": {
     "message": "գերհնարավորություններ տվեք"
-  },
-  "home.hero.trust": {
-    "message": "Աշխատում է Chrome · Edge · Firefox-ում՝ ամբողջովին անվճար և բաց կոդով"
   },
   "home.install.chrome": {
     "message": "Ավելացնել Chrome-ին"
@@ -324,6 +309,9 @@
   },
   "home.install.manual": {
     "message": "Ներբեռնել փաթեթը և տեղադրել ձեռքով"
+  },
+  "home.nav.ai": {
+    "message": "AI"
   },
   "home.nav.changelog": {
     "message": "Փոփոխությունների մատյան"
@@ -373,29 +361,14 @@
   "home.sc.featured.btn": {
     "message": "Դիտել վիդեո սկրիպտները"
   },
-  "home.sc.featured.c1": {
-    "message": "Արագության կառավարում"
-  },
-  "home.sc.featured.c2": {
-    "message": "Գովազդի արգելափակում"
-  },
-  "home.sc.featured.c3": {
-    "message": "Ներբեռնում"
-  },
   "home.sc.featured.c4": {
     "message": "Նկար նկարում"
   },
   "home.sc.featured.d": {
     "message": "Արագության կառավարում, գովազդի ավտոմատ բաց թողնում, մեկ սեղմումով ներբեռնում, նկար նկարում՝ ավելի լավ Bilibili / YouTube / Netflix։"
   },
-  "home.sc.featured.sites": {
-    "message": "Աջակցում է 20+ վիդեո կայքերի"
-  },
   "home.sc.featured.t": {
     "message": "Վիդեո, ամբողջությամբ բարելավված"
-  },
-  "home.sc.featured.tag": {
-    "message": "Ամենահայտնի"
   },
   "home.sc.read.d": {
     "message": "Մուգ ռեժիմ, էջի թարգմանություն, ընկղմվող ընթերցում։"
@@ -460,6 +433,9 @@
   "home.step3.d": {
     "message": "Սեղմեք տեղադրել, և սկրիպտն անմիջապես գործում է էջում։"
   },
+  "home.step3.l": {
+    "message": "Ինչպես տեղադրել սկրիպտներ"
+  },
   "home.step3.p": {
     "message": "Տեղադրված է · Ակտիվ է հիմա"
   },
@@ -468,9 +444,6 @@
   },
   "home.trust.contributors": {
     "message": "Ներդրողներ"
-  },
-  "home.trust.eyebrow": {
-    "message": "ՎՍՏԱՀՎՈՒՄ ԵՆ ՕԳՏԱԳՈՐԾՈՂՆԵՐԸ ԵՎ ՄՇԱԿՈՂՆԵՐԸ ԱՄԲՈՂՋ ԱՇԽԱՐՀՈՒՄ"
   },
   "home.trust.scripts": {
     "message": "Համայնքային սկրիպտներ"
@@ -712,6 +685,129 @@
   "home.search.kw.video": {
     "message": "delays",
     "description": "Search keyword for video"
+  },
+  "home.hero.lead": {
+    "message": "Արգելափակեք գովազդը, բարելավեք վիդեոն, ավտոմատացրեք ձանձրալի գործերը՝ խանութից մեկ սեղմումով տեղադրեք համայնքային սկրիպտներ։ Համատեղելի է Tampermonkey-ի հետ, իսկ մշակողների համար կան ֆոնային սկրիպտներ, հարուստ API և AI ինտեգրում։"
+  },
+  "home.hero.demo.ad": {
+    "message": "Վիդեոգովազդ"
+  },
+  "home.hero.demo.adWait": {
+    "message": "Փակել 15 վ հետո"
+  },
+  "home.hero.demo.popup": {
+    "message": "Սահմանափակ առաջարկ!"
+  },
+  "home.hero.demo.popupSub": {
+    "message": "Սեղմեք և ստացեք նվեր"
+  },
+  "home.hero.demo.blocked": {
+    "message": "Արգելափակվեց 3 գովազդ"
+  },
+  "home.sc.video.t": {
+    "message": "Վիդեո · Բարելավում"
+  },
+  "home.sc.adblock.h": {
+    "message": "Գովազդ և ելնող պատուհաններ՝ մաքրված"
+  },
+  "home.sc.shop.h": {
+    "message": "Իրական ամենացածր գինը՝ մեկ հայացքով"
+  },
+  "home.sc.auto.h": {
+    "message": "Կրկնվող գործերը թողեք սկրիպտներին"
+  },
+  "home.sc.read.h": {
+    "message": "Օտարալեզու երկար տեքստեր՝ հաճելի ընթերցմամբ"
+  },
+  "home.sc.stage.running": {
+    "message": "{name} · Աշխատում է"
+  },
+  "home.sc.stage.read": {
+    "message": "Ընկղմվող թարգմանություն"
+  },
+  "home.sc.stage.blocked": {
+    "message": "Արգելափակված՝ {count}"
+  },
+  "home.sc.stage.skipped": {
+    "message": "Ավտոմատ բաց թողնված"
+  },
+  "home.sc.stage.lowest": {
+    "message": "Ամենացածրը՝ {price}"
+  },
+  "home.sc.stage.coupon": {
+    "message": "Կտրոնը կիրառվեց · {amount} զեղչ"
+  },
+  "home.sc.stage.tasks": {
+    "message": "Ամենօրյա առաջադրանքներ"
+  },
+  "home.sc.stage.task1": {
+    "message": "Ամենօրյա նշում"
+  },
+  "home.sc.stage.task2": {
+    "message": "Ստանալ միավորներ"
+  },
+  "home.sc.stage.task3": {
+    "message": "Կատարել դիտման առաջադրանքները"
+  },
+  "home.sc.stage.readSrc": {
+    "message": "Userscripts let you reshape any website to fit the way you read, watch and shop. Install one, and the page changes instantly — no extension to build, no code to write."
+  },
+  "home.sc.stage.readDst": {
+    "message": "Օգտագործողի սկրիպտները թույլ են տալիս ցանկացած կայք հարմարեցնել այն բանին, թե ինչպես եք դուք կարդում, դիտում և գնումներ անում։ Տեղադրեք մեկը, և էջն անմիջապես կփոխվի՝ առանց ընդլայնում ստեղծելու, առանց կոդ գրելու։"
+  },
+  "home.sc.stage.readChip": {
+    "message": "Թարգմանված է · Ընթերցման ռեժիմը միացված է"
+  },
+  "home.feat.compat.run": {
+    "message": "Աշխատում է անփոփոխ"
+  },
+  "home.ai.eyebrow": {
+    "message": "AI ինտեգրում · AI READY"
+  },
+  "home.ai.title1": {
+    "message": "Թող AI-ն "
+  },
+  "home.ai.title2": {
+    "message": "գրի և գործարկի ձեր սկրիպտները"
+  },
+  "home.ai.sub": {
+    "message": "sctl հրամանի տողի միջոցով Claude Code, Codex և այլ AI ծրագրավորման գործակալներ կարող են գրել սկրիպտներ ScriptCat-ի համար, տեղադրել դրանք ձեր բրաուզերում՝ արդյունքը ստուգելու համար, և ուղղել հայտնաբերված խնդիրները՝ նախքան նորից փորձելը։"
+  },
+  "home.ai.agents.t": {
+    "message": "AI ծրագրավորման գործակալներ"
+  },
+  "home.ai.agents.d": {
+    "message": "Տվեք Claude Code-ին կամ Codex-ին scriptcat-userscript և sctl skill-երը, և այն կիմանա, թե ինչպես են գրվում ScriptCat-ի սկրիպտները, ինչպես նաև կկարողանա ստուգել դրանք ձեր բրաուզերում և ինքնուրույն ուղղել։"
+  },
+  "home.ai.agents.l": {
+    "message": "Մշակեք սկրիպտներ AI-ով"
+  },
+  "home.ai.sctl.t": {
+    "message": "sctl հրամանի տող"
+  },
+  "home.ai.sctl.d": {
+    "message": "Տերմինալից ցուցակագրեք, տեղադրեք և գործարկեք սկրիպտներ ու կարդացեք դրանց մատյանները, կառավարեք ներդիրներն ու էջերը կամ փոխանցեք CDP-ն Playwright-ին։"
+  },
+  "home.ai.sctl.l": {
+    "message": "Սկսել sctl-ով"
+  },
+  "home.ai.term.prompt": {
+    "message": "Գրիր սկրիպտ, որ Bilibili-ի վիդեոները լռելյայն 1080p լինեն, հետո տեղադրիր իմ բրաուզերում ու փորձիր"
+  },
+  "home.ai.term.wrote": {
+    "message": "Գրվեց {file}"
+  },
+  "home.ai.term.installed": {
+    "message": "Տեղադրվեց ScriptCat-ում"
+  },
+  "home.ai.term.verified": {
+    "message": "Սխալներ չկան՝ որակը փոխվեց 1080p-ի"
+  },
+  "home.dev.bgRunning": {
+    "message": "Աշխատում է ֆոնում"
+  },
+  "home.dev.log.trigger": {
+    "message": "պլանավորված գործարկում"
   },
   "ad.label": {
     "message": "Advertisement",

@@ -372,14 +372,8 @@
   "home.hero.title3": {
     "message": "superpowers"
   },
-  "home.hero.subhead": {
-    "message": "Block ads, supercharge video, automate the boring stuff — install community scripts from the store in one click, with background scripts and powerful APIs for developers. Tampermonkey-compatible, so your existing scripts migrate at zero cost."
-  },
   "home.hero.browse": {
     "message": "Browse scripts"
-  },
-  "home.hero.trust": {
-    "message": "Works on Chrome · Edge · Firefox — completely free & open source"
   },
   "home.hero.mock.speed": {
     "message": "Video speed control"
@@ -390,14 +384,8 @@
   "home.hero.mock.dark": {
     "message": "Dark mode for pages"
   },
-  "home.hero.mock.skip": {
-    "message": "Skip ads"
-  },
   "home.hero.mock.running": {
     "message": "3 scripts running on this page"
-  },
-  "home.hero.mock.add": {
-    "message": "Add from script store"
   },
   "home.hero.chip.installed": {
     "message": "Script installed"
@@ -407,9 +395,6 @@
   },
   "home.hero.chip.background": {
     "message": "3 scripts running in the background"
-  },
-  "home.trust.eyebrow": {
-    "message": "TRUSTED BY USERS & DEVELOPERS WORLDWIDE"
   },
   "home.trust.users": {
     "message": "Installed users"
@@ -438,32 +423,17 @@
   "home.sc.sub": {
     "message": "Grab a script from the store — ads, video, shopping, productivity, all handled for you."
   },
-  "home.sc.featured.tag": {
-    "message": "Most popular"
-  },
   "home.sc.featured.t": {
     "message": "Video, fully enhanced"
   },
   "home.sc.featured.d": {
     "message": "Speed control, auto-skip ads, one-click download, picture-in-picture — a better Bilibili / YouTube / Netflix."
   },
-  "home.sc.featured.c1": {
-    "message": "Speed control"
-  },
-  "home.sc.featured.c2": {
-    "message": "Ad-block"
-  },
-  "home.sc.featured.c3": {
-    "message": "Download"
-  },
   "home.sc.featured.c4": {
     "message": "Picture-in-picture"
   },
   "home.sc.featured.btn": {
     "message": "Browse video scripts"
-  },
-  "home.sc.featured.sites": {
-    "message": "Supports 20+ video sites"
   },
   "home.sc.adblock.t": {
     "message": "Ad-block · Cleaner web"
@@ -537,6 +507,9 @@
   "home.step3.d": {
     "message": "Click install and the script takes effect on the page right away."
   },
+  "home.step3.l": {
+    "message": "How to install scripts"
+  },
   "home.step3.p": {
     "message": "Installed · Active now"
   },
@@ -558,6 +531,9 @@
   "home.feat.compat.d": {
     "message": "Fully compatible with the userscript format and GM APIs — migrate existing scripts with zero changes and no switching cost."
   },
+  "home.feat.compat.l": {
+    "message": "Migration guide"
+  },
   "home.feat.compat.b": {
     "message": "Supports GM_* APIs · identical metadata block"
   },
@@ -567,11 +543,17 @@
   "home.feat.store.d": {
     "message": "Install thousands of community scripts in one click, or publish your own and build the ecosystem together."
   },
+  "home.link.store": {
+    "message": "Visit the Script Store"
+  },
   "home.feat.secure.t": {
     "message": "Secure & reliable"
   },
   "home.feat.secure.d": {
     "message": "Transparent, controllable permissions and visible behavior — malicious scripts stopped at the source."
+  },
+  "home.feat.secure.l": {
+    "message": "How permissions work"
   },
   "home.feat.sync.t": {
     "message": "Cloud sync"
@@ -579,20 +561,8 @@
   "home.feat.sync.d": {
     "message": "Scripts and settings sync across devices — nothing lost when you switch or reinstall."
   },
-  "home.feat.bg.t": {
-    "message": "Background scripts"
-  },
-  "home.feat.bg.d": {
-    "message": "Unique: scripts keep running in the background without an open tab."
-  },
-  "home.feat.api.t": {
-    "message": "Powerful APIs"
-  },
-  "home.feat.api.d": {
-    "message": "Richer than GM: file storage, scheduled tasks and cross-origin requests at your fingertips."
-  },
-  "home.feat.devTag": {
-    "message": "Developer"
+  "home.feat.sync.l": {
+    "message": "Set up sync"
   },
   "home.dev.eyebrow": {
     "message": "Built for developers · FOR DEVELOPERS"
@@ -698,6 +668,9 @@
   "home.nav.dev": {
     "message": "Developers"
   },
+  "home.nav.ai": {
+    "message": "AI"
+  },
   "home.nav.changelog": {
     "message": "Changelog"
   },
@@ -712,6 +685,129 @@
   },
   "home.nav.theme": {
     "message": "Toggle theme"
+  },
+  "home.hero.lead": {
+    "message": "Block ads, power up video, automate the busywork — install community scripts from the store in one click. Tampermonkey-compatible, with background scripts, a rich API and AI integration for developers."
+  },
+  "home.hero.demo.ad": {
+    "message": "Video ad"
+  },
+  "home.hero.demo.adWait": {
+    "message": "Skip in 15s"
+  },
+  "home.hero.demo.popup": {
+    "message": "Limited offer!"
+  },
+  "home.hero.demo.popupSub": {
+    "message": "Click to claim a mystery gift"
+  },
+  "home.hero.demo.blocked": {
+    "message": "3 ads blocked"
+  },
+  "home.sc.video.t": {
+    "message": "Video · Enhancements"
+  },
+  "home.sc.adblock.h": {
+    "message": "Ads and pop-ups, swept away"
+  },
+  "home.sc.shop.h": {
+    "message": "Spot the real lowest price"
+  },
+  "home.sc.auto.h": {
+    "message": "Let scripts do the repetitive stuff"
+  },
+  "home.sc.read.h": {
+    "message": "Long foreign reads, made comfortable"
+  },
+  "home.sc.stage.running": {
+    "message": "{name} · Running"
+  },
+  "home.sc.stage.read": {
+    "message": "Immersive Translate"
+  },
+  "home.sc.stage.blocked": {
+    "message": "{count} blocked"
+  },
+  "home.sc.stage.skipped": {
+    "message": "Auto-skipped"
+  },
+  "home.sc.stage.lowest": {
+    "message": "All-time low {price}"
+  },
+  "home.sc.stage.coupon": {
+    "message": "Coupon applied · {amount} off"
+  },
+  "home.sc.stage.tasks": {
+    "message": "Daily tasks"
+  },
+  "home.sc.stage.task1": {
+    "message": "Daily check-in"
+  },
+  "home.sc.stage.task2": {
+    "message": "Claim points"
+  },
+  "home.sc.stage.task3": {
+    "message": "Finish browsing tasks"
+  },
+  "home.sc.stage.readSrc": {
+    "message": "用户脚本让你按自己的习惯，重塑任何网站的阅读、观看与购物体验。装上一个，页面立刻改变 —— 无需开发扩展，也不用写一行代码。"
+  },
+  "home.sc.stage.readDst": {
+    "message": "Userscripts let you reshape any website to fit the way you read, watch and shop. Install one, and the page changes instantly — no extension to build, no code to write."
+  },
+  "home.sc.stage.readChip": {
+    "message": "Translated · Reading mode on"
+  },
+  "home.feat.compat.run": {
+    "message": "Same script, runs as-is"
+  },
+  "home.ai.eyebrow": {
+    "message": "AI integration · AI READY"
+  },
+  "home.ai.title1": {
+    "message": "Let AI "
+  },
+  "home.ai.title2": {
+    "message": "write and run your scripts"
+  },
+  "home.ai.sub": {
+    "message": "With the sctl CLI, AI coding agents like Claude Code and Codex can write ScriptCat scripts, install them into your browser to check the result, and fix what they find before trying again."
+  },
+  "home.ai.agents.t": {
+    "message": "AI coding agents"
+  },
+  "home.ai.agents.d": {
+    "message": "Give Claude Code or Codex the scriptcat-userscript and sctl skills and it knows how ScriptCat scripts are written — and can check them in your browser and fix them itself."
+  },
+  "home.ai.agents.l": {
+    "message": "Develop scripts with AI"
+  },
+  "home.ai.sctl.t": {
+    "message": "sctl CLI"
+  },
+  "home.ai.sctl.d": {
+    "message": "List, install and run scripts and read their logs from the terminal — or drive tabs and pages, or hand CDP to Playwright."
+  },
+  "home.ai.sctl.l": {
+    "message": "Get started with sctl"
+  },
+  "home.ai.term.prompt": {
+    "message": "Write me a script that defaults Bilibili videos to 1080p, then install it in my browser and try it"
+  },
+  "home.ai.term.wrote": {
+    "message": "Wrote {file}"
+  },
+  "home.ai.term.installed": {
+    "message": "Installed into ScriptCat"
+  },
+  "home.ai.term.verified": {
+    "message": "No errors — quality switched to 1080p"
+  },
+  "home.dev.bgRunning": {
+    "message": "Running in background"
+  },
+  "home.dev.log.trigger": {
+    "message": "scheduled run"
   },
   "ad.label": {
     "message": "Advertisement",

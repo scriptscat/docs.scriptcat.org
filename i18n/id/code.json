@@ -202,29 +202,17 @@
   "home.dev.title2": {
     "message": "runtime kode"
   },
-  "home.feat.api.d": {
-    "message": "Lebih kaya dari GM: penyimpanan file, tugas terjadwal, dan permintaan lintas origin di ujung jari Anda."
-  },
-  "home.feat.api.t": {
-    "message": "API Hebat"
-  },
-  "home.feat.bg.d": {
-    "message": "Unik: skrip terus berjalan di latar belakang tanpa tab terbuka."
-  },
-  "home.feat.bg.t": {
-    "message": "Skrip latar belakang"
-  },
   "home.feat.compat.b": {
     "message": "Mendukung API GM_* · blok metadata identik"
   },
   "home.feat.compat.d": {
     "message": "Sepenuhnya kompatibel dengan format skrip pengguna dan API GM — migrasikan skrip yang ada tanpa perubahan dan tanpa biaya peralihan."
   },
+  "home.feat.compat.l": {
+    "message": "Panduan migrasi"
+  },
   "home.feat.compat.t": {
     "message": "Kompatibel dengan Tampermonkey"
-  },
-  "home.feat.devTag": {
-    "message": "Pengembang"
   },
   "home.feat.eyebrow": {
     "message": "Fitur inti · WHY SCRIPTCAT"
@@ -232,11 +220,17 @@
   "home.feat.secure.d": {
     "message": "Izin yang transparan dan terkontrol serta perilaku yang terlihat — skrip jahat dihentikan di sumbernya."
   },
+  "home.feat.secure.l": {
+    "message": "Cara kerja izin"
+  },
   "home.feat.secure.t": {
     "message": "Aman & andal"
   },
   "home.feat.store.d": {
     "message": "Pasang ribuan skrip komunitas sekali klik, atau terbitkan karya Anda dan bangun ekosistem bersama."
+  },
+  "home.link.store": {
+    "message": "Ke Toko Skrip"
   },
   "home.feat.store.t": {
     "message": "Toko skrip"
@@ -246,6 +240,9 @@
   },
   "home.feat.sync.d": {
     "message": "Skrip dan pengaturan tersinkron di semua perangkat — tidak ada yang hilang saat Anda pindah atau menginstal ulang."
+  },
+  "home.feat.sync.l": {
+    "message": "Atur sinkronisasi"
   },
   "home.feat.sync.t": {
     "message": "Sinkronisasi cloud"
@@ -277,26 +274,17 @@
   "home.hero.mock.adblock": {
     "message": "Lewati iklan otomatis"
   },
-  "home.hero.mock.add": {
-    "message": "Tambahkan dari toko skrip"
-  },
   "home.hero.mock.dark": {
     "message": "Mode gelap untuk halaman"
   },
   "home.hero.mock.running": {
     "message": "3 skrip berjalan di halaman ini"
   },
-  "home.hero.mock.skip": {
-    "message": "Lewati iklan"
-  },
   "home.hero.mock.speed": {
     "message": "Kontrol kecepatan video"
   },
   "home.hero.moreBrowsers": {
     "message": "Browser lainnya"
-  },
-  "home.hero.subhead": {
-    "message": "Blokir iklan, tingkatkan video, otomatiskan hal-hal membosankan — pasang skrip komunitas dari toko sekali klik, dengan skrip latar belakang dan API hebat untuk pengembang. Kompatibel dengan Tampermonkey, jadi skrip Anda yang ada bermigrasi tanpa biaya."
   },
   "home.hero.title1": {
     "message": "Beri browser Anda"
@@ -306,9 +294,6 @@
   },
   "home.hero.title3": {
     "message": "kekuatan super"
-  },
-  "home.hero.trust": {
-    "message": "Berfungsi di Chrome · Edge · Firefox — sepenuhnya gratis & sumber terbuka"
   },
   "home.install.chrome": {
     "message": "Tambahkan ke Chrome"
@@ -324,6 +309,9 @@
   },
   "home.install.manual": {
     "message": "Unduh paket & pasang secara manual"
+  },
+  "home.nav.ai": {
+    "message": "AI"
   },
   "home.nav.changelog": {
     "message": "Catatan perubahan"
@@ -373,29 +361,14 @@
   "home.sc.featured.btn": {
     "message": "Jelajahi skrip video"
   },
-  "home.sc.featured.c1": {
-    "message": "Kontrol kecepatan"
-  },
-  "home.sc.featured.c2": {
-    "message": "Pemblokir iklan"
-  },
-  "home.sc.featured.c3": {
-    "message": "Unduhan"
-  },
   "home.sc.featured.c4": {
     "message": "Gambar-dalam-gambar"
   },
   "home.sc.featured.d": {
     "message": "Kontrol kecepatan, lewati iklan otomatis, unduh sekali klik, gambar-dalam-gambar — Bilibili / YouTube / Netflix yang lebih baik."
   },
-  "home.sc.featured.sites": {
-    "message": "Mendukung 20+ situs video"
-  },
   "home.sc.featured.t": {
     "message": "Video, sepenuhnya ditingkatkan"
-  },
-  "home.sc.featured.tag": {
-    "message": "Paling populer"
   },
   "home.sc.read.d": {
     "message": "Mode gelap, terjemahan halaman, membaca imersif."
@@ -460,6 +433,9 @@
   "home.step3.d": {
     "message": "Klik pasang dan skrip langsung berfungsi di halaman."
   },
+  "home.step3.l": {
+    "message": "Cara memasang skrip"
+  },
   "home.step3.p": {
     "message": "Terpasang · Aktif sekarang"
   },
@@ -468,9 +444,6 @@
   },
   "home.trust.contributors": {
     "message": "Kontributor"
-  },
-  "home.trust.eyebrow": {
-    "message": "DIPERCAYA PENGGUNA & PENGEMBANG DI SELURUH DUNIA"
   },
   "home.trust.scripts": {
     "message": "Skrip komunitas"
@@ -712,6 +685,129 @@
   "home.search.kw.video": {
     "message": "video",
     "description": "Search keyword for video"
+  },
+  "home.hero.lead": {
+    "message": "Blokir iklan, tingkatkan video, otomatiskan pekerjaan rutin — pasang skrip komunitas dari toko sekali klik. Kompatibel dengan Tampermonkey, plus skrip latar belakang, API yang kaya, dan integrasi AI untuk pengembang."
+  },
+  "home.hero.demo.ad": {
+    "message": "Iklan video"
+  },
+  "home.hero.demo.adWait": {
+    "message": "Lewati dalam 15 dtk"
+  },
+  "home.hero.demo.popup": {
+    "message": "Promo terbatas!"
+  },
+  "home.hero.demo.popupSub": {
+    "message": "Klik untuk hadiah misterius"
+  },
+  "home.hero.demo.blocked": {
+    "message": "3 iklan diblokir"
+  },
+  "home.sc.video.t": {
+    "message": "Video · Peningkatan"
+  },
+  "home.sc.adblock.h": {
+    "message": "Iklan dan popup, tersapu bersih"
+  },
+  "home.sc.shop.h": {
+    "message": "Harga terendah asli, langsung ketahuan"
+  },
+  "home.sc.auto.h": {
+    "message": "Urusan berulang, serahkan pada skrip"
+  },
+  "home.sc.read.h": {
+    "message": "Bacaan asing yang panjang, tetap nyaman"
+  },
+  "home.sc.stage.running": {
+    "message": "{name} · Berjalan"
+  },
+  "home.sc.stage.read": {
+    "message": "Terjemahan Imersif"
+  },
+  "home.sc.stage.blocked": {
+    "message": "{count} diblokir"
+  },
+  "home.sc.stage.skipped": {
+    "message": "Dilewati otomatis"
+  },
+  "home.sc.stage.lowest": {
+    "message": "Rekor terendah {price}"
+  },
+  "home.sc.stage.coupon": {
+    "message": "Kupon dipakai · hemat {amount}"
+  },
+  "home.sc.stage.tasks": {
+    "message": "Tugas harian"
+  },
+  "home.sc.stage.task1": {
+    "message": "Absen harian"
+  },
+  "home.sc.stage.task2": {
+    "message": "Klaim poin"
+  },
+  "home.sc.stage.task3": {
+    "message": "Selesaikan tugas menjelajah"
+  },
+  "home.sc.stage.readSrc": {
+    "message": "Userscripts let you reshape any website to fit the way you read, watch and shop. Install one, and the page changes instantly — no extension to build, no code to write."
+  },
+  "home.sc.stage.readDst": {
+    "message": "Skrip pengguna memungkinkan Anda mengubah situs web apa pun sesuai cara Anda membaca, menonton, dan berbelanja. Pasang satu, dan halaman langsung berubah — tanpa membuat ekstensi, tanpa menulis kode."
+  },
+  "home.sc.stage.readChip": {
+    "message": "Diterjemahkan · Mode baca aktif"
+  },
+  "home.feat.compat.run": {
+    "message": "Berjalan tanpa diubah"
+  },
+  "home.ai.eyebrow": {
+    "message": "Integrasi AI · AI READY"
+  },
+  "home.ai.title1": {
+    "message": "Biarkan AI "
+  },
+  "home.ai.title2": {
+    "message": "menulis dan menjalankan skrip Anda"
+  },
+  "home.ai.sub": {
+    "message": "Lewat CLI sctl, agen coding AI seperti Claude Code dan Codex dapat menulis skrip ScriptCat, memasangnya di browser Anda untuk memeriksa hasilnya, lalu memperbaiki masalah yang ditemukan sebelum mencoba lagi."
+  },
+  "home.ai.agents.t": {
+    "message": "Agen coding AI"
+  },
+  "home.ai.agents.d": {
+    "message": "Pasang skill scriptcat-userscript dan sctl di Claude Code atau Codex, maka ia paham cara menulis skrip ScriptCat — serta bisa memeriksanya di browser Anda dan memperbaikinya sendiri."
+  },
+  "home.ai.agents.l": {
+    "message": "Kembangkan skrip dengan AI"
+  },
+  "home.ai.sctl.t": {
+    "message": "CLI sctl"
+  },
+  "home.ai.sctl.d": {
+    "message": "Lihat daftar, pasang, dan jalankan skrip serta baca log-nya dari terminal — atau kendalikan tab dan halaman, maupun serahkan CDP ke Playwright."
+  },
+  "home.ai.sctl.l": {
+    "message": "Mulai dengan sctl"
+  },
+  "home.ai.term.prompt": {
+    "message": "Buatkan skrip agar video Bilibili otomatis memakai 1080p, lalu pasang di browser saya dan coba"
+  },
+  "home.ai.term.wrote": {
+    "message": "{file} dibuat"
+  },
+  "home.ai.term.installed": {
+    "message": "Terpasang di ScriptCat"
+  },
+  "home.ai.term.verified": {
+    "message": "Tanpa error — kualitas beralih ke 1080p"
+  },
+  "home.dev.bgRunning": {
+    "message": "Berjalan di latar"
+  },
+  "home.dev.log.trigger": {
+    "message": "eksekusi terjadwal"
   },
   "ad.label": {
     "message": "Advertisement",

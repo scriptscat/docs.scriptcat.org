@@ -389,29 +389,17 @@
   "home.dev.title2": {
     "message": "Code-Laufzeitumgebung"
   },
-  "home.feat.api.d": {
-    "message": "Reichhaltiger als GM: Dateispeicher, geplante Aufgaben und Cross-Origin-Anfragen griffbereit."
-  },
-  "home.feat.api.t": {
-    "message": "Leistungsstarke APIs"
-  },
-  "home.feat.bg.d": {
-    "message": "Einzigartig: Skripte laufen im Hintergrund weiter, ohne offenen Tab."
-  },
-  "home.feat.bg.t": {
-    "message": "Hintergrundskripte"
-  },
   "home.feat.compat.b": {
     "message": "Unterstützt GM_*-APIs · identischer Metadatenblock"
   },
   "home.feat.compat.d": {
     "message": "Vollständig kompatibel mit dem Userscript-Format und den GM-APIs — migriere bestehende Skripte ohne Änderungen und ohne Umstellungskosten."
   },
+  "home.feat.compat.l": {
+    "message": "Migrationsanleitung"
+  },
   "home.feat.compat.t": {
     "message": "Tampermonkey-kompatibel"
-  },
-  "home.feat.devTag": {
-    "message": "Entwickler"
   },
   "home.feat.eyebrow": {
     "message": "Kernfunktionen · WARUM SCRIPTCAT"
@@ -419,11 +407,17 @@
   "home.feat.secure.d": {
     "message": "Transparente, kontrollierbare Berechtigungen und sichtbares Verhalten — bösartige Skripte werden an der Quelle gestoppt."
   },
+  "home.feat.secure.l": {
+    "message": "So funktionieren Berechtigungen"
+  },
   "home.feat.secure.t": {
     "message": "Sicher & zuverlässig"
   },
   "home.feat.store.d": {
     "message": "Installiere Tausende Community-Skripte mit einem Klick oder veröffentliche eigene und baue das Ökosystem gemeinsam auf."
+  },
+  "home.link.store": {
+    "message": "Zum Skript-Store"
   },
   "home.feat.store.t": {
     "message": "Skript-Store"
@@ -433,6 +427,9 @@
   },
   "home.feat.sync.d": {
     "message": "Skripte und Einstellungen werden geräteübergreifend synchronisiert — nichts geht beim Wechsel oder Neuinstallieren verloren."
+  },
+  "home.feat.sync.l": {
+    "message": "Synchronisierung einrichten"
   },
   "home.feat.sync.t": {
     "message": "Cloud-Synchronisierung"
@@ -464,26 +461,17 @@
   "home.hero.mock.adblock": {
     "message": "Werbung automatisch überspringen"
   },
-  "home.hero.mock.add": {
-    "message": "Aus dem Skript-Store hinzufügen"
-  },
   "home.hero.mock.dark": {
     "message": "Dunkelmodus für Seiten"
   },
   "home.hero.mock.running": {
     "message": "3 Skripte laufen auf dieser Seite"
   },
-  "home.hero.mock.skip": {
-    "message": "Werbung überspringen"
-  },
   "home.hero.mock.speed": {
     "message": "Video-Geschwindigkeitssteuerung"
   },
   "home.hero.moreBrowsers": {
     "message": "Weitere Browser"
-  },
-  "home.hero.subhead": {
-    "message": "Blockiere Werbung, verstärke Videos, automatisiere das Langweilige — installiere Community-Skripte aus dem Store mit einem Klick, mit Hintergrundskripten und leistungsstarken APIs für Entwickler. Tampermonkey-kompatibel, sodass deine bestehenden Skripte ohne Kosten migrieren."
   },
   "home.hero.title1": {
     "message": "Gib deinem Browser"
@@ -493,9 +481,6 @@
   },
   "home.hero.title3": {
     "message": "Superkräfte"
-  },
-  "home.hero.trust": {
-    "message": "Funktioniert auf Chrome · Edge · Firefox — vollständig kostenlos & Open Source"
   },
   "home.install.chrome": {
     "message": "Zu Chrome hinzufügen"
@@ -511,6 +496,9 @@
   },
   "home.install.manual": {
     "message": "Paket herunterladen & manuell installieren"
+  },
+  "home.nav.ai": {
+    "message": "KI"
   },
   "home.nav.changelog": {
     "message": "Änderungsprotokoll"
@@ -560,29 +548,14 @@
   "home.sc.featured.btn": {
     "message": "Video-Skripte durchsuchen"
   },
-  "home.sc.featured.c1": {
-    "message": "Geschwindigkeitssteuerung"
-  },
-  "home.sc.featured.c2": {
-    "message": "Werbe-Blocker"
-  },
-  "home.sc.featured.c3": {
-    "message": "Download"
-  },
   "home.sc.featured.c4": {
     "message": "Bild-in-Bild"
   },
   "home.sc.featured.d": {
     "message": "Geschwindigkeitssteuerung, Werbung automatisch überspringen, Download mit einem Klick, Bild-in-Bild — ein besseres Bilibili / YouTube / Netflix."
   },
-  "home.sc.featured.sites": {
-    "message": "Unterstützt über 20 Video-Websites"
-  },
   "home.sc.featured.t": {
     "message": "Video, vollständig verbessert"
-  },
-  "home.sc.featured.tag": {
-    "message": "Am beliebtesten"
   },
   "home.sc.read.d": {
     "message": "Dunkelmodus, Seitenübersetzung, immersives Lesen."
@@ -647,6 +620,9 @@
   "home.step3.d": {
     "message": "Klicke auf Installieren und das Skript wirkt sofort auf der Seite."
   },
+  "home.step3.l": {
+    "message": "Anleitung zur Skriptinstallation"
+  },
   "home.step3.p": {
     "message": "Installiert · Jetzt aktiv"
   },
@@ -655,9 +631,6 @@
   },
   "home.trust.contributors": {
     "message": "Mitwirkende"
-  },
-  "home.trust.eyebrow": {
-    "message": "VON NUTZERN UND ENTWICKLERN WELTWEIT VERTRAUT"
   },
   "home.trust.scripts": {
     "message": "Community-Skripte"
@@ -703,6 +676,129 @@
   "home.search.kw.video": {
     "message": "Video",
     "description": "Search keyword for video"
+  },
+  "home.hero.lead": {
+    "message": "Blockiere Werbung, mach mehr aus Videos, automatisiere lästige Routine — installiere Community-Skripte mit einem Klick aus dem Store. Tampermonkey-kompatibel, mit Hintergrundskripten, umfangreicher API und KI-Anbindung für Entwickler."
+  },
+  "home.hero.demo.ad": {
+    "message": "Videowerbung"
+  },
+  "home.hero.demo.adWait": {
+    "message": "Überspringen in 15 s"
+  },
+  "home.hero.demo.popup": {
+    "message": "Nur für kurze Zeit!"
+  },
+  "home.hero.demo.popupSub": {
+    "message": "Klick für ein Geheimgeschenk"
+  },
+  "home.hero.demo.blocked": {
+    "message": "3 Anzeigen blockiert"
+  },
+  "home.sc.video.t": {
+    "message": "Video · Verbesserung"
+  },
+  "home.sc.adblock.h": {
+    "message": "Werbung und Popups — einfach weg"
+  },
+  "home.sc.shop.h": {
+    "message": "Echte Tiefstpreise auf einen Blick"
+  },
+  "home.sc.auto.h": {
+    "message": "Lass Skripte die Routine erledigen"
+  },
+  "home.sc.read.h": {
+    "message": "Lange Texte in Fremdsprachen — entspannt lesen"
+  },
+  "home.sc.stage.running": {
+    "message": "{name} · Läuft"
+  },
+  "home.sc.stage.read": {
+    "message": "Immersive Übersetzung"
+  },
+  "home.sc.stage.blocked": {
+    "message": "{count} blockiert"
+  },
+  "home.sc.stage.skipped": {
+    "message": "Automatisch übersprungen"
+  },
+  "home.sc.stage.lowest": {
+    "message": "Allzeittief {price}"
+  },
+  "home.sc.stage.coupon": {
+    "message": "Coupon eingelöst · {amount} Rabatt"
+  },
+  "home.sc.stage.tasks": {
+    "message": "Tägliche Aufgaben"
+  },
+  "home.sc.stage.task1": {
+    "message": "Tägliches Check-in"
+  },
+  "home.sc.stage.task2": {
+    "message": "Punkte einsammeln"
+  },
+  "home.sc.stage.task3": {
+    "message": "Surf-Aufgaben erledigen"
+  },
+  "home.sc.stage.readSrc": {
+    "message": "Userscripts let you reshape any website to fit the way you read, watch and shop. Install one, and the page changes instantly — no extension to build, no code to write."
+  },
+  "home.sc.stage.readDst": {
+    "message": "Mit Userscripts passt du jede Website daran an, wie du liest, schaust und einkaufst. Eins installieren, und die Seite ändert sich sofort — keine Erweiterung bauen, keinen Code schreiben."
+  },
+  "home.sc.stage.readChip": {
+    "message": "Übersetzt · Lesemodus an"
+  },
+  "home.feat.compat.run": {
+    "message": "Läuft ohne Änderungen"
+  },
+  "home.ai.eyebrow": {
+    "message": "KI-Anbindung · AI READY"
+  },
+  "home.ai.title1": {
+    "message": "Lass KI "
+  },
+  "home.ai.title2": {
+    "message": "deine Skripte schreiben und ausführen"
+  },
+  "home.ai.sub": {
+    "message": "Über die sctl-CLI schreiben KI-Coding-Agents wie Claude Code und Codex Skripte für ScriptCat, installieren sie zur Prüfung in deinem Browser und beheben gefundene Fehler selbst, bevor sie es erneut versuchen."
+  },
+  "home.ai.agents.t": {
+    "message": "KI-Coding-Agents"
+  },
+  "home.ai.agents.d": {
+    "message": "Gib Claude Code oder Codex die Skills scriptcat-userscript und sctl — dann weiß der Agent, wie ScriptCat-Skripte geschrieben werden, prüft sie in deinem Browser und behebt Fehler selbst."
+  },
+  "home.ai.agents.l": {
+    "message": "Skripte mit KI entwickeln"
+  },
+  "home.ai.sctl.t": {
+    "message": "sctl-Kommandozeile"
+  },
+  "home.ai.sctl.d": {
+    "message": "Skripte im Terminal auflisten, installieren, ausführen und ihre Logs lesen — oder Tabs und Seiten steuern und CDP an Playwright übergeben."
+  },
+  "home.ai.sctl.l": {
+    "message": "Einstieg in sctl"
+  },
+  "home.ai.term.prompt": {
+    "message": "Schreib mir ein Skript, das Bilibili-Videos standardmäßig auf 1080p stellt, installier es dann in meinem Browser und teste es"
+  },
+  "home.ai.term.wrote": {
+    "message": "{file} geschrieben"
+  },
+  "home.ai.term.installed": {
+    "message": "In ScriptCat installiert"
+  },
+  "home.ai.term.verified": {
+    "message": "Keine Fehler — Qualität auf 1080p umgestellt"
+  },
+  "home.dev.bgRunning": {
+    "message": "Läuft im Hintergrund"
+  },
+  "home.dev.log.trigger": {
+    "message": "geplanter Lauf"
   },
   "ad.label": {
     "message": "Advertisement",

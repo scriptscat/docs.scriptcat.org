@@ -1,0 +1,309 @@
+/* For developers — dark in both themes. Token overrides make the shared
+   eyebrow / h2 / sub / btn primitives read correctly on the dark ground. */
+
+.dev {
+  overflow: hidden;
+  --lp-ink: #ebf2f8;
+  --lp-muted: #9fb4c6;
+  --lp-brand-soft: #123249;
+  --lp-brand-deep: #5cbbf2;
+  background: linear-gradient(180deg, var(--lp-dark) 0%, var(--lp-dark-2) 100%);
+  color: var(--lp-dark-text);
+}
+.glow {
+  position: absolute;
+  left: 50%;
+  top: -180px;
+  width: 900px;
+  height: 600px;
+  margin-left: -450px;
+  border-radius: 50%;
+  background: radial-gradient(closest-side, rgba(18, 150, 219, 0.28), transparent);
+  pointer-events: none;
+  animation: breathe 9s ease-in-out infinite alternate;
+}
+@keyframes breathe {
+  to {
+    transform: scale(1.15);
+    opacity: 0.7;
+  }
+}
+.gridBg {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.035) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.035) 1px, transparent 1px);
+  background-size: 48px 48px;
+  -webkit-mask-image: radial-gradient(ellipse 60% 55% at 50% 40%, #000, transparent);
+  mask-image: radial-gradient(ellipse 60% 55% at 50% 40%, #000, transparent);
+}
+
+.body {
+  position: relative;
+  width: 100%;
+  max-width: 1200px;
+  display: grid;
+  grid-template-columns: minmax(0, 0.85fr) minmax(0, 1.15fr);
+  gap: 56px;
+  align-items: center;
+}
+.left {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+.feature {
+  display: flex;
+  gap: 16px;
+  padding: 14px;
+  border-radius: 16px;
+  transition: background 0.2s ease;
+}
+.feature:hover {
+  background: rgba(255, 255, 255, 0.04);
+}
+.featureChip {
+  width: 46px;
+  height: 46px;
+  flex: none;
+  border-radius: 13px;
+  display: grid;
+  place-items: center;
+  background: var(--lp-dark-surface);
+  border: 1px solid var(--lp-dark-border);
+  color: #42b4f5;
+  font-size: 22px;
+}
+.featureTitle {
+  margin: 2px 0 4px;
+  font-size: 17px;
+  font-weight: 800;
+  color: #fff;
+}
+.featureDesc {
+  margin: 0;
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--lp-dark-text);
+}
+.ctas {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-top: 18px;
+  padding-inline-start: 14px;
+}
+.apiBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 13px 20px;
+  border-radius: 12px;
+  background: var(--lp-dark-surface);
+  border: 1px solid var(--lp-dark-border);
+  color: #fff;
+  font-size: 15px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: translate 0.15s ease, border-color 0.15s ease;
+}
+.apiBtn:hover {
+  translate: 0 -2px;
+  color: #fff;
+  text-decoration: none;
+  border-color: #33536d;
+}
+
+/* ---- editor ------------------------------------------------------------- */
+.editorWrap {
+  position: relative;
+}
+.editorWrap::before {
+  content: "";
+  position: absolute;
+  inset: 30px -20px -30px;
+  z-index: 0;
+  border-radius: 30px;
+  background: linear-gradient(135deg, rgba(18, 150, 219, 0.35), rgba(108, 92, 231, 0.3));
+  filter: blur(40px);
+  opacity: 0.6;
+}
+.editor {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+  background: var(--lp-code-bg);
+  border: 1px solid var(--lp-dark-border);
+  box-shadow: 0 40px 80px -30px rgba(0, 0, 0, 0.7);
+  /* the editor mock is always LTR (dir="ltr" in markup) */
+  /* rtl:ignore */ text-align: left;
+}
+.editorBar {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 11px 14px;
+  background: var(--lp-code-bar);
+  border-bottom: 1px solid var(--lp-dark-border);
+}
+.dots {
+  display: flex;
+  gap: 6px;
+}
+.dots i {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+}
+.file {
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  font-family: var(--lp-font-mono);
+  font-size: 12.5px;
+  color: #c9d6e2;
+}
+.bgChip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  /* rtl:ignore */ margin-left: auto;
+  padding: 4px 9px;
+  border-radius: 999px;
+  background: rgba(18, 178, 140, 0.12);
+  color: #5fe3b8;
+  font-size: 11.5px;
+  font-weight: 700;
+  white-space: nowrap;
+}
+.bgChip i {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: currentColor;
+  animation: led 1.6s ease-in-out infinite;
+}
+@keyframes led {
+  50% {
+    opacity: 0.3;
+  }
+}
+.run {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  padding: 5px 11px;
+  border-radius: 8px;
+  background: rgba(40, 200, 64, 0.12);
+  color: #5fe37a;
+  font-size: 12.5px;
+  font-weight: 800;
+  white-space: nowrap;
+  transition: background 0.2s, box-shadow 0.2s;
+}
+.runActive {
+  background: rgba(40, 200, 64, 0.25);
+  box-shadow: 0 0 0 4px rgba(40, 200, 64, 0.15);
+}
+.area {
+  display: flex;
+  padding: 16px 0;
+  font-family: var(--lp-font-mono);
+  font-size: 13.5px;
+  line-height: 1.85;
+}
+.gutter {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  min-width: 46px;
+  /* rtl:ignore */ padding-right: 16px;
+  color: #3d5469;
+  user-select: none;
+}
+.code {
+  flex: 1;
+  min-width: 0;
+  color: #c9d6e2;
+  white-space: pre;
+}
+:global([data-lp-motion]) .codeLine {
+  clip-path: inset(0 100% 0 0);
+}
+.cComment {
+  color: #5b7a92;
+}
+.cMeta {
+  color: #9fd3f5;
+}
+.cKw {
+  color: #c792ea;
+}
+.cFn {
+  color: #82aaff;
+}
+.cApi {
+  color: #ffcb6b;
+}
+.cStr {
+  color: #c3e88d;
+}
+.console {
+  min-height: 108px;
+  padding: 12px 16px 14px;
+  border-top: 1px solid var(--lp-dark-border);
+  background: rgba(0, 0, 0, 0.18);
+  font-family: var(--lp-font-mono);
+  font-size: 12.5px;
+}
+.log {
+  display: flex;
+  gap: 12px;
+  padding: 3px 0;
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+.logHidden {
+  opacity: 0;
+  transform: translateY(6px);
+}
+.logTime {
+  color: #3d5469;
+}
+.logInfo {
+  color: #9fb4c6;
+}
+.logOk {
+  color: #5fe3b8;
+  font-weight: 700;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .glow,
+  .bgChip i {
+    animation: none;
+  }
+}
+
+@media (max-width: 1000px) {
+  .body {
+    grid-template-columns: 1fr;
+    max-width: 680px;
+  }
+}
+@media (max-width: 640px) {
+  .gutter {
+    display: none;
+  }
+  .area {
+    padding: 14px 16px;
+    font-size: 12px;
+    overflow-x: auto;
+  }
+  .bgChip {
+    display: none;
+  }
+  .run {
+    /* rtl:ignore */ margin-left: auto;
+  }
+}
