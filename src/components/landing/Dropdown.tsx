@@ -56,8 +56,11 @@ export function Dropdown({
     <div
       ref={wrapRef}
       className={styles.dd}
-      onMouseEnter={() => setOpen(true)}
-      onMouseLeave={() => setOpen(false)}
+      // Hover is mouse-only. A tap fires an emulated mouseenter right before
+      // its click, so listening to mouse events would open the menu and the
+      // click would toggle it shut again — on touch it would never open.
+      onPointerEnter={(e) => e.pointerType === "mouse" && setOpen(true)}
+      onPointerLeave={(e) => e.pointerType === "mouse" && setOpen(false)}
     >
       {children({
         onClick: () => setOpen((v) => !v),
